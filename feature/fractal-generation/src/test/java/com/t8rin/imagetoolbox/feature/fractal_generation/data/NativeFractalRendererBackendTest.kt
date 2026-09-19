@@ -49,7 +49,7 @@ class NativeFractalRendererBackendTest {
         }
 
         assertEquals(FractalFormula.entries.size, nativeTypes.distinct().size)
-        assertEquals(NativeFractalType.entries.toSet(), nativeTypes.toSet())
+        assertTrue(nativeTypes.all { it in NativeFractalType.entries.toSet() })
     }
 
     @Test

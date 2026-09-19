@@ -33,21 +33,33 @@ import com.t8rin.fractal_engine.FractalViewport as NativeFractalViewport
 import com.t8rin.fractal_engine.QuaternionConstant as NativeQuaternionConstant
 
 internal class NativeFractalRendererBackend internal constructor(
+    private val isEngineAvailable: () -> Boolean,
     supportedNativeTypes: Set<NativeFractalType>,
     private val nativeRender: suspend (NativeFractalRenderRequest) -> Bitmap
 ) : FractalRenderer<Bitmap> {
 
+    private val nativeTypes: Set<NativeFractalType> = supportedNativeTypes
+
     @Inject
     constructor() : this(
+        isEngineAvailable = { FractalEngine.isAvailable },
         supportedNativeTypes = FractalEngine.supportedTypes,
         nativeRender = { request -> FractalEngine.render(request) }
     )
 
-    override val supportedFormulas: Set<FractalFormula> = NATIVE_TYPE_BY_FORMULA
-        .filterValues { type -> type in supportedNativeTypes }
-        .keys
+    override val supportedFormulas: Set<FractalFormula>
+        get() = if (isEngineAvailable()) {
+            NATIVE_TYPE_BY_FORMULA
+                .filterValues { type -> type in nativeTypes }
+                .keys
+        } else {
+            emptySet()
+        }
 
     override suspend fun render(request: FractalRenderRequest): Bitmap {
+        require(isEngineAvailable()) {
+            "Native fractal engine is not available"
+        }
         require(request.params.formula in supportedFormulas) {
             "Native fractal engine does not support ${request.params.formula.name}"
         }
