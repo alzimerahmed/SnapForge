@@ -643,13 +643,22 @@ class FiltersComponent @AssistedInject internal constructor(
 
     fun enhanceImage() {
         if (_basicFilterState.value.uris.isNullOrEmpty()) return
-        addFilters(
-            listOf(
-                UiContrastFilter(1.15f),
-                UiSaturationFilter(1.1f to true),
-                UiSharpenFilter(0.3f)
-            )
+        val enhanceTriple = listOf(
+            UiContrastFilter(1.15f),
+            UiSaturationFilter(1.1f to true),
+            UiSharpenFilter(0.3f)
         )
+        val currentFilters = _basicFilterState.value.filters
+        if (currentFilters.size >= enhanceTriple.size) {
+            val alreadyApplied = currentFilters
+                .takeLast(enhanceTriple.size)
+                .zip(enhanceTriple)
+                .all { (current, enhance) ->
+                    current::class == enhance::class && current.value == enhance.value
+                }
+            if (alreadyApplied) return
+        }
+        addFilters(enhanceTriple)
     }
 
     fun removeFilterAtIndex(index: Int) {

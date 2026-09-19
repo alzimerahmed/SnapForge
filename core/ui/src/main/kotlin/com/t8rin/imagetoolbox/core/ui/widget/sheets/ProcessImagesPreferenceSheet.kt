@@ -168,8 +168,15 @@ fun ProcessImagesPreferenceSheet(
     }
     val quickActionScreens by remember(rawScreenList) {
         derivedStateOf {
-            listOf(1, 78, 3, 4, 19, 65).mapNotNull { id ->
-                rawScreenList.firstOrNull { it.id == id }
+            listOf(
+                Screen.ResizeAndConvert(),
+                Screen.CompressionLab(),
+                Screen.Crop(),
+                Screen.Filter(),
+                Screen.Watermarking(),
+                Screen.PdfTools.ImagesToPdf()
+            ).mapNotNull { target ->
+                rawScreenList.firstOrNull { it.id == target.id }
             }
         }
     }
@@ -281,20 +288,20 @@ fun ProcessImagesPreferenceSheet(
                         flingBehavior = enhancedFlingBehavior()
                     ) {
                         if (extraDataType == null && searchKeyword.isBlank() && quickActionScreens.isNotEmpty()) {
-                        item(
-                            key = "quickActions",
-                            span = StaggeredGridItemSpan.FullLine
-                        ) {
-                            QuickActionsRow(
-                                screens = quickActionScreens,
-                                onNavigate = { screen ->
-                                    onNavigate(screen)
-                                    onDismiss()
-                                }
-                            )
+                            item(
+                                key = "quickActions",
+                                span = StaggeredGridItemSpan.FullLine
+                            ) {
+                                QuickActionsRow(
+                                    screens = quickActionScreens,
+                                    onNavigate = { screen ->
+                                        onNavigate(screen)
+                                        onDismiss()
+                                    }
+                                )
+                            }
                         }
-                    }
-                    if (extraDataType == null || extraDataType == ExtraDataType.Gif || extraDataType == ExtraDataType.Pdf) {
+                        if (extraDataType == null || extraDataType == ExtraDataType.Gif || extraDataType == ExtraDataType.Pdf) {
                             item(
                                 span = StaggeredGridItemSpan.FullLine
                             ) {
@@ -450,7 +457,7 @@ private fun QuickActionsRow(
     ) {
         items(
             items = screens,
-            key = { it.toString() }
+            key = { it.id }
         ) { screen ->
             val icon = screen.twoToneIcon ?: screen.icon ?: return@items
 

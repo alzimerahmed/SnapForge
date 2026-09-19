@@ -116,10 +116,9 @@ fun WatermarkPresetsRow(
             },
             confirmButton = {
                 EnhancedButton(
+                    enabled = value.isNotBlank(),
                     onClick = {
-                        if (value.isNotBlank()) {
-                            onSavePreset(value.trim())
-                        }
+                        onSavePreset(value.trim())
                         showSaveDialog = false
                     }
                 ) {

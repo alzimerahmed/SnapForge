@@ -143,7 +143,7 @@ internal class AndroidImageTransformer @Inject constructor(
                 val height = calcHeight()
                 val longestSide = maxOf(width, height)
 
-                if (longestSide <= preset.value) {
+                if (preset.value <= 0 || longestSide <= preset.value) {
                     currentInfo
                 } else {
                     val scale = preset.value / longestSide.toFloat()

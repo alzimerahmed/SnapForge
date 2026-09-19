@@ -150,7 +150,9 @@ internal fun LauncherScreenSelector(
             }
         }
         items(
-            screenList.filter { it.id !in settingsState.pinnedScreenList }
+            if (showPinnedSection) {
+                screenList.filter { it.id !in settingsState.pinnedScreenList }
+            } else screenList
         ) { screen ->
             LauncherScreenTile(
                 screen = screen,

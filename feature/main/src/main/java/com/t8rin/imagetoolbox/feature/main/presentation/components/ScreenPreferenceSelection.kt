@@ -260,7 +260,9 @@ internal fun RowScope.ScreenPreferenceSelection(
                                     }
                                 }
                                 items(
-                                    currentScreenList.filter { it.id !in settingsState.pinnedScreenList }
+                                    if (showPinnedSection) {
+                                        currentScreenList.filter { it.id !in settingsState.pinnedScreenList }
+                                    } else currentScreenList
                                 ) { screen ->
                                         ScreenPreferenceItem(
                                             screen = screen,

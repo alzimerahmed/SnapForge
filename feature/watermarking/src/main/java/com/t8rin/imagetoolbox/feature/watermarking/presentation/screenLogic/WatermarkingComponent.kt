@@ -65,6 +65,8 @@ import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 
 class WatermarkingComponent @AssistedInject internal constructor(
@@ -91,9 +93,12 @@ class WatermarkingComponent @AssistedInject internal constructor(
             initialUris?.let(::setUris)
         }
         componentScope.launch {
-            settingsManager.settingsState.collect { state ->
-                _watermarkPresets.value = state.watermarkPresets.mapNotNull(::decodePreset)
-            }
+            settingsManager.settingsState
+                .map { it.watermarkPresets }
+                .distinctUntilChanged()
+                .collect { presets ->
+                    _watermarkPresets.value = presets.mapNotNull(::decodePreset)
+                }
         }
     }
 

@@ -18,6 +18,7 @@
 package com.t8rin.imagetoolbox.feature.watermarking.domain
 
 import com.t8rin.imagetoolbox.core.domain.image.model.BlendingMode
+import com.t8rin.imagetoolbox.core.settings.domain.model.FontType
 
 data class WatermarkPreset(
     val name: String,
@@ -30,8 +31,24 @@ data class WatermarkPreset(
     val text: String,
     val textSize: Float,
     val colorArgb: Long,
-    val backgroundColorArgb: Long
+    val backgroundColorArgb: Long,
+    val fontType: String? = null,
+    val isInvisible: Boolean = false,
+    val isLSB: Boolean = true
 )
+
+private fun FontType?.encode(): String? = when (this) {
+    is FontType.Resource -> "res:$resId"
+    is FontType.File -> "file:$path"
+    null -> null
+}
+
+private fun String?.decodeFontType(): FontType? = when {
+    this == null -> null
+    startsWith("res:") -> FontType.Resource(removePrefix("res:").toInt())
+    startsWith("file:") -> FontType.File(removePrefix("file:"))
+    else -> null
+}
 
 fun WatermarkParams.toWatermarkPreset(
     name: String
@@ -48,7 +65,10 @@ fun WatermarkParams.toWatermarkPreset(
         text = type.text,
         textSize = type.params.size,
         colorArgb = type.params.color.toLong(),
-        backgroundColorArgb = type.params.backgroundColor.toLong()
+        backgroundColorArgb = type.params.backgroundColor.toLong(),
+        fontType = type.params.font.encode(),
+        isInvisible = type.digitalParams.isInvisible,
+        isLSB = type.digitalParams.isLSB
     )
 }
 
@@ -58,16 +78,19 @@ fun WatermarkPreset.toWatermarkParams(): WatermarkParams = WatermarkParams(
     rotation = rotation,
     alpha = alpha,
     isRepeated = isRepeated,
-    overlayMode = BlendingMode.newEntries.getOrNull(overlayModeValue)
+    overlayMode = BlendingMode.newEntries.firstOrNull { it.value == overlayModeValue }
         ?: BlendingMode.SrcOver,
     watermarkingType = WatermarkingType.Text(
         params = TextParams(
             color = colorArgb.toInt(),
             size = textSize,
-            font = null,
+            font = fontType.decodeFontType(),
             backgroundColor = backgroundColorArgb.toInt()
         ),
         text = text,
-        digitalParams = DigitalParams.Default
+        digitalParams = DigitalParams(
+            isInvisible = isInvisible,
+            isLSB = isLSB
+        )
     )
 )
