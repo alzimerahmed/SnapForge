@@ -13,3 +13,8 @@
 /.kotlin
 /scripts/
 /outputs/
+
+# Devin prompt system + per-project knowledge (private)
+.devin/
+.switchboard/
+docs/*.md
