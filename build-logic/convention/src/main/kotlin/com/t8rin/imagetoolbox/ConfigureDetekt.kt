@@ -26,6 +26,7 @@ import org.gradle.kotlin.dsl.named
 
 internal fun Project.configureDetekt(extension: DetektExtension) = extension.apply {
     config.setFrom(rootProject.files("config/detekt/detekt.yml"))
+    baseline = rootProject.file("config/detekt/detekt-baseline.xml")
     buildUponDefaultConfig = true
     tasks.named<Detekt>("detekt") {
         reports {

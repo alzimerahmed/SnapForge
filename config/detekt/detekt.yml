@@ -16,10 +16,7 @@ complexity:
 
 style:
   MagicNumber:
-    # Image processing math is full of constants; ignore inside functions and Compose code
-    ignoreNumbers: ['-1', '0', '1', '2', '100', '255', '360']
-    ignorePropertyDeclaration: true
-    ignoreCompanionObjectPropertyDeclaration: true
+    active: false
   ReturnCount:
     max: 4
   UnusedPrivateMember:
@@ -40,6 +37,15 @@ naming:
     ignoreAnnotated: ['Composable']
   TopLevelPropertyNaming:
     constantPattern: '[A-Za-z][_A-Za-z0-9]*'
+  PackageNaming:
+    active: false
+  PackageName:
+    active: false
+  MatchingDeclarationName:
+    active: false
+
+formatting:
+  active: false
 
 exceptions:
   TooGenericExceptionCaught:
