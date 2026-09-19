@@ -9,7 +9,7 @@ SnapForge (fork of T8RIN/ImageToolbox; upstream: https://github.com/T8RIN/ImageT
 **Key subsystems:**
 - **Module graph:** `:app` + 10 `:core:*` modules (data, ui, domain, resources, settings, di, crash, utils, filters, ksp) + 60+ `:feature:*` modules (crop, resize-convert, filters, draw, erase-background, edit-exif, pdf-tools, cipher, ai-tools, recognize-text, document-scanner, gif-tools, jxl-tools, webp-tools, collage-maker, watermarking, scan-qr-code, quick-tiles, ...). Feature modules depend on all core modules; `:app` depends on `:feature:root`, `:feature:media-picker`, `:feature:quick-tiles`. Full graph in `ARCHITECTURE.md` / `ARCHITECTURE_2`.
 - **Build variants:** flavor dimension `app` → `foss` (default, no GMS), `market` (GMS-enabled), `benchmark`. `:app` debug builds use applicationIdSuffix `.debug`.
-- **Identity (current, pending rename decision — see docs/research.md ADR-001):** applicationId `ru.tech.imageresizershrinker`, namespace `com.t8rin.imagetoolbox`, file provider `com.t8rin.imagetoolbox.fileprovider`. Do NOT rename casually — it affects upgrades, FileProvider authorities, and store identity.
+- **Identity:** applicationId `com.alzimerahmed.snapforge` (debug suffix `.debug`); namespace (internal code packages) remains `com.t8rin.imagetoolbox`; file provider `com.alzimerahmed.snapforge.fileprovider`. The namespace/package rename is deferred (docs/research.md ADR-002) — do NOT rename casually; applicationId is now the SnapForge identity.
 - **Native libs under `lib/`** and JitPack/Sonatype-snapshot repositories — dependency resolution is strict (`FAIL_ON_PROJECT_REPOS`).
 - **CI:** `.github/workflows/` — android.yml (full), android_foss.yml, android_market.yml, android_market_debug.yml, tb_release.yml.
 

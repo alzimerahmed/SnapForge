@@ -60,6 +60,6 @@ class BaselineProfileGenerator {
     )
 
     private companion object {
-        const val PACKAGE_NAME = "ru.tech.imageresizershrinker"
+        const val PACKAGE_NAME = "com.alzimerahmed.snapforge"
     }
 }

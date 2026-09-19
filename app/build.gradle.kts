@@ -31,8 +31,7 @@ android {
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
 
-        //Maintained for compatibility with old version
-        applicationId = "ru.tech.imageresizershrinker"
+        applicationId = "com.alzimerahmed.snapforge"
 
         versionCode = libs.versions.versionCode.get().toIntOrNull()
         versionName = System.getenv("VERSION_NAME") ?: libs.versions.versionName.get()
@@ -66,7 +65,7 @@ android {
         debug {
             applicationIdSuffix = ".debug"
             resValue("string", "app_launcher_name", "Image Toolbox DEBUG")
-            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider.debug")
+            resValue("string", "file_provider", "com.alzimerahmed.snapforge.fileprovider.debug")
         }
         release {
             isMinifyEnabled = true
@@ -76,7 +75,7 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "app_launcher_name", "Image Toolbox")
-            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider")
+            resValue("string", "file_provider", "com.alzimerahmed.snapforge.fileprovider")
         }
         create("benchmark") {
             initWith(buildTypes.getByName("release"))
