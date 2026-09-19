@@ -17,6 +17,12 @@ SnapForge (fork of T8RIN/ImageToolbox; upstream: https://github.com/T8RIN/ImageT
 
 **Remote-first verification (policy):** full gates run on CI, not locally — the GitHub Actions workflows build/test on push. Local verification is tiered: targeted compile + scoped tests while iterating, scoped lint before commit, CI for the full gate before merge. Only run full local builds when the change touches build files/deps or an on-device APK is needed.
 
+**IMPORTANT — small-batch local builds (machine-friendly, mandatory):** this repo has 70+ modules and multi-flavor variants; full multi-task Gradle invocations peg the CPU for minutes, lag the machine and heat the laptop. When local builds ARE needed:
+- Build in SMALL BATCHES: one variant or one module per invocation (e.g. `./gradlew assembleFossDebug`, then later `./gradlew assembleMarketDebug` — never both in one command).
+- Prefer scoped tasks: `:module:compileDebugKotlin`, `:module:testDebugUnitTest` over whole-repo `test`/`assemble`.
+- Let the configuration cache + up-to-date checks do their job; don't re-run green tasks.
+- If a build must run long, run it in the background and poll, keeping the machine responsive.
+
 ## Entry Point
 
 This file is auto-loaded by Devin at every session start. It is the entry point to the full prompt system in `.devin/prompt/`. Read `.devin/prompt/map.md` before starting any task — it is the system map.

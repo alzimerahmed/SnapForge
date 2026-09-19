@@ -94,9 +94,6 @@ dependencies {
     implementation(libs.datastore.core.android)
     api(libs.material)
 
-    "marketImplementation"(platform(libs.firebase.bom))
-    "marketImplementation"(libs.firebase.crashlytics)
-    "marketImplementation"(libs.firebase.analytics)
     "marketImplementation"(libs.review.ktx)
     "marketImplementation"(libs.app.update)
     "marketImplementation"(libs.app.update.ktx)

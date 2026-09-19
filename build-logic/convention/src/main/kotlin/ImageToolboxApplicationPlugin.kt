@@ -45,8 +45,6 @@ class ImageToolboxApplicationPlugin : Plugin<Project> {
         with(target) {
             apply(plugin = "com.android.application")
             apply(plugin = "kotlin-parcelize")
-            apply(plugin = "com.google.gms.google-services")
-            apply(plugin = "com.google.firebase.crashlytics")
             apply(plugin = "com.mikepenz.aboutlibraries.plugin.android")
             apply(plugin = "org.jetbrains.kotlin.plugin.compose")
             apply(plugin = "io.gitlab.arturbosch.detekt")

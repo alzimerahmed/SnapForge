@@ -53,11 +53,9 @@ android {
         create("foss") {
             dimension = "app"
             versionNameSuffix = "-foss"
-            extra.set("gmsEnabled", false)
         }
         create("market") {
             dimension = "app"
-            extra.set("gmsEnabled", true)
         }
     }
 
@@ -165,24 +163,3 @@ baselineProfile {
     mergeIntoMain = true
 }
 
-androidComponents {
-    beforeVariants(selector().all()) { variantBuilder ->
-        val flavorName = variantBuilder.productFlavors.firstOrNull()?.second.orEmpty()
-        val flavorCap = flavorName.replaceFirstChar(Char::uppercase)
-
-        val gmsEnabled = android.productFlavors
-            .findByName(flavorName)
-            ?.extra
-            ?.get("gmsEnabled") == true
-
-        tasks.configureEach {
-            val isTargetTask = listOf("GoogleServices", "Crashlytics").any { marker ->
-                name.contains(marker)
-            } && name.contains(flavorCap)
-
-            if (isTargetTask) {
-                enabled = gmsEnabled
-            }
-        }
-    }
-}

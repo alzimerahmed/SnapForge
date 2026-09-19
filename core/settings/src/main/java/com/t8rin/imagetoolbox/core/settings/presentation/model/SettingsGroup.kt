@@ -32,7 +32,6 @@ import com.t8rin.imagetoolbox.core.resources.icons.Description
 import com.t8rin.imagetoolbox.core.resources.icons.DesignServices
 import com.t8rin.imagetoolbox.core.resources.icons.Draw
 import com.t8rin.imagetoolbox.core.resources.icons.Exif
-import com.t8rin.imagetoolbox.core.resources.icons.Firebase
 import com.t8rin.imagetoolbox.core.resources.icons.FolderOpen
 import com.t8rin.imagetoolbox.core.resources.icons.Glyphs
 import com.t8rin.imagetoolbox.core.resources.icons.HardDrive
@@ -294,17 +293,6 @@ sealed class SettingsGroup(
         initialState = false
     )
 
-    data object Firebase : SettingsGroup(
-        id = 17,
-        icon = Icons.Outlined.Firebase,
-        titleId = R.string.firebase,
-        settingsList = listOf(
-            Setting.Crashlytics,
-            Setting.Analytics
-        ),
-        initialState = false
-    )
-
     data object Updates : SettingsGroup(
         id = 18,
         icon = Icons.Rounded.MobileArrowDown,
@@ -470,7 +458,6 @@ sealed class SettingsGroup(
                 Storage,
                 ImageSource,
                 BackupRestore,
-                Firebase.takeIf { !Flavor.isFoss() },
                 Updates,
                 AboutApp
             )

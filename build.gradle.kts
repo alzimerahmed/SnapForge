@@ -29,8 +29,6 @@ buildscript {
         classpath(libs.agp.gradle)
         classpath(libs.kotlin.gradle)
         classpath(libs.hilt.gradle)
-        classpath(libs.gms.gradle)
-        classpath(libs.firebase.crashlytics.gradle)
         classpath(libs.baselineprofile.gradle)
         classpath(libs.detekt.gradle)
         classpath(libs.aboutlibraries.gradle)

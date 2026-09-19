@@ -41,7 +41,6 @@ decompose = "3.5.0"
 kotlin = "2.4.20"
 agp = "9.3.3"
 hilt = "2.60.1"
-gms = "4.5.0"
 
 ktor = "3.6.0"
 coil = "3.6.2"
@@ -93,17 +92,12 @@ materialKolor = "5.0.1"
 palette = "1.1.0-alpha01"
 kotlinxSerializationJson = "1.11.0"
 
-firebaseBom = "34.19.0"
-firebaseCrashlyticsGradle = "3.0.8"
 junit = "4.13.2"
 coilResvg = "1.1.2"
 runner = "1.7.0"
 
 [libraries]
 coil-resvg = { module = "com.hashsequence:coil-resvg", version.ref = "coilResvg" }
-firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
-firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
-firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
 junit = { module = "junit:junit", version.ref = "junit" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 materialKolor = { module = "com.materialkolor:material-kolor", version.ref = "materialKolor" }
@@ -205,11 +199,9 @@ tesseract = { module = "com.github.adaptech-cz.Tesseract4Android:tesseract4andro
 bouncycastle-pkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncycastle" }
 bouncycastle-provider = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncycastleProvider" }
 
-firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
 baselineprofile-gradle = { group = "androidx.benchmark", name = "benchmark-baseline-profile-gradle-plugin", version.ref = "androidxMacroBenchmark" }
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 hilt-gradle = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
-gms-gradle = { module = "com.google.gms:google-services", version.ref = "gms" }
 kotlinx-serialization-gradle = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
 ksp-gradle = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 agp-gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
