@@ -54,11 +54,6 @@ exceptions:
   SwallowedException:
     active: false
 
-formatting:
-  autoCorrect: true
-  MaximumLineLength:
-    maxLineLength: 160
-
 Compose:
   ComposableAnnotationNaming:
     active: true
