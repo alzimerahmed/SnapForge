@@ -53,28 +53,32 @@ class ThemeScreenshotTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun capturesLightAndDarkThemeScreenshots() {
+    fun capturesLightThemeScreenshot() {
+        captureThemeScreenshot(NightMode.Light, "src/test/snapshots/light/theme_light.png")
+    }
+
+    @Test
+    fun capturesDarkThemeScreenshot() {
+        captureThemeScreenshot(NightMode.Dark, "src/test/snapshots/dark/theme_dark.png")
+    }
+
+    private fun captureThemeScreenshot(nightMode: NightMode, path: String) {
         // Record mode: run `recordRoborazziFossDebug` (CI) to generate goldens,
         // then `verifyRoborazziFossDebug` gates regressions.
-        listOf(
-            NightMode.Light to "src/test/snapshots/light/theme_light.png",
-            NightMode.Dark to "src/test/snapshots/dark/theme_dark.png"
-        ).forEach { (nightMode, path) ->
-            composeRule.setContent {
-                val settingsState = SettingsState.Default.copy(nightMode = nightMode).toUiState()
+        composeRule.setContent {
+            val settingsState = SettingsState.Default.copy(nightMode = nightMode).toUiState()
 
-                CompositionLocalProvider(LocalSettingsState provides settingsState) {
-                    ImageToolboxTheme {
-                        Surface {
-                            Column(Modifier.fillMaxWidth().padding(16.dp)) {
-                                Text("SnapForge theme sample")
-                                Button(onClick = {}) { Text("Primary action") }
-                            }
+            CompositionLocalProvider(LocalSettingsState provides settingsState) {
+                ImageToolboxTheme {
+                    Surface {
+                        Column(Modifier.fillMaxWidth().padding(16.dp)) {
+                            Text("SnapForge theme sample")
+                            Button(onClick = {}) { Text("Primary action") }
                         }
                     }
                 }
             }
-            composeRule.onRoot().captureRoboImage(path)
         }
+        composeRule.onRoot().captureRoboImage(path)
     }
 }
