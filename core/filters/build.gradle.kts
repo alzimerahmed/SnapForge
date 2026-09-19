@@ -23,6 +23,14 @@ plugins {
 
 android.namespace = "com.t8rin.imagetoolbox.core.filters"
 
+android {
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
+}
+
 dependencies {
     implementation(projects.core.domain)
     implementation(projects.core.ui)
@@ -36,4 +44,10 @@ dependencies {
     implementation(projects.lib.ascii)
     implementation(projects.lib.neuralTools)
     implementation(libs.trickle)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.androidx.test.ext.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.turbine)
+    testImplementation(libs.kotlinx.coroutines.test)
 }

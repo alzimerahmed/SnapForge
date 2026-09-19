@@ -1,0 +1,78 @@
+# SnapForge detekt configuration — layered on top of detekt defaults (buildUponDefaultConfig = true).
+# Only deviations from defaults are listed here. Keep this file small; tune only what fires.
+
+complexity:
+  LongMethod:
+    threshold: 120
+  LongParameterList:
+    # Compose functions and image-pipeline APIs legitimately take many parameters
+    active: false
+  TooManyFunctions:
+    active: false
+  CyclomaticComplexMethod:
+    threshold: 20
+  LargeClass:
+    threshold: 800
+
+style:
+  MagicNumber:
+    # Image processing math is full of constants; ignore inside functions and Compose code
+    ignoreNumbers: ['-1', '0', '1', '2', '100', '255', '360']
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+  ReturnCount:
+    max: 4
+  UnusedPrivateMember:
+    # Compose previews and @Preview params are referenced by the compiler plugin
+    ignoreAnnotated: ['Preview']
+  ThrowsCount:
+    max: 3
+  MaxLineLength:
+    maxLineLength: 160
+  WildcardImport:
+    active: false
+  UnusedParameter:
+    active: false
+
+naming:
+  FunctionNaming:
+    # Compose @Composable functions use PascalCase
+    ignoreAnnotated: ['Composable']
+  TopLevelPropertyNaming:
+    constantPattern: '[A-Za-z][_A-Za-z0-9]*'
+
+exceptions:
+  TooGenericExceptionCaught:
+    # Image decoding across many formats throws generic exceptions at boundaries
+    active: false
+  SwallowedException:
+    active: false
+
+formatting:
+  autoCorrect: true
+  MaximumLineLength:
+    maxLineLength: 160
+
+Compose:
+  ComposableAnnotationNaming:
+    active: true
+  CompositionLocalAllowlist:
+    active: false
+  ContentEmitterReturningValues:
+    active: true
+  ModifierComposable:
+    active: true
+  ModifierMissing:
+    active: false
+  MutableParams:
+    active: true
+  PreviewPublic:
+    active: false
+  RememberMissing:
+    active: false
+  UnstableCollections:
+    active: false
+  ViewModelForwarding:
+    active: false
+  ViewModelInjection:
+    active: false

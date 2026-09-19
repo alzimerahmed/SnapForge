@@ -95,10 +95,16 @@ kotlinxSerializationJson = "1.11.0"
 junit = "4.13.2"
 coilResvg = "1.1.2"
 runner = "1.7.0"
+robolectric = "4.16.1"
+turbine = "1.2.1"
+kotlinxCoroutinesTest = "1.10.2"
 
 [libraries]
 coil-resvg = { module = "com.hashsequence:coil-resvg", version.ref = "coilResvg" }
 junit = { module = "junit:junit", version.ref = "junit" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 materialKolor = { module = "com.materialkolor:material-kolor", version.ref = "materialKolor" }
 androidx-palette-ktx = { module = "androidx.palette:palette", version.ref = "palette" }
