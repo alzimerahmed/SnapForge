@@ -39,8 +39,11 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridItemSpan
@@ -93,6 +96,7 @@ import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.matchesSearchQuery
 import com.t8rin.imagetoolbox.core.ui.utils.provider.LocalAppHistoryRepository
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
+import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedChip
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedIconButton
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedFlingBehavior
@@ -160,6 +164,13 @@ fun ProcessImagesPreferenceSheet(
             lastUsedTools.mapNotNull { tool ->
                 rawScreenList.find { screen -> screen.id == tool.screenId }
             }.take(5)
+        }
+    }
+    val quickActionScreens by remember(rawScreenList) {
+        derivedStateOf {
+            listOf(1, 78, 3, 4, 19, 65).mapNotNull { id ->
+                rawScreenList.firstOrNull { it.id == id }
+            }
         }
     }
 
@@ -269,7 +280,21 @@ fun ProcessImagesPreferenceSheet(
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
                         flingBehavior = enhancedFlingBehavior()
                     ) {
-                        if (extraDataType == null || extraDataType == ExtraDataType.Gif || extraDataType == ExtraDataType.Pdf) {
+                        if (extraDataType == null && searchKeyword.isBlank() && quickActionScreens.isNotEmpty()) {
+                        item(
+                            key = "quickActions",
+                            span = StaggeredGridItemSpan.FullLine
+                        ) {
+                            QuickActionsRow(
+                                screens = quickActionScreens,
+                                onNavigate = { screen ->
+                                    onNavigate(screen)
+                                    onDismiss()
+                                }
+                            )
+                        }
+                    }
+                    if (extraDataType == null || extraDataType == ExtraDataType.Gif || extraDataType == ExtraDataType.Pdf) {
                             item(
                                 span = StaggeredGridItemSpan.FullLine
                             ) {
@@ -410,6 +435,53 @@ fun ProcessImagesPreferenceSheet(
             if (!it) onDismiss()
         }
     )
+}
+
+@Composable
+private fun QuickActionsRow(
+    screens: List<Screen>,
+    onNavigate: (Screen) -> Unit
+) {
+    LazyRow(
+        flingBehavior = enhancedFlingBehavior(),
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+        contentPadding = PaddingValues(horizontal = 2.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        items(
+            items = screens,
+            key = { it.toString() }
+        ) { screen ->
+            val icon = screen.twoToneIcon ?: screen.icon ?: return@items
+
+            EnhancedChip(
+                selected = false,
+                onClick = { onNavigate(screen) },
+                selectedColor = MaterialTheme.colorScheme.secondaryContainer,
+                contentPadding = PaddingValues(
+                    start = 6.dp,
+                    end = 8.dp,
+                    top = 4.dp,
+                    bottom = 4.dp
+                )
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        imageVector = icon,
+                        contentDescription = null,
+                        modifier = Modifier.size(20.dp)
+                    )
+                    Spacer(Modifier.width(4.dp))
+                    Text(
+                        text = stringResource(screen.title),
+                        style = MaterialTheme.typography.labelMedium
+                    )
+                }
+            }
+        }
+    }
 }
 
 private data class ProcessImagesSheetTitle(
