@@ -52,7 +52,8 @@ class SideFadePaintTest {
     @Test
     fun gradientTileModeIsClamp() {
         val paint = FadeSide.Top.getPaint(bitmap, length = 20, strength = 0.5f)
-        assertEquals(Shader.TileMode.CLAMP, paint.shader.tileMode)
+        val gradient = paint.shader as LinearGradient
+        assertEquals(Shader.TileMode.CLAMP, gradient.tileMode)
     }
 
     @Test

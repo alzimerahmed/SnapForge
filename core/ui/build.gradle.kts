@@ -38,9 +38,19 @@ plugins {
     alias(libs.plugins.image.toolbox.library)
     alias(libs.plugins.image.toolbox.hilt)
     alias(libs.plugins.image.toolbox.compose)
+    id("io.github.takahirom.roborazzi")
 }
 
 android.namespace = "com.t8rin.imagetoolbox.core.ui"
+
+android {
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+            all { it.jvmArgs("-Xmx2g") }
+        }
+    }
+}
 
 dependencies {
     api(projects.core.resources)
@@ -118,4 +128,10 @@ dependencies {
     api(libs.flinger)
 
     testImplementation(libs.junit)
+    testImplementation(libs.androidx.test.ext.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.roborazzi)
+    testImplementation(libs.roborazzi.compose)
+    testImplementation(libs.roborazzi.rule)
+    testImplementation(libs.androidx.compose.ui.test.junit4)
 }

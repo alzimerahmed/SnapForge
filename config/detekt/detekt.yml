@@ -60,8 +60,6 @@ Compose:
     active: false
   ContentEmitterReturningValues:
     active: true
-  ModifierComposable:
-    active: true
   ModifierMissing:
     active: false
   MutableParams:

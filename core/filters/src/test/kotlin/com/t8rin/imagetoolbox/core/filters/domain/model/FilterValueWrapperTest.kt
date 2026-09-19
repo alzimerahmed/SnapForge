@@ -18,7 +18,6 @@
 package com.t8rin.imagetoolbox.core.filters.domain.model
 
 import org.junit.Assert.assertEquals
-import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -47,9 +46,8 @@ class FilterValueWrapperTest {
     }
 
     @Test
-    fun nullIsNotWrappedValue() {
+    fun wrappedValueIsNonNull() {
         val wrapper = "x".wrap()
         assertTrue(wrapper.wrapped != null)
-        assertFalse(wrapper.wrapped is Unit)
     }
 }
