@@ -67,7 +67,10 @@ import com.t8rin.imagetoolbox.core.domain.utils.smartJob
 import com.t8rin.imagetoolbox.core.filters.domain.FilterProvider
 import com.t8rin.imagetoolbox.core.filters.domain.model.Filter
 import com.t8rin.imagetoolbox.core.filters.domain.model.params.SeamCarvingParams
+import com.t8rin.imagetoolbox.core.filters.presentation.model.UiContrastFilter
 import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
+import com.t8rin.imagetoolbox.core.filters.presentation.model.UiSaturationFilter
+import com.t8rin.imagetoolbox.core.filters.presentation.model.UiSharpenFilter
 import com.t8rin.imagetoolbox.core.filters.presentation.model.hasSameState
 import com.t8rin.imagetoolbox.core.filters.presentation.model.hasSameValue
 import com.t8rin.imagetoolbox.core.filters.presentation.model.previewKey
@@ -636,6 +639,17 @@ class FiltersComponent @AssistedInject internal constructor(
         filterJob = null
         updatePreview()
         commitHistoryFrom(beforeSnapshot)
+    }
+
+    fun enhanceImage() {
+        if (_basicFilterState.value.uris.isNullOrEmpty()) return
+        addFilters(
+            listOf(
+                UiContrastFilter(1.15f),
+                UiSaturationFilter(1.1f to true),
+                UiSharpenFilter(0.3f)
+            )
+        )
     }
 
     fun removeFilterAtIndex(index: Int) {

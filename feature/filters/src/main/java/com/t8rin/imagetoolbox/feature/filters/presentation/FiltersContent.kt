@@ -48,6 +48,7 @@ import com.t8rin.imagetoolbox.core.filters.presentation.model.UiFilter
 import com.t8rin.imagetoolbox.core.filters.presentation.widget.FilterTemplateManager
 import com.t8rin.imagetoolbox.core.resources.Icons
 import com.t8rin.imagetoolbox.core.resources.R
+import com.t8rin.imagetoolbox.core.resources.icons.AutoAwesome
 import com.t8rin.imagetoolbox.core.resources.icons.Tune
 import com.t8rin.imagetoolbox.core.ui.utils.animation.toolboxPredictiveBackAnimation
 import com.t8rin.imagetoolbox.core.ui.utils.content_pickers.rememberImagePicker
@@ -185,6 +186,16 @@ private fun FiltersMainContent(component: FiltersComponent) {
                 }
             )
 
+            if (component.bitmap != null) {
+                EnhancedIconButton(
+                    onClick = component::enhanceImage
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.AutoAwesome,
+                        contentDescription = stringResource(R.string.enhance)
+                    )
+                }
+            }
             if (component.bitmap != null && (component.basicFilterState.filters.size >= 2 || component.maskingFilterState.masks.size >= 2)) {
                 EnhancedIconButton(
                     onClick = component::showReorderSheet
