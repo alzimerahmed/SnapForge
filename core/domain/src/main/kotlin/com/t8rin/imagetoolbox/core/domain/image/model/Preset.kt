@@ -25,6 +25,8 @@ sealed class Preset {
 
     data class Percentage(val value: Int) : Preset()
 
+    data class MaxSide(val value: Int) : Preset()
+
     data class AspectRatio(
         val ratio: Float,
         val isFit: Boolean
@@ -42,6 +44,7 @@ sealed class Preset {
         is AspectRatio -> "ratio($ratio)"
         None -> ""
         is Percentage -> "$value%"
+        is MaxSide -> "max($value)"
         Telegram -> "telegram"
     }
 

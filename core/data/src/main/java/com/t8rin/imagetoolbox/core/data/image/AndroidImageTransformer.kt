@@ -138,6 +138,22 @@ internal class AndroidImageTransformer @Inject constructor(
                 height = calcHeight().calc(preset.value),
             )
 
+            is Preset.MaxSide -> {
+                val width = calcWidth()
+                val height = calcHeight()
+                val longestSide = maxOf(width, height)
+
+                if (longestSide <= preset.value) {
+                    currentInfo
+                } else {
+                    val scale = preset.value / longestSide.toFloat()
+                    currentInfo.copy(
+                        width = (width * scale).roundToInt(),
+                        height = (height * scale).roundToInt()
+                    )
+                }
+            }
+
             is Preset.AspectRatio -> {
                 val originalWidth = calcWidth().toFloat()
                 val originalHeight = calcHeight().toFloat()

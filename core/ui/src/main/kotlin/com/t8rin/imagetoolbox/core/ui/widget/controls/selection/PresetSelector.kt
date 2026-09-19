@@ -102,6 +102,7 @@ fun PresetSelector(
     value: Preset,
     includeTelegramOption: Boolean = false,
     includeAspectRatioOption: Boolean = false,
+    includeSocialOptions: Boolean = false,
     isBytesResize: Boolean = false,
     showWarning: Boolean = false,
     onValueChange: (Preset) -> Unit,
@@ -163,6 +164,15 @@ fun PresetSelector(
     var showPresetInfoDialog by remember { mutableStateOf(false) }
 
     val canEnterPresetsByTextField = settingsState.canEnterPresetsByTextField
+
+    val socialPresets = remember {
+        listOf(
+            R.string.instagram to 1080,
+            R.string.whatsapp to 1280,
+            R.string.youtube to 1280,
+            R.string.twitter_x to 1600
+        )
+    }
 
     SwipeToReveal(
         directions = setOf(
@@ -327,6 +337,24 @@ fun PresetSelector(
                                     Icon(
                                         imageVector = Icons.Outlined.AspectRatio,
                                         contentDescription = stringResource(R.string.aspect_ratio)
+                                    )
+                                }
+                            }
+                        }
+                        if (includeSocialOptions) {
+                            items(
+                                items = socialPresets,
+                                key = { "social_${it.second}" }
+                            ) { (labelRes, maxSide) ->
+                                val selected = (value as? Preset.MaxSide)?.value == maxSide
+                                EnhancedChip(
+                                    selected = selected,
+                                    onClick = { onValueChange(Preset.MaxSide(maxSide)) },
+                                    selectedColor = selectedChipColor,
+                                    shape = MaterialTheme.shapes.medium
+                                ) {
+                                    AutoSizeText(
+                                        text = stringResource(labelRes) + " · $maxSide"
                                     )
                                 }
                             }

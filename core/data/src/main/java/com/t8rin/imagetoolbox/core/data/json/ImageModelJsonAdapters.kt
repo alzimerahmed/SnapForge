@@ -49,6 +49,8 @@ internal class PresetJsonAdapter {
             isFit = value.isFit ?: false
         )
 
+        MaxSide -> value.value?.let(Preset::MaxSide) ?: Preset.None
+
         else -> Preset.None
     }
 
@@ -66,6 +68,11 @@ internal class PresetJsonAdapter {
             ratio = value.ratio,
             isFit = value.isFit
         )
+
+        is Preset.MaxSide -> PresetJson(
+            type = MaxSide,
+            value = value.value
+        )
     }
 
     private companion object {
@@ -73,6 +80,7 @@ internal class PresetJsonAdapter {
         const val Telegram = "telegram"
         const val Percentage = "percentage"
         const val AspectRatio = "aspect_ratio"
+        const val MaxSide = "max_side"
     }
 }
 

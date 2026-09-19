@@ -337,6 +337,7 @@ private fun Preset.targetLabel(imageInfo: ImageInfo): String = when (this) {
     }
 
     Preset.None -> imageInfo.sizeLabel()
+    is Preset.MaxSide -> "max $value px"
     is Preset.Percentage -> "$value%"
     Preset.Telegram -> stringResource(R.string.telegram)
 }

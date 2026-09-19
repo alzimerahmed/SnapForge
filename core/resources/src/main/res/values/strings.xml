@@ -960,6 +960,10 @@
     <string name="dynamic_colors_sub">If enabled, then app colors will be adopted to wallpaper colors</string>
     <string name="failed_to_save">Failed to save %d image(s)</string>
     <string name="telegram" translatable="false">Telegram</string>
+    <string name="instagram" translatable="false">Instagram</string>
+    <string name="whatsapp" translatable="false">WhatsApp</string>
+    <string name="youtube" translatable="false">YouTube</string>
+    <string name="twitter_x" translatable="false">X (Twitter)</string>
     <string name="email">Email</string>
     <string name="github" translatable="false">GitHub</string>
     <string name="primary">Primary</string>

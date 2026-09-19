@@ -302,6 +302,7 @@ fun ResizeAndConvertContent(
                 value = component.presetSelected,
                 includeTelegramOption = true,
                 includeAspectRatioOption = true,
+                includeSocialOptions = true,
                 onValueChange = component::updateProfile,
                 imageInfo = imageInfo,
                 imageExportProfilesHolder = component
