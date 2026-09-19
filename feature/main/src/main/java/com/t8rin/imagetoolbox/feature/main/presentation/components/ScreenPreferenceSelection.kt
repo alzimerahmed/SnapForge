@@ -79,8 +79,10 @@ import com.t8rin.imagetoolbox.core.resources.icons.BookmarkRemove
 import com.t8rin.imagetoolbox.core.resources.icons.ContentPaste
 import com.t8rin.imagetoolbox.core.resources.icons.ContentPasteOff
 import com.t8rin.imagetoolbox.core.resources.icons.LayersSearchOutline
+import com.t8rin.imagetoolbox.core.resources.icons.PushPin
 import com.t8rin.imagetoolbox.core.resources.icons.SearchOff
 import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
+import com.t8rin.imagetoolbox.core.settings.presentation.model.UiSettingsState
 import com.t8rin.imagetoolbox.core.ui.utils.helper.AppToastHost
 import com.t8rin.imagetoolbox.core.ui.utils.helper.clipList
 import com.t8rin.imagetoolbox.core.ui.utils.helper.rememberClipboardData
@@ -108,6 +110,8 @@ internal fun RowScope.ScreenPreferenceSelection(
     onNavigateToScreenWithPopUpTo: (Screen) -> Unit,
     onChangeShowScreenSearch: (Boolean) -> Unit,
     onToggleFavorite: (Screen) -> Unit,
+    onTogglePin: (Screen) -> Unit,
+    showPinnedSection: Boolean,
     showNavRail: Boolean,
     lastUsedTools: List<UiLastUsedTool>
 ) {
@@ -119,6 +123,11 @@ internal fun RowScope.ScreenPreferenceSelection(
     val isScreenSelectionLauncherMode = settingsState.isScreenSelectionLauncherMode
     val showFavoriteControls =
         !settingsState.groupOptionsByTypes || settingsState.showFavoriteToolsInGroupedMode
+    val pinnedScreens = remember(settingsState.pinnedScreenList) {
+        settingsState.pinnedScreenList.mapNotNull { id ->
+            Screen.entries.find { it.id == id }
+        }
+    }
 
     AnimatedContent(
         modifier = Modifier
@@ -196,6 +205,8 @@ internal fun RowScope.ScreenPreferenceSelection(
                             onNavigateToScreenWithPopUpTo = onNavigateToScreenWithPopUpTo,
                             contentPadding = contentPadding,
                             onToggleFavorite = onToggleFavorite,
+                            onTogglePin = onTogglePin,
+                            showPinnedSection = showPinnedSection,
                             lastUsedTools = lastUsedTools
                         )
                     } else {
@@ -223,105 +234,42 @@ internal fun RowScope.ScreenPreferenceSelection(
                                         )
                                     }
                                 }
-                                items(currentScreenList) { screen ->
-                                    PreferenceItemOverload(
-                                        onClick = {
-                                            onNavigateToScreenWithPopUpTo(screen)
-                                        },
-                                        containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
-                                        modifier = Modifier
-                                            .widthIn(min = 1.dp)
-                                            .fillMaxWidth()
-                                            .animateItem(),
-                                        shape = ShapeDefaults.default,
-                                        title = stringResource(screen.title),
-                                        subtitle = stringResource(screen.subtitle),
-                                        badge = {
-                                            AnimatedVisibility(
-                                                visible = screen.isBetaFeature,
-                                                modifier = Modifier
-                                                    .align(Alignment.CenterVertically)
-                                                    .padding(
-                                                        start = 4.dp,
-                                                        bottom = 2.dp,
-                                                        top = 2.dp
-                                                    ),
-                                                enter = fadeIn(),
-                                                exit = fadeOut()
-                                            ) {
-                                                EnhancedBadge(
-                                                    content = {
-                                                        Text(stringResource(R.string.beta))
-                                                    },
-                                                    containerColor = MaterialTheme.colorScheme.secondary,
-                                                    contentColor = MaterialTheme.colorScheme.onSecondary
-                                                )
-                                            }
-                                        },
-                                        endIcon = {
-                                            Row(
-                                                verticalAlignment = Alignment.CenterVertically,
-                                                horizontalArrangement = Arrangement.spacedBy(4.dp)
-                                            ) {
-                                                if (showFavoriteControls) {
-                                                    EnhancedIconButton(
-                                                        onClick = {
-                                                            onToggleFavorite(screen)
-                                                        },
-                                                        modifier = Modifier.offset(8.dp)
-                                                    ) {
-                                                        val inFavorite by remember(
-                                                            settingsState.favoriteScreenList,
-                                                            screen
-                                                        ) {
-                                                            derivedStateOf {
-                                                                settingsState.favoriteScreenList.find { it == screen.id } != null
-                                                            }
-                                                        }
-                                                        AnimatedContent(
-                                                            targetState = inFavorite,
-                                                            transitionSpec = {
-                                                                (fadeIn() + scaleIn(initialScale = 0.85f))
-                                                                    .togetherWith(
-                                                                        fadeOut() + scaleOut(
-                                                                            targetScale = 0.85f
-                                                                        )
-                                                                    )
-                                                            }
-                                                        ) { isInFavorite ->
-                                                            val icon by remember(isInFavorite) {
-                                                                derivedStateOf {
-                                                                    if (isInFavorite) Icons.Rounded.BookmarkRemove
-                                                                    else Icons.Outlined.Bookmark
-                                                                }
-                                                            }
-                                                            Icon(
-                                                                imageVector = icon,
-                                                                contentDescription = null
-                                                            )
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        startIcon = {
-                                            AnimatedContent(
-                                                targetState = screen.icon,
-                                                transitionSpec = {
-                                                    (slideInVertically() + fadeIn() + scaleIn())
-                                                        .togetherWith(slideOutVertically { it / 2 } + fadeOut() + scaleOut())
-                                                        .using(SizeTransform(false))
-                                                }
-                                            ) { icon ->
-                                                icon?.let {
-                                                    Icon(
-                                                        imageVector = icon,
-                                                        contentDescription = null
-                                                    )
-                                                }
-                                            }
-                                        }
-                                    )
+                                if (showPinnedSection && pinnedScreens.isNotEmpty()) {
+                                    item(
+                                        key = "pinnedHeader",
+                                        span = StaggeredGridItemSpan.FullLine
+                                    ) {
+                                        Text(
+                                            text = stringResource(R.string.pinned),
+                                            style = MaterialTheme.typography.titleMedium,
+                                            modifier = Modifier
+                                                .fillMaxWidth()
+                                                .padding(horizontal = 4.dp)
+                                                .animateItem()
+                                        )
+                                    }
+                                    items(pinnedScreens) { screen ->
+                                        ScreenPreferenceItem(
+                                            screen = screen,
+                                            settingsState = settingsState,
+                                            showFavoriteControls = showFavoriteControls,
+                                            onNavigateToScreenWithPopUpTo = onNavigateToScreenWithPopUpTo,
+                                            onToggleFavorite = onToggleFavorite,
+                                            onTogglePin = onTogglePin
+                                        )
+                                    }
+                                }
+                                items(
+                                    currentScreenList.filter { it.id !in settingsState.pinnedScreenList }
+                                ) { screen ->
+                                        ScreenPreferenceItem(
+                                            screen = screen,
+                                            settingsState = settingsState,
+                                            showFavoriteControls = showFavoriteControls,
+                                            onNavigateToScreenWithPopUpTo = onNavigateToScreenWithPopUpTo,
+                                            onToggleFavorite = onToggleFavorite,
+                                            onTogglePin = onTogglePin
+                                        )
                                 }
                             }
                         )
@@ -490,4 +438,149 @@ internal fun RowScope.ScreenPreferenceSelection(
             }
         }
     }
+}
+
+@Composable
+private fun ScreenPreferenceItem(
+    screen: Screen,
+    settingsState: UiSettingsState,
+    showFavoriteControls: Boolean,
+    onNavigateToScreenWithPopUpTo: (Screen) -> Unit,
+    onToggleFavorite: (Screen) -> Unit,
+    onTogglePin: (Screen) -> Unit
+) {
+    PreferenceItemOverload(
+        onClick = {
+            onNavigateToScreenWithPopUpTo(screen)
+        },
+        containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
+        modifier = Modifier
+            .widthIn(min = 1.dp)
+            .fillMaxWidth(),
+        shape = ShapeDefaults.default,
+        title = stringResource(screen.title),
+        subtitle = stringResource(screen.subtitle),
+        badge = {
+            AnimatedVisibility(
+                visible = screen.isBetaFeature,
+                modifier = Modifier
+                    .align(Alignment.CenterVertically)
+                    .padding(
+                        start = 4.dp,
+                        bottom = 2.dp,
+                        top = 2.dp
+                    ),
+                enter = fadeIn(),
+                exit = fadeOut()
+            ) {
+                EnhancedBadge(
+                    content = {
+                        Text(stringResource(R.string.beta))
+                    },
+                    containerColor = MaterialTheme.colorScheme.secondary,
+                    contentColor = MaterialTheme.colorScheme.onSecondary
+                )
+            }
+        },
+        endIcon = {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                EnhancedIconButton(
+                    onClick = {
+                        onTogglePin(screen)
+                    },
+                    modifier = Modifier.offset(8.dp)
+                ) {
+                    val inPinned by remember(
+                        settingsState.pinnedScreenList,
+                        screen
+                    ) {
+                        derivedStateOf {
+                            settingsState.pinnedScreenList.find { it == screen.id } != null
+                        }
+                    }
+                    AnimatedContent(
+                        targetState = inPinned,
+                        transitionSpec = {
+                            (fadeIn() + scaleIn(initialScale = 0.85f))
+                                .togetherWith(
+                                    fadeOut() + scaleOut(
+                                        targetScale = 0.85f
+                                    )
+                                )
+                        }
+                    ) { isPinned ->
+                        val icon by remember(isPinned) {
+                            derivedStateOf {
+                                if (isPinned) Icons.Rounded.PushPin
+                                else Icons.Outlined.PushPin
+                            }
+                        }
+                        Icon(
+                            imageVector = icon,
+                            contentDescription = null
+                        )
+                    }
+                }
+                if (showFavoriteControls) {
+                    EnhancedIconButton(
+                        onClick = {
+                            onToggleFavorite(screen)
+                        },
+                        modifier = Modifier.offset(8.dp)
+                    ) {
+                        val inFavorite by remember(
+                            settingsState.favoriteScreenList,
+                            screen
+                        ) {
+                            derivedStateOf {
+                                settingsState.favoriteScreenList.find { it == screen.id } != null
+                            }
+                        }
+                        AnimatedContent(
+                            targetState = inFavorite,
+                            transitionSpec = {
+                                (fadeIn() + scaleIn(initialScale = 0.85f))
+                                    .togetherWith(
+                                        fadeOut() + scaleOut(
+                                            targetScale = 0.85f
+                                        )
+                                    )
+                            }
+                        ) { isInFavorite ->
+                            val icon by remember(isInFavorite) {
+                                derivedStateOf {
+                                    if (isInFavorite) Icons.Rounded.BookmarkRemove
+                                    else Icons.Outlined.Bookmark
+                                }
+                            }
+                            Icon(
+                                imageVector = icon,
+                                contentDescription = null
+                            )
+                        }
+                    }
+                }
+            }
+        },
+        startIcon = {
+            AnimatedContent(
+                targetState = screen.icon,
+                transitionSpec = {
+                    (slideInVertically() + fadeIn() + scaleIn())
+                        .togetherWith(slideOutVertically { it / 2 } + fadeOut() + scaleOut())
+                        .using(SizeTransform(false))
+                }
+            ) { icon ->
+                icon?.let {
+                    Icon(
+                        imageVector = icon,
+                        contentDescription = null
+                    )
+                }
+            }
+        }
+    )
 }

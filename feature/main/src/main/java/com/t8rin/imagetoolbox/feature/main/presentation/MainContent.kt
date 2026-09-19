@@ -166,6 +166,7 @@ fun MainContent(
                 isUpdateAvailable = isUpdateAvailable,
                 onNavigate = component.onNavigate,
                 onToggleFavorite = component::toggleFavoriteScreen,
+                onTogglePin = component::togglePinnedScreen,
                 lastUsedTools = lastUsedTools
             )
         }

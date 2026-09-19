@@ -72,6 +72,7 @@ import com.t8rin.imagetoolbox.core.resources.icons.BookmarkRemove
 import com.t8rin.imagetoolbox.core.resources.icons.PushPin
 import com.t8rin.imagetoolbox.core.resources.utils.animation.animateColorAsState
 import com.t8rin.imagetoolbox.core.settings.presentation.model.IconShape
+import com.t8rin.imagetoolbox.core.settings.presentation.model.UiSettingsState
 import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
 import com.t8rin.imagetoolbox.core.ui.theme.blend
 import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
@@ -123,23 +124,70 @@ internal fun LauncherScreenSelector(
                 )
             }
         }
-        items(screenList) { screen ->
-            val containerColor by animateColorAsState(
-                if (settingsState.isNightMode) {
-                    MaterialTheme.colorScheme.secondaryContainer.blend(
-                        color = Color.Black,
-                        fraction = 0.3f
-                    )
-                } else {
-                    MaterialTheme.colorScheme.primaryContainer
-                }
-            )
-
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.animateItem()
+        if (showPinnedSection && pinnedScreens.isNotEmpty()) {
+            item(
+                key = "pinnedHeader",
+                span = { GridItemSpan(maxLineSpan) }
             ) {
-                TooltipBox(
+                Text(
+                    text = stringResource(R.string.pinned),
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp)
+                        .animateItem()
+                )
+            }
+            items(pinnedScreens) { screen ->
+                LauncherScreenTile(
+                    screen = screen,
+                    settingsState = settingsState,
+                    showFavoriteControls = showFavoriteControls,
+                    onNavigateToScreenWithPopUpTo = onNavigateToScreenWithPopUpTo,
+                    onToggleFavorite = onToggleFavorite,
+                    onTogglePin = onTogglePin
+                )
+            }
+        }
+        items(
+            screenList.filter { it.id !in settingsState.pinnedScreenList }
+        ) { screen ->
+            LauncherScreenTile(
+                screen = screen,
+                settingsState = settingsState,
+                showFavoriteControls = showFavoriteControls,
+                onNavigateToScreenWithPopUpTo = onNavigateToScreenWithPopUpTo,
+                onToggleFavorite = onToggleFavorite,
+                onTogglePin = onTogglePin
+            )
+        }
+    }
+}
+
+@Composable
+private fun LauncherScreenTile(
+    screen: Screen,
+    settingsState: UiSettingsState,
+    showFavoriteControls: Boolean,
+    onNavigateToScreenWithPopUpTo: (Screen) -> Unit,
+    onToggleFavorite: (Screen) -> Unit,
+    onTogglePin: (Screen) -> Unit
+) {
+    val containerColor by animateColorAsState(
+        if (settingsState.isNightMode) {
+            MaterialTheme.colorScheme.secondaryContainer.blend(
+                color = Color.Black,
+                fraction = 0.3f
+            )
+        } else {
+            MaterialTheme.colorScheme.primaryContainer
+        }
+    )
+
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        TooltipBox(
                     positionProvider = TooltipDefaults.rememberTooltipPositionProvider(
                         TooltipAnchorPosition.Below
                     ),
@@ -170,6 +218,67 @@ internal fun LauncherScreenSelector(
                 ) {
                     BadgedBox(
                         badge = {
+                            BoxAnimatedVisibility(
+                                visible = true,
+                                modifier = Modifier
+                                    .size(34.dp)
+                                    .offset(x = 8.dp, y = (-8).dp),
+                            ) {
+                                val interactionSource = remember { MutableInteractionSource() }
+                                val shape = shapeByInteraction(
+                                    shape = AutoCircleShape(),
+                                    pressedShape = ShapeDefaults.smallMini,
+                                    interactionSource = interactionSource
+                                )
+                                EnhancedIconButton(
+                                    onClick = {
+                                        onTogglePin(screen)
+                                    },
+                                    modifier = Modifier
+                                        .fillMaxSize()
+                                        .background(
+                                            shape = shape,
+                                            color = MaterialTheme.colorScheme.surface
+                                        )
+                                        .padding(2.dp)
+                                        .padding(bottom = 0.5.dp),
+                                    containerColor = containerColor.copy(0.5f),
+                                    contentColor = LocalContentColor.current,
+                                    interactionSource = interactionSource
+                                ) {
+                                    val inPinned by remember(
+                                        settingsState.pinnedScreenList,
+                                        screen
+                                    ) {
+                                        derivedStateOf {
+                                            settingsState.pinnedScreenList.find { it == screen.id } != null
+                                        }
+                                    }
+                                    AnimatedContent(
+                                        targetState = inPinned,
+                                        transitionSpec = {
+                                            (fadeIn() + scaleIn(initialScale = 0.85f))
+                                                .togetherWith(
+                                                    fadeOut() + scaleOut(
+                                                        targetScale = 0.85f
+                                                    )
+                                                )
+                                        },
+                                        modifier = Modifier.fillMaxSize(0.6f)
+                                    ) { isPinned ->
+                                        val icon by remember(isPinned) {
+                                            derivedStateOf {
+                                                if (isPinned) Icons.Rounded.PushPin
+                                                else Icons.Outlined.PushPin
+                                            }
+                                        }
+                                        Icon(
+                                            imageVector = icon,
+                                            contentDescription = null
+                                        )
+                                    }
+                                }
+                            }
                             BoxAnimatedVisibility(
                                 visible = showFavoriteControls,
                                 modifier = Modifier
@@ -296,7 +405,5 @@ internal fun LauncherScreenSelector(
                             .padding(horizontal = 8.dp)
                     )
                 }
-            }
-        }
     }
 }

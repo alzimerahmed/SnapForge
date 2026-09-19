@@ -1714,6 +1714,7 @@
     <string name="old_tv">Old Tv</string>
     <string name="shuffle_blur">Shuffle Blur</string>
     <string name="favorite">Favorite</string>
+    <string name="pinned">Pinned</string>
     <string name="no_favorite_filters">No favorite filters added yet</string>
     <string name="image_format">Image Format</string>
     <string name="icon_shape_sub">Adds a container with the selected shape under the icons</string>

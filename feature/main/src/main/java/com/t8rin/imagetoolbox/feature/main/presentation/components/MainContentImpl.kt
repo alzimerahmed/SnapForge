@@ -69,6 +69,7 @@ internal fun MainContentImpl(
     onGetClipList: (List<Uri>) -> Unit,
     onNavigate: (Screen) -> Unit,
     onToggleFavorite: (Screen) -> Unit,
+    onTogglePin: (Screen) -> Unit,
     onShowFeaturesFall: () -> Unit,
     onTryGetUpdate: () -> Unit,
     isUpdateAvailable: Boolean,
@@ -87,6 +88,15 @@ internal fun MainContentImpl(
         selectedNavigationItem = selectedNavigationItem,
         showScreenSearch = showScreenSearch
     )
+    val favoriteIndex = if (settingsState.showFavoriteAsLast) {
+        if (settingsState.groupOptionsByTypes) Screen.typedEntries.size else 1
+    } else {
+        0
+    }
+    val showPinnedSection = !settingsState.groupOptionsByTypes &&
+            selectedNavigationItem != favoriteIndex &&
+            screenSearchKeyword.isEmpty() &&
+            !showScreenSearch
 
     LaunchedEffect(
         settingsState.groupOptionsByTypes,
@@ -281,6 +291,8 @@ internal fun MainContentImpl(
                     onNavigateToScreenWithPopUpTo = onNavigate,
                     onNavigationBarItemChange = { selectedNavigationItem = it },
                     onToggleFavorite = onToggleFavorite,
+                    onTogglePin = onTogglePin,
+                    showPinnedSection = showPinnedSection,
                     lastUsedTools = lastUsedTools
                 )
             }

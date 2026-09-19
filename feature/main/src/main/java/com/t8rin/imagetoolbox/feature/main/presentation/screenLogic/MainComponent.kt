@@ -95,6 +95,12 @@ class MainComponent @AssistedInject internal constructor(
         }
     }
 
+    fun togglePinnedScreen(screen: Screen) {
+        componentScope.launch {
+            settingsManager.togglePinnedScreen(screen.id)
+        }
+    }
+
     fun parseClipList(
         list: List<Uri>
     ) = onGetClipList(list)
