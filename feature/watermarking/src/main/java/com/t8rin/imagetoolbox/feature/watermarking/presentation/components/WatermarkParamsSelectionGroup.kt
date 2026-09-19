@@ -35,6 +35,7 @@ import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
 import com.t8rin.imagetoolbox.core.ui.widget.other.ExpandableItem
 import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
 import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkParams
+import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkPreset
 import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.CommonParamsContent
 import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.DigitalParamsContent
 import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selectors.ImageParamsContent
@@ -45,6 +46,10 @@ import com.t8rin.imagetoolbox.feature.watermarking.presentation.components.selec
 fun WatermarkParamsSelectionGroup(
     value: WatermarkParams,
     onValueChange: (WatermarkParams) -> Unit,
+    presets: List<WatermarkPreset>,
+    onApplyPreset: (WatermarkPreset) -> Unit,
+    onRemovePreset: (WatermarkPreset) -> Unit,
+    onSavePreset: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     ExpandableItem(
@@ -67,6 +72,13 @@ fun WatermarkParamsSelectionGroup(
                 verticalArrangement = Arrangement.spacedBy(4.dp)
             ) {
                 val params by rememberUpdatedState(value)
+
+                WatermarkPresetsRow(
+                    presets = presets,
+                    onApplyPreset = onApplyPreset,
+                    onRemovePreset = onRemovePreset,
+                    onSavePreset = onSavePreset
+                )
 
                 CommonParamsContent(
                     params = params,

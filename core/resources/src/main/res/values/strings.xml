@@ -1551,6 +1551,7 @@
     <string name="camera">Camera</string>
     <string name="camera_sub">Take a picture with a camera. Note that it is possible to get only one image from this image source</string>
     <string name="watermarking">Watermarking</string>
+    <string name="save_preset">Save preset</string>
     <string name="watermarking_sub">Cover pictures with customizable text/image watermarks</string>
     <string name="repeat_watermark">Repeat watermark</string>
     <string name="repeat_watermark_sub">Repeats watermark over image instead of single at given position</string>

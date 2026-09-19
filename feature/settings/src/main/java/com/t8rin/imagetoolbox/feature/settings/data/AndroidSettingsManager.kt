@@ -218,6 +218,7 @@ import com.t8rin.imagetoolbox.feature.settings.data.keys.USE_EMOJI_AS_PRIMARY_CO
 import com.t8rin.imagetoolbox.feature.settings.data.keys.USE_FORMATTED_TIMESTAMP
 import com.t8rin.imagetoolbox.feature.settings.data.keys.USE_FULLSCREEN_SETTINGS
 import com.t8rin.imagetoolbox.feature.settings.data.keys.USE_RANDOM_EMOJIS
+import com.t8rin.imagetoolbox.feature.settings.data.keys.WATERMARK_PRESETS
 import com.t8rin.imagetoolbox.feature.settings.data.keys.VIBRATION_STRENGTH
 import com.t8rin.imagetoolbox.feature.settings.data.keys.toGradientPalettes
 import com.t8rin.imagetoolbox.feature.settings.data.keys.toSettingsState
@@ -407,6 +408,10 @@ internal class AndroidSettingsManager @Inject constructor(
             }
             .distinctBy { it.widthProportion to it.heightProportion }
             .joinToString("*") { "${it.widthProportion}:${it.heightProportion}" }
+    }
+
+    override suspend fun setWatermarkPresets(presets: List<String>) = edit { preferences ->
+        preferences[WATERMARK_PRESETS] = presets.joinToString("\u0000")
     }
 
     override suspend fun toggleDynamicColors() = edit {

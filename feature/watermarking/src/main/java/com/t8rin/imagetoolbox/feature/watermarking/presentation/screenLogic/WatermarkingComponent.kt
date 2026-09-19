@@ -36,6 +36,7 @@ import com.t8rin.imagetoolbox.core.domain.image.model.ImageFormat
 import com.t8rin.imagetoolbox.core.domain.image.model.ImageInfo
 import com.t8rin.imagetoolbox.core.domain.image.model.Quality
 import com.t8rin.imagetoolbox.core.domain.image.model.ResizeType
+import com.t8rin.imagetoolbox.core.domain.json.JsonParser
 import com.t8rin.imagetoolbox.core.domain.model.ColorModel
 import com.t8rin.imagetoolbox.core.domain.saving.FileController
 import com.t8rin.imagetoolbox.core.domain.saving.model.ImageSaveTarget
@@ -54,8 +55,11 @@ import com.t8rin.imagetoolbox.core.ui.utils.state.update
 import com.t8rin.imagetoolbox.core.utils.filename
 import com.t8rin.imagetoolbox.feature.watermarking.domain.HiddenWatermark
 import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkApplier
+import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkPreset
 import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkParams
 import com.t8rin.imagetoolbox.feature.watermarking.domain.WatermarkingType
+import com.t8rin.imagetoolbox.feature.watermarking.domain.toWatermarkParams
+import com.t8rin.imagetoolbox.feature.watermarking.domain.toWatermarkPreset
 import com.t8rin.imagetoolbox.feature.watermarking.presentation.screenLogic.WatermarkingComponent.HistorySnapshot
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
@@ -75,6 +79,7 @@ class WatermarkingComponent @AssistedInject internal constructor(
     private val imageScaler: ImageScaler<Bitmap>,
     private val watermarkApplier: WatermarkApplier<Bitmap>,
     private val settingsManager: SettingsManager,
+    private val jsonParser: JsonParser,
     dispatchersHolder: DispatchersHolder
 ) : BaseHistoryComponent<HistorySnapshot>(
     dispatchersHolder = dispatchersHolder,
@@ -84,6 +89,11 @@ class WatermarkingComponent @AssistedInject internal constructor(
     init {
         debounce {
             initialUris?.let(::setUris)
+        }
+        componentScope.launch {
+            settingsManager.settingsState.collect { state ->
+                _watermarkPresets.value = state.watermarkPresets.mapNotNull(::decodePreset)
+            }
         }
     }
 
@@ -107,6 +117,9 @@ class WatermarkingComponent @AssistedInject internal constructor(
 
     private val _watermarkParams = mutableStateOf(WatermarkParams.Default)
     val watermarkParams by _watermarkParams
+
+    private val _watermarkPresets = mutableStateOf<List<WatermarkPreset>>(emptyList())
+    val watermarkPresets: List<WatermarkPreset> by _watermarkPresets
 
     private val _imageFormat: MutableState<ImageFormat> = mutableStateOf(ImageFormat.Default)
     val imageFormat by _imageFormat
@@ -339,6 +352,36 @@ class WatermarkingComponent @AssistedInject internal constructor(
             schedulePendingHistoryCommit()
         }
     }
+
+    fun saveWatermarkPreset(name: String) {
+        val preset = watermarkParams.toWatermarkPreset(name = name) ?: return
+        componentScope.launch {
+            settingsManager.setWatermarkPresets(
+                settingsManager.settingsState.value.watermarkPresets +
+                        encodePreset(preset)
+            )
+        }
+    }
+
+    fun applyWatermarkPreset(preset: WatermarkPreset) {
+        updateWatermarkParams(preset.toWatermarkParams())
+    }
+
+    fun removeWatermarkPreset(preset: WatermarkPreset) {
+        componentScope.launch {
+            settingsManager.setWatermarkPresets(
+                settingsManager.settingsState.value.watermarkPresets.filterNot {
+                    it == encodePreset(preset)
+                }
+            )
+        }
+    }
+
+    private fun encodePreset(preset: WatermarkPreset): String =
+        jsonParser.toJson(preset, WatermarkPreset::class.java).orEmpty()
+
+    private fun decodePreset(json: String): WatermarkPreset? =
+        jsonParser.fromJson(json, WatermarkPreset::class.java)
 
     fun updateSelectedUri(
         uri: Uri

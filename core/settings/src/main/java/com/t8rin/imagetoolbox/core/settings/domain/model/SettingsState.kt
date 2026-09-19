@@ -162,6 +162,7 @@ data class SettingsState(
     val motionDurationScale: Float,
     val markupLayerTextDefaults: MarkupLayerTextDefaults,
     val rawDevelopSettings: RawDevelopSettings,
+    val watermarkPresets: List<String>,
 ) {
 
     companion object {
@@ -299,6 +300,7 @@ data class SettingsState(
                 motionDurationScale = 1f,
                 markupLayerTextDefaults = MarkupLayerTextDefaults.Default,
                 rawDevelopSettings = RawDevelopSettings(),
+                watermarkPresets = emptyList(),
             )
         }
     }

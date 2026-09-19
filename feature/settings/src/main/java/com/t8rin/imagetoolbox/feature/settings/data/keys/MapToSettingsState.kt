@@ -324,7 +324,11 @@ internal fun Preferences.toSettingsState(
         halfSize = this[RAW_HALF_SIZE] ?: default.rawDevelopSettings.halfSize,
         applyOrientation = this[RAW_APPLY_ORIENTATION]
             ?: default.rawDevelopSettings.applyOrientation
-    )
+    ),
+    watermarkPresets = this[WATERMARK_PRESETS]
+        ?.split("\u0000")
+        ?.filter(String::isNotBlank)
+        ?: default.watermarkPresets,
 )
 
 private fun Preferences.toRawWhiteBalance(default: RawWhiteBalance): RawWhiteBalance {

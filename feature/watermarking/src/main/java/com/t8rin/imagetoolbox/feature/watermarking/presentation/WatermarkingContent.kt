@@ -246,7 +246,11 @@ fun WatermarkingContent(
                 )
                 WatermarkParamsSelectionGroup(
                     value = component.watermarkParams,
-                    onValueChange = component::updateWatermarkParams
+                    onValueChange = component::updateWatermarkParams,
+                    presets = component.watermarkPresets,
+                    onApplyPreset = component::applyWatermarkPreset,
+                    onRemovePreset = component::removeWatermarkPreset,
+                    onSavePreset = component::saveWatermarkPreset
                 )
                 SaveExifWidget(
                     checked = component.keepExif,

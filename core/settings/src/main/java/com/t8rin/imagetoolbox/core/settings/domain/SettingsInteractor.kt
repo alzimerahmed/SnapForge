@@ -59,6 +59,8 @@ interface SettingsInteractor : SimpleSettingsInteractor {
 
     suspend fun setPresets(newPresets: List<Int>)
 
+    suspend fun setWatermarkPresets(presets: List<String>)
+
     suspend fun toggleDynamicColors()
 
     override suspend fun setBorderWidth(width: Float)

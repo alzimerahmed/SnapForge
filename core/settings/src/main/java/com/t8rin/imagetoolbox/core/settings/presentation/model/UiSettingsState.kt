@@ -201,6 +201,7 @@ data class UiSettingsState(
     val motionDurationScale: Float,
     val markupLayerTextDefaults: MarkupLayerTextDefaults,
     val rawDevelopSettings: RawDevelopSettings,
+    val watermarkPresets: List<String>,
 )
 
 fun UiSettingsState.isFirstLaunch(
@@ -478,6 +479,7 @@ fun SettingsState.toUiState(
                 motionDurationScale = motionDurationScale,
                 markupLayerTextDefaults = markupLayerTextDefaults,
                 rawDevelopSettings = rawDevelopSettings,
+                watermarkPresets = watermarkPresets,
             )
         }
     }.value
