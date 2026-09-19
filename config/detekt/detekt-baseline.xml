@@ -395,8 +395,6 @@
   <ID>DestructuringDeclarationWithTooManyEntries:Mappings.kt</ID>
   <ID>DestructuringDeclarationWithTooManyEntries:PreviewCollageGeneration.kt</ID>
   <ID>DestructuringDeclarationWithTooManyEntries:SideFadePaint.kt</ID>
-  <ID>Detekt (static analysis)	Run detekt	2026-09-19T10:00:50.1856092Z /home/runner/work/SnapForge/SnapForge/feature/pdf-tools/src/test/java/com/t8rin/imagetoolbox/feature/pdf_tools/data/DefaultPdfFontTest.kt:61:29: String.format(</ID>
-  <ID>Detekt (static analysis)	Run detekt	2026-09-19T10:00:56.6896162Z /home/runner/work/SnapForge/SnapForge/lib/palette/src/main/java/com/t8rin/palette/coders/ACBPaletteCoder.kt:277:17: String.format(</ID>
   <ID>EmptyFunctionBlock:FramePhotoLayout.kt</ID>
   <ID>EmptyFunctionBlock:PdfContentStreamEditor.kt</ID>
   <ID>EmptyFunctionBlock:Util.kt</ID>

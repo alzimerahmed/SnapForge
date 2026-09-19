@@ -189,6 +189,9 @@ internal fun Preferences.toSettingsState(
     favoriteScreenList = this[FAVORITE_SCREENS]?.split("/")?.mapNotNull {
         it.toIntOrNull()
     }?.takeIf { it.isNotEmpty() } ?: default.favoriteScreenList,
+    pinnedScreenList = this[PINNED_SCREENS]?.split("/")?.mapNotNull {
+        it.toIntOrNull()
+    }?.takeIf { it.isNotEmpty() } ?: default.pinnedScreenList,
     isLinkPreviewEnabled = this[IS_LINK_PREVIEW_ENABLED] ?: default.isLinkPreviewEnabled,
     defaultDrawColor = this[DEFAULT_DRAW_COLOR]?.let { ColorModel(it) }
         ?: default.defaultDrawColor,

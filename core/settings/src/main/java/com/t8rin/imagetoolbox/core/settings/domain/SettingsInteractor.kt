@@ -207,6 +207,8 @@ interface SettingsInteractor : SimpleSettingsInteractor {
 
     suspend fun toggleFavoriteScreen(screenId: Int)
 
+    suspend fun togglePinnedScreen(screenId: Int)
+
     suspend fun toggleIsLinkPreviewEnabled()
 
     suspend fun setDefaultDrawColor(color: ColorModel)

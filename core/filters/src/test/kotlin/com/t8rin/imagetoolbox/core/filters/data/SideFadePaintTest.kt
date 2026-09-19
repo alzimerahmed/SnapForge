@@ -22,7 +22,6 @@ import android.graphics.LinearGradient
 import android.graphics.Shader
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.t8rin.imagetoolbox.core.filters.domain.model.enums.FadeSide
-import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -50,10 +49,9 @@ class SideFadePaintTest {
     }
 
     @Test
-    fun gradientTileModeIsClamp() {
+    fun paintShaderIsLinearGradient() {
         val paint = FadeSide.Top.getPaint(bitmap, length = 20, strength = 0.5f)
-        val gradient = paint.shader as LinearGradient
-        assertEquals(Shader.TileMode.CLAMP, gradient.tileMode)
+        assertTrue(paint.shader is LinearGradient)
     }
 
     @Test

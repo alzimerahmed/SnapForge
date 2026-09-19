@@ -114,6 +114,7 @@ internal val CAN_ENTER_PRESETS_BY_TEXT_FIELD =
 internal val DONATE_DIALOG_OPEN_COUNT = intPreferencesKey("DONATE_DIALOG_OPEN_COUNT")
 internal val COLOR_BLIND_TYPE = intPreferencesKey("COLOR_BLIND_TYPE")
 internal val FAVORITE_SCREENS = stringPreferencesKey("FAVORITE_SCREENS")
+internal val PINNED_SCREENS = stringPreferencesKey("PINNED_SCREENS")
 internal val IS_LINK_PREVIEW_ENABLED = booleanPreferencesKey("IS_LINK_PREVIEW_ENABLED")
 internal val DEFAULT_DRAW_COLOR = intPreferencesKey("DEFAULT_DRAW_COLOR")
 internal val DEFAULT_DRAW_PATH_MODE = intPreferencesKey("DEFAULT_DRAW_PATH_MODE")

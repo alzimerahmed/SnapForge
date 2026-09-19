@@ -66,8 +66,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.t8rin.imagetoolbox.core.resources.Icons
+import com.t8rin.imagetoolbox.core.resources.R
 import com.t8rin.imagetoolbox.core.resources.icons.Bookmark
 import com.t8rin.imagetoolbox.core.resources.icons.BookmarkRemove
+import com.t8rin.imagetoolbox.core.resources.icons.PushPin
 import com.t8rin.imagetoolbox.core.resources.utils.animation.animateColorAsState
 import com.t8rin.imagetoolbox.core.settings.presentation.model.IconShape
 import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
@@ -89,11 +91,18 @@ internal fun LauncherScreenSelector(
     onNavigateToScreenWithPopUpTo: (Screen) -> Unit,
     contentPadding: PaddingValues,
     onToggleFavorite: (Screen) -> Unit,
+    onTogglePin: (Screen) -> Unit,
+    showPinnedSection: Boolean,
     lastUsedTools: List<UiLastUsedTool>
 ) {
     val settingsState = LocalSettingsState.current
     val showFavoriteControls =
         !settingsState.groupOptionsByTypes || settingsState.showFavoriteToolsInGroupedMode
+    val pinnedScreens = remember(settingsState.pinnedScreenList) {
+        settingsState.pinnedScreenList.mapNotNull { id ->
+            Screen.entries.find { it.id == id }
+        }
+    }
 
     LazyVerticalGrid(
         columns = GridCells.Adaptive(80.dp),

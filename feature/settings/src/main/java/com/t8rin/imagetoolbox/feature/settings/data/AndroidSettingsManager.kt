@@ -133,6 +133,7 @@ import com.t8rin.imagetoolbox.feature.settings.data.keys.FAST_SETTINGS_SIDE
 import com.t8rin.imagetoolbox.feature.settings.data.keys.FAVORITE_COLORS
 import com.t8rin.imagetoolbox.feature.settings.data.keys.FAVORITE_GRADIENTS
 import com.t8rin.imagetoolbox.feature.settings.data.keys.FAVORITE_SCREENS
+import com.t8rin.imagetoolbox.feature.settings.data.keys.PINNED_SCREENS
 import com.t8rin.imagetoolbox.feature.settings.data.keys.FILENAME_BEHAVIOR
 import com.t8rin.imagetoolbox.feature.settings.data.keys.FILENAME_PATTERN
 import com.t8rin.imagetoolbox.feature.settings.data.keys.FILENAME_PREFIX
@@ -926,6 +927,17 @@ internal class AndroidSettingsManager @Inject constructor(
         }
 
         it[FAVORITE_SCREENS] = newScreens.joinToString("/")
+    }
+
+    override suspend fun togglePinnedScreen(screenId: Int) = edit {
+        val current = currentSettings.pinnedScreenList
+        val newScreens = if (screenId in current) {
+            current - screenId
+        } else {
+            current + screenId
+        }
+
+        it[PINNED_SCREENS] = newScreens.joinToString("/")
     }
 
     override suspend fun toggleIsLinkPreviewEnabled() = toggle(
