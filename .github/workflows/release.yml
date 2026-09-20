@@ -47,13 +47,13 @@ jobs:
 
       - name: Rename APKs
         run: |
-          mkdir -p dist
+          mkdir -p "$GITHUB_WORKSPACE/dist"
           cd app/build/outputs/apk/foss/release
           for f in *-signed.apk; do
             name="$(echo "$f" | sed -e 's/-release-unsigned-signed\.apk$/.apk/' -e 's/snapforge-.*-foss-/snapforge-/')"
-            mv "$f" "../../../dist/$name"
+            mv "$f" "$GITHUB_WORKSPACE/dist/$name"
           done
-          ls -la ../../../dist
+          ls -la "$GITHUB_WORKSPACE/dist"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
