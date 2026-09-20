@@ -110,8 +110,9 @@ class BatchComponent @AssistedInject internal constructor(
     private var failureDecision: CompletableDeferred<BatchDecision>? = null
 
     fun updateUris(uris: List<Uri>?) {
+        if (_isSaving.value) return
         _uris.update { uris }
-        _items.update { BatchRun.initialItems(uris.orEmpty().map(Uri::toString)) }
+        _items.update { BatchRun.initialItems(uris.orEmpty().distinct().map(Uri::toString)) }
         _done.value = 0
         _failedItem.update { null }
     }
@@ -137,7 +138,7 @@ class BatchComponent @AssistedInject internal constructor(
     }
 
     fun runBatch(oneTimeSaveLocationUri: String?) {
-        if (_items.value.isEmpty()) return
+        if (_items.value.isEmpty() || _isSaving.value) return
         savingJob = trackProgress {
             _isSaving.update { true }
             _failedItem.update { null }
@@ -145,51 +146,61 @@ class BatchComponent @AssistedInject internal constructor(
             _items.update { items }
             _done.value = 0
 
-            items.forEach { item ->
-                items = BatchRun.markRunning(items, item.uri)
-                _items.update { items }
+            try {
+                var index = 0
+                while (index < items.size) {
+                    val item = items[index]
+                    items = BatchRun.markRunning(items, item.uri)
+                    _items.update { items }
 
-                val result = runSuspendCatching {
-                    processItem(
-                        uri = item.uri,
-                        oneTimeSaveLocationUri = oneTimeSaveLocationUri
-                    )
-                }.getOrElse { SaveResult.Error.Exception(it) }
-
-                when (result) {
-                    is SaveResult.Success -> {
-                        items = BatchRun.markDone(items, item.uri)
-                        _items.update { items }
-                    }
-
-                    is SaveResult.Skipped -> {
-                        items = BatchRun.markDone(items, item.uri)
-                        _items.update { items }
-                    }
-
-                    is SaveResult.Error -> {
-                        items = BatchRun.markFailed(
-                            items = items,
+                    val result = runSuspendCatching {
+                        processItem(
                             uri = item.uri,
-                            error = result.throwable.message ?: result.throwable.toString()
+                            oneTimeSaveLocationUri = oneTimeSaveLocationUri,
+                            sequenceNumber = index + 1
                         )
-                        _items.update { items }
-                        when (awaitFailureDecision(item)) {
-                            BatchDecision.Retry -> retryCurrent()
-                            BatchDecision.Skip -> Unit
-                            BatchDecision.Cancel -> return@trackProgress
+                    }.getOrElse { SaveResult.Error.Exception(it) }
+
+                    when (result) {
+                        is SaveResult.Success,
+                        is SaveResult.Skipped -> {
+                            items = BatchRun.markDone(items, item.uri)
+                            _items.update { items }
+                        }
+
+                        is SaveResult.Error -> {
+                            items = BatchRun.markFailed(
+                                items = items,
+                                uri = item.uri,
+                                error = result.throwable.message ?: result.throwable.toString()
+                            )
+                            _items.update { items }
+                            when (awaitFailureDecision(item)) {
+                                BatchDecision.Retry -> {
+                                    items = BatchRun.retry(items, item.uri)
+                                    _items.update { items }
+                                    continue
+                                }
+
+                                BatchDecision.Skip -> Unit
+                                BatchDecision.Cancel -> return@trackProgress
+                            }
                         }
                     }
+
+                    _done.value = BatchRun.doneCount(items)
+                    updateProgress(
+                        done = done,
+                        total = BatchRun.totalCount(items)
+                    )
+                    index++
                 }
-
-                _done.value = BatchRun.doneCount(items)
-                updateProgress(
-                    done = done,
-                    total = BatchRun.totalCount(items)
-                )
+            } finally {
+                _isSaving.update { false }
+                _failedItem.update { null }
+                failureDecision?.complete(BatchDecision.Cancel)
+                failureDecision = null
             }
-
-            _isSaving.update { false }
         }
     }
 
@@ -205,31 +216,35 @@ class BatchComponent @AssistedInject internal constructor(
         savingJob = null
     }
 
-    private fun retryCurrent() {
-        val failed = _failedItem.value ?: return
-        _items.update { BatchRun.retry(it, failed.uri) }
-        _failedItem.update { null }
-    }
-
     private suspend fun awaitFailureDecision(item: BatchItem): BatchDecision {
-        _failedItem.update { _items.value.firstOrNull { it.uri == item.uri } }
         val deferred = CompletableDeferred<BatchDecision>()
         failureDecision = deferred
+        _failedItem.update { _items.value.firstOrNull { it.uri == item.uri } }
         return deferred.await()
     }
 
     private suspend fun processItem(
         uri: String,
-        oneTimeSaveLocationUri: String?
+        oneTimeSaveLocationUri: String?,
+        sequenceNumber: Int
     ): SaveResult {
         val imageData = imageGetter.getImage(uri, originalSize = true)
             ?: return SaveResult.Error.Exception(IllegalStateException("Cannot read image: $uri"))
         val bitmap = imageData.image
         val originalInfo = imageData.imageInfo
 
+        val requestedWidth = targetWidth.takeIf { it > 0 }
+        val requestedHeight = targetHeight.takeIf { it > 0 }
+        val width = requestedWidth ?: requestedHeight?.let {
+            (it.toLong() * bitmap.width / bitmap.height).toInt().coerceAtLeast(1)
+        } ?: bitmap.width
+        val height = requestedHeight ?: requestedWidth?.let {
+            (it.toLong() * bitmap.height / bitmap.width).toInt().coerceAtLeast(1)
+        } ?: bitmap.height
+
         val info = originalInfo.copy(
-            width = targetWidth.takeIf { it > 0 } ?: bitmap.width,
-            height = targetHeight.takeIf { it > 0 } ?: bitmap.height,
+            width = width,
+            height = height,
             imageFormat = targetFormat ?: originalInfo.imageFormat,
             quality = if (targetFormat != null) {
                 Quality.Base(qualityValue)
@@ -243,7 +258,7 @@ class BatchComponent @AssistedInject internal constructor(
             saveTarget = ImageSaveTarget(
                 imageInfo = info,
                 originalUri = uri,
-                sequenceNumber = done + 1,
+                sequenceNumber = sequenceNumber,
                 metadata = null,
                 data = imageCompressor.compressAndTransform(
                     image = bitmap,

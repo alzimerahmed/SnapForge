@@ -28,7 +28,6 @@ import com.t8rin.imagetoolbox.core.resources.Icons
 import com.t8rin.imagetoolbox.core.resources.R
 import com.t8rin.imagetoolbox.core.resources.icons.Error
 import com.t8rin.imagetoolbox.feature.batch.domain.model.BatchItem
-import com.t8rin.imagetoolbox.feature.batch.domain.model.BatchItemStatus
 import com.t8rin.imagetoolbox.feature.batch.presentation.screenLogic.BatchDecision
 
 @Composable
