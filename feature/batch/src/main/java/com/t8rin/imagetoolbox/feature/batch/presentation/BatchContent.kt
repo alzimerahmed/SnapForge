@@ -188,6 +188,19 @@ fun BatchContent(
         canShowScreenData = !component.uris.isNullOrEmpty()
     )
 
+    BatchOverlays(
+        component = component,
+        showExitDialog = showExitDialog,
+        onDismissExitDialog = { showExitDialog = false }
+    )
+}
+
+@Composable
+private fun BatchOverlays(
+    component: BatchComponent,
+    showExitDialog: Boolean,
+    onDismissExitDialog: () -> Unit
+) {
     LoadingDialog(
         visible = component.isSaving,
         done = component.done,
@@ -204,7 +217,7 @@ fun BatchContent(
 
     ExitWithoutSavingDialog(
         onExit = component.onGoBack,
-        onDismiss = { showExitDialog = false },
+        onDismiss = onDismissExitDialog,
         visible = showExitDialog
     )
 }
