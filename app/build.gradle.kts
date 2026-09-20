@@ -62,7 +62,7 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
-            resValue("string", "app_launcher_name", "Image Toolbox DEBUG")
+            resValue("string", "app_launcher_name", "SnapForge DEBUG")
             resValue("string", "file_provider", "com.alzimerahmed.snapforge.fileprovider.debug")
         }
         release {
@@ -72,7 +72,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_launcher_name", "Image Toolbox")
+            resValue("string", "app_launcher_name", "SnapForge")
             resValue("string", "file_provider", "com.alzimerahmed.snapforge.fileprovider")
         }
         create("benchmark") {
@@ -131,7 +131,7 @@ android {
 }
 
 base {
-    archivesName = "image-toolbox-${android.defaultConfig.versionName}"
+    archivesName = "snapforge-${android.defaultConfig.versionName}"
 }
 
 aboutLibraries {

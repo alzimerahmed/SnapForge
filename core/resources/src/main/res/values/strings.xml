@@ -16,7 +16,7 @@
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name" translatable="false">SnapForge</string>
-    <string name="app_launcher_name" translatable="false">Image Toolbox</string>
+    <string name="app_launcher_name" translatable="false">SnapForge</string>
     <string name="file_provider" translatable="false">com.alzimerahmed.snapforge.fileprovider</string>
     <string name="smth_went_wrong">Something went wrong: %1$s</string>
     <string name="size">Size %1$s</string>
@@ -160,10 +160,10 @@
     <string name="help_tip_choose_tool_title">Choose the right tool</string>
     <string name="help_tip_choose_tool_subtitle">Use categories, search, favorites, and share actions to start in the right place</string>
     <string name="help_tip_choose_tool_page_title">Start from the best entry point</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox has many focused tools, and many of them overlap at first glance. Start from the task you want to finish, then choose the tool that controls the most important part of the result: size, format, metadata, text, PDF pages, colors, or layout.</string>
+    <string name="help_tip_choose_tool_description">SnapForge has many focused tools, and many of them overlap at first glance. Start from the task you want to finish, then choose the tool that controls the most important part of the result: size, format, metadata, text, PDF pages, colors, or layout.</string>
     <string name="help_tip_choose_tool_step_1">Use search when you know the action name, such as resize, PDF, EXIF, OCR, QR, or color.</string>
     <string name="help_tip_choose_tool_step_2">Open a category when you only know the task type, then pin frequent tools as favorites.</string>
-    <string name="help_tip_choose_tool_step_3">When another app shares an image into Image Toolbox, pick the tool from the share sheet flow.</string>
+    <string name="help_tip_choose_tool_step_3">When another app shares an image into SnapForge, pick the tool from the share sheet flow.</string>
     <string name="help_tip_import_save_share_title">Import, save, and share results</string>
     <string name="help_tip_import_save_share_subtitle">Understand the usual flow from picking input to exporting the edited file</string>
     <string name="help_tip_import_save_share_page_title">Follow the common editing flow</string>
@@ -202,10 +202,10 @@
     <string name="help_tip_picker_launcher_title">Picker and launcher</string>
     <string name="help_tip_picker_launcher_subtitle">Use picker settings when the app opens too many dialogs or starts in the wrong place</string>
     <string name="help_tip_picker_launcher_page_title">Make opening files match your habit</string>
-    <string name="help_tip_picker_launcher_description">Picker and launcher settings control whether Image Toolbox starts from the main screen, a tool, or a file selection flow. These options are especially useful when you usually enter from the Android share sheet or when you want the app to feel more like a tool launcher.</string>
+    <string name="help_tip_picker_launcher_description">Picker and launcher settings control whether SnapForge starts from the main screen, a tool, or a file selection flow. These options are especially useful when you usually enter from the Android share sheet or when you want the app to feel more like a tool launcher.</string>
     <string name="help_tip_picker_launcher_step_1">Use photo picker settings if the system picker hides files, shows too many recent items, or handles cloud files poorly.</string>
     <string name="help_tip_picker_launcher_step_2">Enable skip picking only for tools where you usually enter from share or already know the source file.</string>
-    <string name="help_tip_picker_launcher_step_3">Review launcher mode if you want Image Toolbox to behave more like a tool picker than a normal home screen.</string>
+    <string name="help_tip_picker_launcher_step_3">Review launcher mode if you want SnapForge to behave more like a tool picker than a normal home screen.</string>
     <string name="help_tip_image_source_title">Image source</string>
     <string name="help_tip_image_source_subtitle">Choose the picker mode that works best with galleries, file managers, and cloud files</string>
     <string name="help_tip_image_source_page_title">Pick files from the right source</string>
@@ -551,7 +551,7 @@
     <string name="help_tip_one_time_save_location_title">One-time save folders</string>
     <string name="help_tip_one_time_save_location_subtitle">Send the next exports to a temporary folder without changing your normal destination</string>
     <string name="help_tip_one_time_save_location_page_title">Keep special jobs separate</string>
-    <string name="help_tip_one_time_save_location_description">One-time save location is useful for temporary projects, client folders, cleanup sessions, or exports that should not mix with your regular Image Toolbox folder. It gives a short-lived destination without rewriting your default setup.</string>
+    <string name="help_tip_one_time_save_location_description">One-time save location is useful for temporary projects, client folders, cleanup sessions, or exports that should not mix with your regular SnapForge folder. It gives a short-lived destination without rewriting your default setup.</string>
     <string name="help_tip_one_time_save_location_step_1">Choose a one-time folder before starting a task that belongs outside your normal export location.</string>
     <string name="help_tip_one_time_save_location_step_2">Use it for short projects, shared folders, or batches where outputs must stay grouped together.</string>
     <string name="help_tip_one_time_save_location_step_3">Return to the default folder after the job so later exports do not unexpectedly land in the temporary location.</string>
@@ -1131,11 +1131,11 @@
     <string name="decrypt">Decrypt</string>
     <string name="pick_file_to_start">Pick file to start</string>
     <string name="open_markup_project">Open project</string>
-    <string name="open_markup_project_sub">Continue editing a previously saved Image Toolbox project</string>
-    <string name="markup_project_open_failed">Unable to open Image Toolbox project</string>
-    <string name="markup_project_missing_data">Image Toolbox project is missing project data</string>
-    <string name="markup_project_corrupted">Image Toolbox project is corrupted</string>
-    <string name="unsupported_markup_project_version">Unsupported Image Toolbox project version: %1$d</string>
+    <string name="open_markup_project_sub">Continue editing a previously Saved SnapForge project</string>
+    <string name="markup_project_open_failed">Unable to open SnapForge project</string>
+    <string name="markup_project_missing_data">SnapForge project is missing project data</string>
+    <string name="markup_project_corrupted">SnapForge project is corrupted</string>
+    <string name="unsupported_markup_project_version">Unsupported SnapForge project version: %1$d</string>
     <string name="decryption">Decryption</string>
     <string name="encryption">Encryption</string>
     <string name="key">Key</string>
@@ -1854,7 +1854,7 @@
     <string name="header_today">Today</string>
     <string name="header_yesterday">Yesterday</string>
     <string name="embedded_picker">Embedded Picker</string>
-    <string name="embedded_picker_sub">Image Toolbox\'s image picker</string>
+    <string name="embedded_picker_sub">SnapForge\'s image picker</string>
     <string name="no_permissions">No permissions</string>
     <string name="request">Request</string>
     <string name="pick_multiple_media">Pick Multiple Media</string>
@@ -2379,7 +2379,7 @@
     <string name="webp_type_to_jxl_sub">Convert WEBP animations to JXL images</string>
     <string name="select_webp_image_to_start">Pick WEBP image to start</string>
     <string name="manage_storage_extra_types">No full access to files</string>
-    <string name="manage_storage_extra_types_sub">Allow all files access to see JXL, QOI and other images that are not recognized as images on Android. Without the permission Image Toolbox is unable to show those images</string>
+    <string name="manage_storage_extra_types_sub">Allow all files access to see JXL, QOI and other images that are not recognized as images on Android. Without the permission SnapForge is unable to show those images</string>
     <string name="default_draw_color">Default Draw Color</string>
     <string name="default_draw_path_mode">Default Draw Path Mode</string>
     <string name="add_timestamp">Add Timestamp</string>
@@ -2393,7 +2393,7 @@
     <string name="ci_channel">CI channel</string>
     <string name="group">Group</string>
     <string name="ungroup">Ungroup</string>
-    <string name="image_toolbox_in_telegram">Image Toolbox in Telegram 🎉</string>
+    <string name="image_toolbox_in_telegram">Image Toolbox (upstream) in Telegram 🎉</string>
     <string name="image_toolbox_in_telegram_sub">Join our chat where you can discuss anything you want and also look into the CI channel where I post betas and announcements</string>
     <string name="ci_channel_sub">Get notified about new versions of app, and read announcements</string>
     <string name="fit_description">Fit an image to given dimensions and apply blur or color to background</string>
@@ -4175,7 +4175,7 @@
     <string name="delete_originals_after_save">Delete original files after saving</string>
     <string name="delete_originals_after_save_sub">Only successfully processed source files will be deleted</string>
     <string name="return_to_external_app_after_save">Return after saving external edits</string>
-    <string name="return_to_external_app_after_save_sub">Close Image Toolbox after saving an image opened for editing from another app</string>
+    <string name="return_to_external_app_after_save_sub">Close SnapForge after saving an image opened for editing from another app</string>
     <string name="original_files_deleted">Original files deleted: %1$d</string>
     <string name="original_files_delete_failed">Failed to delete original files: %1$d</string>
     <string name="original_files_delete_result">Original files deleted: %1$d, failed: %2$d</string>
@@ -5106,7 +5106,7 @@
     <string name="depth_result">Depth result</string>
     <string name="depth_map">Depth map</string>
     <string name="custom_depth_map">Custom depth map</string>
-    <string name="custom_depth_map_sub">Optional. Reuse a grayscale or Image Toolbox depth map instead of estimating depth again</string>
+    <string name="custom_depth_map_sub">Optional. Reuse a grayscale or SnapForge depth map instead of estimating depth again</string>
     <string name="depth_blur">Depth blur</string>
     <string name="depth_blur_sub">Keep the selected depth plane sharp and gradually blur objects outside it</string>
     <string name="depth_background_blur">Background blur</string>

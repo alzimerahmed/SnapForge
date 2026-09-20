@@ -186,9 +186,8 @@ class RootComponent @AssistedInject internal constructor(
         settingsManager
             .settingsState
             .onEach { state ->
-                _showTelegramGroupDialog.update {
-                    state.appOpenCount % 6 == 0 && state.appOpenCount != 0 && !state.isTelegramGroupOpened
-                }
+                // Upstream Telegram community promo disabled for SnapForge
+                _showTelegramGroupDialog.update { false }
                 _settingsState.value = state
             }
             .launchIn(componentScope)

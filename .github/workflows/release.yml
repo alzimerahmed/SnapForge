@@ -1,0 +1,106 @@
+name: Create SnapForge Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build_and_release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Set version variable
+        run: echo "VERSION_NAME=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+
+      - name: Assemble FOSS release
+        run: bash ./gradlew assembleFossRelease
+
+      - name: Sign FOSS APKs
+        id: sign_app_foss
+        uses: iota9star/sign-android-release@v1.0.5
+        with:
+          releaseDirectory: app/build/outputs/apk/foss/release
+          fileRex: .*apk
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASS }}
+          keyPassword: ${{ secrets.KEY_STORE_PASS }}
+        env:
+          BUILD_TOOLS_VERSION: "34.0.0"
+
+      - name: Rename APKs
+        run: |
+          cd app/build/outputs/apk/foss/release
+          for f in *-signed.apk; do
+            mv "$f" "$(echo "$f" | sed -e 's/-release-unsigned-signed/-release/' -e 's/snapforge-[^-]*-foss-/snapforge-/')"
+          done
+          ls -la
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: signed-foss-apks
+          path: app/build/outputs/apk/foss/release/*.apk
+
+  create_release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs:
+      - build_and_release
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: signed-foss-apks
+          path: apks
+
+      - name: Set version variables
+        run: |
+          echo "VERSION_NAME=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+          if [[ "$GITHUB_REF_NAME" == *-* ]]; then
+            echo "PRE_RELEASE_FLAG=true" >> $GITHUB_ENV
+          else
+            echo "PRE_RELEASE_FLAG=false" >> $GITHUB_ENV
+          fi
+
+      - name: Generate changelog
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || true)
+          if [ -n "$PREV_TAG" ]; then
+            RANGE="$PREV_TAG..${GITHUB_REF_NAME}"
+          else
+            RANGE="${GITHUB_REF_NAME}"
+          fi
+          {
+            echo "## What's Changed"
+            echo ""
+            git log --pretty=format:'- %s (%h)' "$RANGE" | grep -v '^$'
+          } > CHANGELOG.md
+          cat CHANGELOG.md
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "apks/*.apk"
+          bodyFile: "CHANGELOG.md"
+          prerelease: ${{ env.PRE_RELEASE_FLAG }}
+          generateReleaseNotes: true

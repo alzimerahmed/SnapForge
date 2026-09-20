@@ -27,7 +27,8 @@ const val TELEGRAM_CHANNEL_LINK = "https://t.me/t8rin_imagetoolbox_ci"
 
 
 const val AUTHOR_GITHUB = "https://github.com/$AUTHOR_NICK"
-const val APP_GITHUB_LINK = "$AUTHOR_GITHUB/ImageToolbox"
+const val SNAPFORGE_GITHUB = "https://github.com/alzimerahmed/SnapForge"
+const val APP_GITHUB_LINK = SNAPFORGE_GITHUB
 const val ISSUE_TRACKER = "$APP_GITHUB_LINK/issues"
 const val APP_RELEASES = "$APP_GITHUB_LINK/releases"
 const val APP_CHANGELOG = "$APP_RELEASES.atom"
