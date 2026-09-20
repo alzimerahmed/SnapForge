@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">Tänään</string>
     <string name="header_yesterday">Eilen</string>
     <string name="embedded_picker">Embedded Picker</string>
-    <string name="embedded_picker_sub">Image Toolboxin kuvanvalitsin</string>
+    <string name="embedded_picker_sub">SnapForgein kuvanvalitsin</string>
     <string name="no_permissions">Ei käyttöoikeuksia</string>
     <string name="request">Pyytää</string>
     <string name="pick_multiple_media">Valitse useita mediatiedostoja</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Mahdollistaa antialiasoinnin terävien reunojen estämiseksi</string>
     <string name="open_edit_instead_of_preview">Avaa Muokkaa esikatselun sijaan</string>
-    <string name="open_edit_instead_of_preview_sub">Kun valitset avattavan (esikatselun) kuvan ImageToolboxissa, muokkausvalintasivu avautuu esikatselun sijaan</string>
+    <string name="open_edit_instead_of_preview_sub">Kun valitset avattavan (esikatselun) kuvan SnapForgeissa, muokkausvalintasivu avautuu esikatselun sijaan</string>
     <string name="document_scanner">Asiakirjan skanneri</string>
     <string name="document_scanner_sub">Skannaa asiakirjoja ja luo PDF-tiedostoja tai erota niistä kuvia</string>
     <string name="click_to_start_scanning">Aloita skannaus napsauttamalla</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Kuvat WEBP:hen</string>
     <string name="select_webp_image_to_start">Aloita valitsemalla WEBP-kuva</string>
     <string name="manage_storage_extra_types">Ei täydellistä pääsyä tiedostoihin</string>
-    <string name="manage_storage_extra_types_sub">Salli kaikkien tiedostojen käyttöoikeus nähdä JXL, QOI ja muut kuvat, joita ei tunnisteta kuviksi Androidissa. Ilman lupaa Image Toolbox ei voi näyttää näitä kuvia</string>
+    <string name="manage_storage_extra_types_sub">Salli kaikkien tiedostojen käyttöoikeus nähdä JXL, QOI ja muut kuvat, joita ei tunnisteta kuviksi Androidissa. Ilman lupaa SnapForge ei voi näyttää näitä kuvia</string>
     <string name="default_draw_color">Piirustuksen oletusväri</string>
     <string name="default_draw_path_mode">Oletuspiirtopolkutila</string>
     <string name="add_timestamp">Lisää aikaleima</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Vie luotu paletti eri muotoihin</string>
     <string name="add_color_palette_sub">Lisää uutta väriä nykyiseen palettiin</string>
     <string name="palette_name_not_supported">%1$s-muoto ei tue paletin nimen antamista</string>
-    <string name="wallpapers_export_not_avaialbe">Play Kaupan käytäntöjen vuoksi tätä ominaisuutta ei voi sisällyttää nykyiseen koontiversioon. Voit käyttää tätä toimintoa lataamalla ImageToolboxin vaihtoehtoisesta lähteestä. Löydät saatavilla olevat versiot GitHubista alta.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Kaupan käytäntöjen vuoksi tätä ominaisuutta ei voi sisällyttää nykyiseen koontiversioon. Voit käyttää tätä toimintoa lataamalla SnapForgein vaihtoehtoisesta lähteestä. Löydät saatavilla olevat versiot GitHubista alta.</string>
     <string name="open_github_page">Avaa Github-sivu</string>
     <string name="overwrite_files_sub_short">Alkuperäinen tiedosto korvataan uudella sen sijaan, että se tallennettaisiin valittuun kansioon</string>
     <string name="hidden_watermark_text_detected">Havaittiin piilotettu vesileimateksti</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Muunna kaikki asiakirjan upotetut kuvat harmaasävyiksi</string>
     <string name="compress_pdf">Pakkaa PDF</string>
     <string name="compress_pdf_sub">Optimoi asiakirjatiedoston koko helpottamaan jakamista</string>
-    <string name="repair_info">ImageToolbox rakentaa sisäisen ristiviittaustaulukon uudelleen ja luo tiedostorakenteen uudelleen tyhjästä. Tämä voi palauttaa pääsyn moniin tiedostoihin, joita \\\"ei voi avata\\\"</string>
+    <string name="repair_info">SnapForge rakentaa sisäisen ristiviittaustaulukon uudelleen ja luo tiedostorakenteen uudelleen tyhjästä. Tämä voi palauttaa pääsyn moniin tiedostoihin, joita \\\"ei voi avata\\\"</string>
     <string name="grayscale_info">Tämä työkalu muuntaa kaikki asiakirjan kuvat harmaasävyiksi. Paras tulostukseen ja tiedostokoon pienentämiseen</string>
     <string name="metadata">Metatiedot</string>
     <string name="metadata_pdf_sub">Muokkaa asiakirjan ominaisuuksia parantaaksesi yksityisyyttä</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Taustaväri Alfa-formaateille</string>
     <string name="background_color_for_alpha_formats_sub">Lisää mahdollisuuden asettaa taustavärin jokaiselle kuvamuodolle alfa-tuella, kun tämä ei ole käytössä, tämä on käytettävissä vain muille kuin alfa-muodoille</string>
     <string name="open_markup_project">Avoin projekti</string>
-    <string name="open_markup_project_sub">Jatka aiemmin tallennetun Image Toolbox -projektin muokkaamista</string>
-    <string name="markup_project_open_failed">Image Toolbox -projektia ei voi avata</string>
-    <string name="markup_project_missing_data">Image Toolbox -projektista puuttuu projektitiedot</string>
-    <string name="markup_project_corrupted">Image Toolbox -projekti on vioittunut</string>
-    <string name="unsupported_markup_project_version">Ei tuettu Image Toolbox -projektin versio: %1$d</string>
+    <string name="open_markup_project_sub">Jatka aiemmin tallennetun SnapForge -projektin muokkaamista</string>
+    <string name="markup_project_open_failed">SnapForge -projektia ei voi avata</string>
+    <string name="markup_project_missing_data">SnapForge -projektista puuttuu projektitiedot</string>
+    <string name="markup_project_corrupted">SnapForge -projekti on vioittunut</string>
+    <string name="unsupported_markup_project_version">Ei tuettu SnapForge -projektin versio: %1$d</string>
     <string name="save_markup_project">Tallenna projekti</string>
     <string name="save_markup_project_sub">Tallenna tasot, tausta ja muokkaushistoria muokattavaan projektitiedostoon</string>
     <string name="failed_to_open">Avaaminen epäonnistui</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Valitse oikea työkalu</string>
     <string name="help_tip_choose_tool_subtitle">Käytä luokkia, hakua, suosikkeja ja jaa toimintoja aloittaaksesi oikeasta paikasta</string>
     <string name="help_tip_choose_tool_page_title">Aloita parhaasta sisääntulopisteestä</string>
-    <string name="help_tip_choose_tool_description">Image Toolboxissa on monia kohdennettuja työkaluja, ja monet niistä ovat päällekkäisiä ensi silmäyksellä. Aloita tehtävästä, jonka haluat suorittaa loppuun, ja valitse sitten työkalu, joka hallitsee tuloksen tärkeintä osaa: kokoa, muotoa, metatietoja, tekstiä, PDF-sivuja, värejä tai asettelua.</string>
+    <string name="help_tip_choose_tool_description">SnapForgeissa on monia kohdennettuja työkaluja, ja monet niistä ovat päällekkäisiä ensi silmäyksellä. Aloita tehtävästä, jonka haluat suorittaa loppuun, ja valitse sitten työkalu, joka hallitsee tuloksen tärkeintä osaa: kokoa, muotoa, metatietoja, tekstiä, PDF-sivuja, värejä tai asettelua.</string>
     <string name="help_tip_choose_tool_step_1">Käytä hakua, kun tiedät toiminnon nimen, kuten kokoa, PDF, EXIF, OCR, QR tai väri.</string>
     <string name="help_tip_choose_tool_step_2">Avaa luokka, kun tiedät vain tehtävätyypin, ja kiinnitä sitten usein työkalut suosikeiksi.</string>
-    <string name="help_tip_choose_tool_step_3">Kun toinen sovellus jakaa kuvan Image Toolboxiin, valitse työkalu jakotaulukon kulusta.</string>
+    <string name="help_tip_choose_tool_step_3">Kun toinen sovellus jakaa kuvan SnapForgeiin, valitse työkalu jakotaulukon kulusta.</string>
     <string name="help_tip_import_save_share_title">Tuo, tallenna ja jaa tuloksia</string>
     <string name="help_tip_import_save_share_subtitle">Ymmärrä tavallinen kulku syötteen poimimisesta muokatun tiedoston vientiin</string>
     <string name="help_tip_import_save_share_page_title">Noudata yleistä muokkausprosessia</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Poimija ja kantoraketti</string>
     <string name="help_tip_picker_launcher_subtitle">Käytä valitsinasetuksia, kun sovellus avaa liian monta valintaikkunaa tai käynnistyy väärästä paikasta</string>
     <string name="help_tip_picker_launcher_page_title">Tee tiedostojen avaamisesta tapasi mukaista</string>
-    <string name="help_tip_picker_launcher_description">Valitsimen ja käynnistysohjelman asetukset määräävät, alkaako Image Toolbox päänäytöstä, työkalusta vai tiedoston valintaprosessista. Nämä vaihtoehdot ovat erityisen hyödyllisiä, kun syötät tavallisesti Android-jakosivulta tai kun haluat sovelluksen tuntuvan enemmän työkalun käynnistysohjelmalta.</string>
+    <string name="help_tip_picker_launcher_description">Valitsimen ja käynnistysohjelman asetukset määräävät, alkaako SnapForge päänäytöstä, työkalusta vai tiedoston valintaprosessista. Nämä vaihtoehdot ovat erityisen hyödyllisiä, kun syötät tavallisesti Android-jakosivulta tai kun haluat sovelluksen tuntuvan enemmän työkalun käynnistysohjelmalta.</string>
     <string name="help_tip_picker_launcher_step_1">Käytä valokuvavalitsin asetuksia, jos järjestelmävalitsin piilottaa tiedostoja, näyttää liian monta viimeaikaista kohdetta tai käsittelee pilvitiedostoja huonosti.</string>
     <string name="help_tip_picker_launcher_step_2">Ota ohitustoiminto käyttöön vain työkaluissa, joihin syötät tavallisesti jaettuna tai jo tiedät lähdetiedoston.</string>
-    <string name="help_tip_picker_launcher_step_3">Tarkista käynnistystila, jos haluat Image Toolboxin toimivan enemmän työkaluvalitsimena kuin tavallisen aloitusnäytön tavoin.</string>
+    <string name="help_tip_picker_launcher_step_3">Tarkista käynnistystila, jos haluat SnapForgein toimivan enemmän työkaluvalitsimena kuin tavallisen aloitusnäytön tavoin.</string>
     <string name="help_tip_image_source_title">Kuvan lähde</string>
     <string name="help_tip_image_source_subtitle">Valitse poimintatila, joka toimii parhaiten gallerioiden, tiedostonhallintaohjelmien ja pilvitiedostojen kanssa</string>
     <string name="help_tip_image_source_page_title">Valitse tiedostot oikeasta lähteestä</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Kertatallennuskansiot</string>
     <string name="help_tip_one_time_save_location_subtitle">Lähetä seuraavat vientitiedostot väliaikaiseen kansioon muuttamatta normaalia kohdetta</string>
     <string name="help_tip_one_time_save_location_page_title">Pidä erikoistyöt erillään</string>
-    <string name="help_tip_one_time_save_location_description">Kertatallennuspaikka on hyödyllinen tilapäisprojekteissa, asiakaskansioissa, puhdistusistunnoissa tai viennissä, joiden ei pitäisi sekoittua tavalliseen Image Toolbox -kansioosi. Se tarjoaa lyhytaikaisen määränpään ilman oletusasetusten uudelleenkirjoittamista.</string>
+    <string name="help_tip_one_time_save_location_description">Kertatallennuspaikka on hyödyllinen tilapäisprojekteissa, asiakaskansioissa, puhdistusistunnoissa tai viennissä, joiden ei pitäisi sekoittua tavalliseen SnapForge -kansioosi. Se tarjoaa lyhytaikaisen määränpään ilman oletusasetusten uudelleenkirjoittamista.</string>
     <string name="help_tip_one_time_save_location_step_1">Valitse kertaluonteinen kansio ennen kuin aloitat tehtävän, joka kuuluu normaalin vientisijaintisi ulkopuolelle.</string>
     <string name="help_tip_one_time_save_location_step_2">Käytä sitä lyhyissä projekteissa, jaetuissa kansioissa tai erissä, joissa tulosteiden on pysyttävä ryhmiteltyinä.</string>
     <string name="help_tip_one_time_save_location_step_3">Palaa oletuskansioon työn jälkeen, jotta myöhemmät viennit eivät yllättäen pääty väliaikaiseen sijaintiin.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d avautuu • %2$s</string>
     <string name="no_usage_statistics">Ei vielä käyttötilastoja</string>
     <string name="no_usage_statistics_sub">Avaa muutama työkalu, niin ne näkyvät täällä automaattisesti</string>
-    <string name="usage_statistics_info">Käyttötilastot tallennetaan vain paikallisesti laitteellesi. ImageToolbox käyttää niitä vain näyttääkseen henkilökohtaisen toimintasi, suosikkityökalusi ja tallennetut tiedot</string>
+    <string name="usage_statistics_info">Käyttötilastot tallennetaan vain paikallisesti laitteellesi. SnapForge käyttää niitä vain näyttääkseen henkilökohtaisen toimintasi, suosikkityökalusi ja tallennetut tiedot</string>
     <string name="search_keywords_single_edit">editori muokkaa valokuvaa kuvaa retusoi säädä</string>
     <string name="search_keywords_resize_and_convert">kokoa muuntaa asteikko resoluutio mitat leveys korkeus jpg jpeg png webp pakkaus</string>
     <string name="search_keywords_weight_resize">pakkaa koko paino tavua mb kb vähentää laatua optimoida</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Käytä RAW-kuvaan upotettua esikatselua sen kehittämisen sijaan</string>
     <string name="score">Pisteet</string>
     <string name="return_to_external_app_after_save">Palauta ulkoisten muokkausten tallentamisen jälkeen</string>
-    <string name="return_to_external_app_after_save_sub">Sulje Image Toolbox toisesta sovelluksesta muokattavaksi avatun kuvan tallentamisen jälkeen</string>
-    <string name="add_imagetoolbox_metadata">Lisää ImageToolboxin metatiedot</string>
+    <string name="return_to_external_app_after_save_sub">Sulje SnapForge toisesta sovelluksesta muokattavaksi avatun kuvan tallentamisen jälkeen</string>
+    <string name="add_imagetoolbox_metadata">Lisää SnapForgein metatiedot</string>
     <string name="add_imagetoolbox_metadata_sub">Kirjoita sovelluksen versio ja määritetyt kuvaparametrit EXIF-tiedostoon tallennuksen yhteydessä</string>
     <string name="read_only">Vain luku</string>
     <string name="tag_camera_firmware">Kameran laiteohjelmisto</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">Liuskekivi</string>
     <string name="search_keywords_pdf_dark_mode">pdf pimeän tilan yölukija käänteisvärit negatiivinen</string>
     <string name="custom_depth_map">Mukautettu syvyyskartta</string>
-    <string name="custom_depth_map_sub">Valinnainen. Käytä uudelleen harmaasävy- tai Image Toolbox -syvyyskarttaa sen sijaan, että arvioisit syvyyttä uudelleen</string>
+    <string name="custom_depth_map_sub">Valinnainen. Käytä uudelleen harmaasävy- tai SnapForge -syvyyskarttaa sen sijaan, että arvioisit syvyyttä uudelleen</string>
     <string name="comic_to_pdf">Sarjakuva PDF-muodossa</string>
     <string name="comic_to_pdf_sub">Muunna CBR, CBZ, CB7 ja muut kuva-arkistot PDF-muotoon</string>
     <string name="select_comic_archive_to_start">Valitse CBR-, CBZ-, CB7- tai CBT-sarjakuva-arkisto</string>

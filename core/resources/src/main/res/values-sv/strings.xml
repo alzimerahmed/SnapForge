@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -917,7 +917,7 @@
     <string name="header_today">I dag</string>
     <string name="header_yesterday">I går</string>
     <string name="embedded_picker">Inbäddad väljare</string>
-    <string name="embedded_picker_sub">Image Toolboxs bildväljare</string>
+    <string name="embedded_picker_sub">SnapForges bildväljare</string>
     <string name="no_permissions">Inga behörigheter</string>
     <string name="request">Begäran</string>
     <string name="pick_multiple_media">Välj flera media</string>
@@ -1131,7 +1131,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Möjliggör kantutjämning för att förhindra skarpa kanter</string>
     <string name="open_edit_instead_of_preview">Öppna Redigera istället för förhandsgranskning</string>
-    <string name="open_edit_instead_of_preview_sub">När du väljer bild som ska öppnas (förhandsgranska) i ImageToolbox öppnas redigera urvalsark istället för att förhandsgranska</string>
+    <string name="open_edit_instead_of_preview_sub">När du väljer bild som ska öppnas (förhandsgranska) i SnapForge öppnas redigera urvalsark istället för att förhandsgranska</string>
     <string name="document_scanner">Dokumentskanner</string>
     <string name="document_scanner_sub">Skanna dokument och skapa PDF eller separera bilder från dem</string>
     <string name="click_to_start_scanning">Klicka för att börja skanna</string>
@@ -1406,7 +1406,7 @@
     <string name="webp_type_to_webp">Bilder till WEBP</string>
     <string name="select_webp_image_to_start">Välj WEBP-bild för att starta</string>
     <string name="manage_storage_extra_types">Ingen fullständig åtkomst till filer</string>
-    <string name="manage_storage_extra_types_sub">Tillåt alla filer åtkomst för att se JXL, QOI och andra bilder som inte känns igen som bilder på Android. Utan tillstånd kan Image Toolbox inte visa dessa bilder</string>
+    <string name="manage_storage_extra_types_sub">Tillåt alla filer åtkomst för att se JXL, QOI och andra bilder som inte känns igen som bilder på Android. Utan tillstånd kan SnapForge inte visa dessa bilder</string>
     <string name="default_draw_color">Standard ritfärg</string>
     <string name="default_draw_path_mode">Standardläge för ritningsväg</string>
     <string name="add_timestamp">Lägg till tidsstämpel</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Exportera genererad palett till olika format</string>
     <string name="add_color_palette_sub">Lägger till ny färg till nuvarande palett</string>
     <string name="palette_name_not_supported">Formatet %1$s stöder inte att ange palettnamn</string>
-    <string name="wallpapers_export_not_avaialbe">På grund av Play Butiks policyer kan den här funktionen inte inkluderas i den aktuella versionen. För att komma åt denna funktion, ladda ner ImageToolbox från en alternativ källa. Du kan hitta de tillgängliga versionerna på GitHub nedan.</string>
+    <string name="wallpapers_export_not_avaialbe">På grund av Play Butiks policyer kan den här funktionen inte inkluderas i den aktuella versionen. För att komma åt denna funktion, ladda ner SnapForge från en alternativ källa. Du kan hitta de tillgängliga versionerna på GitHub nedan.</string>
     <string name="open_github_page">Öppna Github-sidan</string>
     <string name="overwrite_files_sub_short">Originalfilen kommer att ersättas med en ny istället för att sparas i den valda mappen</string>
     <string name="hidden_watermark_text_detected">Upptäckt dold vattenstämpeltext</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Konvertera alla dokumentinbäddade bilder till gråskala</string>
     <string name="compress_pdf">Komprimera PDF</string>
     <string name="compress_pdf_sub">Optimera din dokumentfilstorlek för enklare delning</string>
-    <string name="repair_info">ImageToolbox bygger om den interna korsreferenstabellen och regenererar filstrukturen från början. Detta kan återställa åtkomst till många filer som \\\"inte kan öppnas\\\"</string>
+    <string name="repair_info">SnapForge bygger om den interna korsreferenstabellen och regenererar filstrukturen från början. Detta kan återställa åtkomst till många filer som \\\"inte kan öppnas\\\"</string>
     <string name="grayscale_info">Detta verktyg konverterar alla dokumentbilder till gråskala. Bäst för att skriva ut och minska filstorleken</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">Redigera dokumentegenskaper för bättre sekretess</string>
@@ -2187,11 +2187,11 @@
     <string name="keep_date_time_sub">Bevara alltid exif-taggar relaterade till datum och tid, fungerar oberoende av keep exif-alternativet</string>
     <string name="background_color_for_alpha_formats">Bakgrundsfärg För Alfaformat</string>
     <string name="background_color_for_alpha_formats_sub">Lägger till möjlighet att ställa in bakgrundsfärg för varje bildformat med alfa-stöd, när det är inaktiverat är detta endast tillgängligt för icke-alfa-one</string>
-    <string name="open_markup_project_sub">Fortsätt redigera ett tidigare sparat Image Toolbox-projekt</string>
-    <string name="markup_project_open_failed">Det gick inte att öppna Image Toolbox-projektet</string>
-    <string name="markup_project_missing_data">Image Toolbox-projektet saknar projektdata</string>
-    <string name="markup_project_corrupted">Image Toolbox-projektet är skadat</string>
-    <string name="unsupported_markup_project_version">Image Toolbox-projektversion som inte stöds: %1$d</string>
+    <string name="open_markup_project_sub">Fortsätt redigera ett tidigare sparat SnapForge-projekt</string>
+    <string name="markup_project_open_failed">Det gick inte att öppna SnapForge-projektet</string>
+    <string name="markup_project_missing_data">SnapForge-projektet saknar projektdata</string>
+    <string name="markup_project_corrupted">SnapForge-projektet är skadat</string>
+    <string name="unsupported_markup_project_version">SnapForge-projektversion som inte stöds: %1$d</string>
     <string name="save_markup_project_sub">Lagra lager, bakgrund och redigeringshistorik i en redigerbar projektfil</string>
     <string name="ocr_write_to_searchable_pdf">Skriv till sökbar PDF</string>
     <string name="ocr_write_to_searchable_pdf_sub">Känn igen text från bildbatch och spara sökbar PDF med bild och valbart textlager</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Välj rätt verktyg</string>
     <string name="help_tip_choose_tool_subtitle">Använd kategorier, sökning, favoriter och dela åtgärder för att börja på rätt plats</string>
     <string name="help_tip_choose_tool_page_title">Börja från den bästa ingångspunkten</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox har många fokuserade verktyg, och många av dem överlappar varandra vid första anblicken. Börja från uppgiften du vill slutföra och välj sedan verktyget som styr den viktigaste delen av resultatet: storlek, format, metadata, text, PDF-sidor, färger eller layout.</string>
+    <string name="help_tip_choose_tool_description">SnapForge har många fokuserade verktyg, och många av dem överlappar varandra vid första anblicken. Börja från uppgiften du vill slutföra och välj sedan verktyget som styr den viktigaste delen av resultatet: storlek, format, metadata, text, PDF-sidor, färger eller layout.</string>
     <string name="help_tip_choose_tool_step_1">Använd sökning när du känner till åtgärdens namn, till exempel ändra storlek, PDF, EXIF, OCR, QR eller färg.</string>
     <string name="help_tip_choose_tool_step_2">Öppna en kategori när du bara känner till uppgiftstypen och fäst sedan vanliga verktyg som favoriter.</string>
-    <string name="help_tip_choose_tool_step_3">När en annan app delar en bild i Image Toolbox väljer du verktyget från flödet för delningsark.</string>
+    <string name="help_tip_choose_tool_step_3">När en annan app delar en bild i SnapForge väljer du verktyget från flödet för delningsark.</string>
     <string name="help_tip_import_save_share_title">Importera, spara och dela resultat</string>
     <string name="help_tip_import_save_share_subtitle">Förstå det vanliga flödet från att plocka indata till att exportera den redigerade filen</string>
     <string name="help_tip_import_save_share_page_title">Följ det vanliga redigeringsflödet</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Picker och launcher</string>
     <string name="help_tip_picker_launcher_subtitle">Använd väljarinställningar när appen öppnar för många dialogrutor eller startar på fel ställe</string>
     <string name="help_tip_picker_launcher_page_title">Låt öppna filer matcha din vana</string>
-    <string name="help_tip_picker_launcher_description">Väljar- och startinställningar styr om Image Toolbox startar från huvudskärmen, ett verktyg eller ett filvalsflöde. Dessa alternativ är särskilt användbara när du vanligtvis går in från Android-delarket eller när du vill att appen ska kännas mer som en verktygsstartare.</string>
+    <string name="help_tip_picker_launcher_description">Väljar- och startinställningar styr om SnapForge startar från huvudskärmen, ett verktyg eller ett filvalsflöde. Dessa alternativ är särskilt användbara när du vanligtvis går in från Android-delarket eller när du vill att appen ska kännas mer som en verktygsstartare.</string>
     <string name="help_tip_picker_launcher_step_1">Använd inställningar för fotoväljare om systemväljaren döljer filer, visar för många senaste objekt eller hanterar molnfiler dåligt.</string>
     <string name="help_tip_picker_launcher_step_2">Aktivera hoppa över plockning endast för verktyg där du vanligtvis anger från delningen eller redan känner till källfilen.</string>
-    <string name="help_tip_picker_launcher_step_3">Granska startläge om du vill att Image Toolbox ska bete sig mer som en verktygsväljare än en vanlig startskärm.</string>
+    <string name="help_tip_picker_launcher_step_3">Granska startläge om du vill att SnapForge ska bete sig mer som en verktygsväljare än en vanlig startskärm.</string>
     <string name="help_tip_image_source_title">Bildkälla</string>
     <string name="help_tip_image_source_subtitle">Välj det väljarläge som fungerar bäst med gallerier, filhanterare och molnfiler</string>
     <string name="help_tip_image_source_page_title">Välj filer från rätt källa</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Engångssparmappar</string>
     <string name="help_tip_one_time_save_location_subtitle">Skicka nästa export till en tillfällig mapp utan att ändra din normala destination</string>
     <string name="help_tip_one_time_save_location_page_title">Håll speciella jobb åtskilda</string>
-    <string name="help_tip_one_time_save_location_description">Engångslagringsplats är användbar för tillfälliga projekt, klientmappar, rensningssessioner eller exporter som inte ska blandas med din vanliga Image Toolbox-mapp. Det ger en kortlivad destination utan att skriva om din standardinställning.</string>
+    <string name="help_tip_one_time_save_location_description">Engångslagringsplats är användbar för tillfälliga projekt, klientmappar, rensningssessioner eller exporter som inte ska blandas med din vanliga SnapForge-mapp. Det ger en kortlivad destination utan att skriva om din standardinställning.</string>
     <string name="help_tip_one_time_save_location_step_1">Välj en engångsmapp innan du startar en uppgift som hör hemma utanför din normala exportplats.</string>
     <string name="help_tip_one_time_save_location_step_2">Använd den för korta projekt, delade mappar eller partier där utdata måste förbli grupperade.</string>
     <string name="help_tip_one_time_save_location_step_3">Återgå till standardmappen efter jobbet så att senare exporter inte oväntat hamnar på den tillfälliga platsen.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d öppnas • %2$s</string>
     <string name="no_usage_statistics">Ingen användningsstatistik ännu</string>
     <string name="no_usage_statistics_sub">Öppna några verktyg så visas de här automatiskt</string>
-    <string name="usage_statistics_info">Din användningsstatistik lagras endast lokalt på din enhet. ImageToolbox använder dem endast för att visa din personliga aktivitet, favoritverktyg och sparade datainsikter</string>
+    <string name="usage_statistics_info">Din användningsstatistik lagras endast lokalt på din enhet. SnapForge använder dem endast för att visa din personliga aktivitet, favoritverktyg och sparade datainsikter</string>
     <string name="search_keywords_single_edit">redigerare redigera foto bild retuschera justera</string>
     <string name="search_keywords_resize_and_convert">ändra storlek konvertera skala upplösning dimensioner bredd höjd jpg jpeg png webp komprimera</string>
     <string name="search_keywords_weight_resize">komprimera storlek vikt byte mb kb minska kvaliteten optimera</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Använd förhandsgranskningen som är inbäddad i RAW-bilden istället för att framkalla den</string>
     <string name="score">Göra</string>
     <string name="return_to_external_app_after_save">Återgå efter att ha sparat externa redigeringar</string>
-    <string name="return_to_external_app_after_save_sub">Stäng Image Toolbox efter att du har sparat en bild som öppnats för redigering från en annan app</string>
-    <string name="add_imagetoolbox_metadata">Lägg till ImageToolbox-metadata</string>
+    <string name="return_to_external_app_after_save_sub">Stäng SnapForge efter att du har sparat en bild som öppnats för redigering från en annan app</string>
+    <string name="add_imagetoolbox_metadata">Lägg till SnapForge-metadata</string>
     <string name="add_imagetoolbox_metadata_sub">Skriv appversionen och konfigurerade bildparametrar till EXIF ​​när du sparar</string>
     <string name="read_only">Endast läs</string>
     <string name="tag_camera_firmware">Kamerans firmware</string>
@@ -5049,7 +5049,7 @@
     <string name="slate">Skiffer</string>
     <string name="search_keywords_pdf_dark_mode">pdf mörkt läge nattläsare invertera negativa färger</string>
     <string name="custom_depth_map">Anpassad djupkarta</string>
-    <string name="custom_depth_map_sub">Frivillig. Återanvänd en djupkarta i gråskala eller Image Toolbox istället för att uppskatta djupet igen</string>
+    <string name="custom_depth_map_sub">Frivillig. Återanvänd en djupkarta i gråskala eller SnapForge istället för att uppskatta djupet igen</string>
     <string name="comic_to_pdf">Serietidning till pdf</string>
     <string name="comic_to_pdf_sub">Konvertera CBR, CBZ, CB7 och andra bildarkiv till PDF</string>
     <string name="select_comic_archive_to_start">Välj ett CBR-, CBZ-, CB7- eller CBT-serieboksarkiv</string>

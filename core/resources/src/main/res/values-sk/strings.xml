@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -825,7 +825,7 @@
     <string name="material_you_switch_sub">Používa prepínač Material You založený na View, tento vyzerá lepšie ako ostatné a má pekné animácie.</string>
     <string name="fast_gaussian_blur_3d">Rýchle Gaussovo rozostrenie 3D</string>
     <string name="cupertino_switch">Cupertino</string>
-    <string name="embedded_picker_sub">Používa vlastný nástroj Image Toolbox na výber obrázkov namiesto preddefinovaných v systéme</string>
+    <string name="embedded_picker_sub">Používa vlastný nástroj SnapForge na výber obrázkov namiesto preddefinovaných v systéme</string>
     <string name="no_permissions">Žiadne povolenia</string>
     <string name="request">Žiadosť</string>
     <string name="auto_paste_sub">Umožňuje aplikácii automaticky prilepiť údaje zo schránky, takže sa zobrazia na hlavnej obrazovke a budete ich môcť spracovať</string>
@@ -1074,7 +1074,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Umožňuje antialiasing, aby sa zabránilo ostrým hranám</string>
     <string name="open_edit_instead_of_preview">Namiesto ukážky otvorte Upraviť</string>
-    <string name="open_edit_instead_of_preview_sub">Keď v ImageToolbox vyberiete obrázok na otvorenie (ukážka), namiesto náhľadu sa otvorí hárok s výberom úprav</string>
+    <string name="open_edit_instead_of_preview_sub">Keď v SnapForge vyberiete obrázok na otvorenie (ukážka), namiesto náhľadu sa otvorí hárok s výberom úprav</string>
     <string name="document_scanner">Skener dokumentov</string>
     <string name="document_scanner_sub">Naskenujte dokumenty a vytvorte z nich súbory PDF alebo samostatné obrázky</string>
     <string name="click_to_start_scanning">Kliknutím spustíte skenovanie</string>
@@ -1349,7 +1349,7 @@
     <string name="webp_type_to_webp">Obrázky na WEBP</string>
     <string name="select_webp_image_to_start">Začnite výberom obrázka WEBP</string>
     <string name="manage_storage_extra_types">Žiadny úplný prístup k súborom</string>
-    <string name="manage_storage_extra_types_sub">Povoľte prístup k všetkým súborom, aby ste mohli vidieť obrázky JXL, QOI a ďalšie obrázky, ktoré nie sú v systéme Android rozpoznané ako obrázky. Bez povolenia Image Toolbox nemôže zobraziť tieto obrázky</string>
+    <string name="manage_storage_extra_types_sub">Povoľte prístup k všetkým súborom, aby ste mohli vidieť obrázky JXL, QOI a ďalšie obrázky, ktoré nie sú v systéme Android rozpoznané ako obrázky. Bez povolenia SnapForge nemôže zobraziť tieto obrázky</string>
     <string name="default_draw_color">Predvolená farba kreslenia</string>
     <string name="default_draw_path_mode">Predvolený režim cesty kreslenia</string>
     <string name="add_timestamp">Pridať časovú pečiatku</string>
@@ -1835,7 +1835,7 @@
     <string name="export_palette_sub">Exportujte vygenerovanú paletu do rôznych formátov</string>
     <string name="add_color_palette_sub">Pridá novú farbu do aktuálnej palety</string>
     <string name="palette_name_not_supported">Formát %1$s nepodporuje poskytnutie názvu palety</string>
-    <string name="wallpapers_export_not_avaialbe">Vzhľadom na pravidlá Obchodu Play túto funkciu nemožno zahrnúť do aktuálnej zostavy. Ak chcete získať prístup k tejto funkcii, stiahnite si ImageToolbox z alternatívneho zdroja. Dostupné zostavy na GitHub nájdete nižšie.</string>
+    <string name="wallpapers_export_not_avaialbe">Vzhľadom na pravidlá Obchodu Play túto funkciu nemožno zahrnúť do aktuálnej zostavy. Ak chcete získať prístup k tejto funkcii, stiahnite si SnapForge z alternatívneho zdroja. Dostupné zostavy na GitHub nájdete nižšie.</string>
     <string name="open_github_page">Otvorte stránku Github</string>
     <string name="overwrite_files_sub_short">Pôvodný súbor bude nahradený novým súborom namiesto uloženia do zvoleného priečinka</string>
     <string name="hidden_watermark_text_detected">Zistil sa skrytý text vodoznaku</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Previesť všetky obrázky vložené do dokumentu na odtiene sivej</string>
     <string name="compress_pdf">Zmenšiť veľkosť súboru PDF</string>
     <string name="compress_pdf_sub">Optimalizujte veľkosť súboru dokumentu pre jednoduchšie zdieľanie</string>
-    <string name="repair_info">ImageToolbox prestavuje internú tabuľku krížových odkazov a regeneruje štruktúru súborov od začiatku. To môže obnoviť prístup k mnohým súborom, ktoré \\\"nemožno otvoriť\\\"</string>
+    <string name="repair_info">SnapForge prestavuje internú tabuľku krížových odkazov a regeneruje štruktúru súborov od začiatku. To môže obnoviť prístup k mnohým súborom, ktoré \\\"nemožno otvoriť\\\"</string>
     <string name="grayscale_info">Tento nástroj skonvertuje všetky obrázky dokumentov do odtieňov sivej. Najlepšie na tlač a zmenšenie veľkosti súboru</string>
     <string name="metadata">Metadáta</string>
     <string name="metadata_pdf_sub">Upravte vlastnosti dokumentu pre väčšie súkromie</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Farba pozadia pre formáty s priehľadnosťou</string>
     <string name="background_color_for_alpha_formats_sub">Pridáva možnosť nastaviť farbu pozadia pre každý formát obrázku s podporou priehľadnosti; ak je táto funkcia vypnutá, je k dispozícii len pre formáty bez priehľadnosti.</string>
     <string name="open_markup_project">Otvorte projekt</string>
-    <string name="open_markup_project_sub">Pokračujte v úpravách predtým uloženého projektu Image Toolbox</string>
-    <string name="markup_project_open_failed">Nie je možné otvoriť projekt Image Toolbox</string>
-    <string name="markup_project_missing_data">Projektu Image Toolbox chýbajú projektové údaje</string>
-    <string name="markup_project_corrupted">Projekt Image Toolbox je poškodený</string>
-    <string name="unsupported_markup_project_version">Nepodporovaná verzia projektu Image Toolbox: %1$d</string>
+    <string name="open_markup_project_sub">Pokračujte v úpravách predtým uloženého projektu SnapForge</string>
+    <string name="markup_project_open_failed">Nie je možné otvoriť projekt SnapForge</string>
+    <string name="markup_project_missing_data">Projektu SnapForge chýbajú projektové údaje</string>
+    <string name="markup_project_corrupted">Projekt SnapForge je poškodený</string>
+    <string name="unsupported_markup_project_version">Nepodporovaná verzia projektu SnapForge: %1$d</string>
     <string name="save_markup_project">Uložiť projekt</string>
     <string name="save_markup_project_sub">Uložte vrstvy, pozadie a históriu úprav do upraviteľného súboru projektu</string>
     <string name="failed_to_open">Nepodarilo sa otvoriť</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Vyberte si správny nástroj</string>
     <string name="help_tip_choose_tool_subtitle">Ak chcete začať na správnom mieste, použite kategórie, vyhľadávanie, obľúbené položky a akcie zdieľania</string>
     <string name="help_tip_choose_tool_page_title">Začnite od najlepšieho vstupného bodu</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox ponúka množstvo špecializovaných nástrojov, z ktorých sa mnohé na prvý pohľad zdajú byť podobné. Začnite od úlohy, ktorú chcete dokončiť, a potom vyberte nástroj, ktorý ovplyvňuje najdôležitejšiu časť výsledku: veľkosť, formát, metadáta, text, stránky PDF, farby alebo rozloženie.</string>
+    <string name="help_tip_choose_tool_description">SnapForge ponúka množstvo špecializovaných nástrojov, z ktorých sa mnohé na prvý pohľad zdajú byť podobné. Začnite od úlohy, ktorú chcete dokončiť, a potom vyberte nástroj, ktorý ovplyvňuje najdôležitejšiu časť výsledku: veľkosť, formát, metadáta, text, stránky PDF, farby alebo rozloženie.</string>
     <string name="help_tip_choose_tool_step_1">Vyhľadávanie použite, keď poznáte názov akcie, ako je zmena veľkosti, PDF, EXIF, OCR, QR alebo farba.</string>
     <string name="help_tip_choose_tool_step_2">Otvorte kategóriu, keď poznáte iba typ úlohy, a potom pripnite časté nástroje medzi obľúbené.</string>
-    <string name="help_tip_choose_tool_step_3">Keď iná aplikácia zdieľa obrázok do Image Toolbox, vyberte nástroj z toku zdieľania hárka.</string>
+    <string name="help_tip_choose_tool_step_3">Keď iná aplikácia zdieľa obrázok do SnapForge, vyberte nástroj z toku zdieľania hárka.</string>
     <string name="help_tip_import_save_share_title">Importujte, ukladajte a zdieľajte výsledky</string>
     <string name="help_tip_import_save_share_subtitle">Pochopte obvyklý postup od výberu vstupu po export upraveného súboru</string>
     <string name="help_tip_import_save_share_page_title">Postupujte podľa bežného postupu úprav</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Výber a spúšťač</string>
     <string name="help_tip_picker_launcher_subtitle">Nastavenia výberu použite, keď aplikácia otvorí príliš veľa dialógových okien alebo sa spustí na nesprávnom mieste</string>
     <string name="help_tip_picker_launcher_page_title">Nastavte otváranie súborov tak, aby vyhovovalo vašim zvykom</string>
-    <string name="help_tip_picker_launcher_description">Nastavenia výberu a spúšťača ovládajú, či sa Image Toolbox spustí z hlavnej obrazovky, nástroja alebo toku výberu súboru. Tieto možnosti sú užitočné najmä vtedy, keď zvyčajne zadávate z hárku zdieľania systému Android alebo keď chcete, aby aplikácia vyzerala skôr ako spúšťač nástrojov.</string>
+    <string name="help_tip_picker_launcher_description">Nastavenia výberu a spúšťača ovládajú, či sa SnapForge spustí z hlavnej obrazovky, nástroja alebo toku výberu súboru. Tieto možnosti sú užitočné najmä vtedy, keď zvyčajne zadávate z hárku zdieľania systému Android alebo keď chcete, aby aplikácia vyzerala skôr ako spúšťač nástrojov.</string>
     <string name="help_tip_picker_launcher_step_1">Nastavenia výberu fotografií použite, ak nástroj na výber systému skrýva súbory, zobrazuje príliš veľa nedávnych položiek alebo zle spracováva cloudové súbory.</string>
     <string name="help_tip_picker_launcher_step_2">Povoľte preskakovanie iba pre nástroje, do ktorých zvyčajne zadávate zo zdieľania alebo už poznáte zdrojový súbor.</string>
-    <string name="help_tip_picker_launcher_step_3">Skontrolujte režim spúšťača, ak chcete, aby sa nástroj Image Toolbox správal viac ako nástroj na výber nástrojov než ako bežná domovská obrazovka.</string>
+    <string name="help_tip_picker_launcher_step_3">Skontrolujte režim spúšťača, ak chcete, aby sa nástroj SnapForge správal viac ako nástroj na výber nástrojov než ako bežná domovská obrazovka.</string>
     <string name="help_tip_image_source_title">Zdroj obrázka</string>
     <string name="help_tip_image_source_subtitle">Vyberte režim výberu, ktorý najlepšie funguje s galériami, správcami súborov a cloudovými súbormi</string>
     <string name="help_tip_image_source_page_title">Vyberte súbory zo správneho zdroja</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Priečinky na jednorazové uloženie</string>
     <string name="help_tip_one_time_save_location_subtitle">Pošlite ďalšie exporty do dočasného priečinka bez zmeny vášho normálneho cieľa</string>
     <string name="help_tip_one_time_save_location_page_title">Udržujte špeciálne úlohy oddelené</string>
-    <string name="help_tip_one_time_save_location_description">Umiestnenie na jednorazové uloženie je užitočné pre dočasné projekty, klientske priečinky, relácie čistenia alebo exporty, ktoré by sa nemali miešať s bežným priečinkom Image Toolbox. Poskytuje krátkodobý cieľ bez prepisovania predvoleného nastavenia.</string>
+    <string name="help_tip_one_time_save_location_description">Umiestnenie na jednorazové uloženie je užitočné pre dočasné projekty, klientske priečinky, relácie čistenia alebo exporty, ktoré by sa nemali miešať s bežným priečinkom SnapForge. Poskytuje krátkodobý cieľ bez prepisovania predvoleného nastavenia.</string>
     <string name="help_tip_one_time_save_location_step_1">Pred spustením úlohy vyberte jednorazový priečinok, ktorý nepatrí do vášho normálneho umiestnenia exportu.</string>
     <string name="help_tip_one_time_save_location_step_2">Použite ho pre krátke projekty, zdieľané priečinky alebo dávky, kde výstupy musia zostať zoskupené.</string>
     <string name="help_tip_one_time_save_location_step_3">Po vykonaní úlohy sa vráťte do predvoleného priečinka, aby sa neskoršie exporty neočakávane nedostali do dočasného umiestnenia.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d sa otvorí • %2$s</string>
     <string name="no_usage_statistics">Zatiaľ žiadne štatistiky používania</string>
     <string name="no_usage_statistics_sub">Otvorte niekoľko nástrojov a automaticky sa tu zobrazia</string>
-    <string name="usage_statistics_info">Štatistiky používania sú uložené iba lokálne vo vašom zariadení. ImageToolbox ich používa iba na zobrazenie vašej osobnej aktivity, obľúbených nástrojov a prehľadov uložených údajov</string>
+    <string name="usage_statistics_info">Štatistiky používania sú uložené iba lokálne vo vašom zariadení. SnapForge ich používa iba na zobrazenie vašej osobnej aktivity, obľúbených nástrojov a prehľadov uložených údajov</string>
     <string name="search_keywords_single_edit">editor upraviť fotografiu obrázok retuš upraviť</string>
     <string name="search_keywords_resize_and_convert">zmeniť veľkosť konvertovať mierka rozlíšenie rozmery šírka výška jpg jpeg png webp komprimovať</string>
     <string name="search_keywords_weight_resize">komprimovať veľkosť hmotnosť bajtov mb kb znížiť kvalitu optimalizovať</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Namiesto vyvolávania použite náhľad vložený do obrázka RAW</string>
     <string name="score">skóre</string>
     <string name="return_to_external_app_after_save">Vráťte sa po uložení externých úprav</string>
-    <string name="return_to_external_app_after_save_sub">Po uložení obrázka otvoreného na úpravu z inej aplikácie zatvorte nástroj Image Toolbox</string>
-    <string name="add_imagetoolbox_metadata">Pridajte metadáta ImageToolbox</string>
+    <string name="return_to_external_app_after_save_sub">Po uložení obrázka otvoreného na úpravu z inej aplikácie zatvorte nástroj SnapForge</string>
+    <string name="add_imagetoolbox_metadata">Pridajte metadáta SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Pri ukladaní zapíšte verziu aplikácie a nakonfigurované parametre obrázka do EXIF</string>
     <string name="read_only">Iba na čítanie</string>
     <string name="tag_camera_firmware">Firmvér fotoaparátu</string>

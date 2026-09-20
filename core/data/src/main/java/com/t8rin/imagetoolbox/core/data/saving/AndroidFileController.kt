@@ -964,7 +964,7 @@ internal class AndroidFileController @Inject constructor(
             openFileDescriptor(fileUri)?.use {
                 it.fileDescriptor.toMetadata().apply {
                     this[MetadataTag.Software] =
-                        "ImageToolbox ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})"
+                        "SnapForge ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})"
 
                     val oldComment = this[MetadataTag.UserComment]
                         ?.lineSequence()
@@ -1013,4 +1013,4 @@ private fun ImageSaveTarget.imageToolboxMetadata(): String {
 }
 
 private const val FILE_EXPLORER_PICKER_MODE = 3
-private const val IMAGETOOLBOX_METADATA_PREFIX = "ImageToolbox parameters: "
+private const val IMAGETOOLBOX_METADATA_PREFIX = "SnapForge parameters: "

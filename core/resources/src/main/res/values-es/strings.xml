@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -885,7 +885,7 @@
     <string name="recently_used">Usados recientemente</string>
     <string name="ci_channel">Canal CI</string>
     <string name="group">Grupo</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox en Telegram 🎉</string>
+    <string name="image_toolbox_in_telegram">SnapForge en Telegram 🎉</string>
     <string name="font_size">Tamaño de fuente</string>
     <string name="watermark_size">Tamaño de marca de agua</string>
     <string name="custom_options">Opciones personalizadas</string>
@@ -1041,7 +1041,7 @@
     <string name="default_line_width">Anchura de línea predeterminada</string>
     <string name="show_settings_in_landscape">Mostrar ajustes en vista horizontal</string>
     <string name="embedded_picker">Selector integrado</string>
-    <string name="embedded_picker_sub">Selector de imágenes de Image Toolbox</string>
+    <string name="embedded_picker_sub">Selector de imágenes de SnapForge</string>
     <string name="no_permissions">Sin permisos</string>
     <string name="request">Solicitar</string>
     <string name="auto_paste">Pegado automático</string>
@@ -1228,7 +1228,7 @@
     <string name="fluent_switch">Fluido</string>
     <string name="tag_device_setting_description">Descripción de ajustes de dispositivo</string>
     <string name="reset_curves_sub">Las curvas serán reestablecidas al valor predeterminado</string>
-    <string name="open_edit_instead_of_preview_sub">Cuando seleccionas una imagen para abrir (vista previa) en ImageToolbox, la hoja de selección de edición se abrirá en vez de mostrar la vista previa</string>
+    <string name="open_edit_instead_of_preview_sub">Cuando seleccionas una imagen para abrir (vista previa) en SnapForge, la hoja de selección de edición se abrirá en vez de mostrar la vista previa</string>
     <string name="barcodes_sub">Escanea cualquier código de barras (QR, EAN, AZTEC, …) y obtén su contenido o pega tu texto para generar uno nuevo</string>
     <string name="lanczos2_jinc_sub">Una variante del filtro Lanczos 2 que usa la función jinc, proveyendo interpolación de alta calidad con distorsiones mínimas</string>
     <string name="compose_switch_sub">Un interruptor Jetpack Compose Material You</string>
@@ -1322,7 +1322,7 @@
     <string name="golden_forest">Bosque Dorado</string>
     <string name="webp_tools_sub">Convierte imágenes a imágenes WEBP animadas o extrae frames de un archivo WEBP animado dado</string>
     <string name="ico_size_warning">Los archivos ICO sólo pueden ser guardados con tamaño máximo de 256 x 256</string>
-    <string name="manage_storage_extra_types_sub">Permite acceso a todos los archivos para ver JXL, QOI y otras imágenes que no son reconocidas como imágenes en Android. Sin los permisos, Image Toolbox no podrá mostrar esas imágenes</string>
+    <string name="manage_storage_extra_types_sub">Permite acceso a todos los archivos para ver JXL, QOI y otras imágenes que no son reconocidas como imágenes en Android. Sin los permisos, SnapForge no podrá mostrar esas imágenes</string>
     <string name="formatted_timestamp">Marca de tiempo con formato</string>
     <string name="formatted_timestamp_sub">Habilita el formateo de marcas de tiempo (Timestamps) en el nombre del archivo de salida, en lugar de milisegundos básicos</string>
     <string name="auto">Auto</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Exportar paleta generada a diferentes formatos.</string>
     <string name="add_color_palette_sub">Agrega un nuevo color a la paleta actual</string>
     <string name="palette_name_not_supported">El formato %1$s no admite proporcionar el nombre de la paleta</string>
-    <string name="wallpapers_export_not_avaialbe">Debido a las políticas de Play Store, esta función no se puede incluir en la versión actual. Para acceder a esta funcionalidad, descargue ImageToolbox desde una fuente alternativa. Puede encontrar las compilaciones disponibles en GitHub a continuación.</string>
+    <string name="wallpapers_export_not_avaialbe">Debido a las políticas de Play Store, esta función no se puede incluir en la versión actual. Para acceder a esta funcionalidad, descargue SnapForge desde una fuente alternativa. Puede encontrar las compilaciones disponibles en GitHub a continuación.</string>
     <string name="open_github_page">Abrir página de Github</string>
     <string name="overwrite_files_sub_short">El archivo original será reemplazado por uno nuevo en lugar de guardarse en la carpeta seleccionada.</string>
     <string name="hidden_watermark_text_detected">Texto de marca de agua oculto detectado</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Convierta todas las imágenes incrustadas en documentos a escala de grises</string>
     <string name="compress_pdf">Comprimir PDF</string>
     <string name="compress_pdf_sub">Optimice el tamaño del archivo de su documento para compartirlo más fácilmente</string>
-    <string name="repair_info">ImageToolbox reconstruye la tabla de referencias cruzadas interna y regenera la estructura del archivo desde cero. Esto puede restaurar el acceso a muchos archivos que \\\"no se pueden abrir\\\"</string>
+    <string name="repair_info">SnapForge reconstruye la tabla de referencias cruzadas interna y regenera la estructura del archivo desde cero. Esto puede restaurar el acceso a muchos archivos que \\\"no se pueden abrir\\\"</string>
     <string name="grayscale_info">Esta herramienta convierte todas las imágenes de documentos a escala de grises. Lo mejor para imprimir y reducir el tamaño del archivo</string>
     <string name="metadata">Metadatos</string>
     <string name="metadata_pdf_sub">Edite las propiedades del documento para una mayor privacidad</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Color de fondo para formatos alfa</string>
     <string name="background_color_for_alpha_formats_sub">Agrega la capacidad de establecer el color de fondo para cada formato de imagen con soporte alfa; cuando está deshabilitado, está disponible solo para los que no son alfa.</string>
     <string name="open_markup_project">Abrir proyecto</string>
-    <string name="open_markup_project_sub">Continuar editando un proyecto de Image Toolbox previamente guardado</string>
-    <string name="markup_project_open_failed">No se puede abrir el proyecto de Image Toolbox</string>
-    <string name="markup_project_missing_data">Al proyecto Image Toolbox le faltan datos del proyecto</string>
-    <string name="markup_project_corrupted">El proyecto Image Toolbox está dañado</string>
-    <string name="unsupported_markup_project_version">Versión del proyecto Image Toolbox no compatible: %1$d</string>
+    <string name="open_markup_project_sub">Continuar editando un proyecto de SnapForge previamente guardado</string>
+    <string name="markup_project_open_failed">No se puede abrir el proyecto de SnapForge</string>
+    <string name="markup_project_missing_data">Al proyecto SnapForge le faltan datos del proyecto</string>
+    <string name="markup_project_corrupted">El proyecto SnapForge está dañado</string>
+    <string name="unsupported_markup_project_version">Versión del proyecto SnapForge no compatible: %1$d</string>
     <string name="save_markup_project">Guardar proyecto</string>
     <string name="save_markup_project_sub">Almacene capas, fondos y edite el historial en un archivo de proyecto editable</string>
     <string name="failed_to_open">No se pudo abrir</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Elija la herramienta adecuada</string>
     <string name="help_tip_choose_tool_subtitle">Utilice categorías, busque, favoritos y comparta acciones para comenzar en el lugar correcto</string>
     <string name="help_tip_choose_tool_page_title">Comience desde el mejor punto de entrada</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox tiene muchas herramientas específicas y muchas de ellas se superponen a primera vista. Comience desde la tarea que desea finalizar, luego elija la herramienta que controla la parte más importante del resultado: tamaño, formato, metadatos, texto, páginas PDF, colores o diseño.</string>
+    <string name="help_tip_choose_tool_description">SnapForge tiene muchas herramientas específicas y muchas de ellas se superponen a primera vista. Comience desde la tarea que desea finalizar, luego elija la herramienta que controla la parte más importante del resultado: tamaño, formato, metadatos, texto, páginas PDF, colores o diseño.</string>
     <string name="help_tip_choose_tool_step_1">Utilice la búsqueda cuando conozca el nombre de la acción, como cambiar tamaño, PDF, EXIF, OCR, QR o color.</string>
     <string name="help_tip_choose_tool_step_2">Abra una categoría cuando solo conozca el tipo de tarea y luego fije las herramientas frecuentes como favoritas.</string>
-    <string name="help_tip_choose_tool_step_3">Cuando otra aplicación comparte una imagen en Image Toolbox, seleccione la herramienta del flujo de la hoja para compartir.</string>
+    <string name="help_tip_choose_tool_step_3">Cuando otra aplicación comparte una imagen en SnapForge, seleccione la herramienta del flujo de la hoja para compartir.</string>
     <string name="help_tip_import_save_share_title">Importar, guardar y compartir resultados</string>
     <string name="help_tip_import_save_share_subtitle">Comprender el flujo habitual desde la selección de datos hasta la exportación del archivo editado.</string>
     <string name="help_tip_import_save_share_page_title">Siga el flujo de edición común</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Selector y lanzador</string>
     <string name="help_tip_picker_launcher_subtitle">Utilice la configuración del selector cuando la aplicación abra demasiados cuadros de diálogo o se inicie en el lugar equivocado</string>
     <string name="help_tip_picker_launcher_page_title">Haga que abrir archivos coincida con su hábito</string>
-    <string name="help_tip_picker_launcher_description">La configuración del selector y del iniciador controla si Image Toolbox se inicia desde la pantalla principal, una herramienta o un flujo de selección de archivos. Estas opciones son especialmente útiles cuando normalmente ingresas desde la hoja para compartir de Android o cuando quieres que la aplicación se parezca más a un iniciador de herramientas.</string>
+    <string name="help_tip_picker_launcher_description">La configuración del selector y del iniciador controla si SnapForge se inicia desde la pantalla principal, una herramienta o un flujo de selección de archivos. Estas opciones son especialmente útiles cuando normalmente ingresas desde la hoja para compartir de Android o cuando quieres que la aplicación se parezca más a un iniciador de herramientas.</string>
     <string name="help_tip_picker_launcher_step_1">Utilice la configuración del selector de fotos si el selector del sistema oculta archivos, muestra demasiados elementos recientes o maneja mal los archivos en la nube.</string>
     <string name="help_tip_picker_launcher_step_2">Habilite la omisión de selección solo para herramientas en las que normalmente ingresa desde el recurso compartido o donde ya conoce el archivo fuente.</string>
-    <string name="help_tip_picker_launcher_step_3">Revise el modo de inicio si desea que Image Toolbox se comporte más como un selector de herramientas que como una pantalla de inicio normal.</string>
+    <string name="help_tip_picker_launcher_step_3">Revise el modo de inicio si desea que SnapForge se comporte más como un selector de herramientas que como una pantalla de inicio normal.</string>
     <string name="help_tip_image_source_title">Fuente de la imagen</string>
     <string name="help_tip_image_source_subtitle">Elija el modo de selección que funcione mejor con galerías, administradores de archivos y archivos en la nube</string>
     <string name="help_tip_image_source_page_title">Elija archivos de la fuente correcta</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Carpetas guardadas una sola vez</string>
     <string name="help_tip_one_time_save_location_subtitle">Envíe las próximas exportaciones a una carpeta temporal sin cambiar su destino normal</string>
     <string name="help_tip_one_time_save_location_page_title">Mantenga los trabajos especiales separados</string>
-    <string name="help_tip_one_time_save_location_description">La ubicación para guardar de una sola vez es útil para proyectos temporales, carpetas de clientes, sesiones de limpieza o exportaciones que no deben mezclarse con su carpeta habitual de Image Toolbox. Ofrece un destino de corta duración sin reescribir su configuración predeterminada.</string>
+    <string name="help_tip_one_time_save_location_description">La ubicación para guardar de una sola vez es útil para proyectos temporales, carpetas de clientes, sesiones de limpieza o exportaciones que no deben mezclarse con su carpeta habitual de SnapForge. Ofrece un destino de corta duración sin reescribir su configuración predeterminada.</string>
     <string name="help_tip_one_time_save_location_step_1">Elija una carpeta de uso único antes de comenzar una tarea que pertenezca fuera de su ubicación de exportación normal.</string>
     <string name="help_tip_one_time_save_location_step_2">Úselo para proyectos cortos, carpetas compartidas o lotes donde los resultados deben permanecer agrupados.</string>
     <string name="help_tip_one_time_save_location_step_3">Regrese a la carpeta predeterminada después del trabajo para que las exportaciones posteriores no acaben inesperadamente en la ubicación temporal.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d abre • %2$s</string>
     <string name="no_usage_statistics">Aún no hay estadísticas de uso</string>
     <string name="no_usage_statistics_sub">Abra algunas herramientas y aparecerán aquí automáticamente.</string>
-    <string name="usage_statistics_info">Sus estadísticas de uso se almacenan solo localmente en su dispositivo. ImageToolbox los usa solo para mostrar su actividad personal, herramientas favoritas e información sobre datos guardados.</string>
+    <string name="usage_statistics_info">Sus estadísticas de uso se almacenan solo localmente en su dispositivo. SnapForge los usa solo para mostrar su actividad personal, herramientas favoritas e información sobre datos guardados.</string>
     <string name="search_keywords_single_edit">editor editar foto retoque de imagen ajustar</string>
     <string name="search_keywords_resize_and_convert">cambiar tamaño convertir escala resolución dimensiones ancho alto jpg jpeg png webp comprimir</string>
     <string name="search_keywords_weight_resize">comprimir tamaño peso bytes mb kb reducir calidad optimizar</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Utilice la vista previa incrustada en la imagen RAW en lugar de revelarla</string>
     <string name="score">Puntaje</string>
     <string name="return_to_external_app_after_save">Volver después de guardar ediciones externas</string>
-    <string name="return_to_external_app_after_save_sub">Cierre Image Toolbox después de guardar una imagen abierta para editarla desde otra aplicación</string>
-    <string name="add_imagetoolbox_metadata">Agregar metadatos de ImageToolbox</string>
+    <string name="return_to_external_app_after_save_sub">Cierre SnapForge después de guardar una imagen abierta para editarla desde otra aplicación</string>
+    <string name="add_imagetoolbox_metadata">Agregar metadatos de SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Escriba la versión de la aplicación y los parámetros de imagen configurados en EXIF ​​al guardar</string>
     <string name="read_only">Solo lectura</string>
     <string name="tag_camera_firmware">Firmware de la cámara</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">Pizarra</string>
     <string name="search_keywords_pdf_dark_mode">pdf modo oscuro lector nocturno invertir colores negativo</string>
     <string name="custom_depth_map">Mapa de profundidad personalizado</string>
-    <string name="custom_depth_map_sub">Opcional. Reutilice un mapa de profundidad en escala de grises o Image Toolbox en lugar de estimar la profundidad nuevamente</string>
+    <string name="custom_depth_map_sub">Opcional. Reutilice un mapa de profundidad en escala de grises o SnapForge en lugar de estimar la profundidad nuevamente</string>
     <string name="comic_to_pdf">Cómic a PDF</string>
     <string name="comic_to_pdf_sub">Convierta CBR, CBZ, CB7 y otros archivos de imágenes a PDF</string>
     <string name="select_comic_archive_to_start">Seleccione un archivo de cómics CBR, CBZ, CB7 o CBT</string>

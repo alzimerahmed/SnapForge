@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -840,7 +840,7 @@
     <string name="layers_on_background">Straturi pe fundal</string>
     <string name="layers_on_background_sub">La fel ca prima opțiune, dar cu culoare în loc de imagine</string>
     <string name="embedded_picker">Selector încorporat</string>
-    <string name="embedded_picker_sub">Folosește propriul selector de imagini Image Toolbox în locul celor predefinite de sistem</string>
+    <string name="embedded_picker_sub">Folosește propriul selector de imagini SnapForge în locul celor predefinite de sistem</string>
     <string name="skip_file_picking">Săriți peste selectarea fișierelor</string>
     <string name="skip_file_picking_sub">Selectorul de fișiere va fi afișat imediat dacă acest lucru este posibil pe ecranul ales</string>
     <string name="select_webp_image_to_start">Alegeți imaginea WEBP pentru a începe</string>
@@ -1007,7 +1007,7 @@
     <string name="fast_settings_side_sub">Adăugați o bandă plutitoare în partea aleasă în timpul editării imaginilor, care va deschide setările rapide dacă faceți clic pe ea</string>
     <string name="checksum_as_filename">Suma de control ca nume de fișier</string>
     <string name="auto_paste">Lipire automată</string>
-    <string name="open_edit_instead_of_preview_sub">Atunci când selectați imaginea pentru a o deschide (previzualizare) în ImageToolbox, în loc de previzualizare se va deschide foaia de selecție de editare</string>
+    <string name="open_edit_instead_of_preview_sub">Atunci când selectați imaginea pentru a o deschide (previzualizare) în SnapForge, în loc de previzualizare se va deschide foaia de selecție de editare</string>
     <string name="allow_enter_by_text_field">Permiteți introducerea pe câmpul de text</string>
     <string name="allow_enter_by_text_field_sub">Activează câmpul de text din spatele selecției presetărilor, pentru a le introduce din mers</string>
     <string name="add_timestamp_sub">Activează adăugarea marcajului temporal la numele fișierului de ieșire</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Exportați paleta generată în diferite formate</string>
     <string name="add_color_palette_sub">Adaugă o nouă culoare paletei curente</string>
     <string name="palette_name_not_supported">Formatul %1$s nu acceptă furnizarea numelui paletei</string>
-    <string name="wallpapers_export_not_avaialbe">Din cauza politicilor Magazinului Play, această funcție nu poate fi inclusă în versiunea actuală. Pentru a accesa această funcționalitate, vă rugăm să descărcați ImageToolbox dintr-o sursă alternativă. Puteți găsi versiunile disponibile pe GitHub mai jos.</string>
+    <string name="wallpapers_export_not_avaialbe">Din cauza politicilor Magazinului Play, această funcție nu poate fi inclusă în versiunea actuală. Pentru a accesa această funcționalitate, vă rugăm să descărcați SnapForge dintr-o sursă alternativă. Puteți găsi versiunile disponibile pe GitHub mai jos.</string>
     <string name="open_github_page">Deschideți pagina Github</string>
     <string name="overwrite_files_sub_short">Fișierul original va fi înlocuit cu unul nou în loc să fie salvat în folderul selectat</string>
     <string name="hidden_watermark_text_detected">S-a detectat text filigran ascuns</string>
@@ -2137,7 +2137,7 @@
     <string name="grayscale_pdf_sub">Convertiți toate imaginile încorporate în document în tonuri de gri</string>
     <string name="compress_pdf">Comprimați PDF</string>
     <string name="compress_pdf_sub">Optimizați dimensiunea fișierului documentului pentru o partajare mai ușoară</string>
-    <string name="repair_info">ImageToolbox reconstruiește tabelul intern de referințe încrucișate și regenerează structura fișierului de la zero. Acest lucru poate restabili accesul la multe fișiere care „nu pot fi deschise”</string>
+    <string name="repair_info">SnapForge reconstruiește tabelul intern de referințe încrucișate și regenerează structura fișierului de la zero. Acest lucru poate restabili accesul la multe fișiere care „nu pot fi deschise”</string>
     <string name="grayscale_info">Acest instrument convertește toate imaginile documentului în tonuri de gri. Cel mai bun pentru tipărirea și reducerea dimensiunii fișierului</string>
     <string name="metadata">Metadate</string>
     <string name="metadata_pdf_sub">Editați proprietățile documentului pentru o confidențialitate mai bună</string>
@@ -2189,11 +2189,11 @@
     <string name="background_color_for_alpha_formats">Culoare de fundal pentru formatele Alpha</string>
     <string name="background_color_for_alpha_formats_sub">Adaugă capacitatea de a seta culoarea de fundal pentru fiecare format de imagine cu suport alfa, când este dezactivat, acesta este disponibil numai pentru cele non alfa</string>
     <string name="open_markup_project">Proiect deschis</string>
-    <string name="open_markup_project_sub">Continuați editarea unui proiect Image Toolbox salvat anterior</string>
-    <string name="markup_project_open_failed">Imposibil de deschis proiectul Image Toolbox</string>
-    <string name="markup_project_missing_data">Din proiectul Image Toolbox lipsesc date de proiect</string>
-    <string name="markup_project_corrupted">Proiectul Image Toolbox este corupt</string>
-    <string name="unsupported_markup_project_version">Versiunea proiectului Image Toolbox neacceptată: %1$d</string>
+    <string name="open_markup_project_sub">Continuați editarea unui proiect SnapForge salvat anterior</string>
+    <string name="markup_project_open_failed">Imposibil de deschis proiectul SnapForge</string>
+    <string name="markup_project_missing_data">Din proiectul SnapForge lipsesc date de proiect</string>
+    <string name="markup_project_corrupted">Proiectul SnapForge este corupt</string>
+    <string name="unsupported_markup_project_version">Versiunea proiectului SnapForge neacceptată: %1$d</string>
     <string name="save_markup_project">Salvați proiectul</string>
     <string name="save_markup_project_sub">Stocați straturi, fundal și editează istoricul într-un fișier de proiect editabil</string>
     <string name="failed_to_open">Deschiderea eșuată</string>
@@ -2422,10 +2422,10 @@
     <string name="help_tip_choose_tool_title">Alegeți instrumentul potrivit</string>
     <string name="help_tip_choose_tool_subtitle">Utilizați categorii, căutare, favorite și acțiuni de distribuire pentru a începe din locul potrivit</string>
     <string name="help_tip_choose_tool_page_title">Începeți de la cel mai bun punct de intrare</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox are multe instrumente concentrate și multe dintre ele se suprapun la prima vedere. Începeți de la sarcina pe care doriți să o finalizați, apoi alegeți instrumentul care controlează cea mai importantă parte a rezultatului: dimensiune, format, metadate, text, pagini PDF, culori sau aspect.</string>
+    <string name="help_tip_choose_tool_description">SnapForge are multe instrumente concentrate și multe dintre ele se suprapun la prima vedere. Începeți de la sarcina pe care doriți să o finalizați, apoi alegeți instrumentul care controlează cea mai importantă parte a rezultatului: dimensiune, format, metadate, text, pagini PDF, culori sau aspect.</string>
     <string name="help_tip_choose_tool_step_1">Utilizați căutarea atunci când cunoașteți numele acțiunii, cum ar fi redimensionare, PDF, EXIF, OCR, QR sau culoare.</string>
     <string name="help_tip_choose_tool_step_2">Deschideți o categorie atunci când știți doar tipul de sarcină, apoi fixați instrumentele frecvente ca favorite.</string>
-    <string name="help_tip_choose_tool_step_3">Când o altă aplicație partajează o imagine în Image Toolbox, alegeți instrumentul din fluxul foii de partajare.</string>
+    <string name="help_tip_choose_tool_step_3">Când o altă aplicație partajează o imagine în SnapForge, alegeți instrumentul din fluxul foii de partajare.</string>
     <string name="help_tip_import_save_share_title">Importați, salvați și partajați rezultatele</string>
     <string name="help_tip_import_save_share_subtitle">Înțelegeți fluxul obișnuit de la alegerea intrării la exportul fișierului editat</string>
     <string name="help_tip_import_save_share_page_title">Urmați fluxul de editare comun</string>
@@ -2464,10 +2464,10 @@
     <string name="help_tip_picker_launcher_title">Selector și lansator</string>
     <string name="help_tip_picker_launcher_subtitle">Utilizați setările selectorului atunci când aplicația deschide prea multe dialoguri sau pornește în locul greșit</string>
     <string name="help_tip_picker_launcher_page_title">Faceți ca deschiderea fișierelor să se potrivească cu obiceiul dvs</string>
-    <string name="help_tip_picker_launcher_description">Setările selectorului și lansatorului controlează dacă Image Toolbox pornește de la ecranul principal, un instrument sau un flux de selecție a fișierelor. Aceste opțiuni sunt utile în special atunci când intri de obicei din foaia de partajare Android sau când vrei ca aplicația să se simtă mai mult ca un lansator de instrumente.</string>
+    <string name="help_tip_picker_launcher_description">Setările selectorului și lansatorului controlează dacă SnapForge pornește de la ecranul principal, un instrument sau un flux de selecție a fișierelor. Aceste opțiuni sunt utile în special atunci când intri de obicei din foaia de partajare Android sau când vrei ca aplicația să se simtă mai mult ca un lansator de instrumente.</string>
     <string name="help_tip_picker_launcher_step_1">Utilizați setările selectorului de fotografii dacă selectorul de sistem ascunde fișiere, arată prea multe articole recente sau gestionează prost fișierele din cloud.</string>
     <string name="help_tip_picker_launcher_step_2">Activați ignorarea alegerii numai pentru instrumentele în care introduceți de obicei din partajare sau cunoașteți deja fișierul sursă.</string>
-    <string name="help_tip_picker_launcher_step_3">Examinați modul de lansare dacă doriți ca Image Toolbox să se comporte mai mult ca un selector de instrumente decât un ecran de pornire normal.</string>
+    <string name="help_tip_picker_launcher_step_3">Examinați modul de lansare dacă doriți ca SnapForge să se comporte mai mult ca un selector de instrumente decât un ecran de pornire normal.</string>
     <string name="help_tip_image_source_title">Sursa imaginii</string>
     <string name="help_tip_image_source_subtitle">Alegeți modul de selecție care funcționează cel mai bine cu galerii, manageri de fișiere și fișiere cloud</string>
     <string name="help_tip_image_source_page_title">Alegeți fișierele din sursa potrivită</string>
@@ -2611,7 +2611,7 @@
     <string name="help_tip_one_time_save_location_title">Dosare de salvare unică</string>
     <string name="help_tip_one_time_save_location_subtitle">Trimiteți următoarele exporturi într-un folder temporar fără a vă schimba destinația normală</string>
     <string name="help_tip_one_time_save_location_page_title">Păstrați locurile de muncă speciale separate</string>
-    <string name="help_tip_one_time_save_location_description">Locația de salvare unică este utilă pentru proiecte temporare, foldere client, sesiuni de curățare sau exporturi care nu ar trebui să se amestece cu folderul obișnuit Image Toolbox. Oferă o destinație de scurtă durată fără a rescrie configurația implicită.</string>
+    <string name="help_tip_one_time_save_location_description">Locația de salvare unică este utilă pentru proiecte temporare, foldere client, sesiuni de curățare sau exporturi care nu ar trebui să se amestece cu folderul obișnuit SnapForge. Oferă o destinație de scurtă durată fără a rescrie configurația implicită.</string>
     <string name="help_tip_one_time_save_location_step_1">Alegeți un folder unic înainte de a începe o sarcină care aparține în afara locației dvs. obișnuite de export.</string>
     <string name="help_tip_one_time_save_location_step_2">Utilizați-l pentru proiecte scurte, foldere partajate sau loturi în care rezultatele trebuie să rămână grupate împreună.</string>
     <string name="help_tip_one_time_save_location_step_3">Reveniți la folderul implicit după lucrare, astfel încât exporturile ulterioare să nu ajungă în mod neașteptat în locația temporară.</string>
@@ -3188,7 +3188,7 @@
     <string name="tool_usage_subtitle">%1$d se deschide • %2$s</string>
     <string name="no_usage_statistics">Nu există încă statistici de utilizare</string>
     <string name="no_usage_statistics_sub">Deschideți câteva instrumente și acestea vor apărea aici automat</string>
-    <string name="usage_statistics_info">Statisticile dvs. de utilizare sunt stocate numai local pe dispozitivul dvs. ImageToolbox le folosește numai pentru a vă afișa activitatea personală, instrumentele preferate și informațiile despre datele salvate</string>
+    <string name="usage_statistics_info">Statisticile dvs. de utilizare sunt stocate numai local pe dispozitivul dvs. SnapForge le folosește numai pentru a vă afișa activitatea personală, instrumentele preferate și informațiile despre datele salvate</string>
     <string name="error">Eroare</string>
     <string name="neutral_variant">Varianta neutră</string>
     <string name="drop_shadow">Drop Shadow</string>
@@ -4444,7 +4444,7 @@
     <string name="score">Scor</string>
     <string name="return_to_external_app_after_save">Reveniți după salvarea editărilor externe</string>
     <string name="return_to_external_app_after_save_sub">Închideți Caseta de instrumente pentru imagini după ce ați salvat o imagine deschisă pentru editare dintr-o altă aplicație</string>
-    <string name="add_imagetoolbox_metadata">Adăugați metadate ImageToolbox</string>
+    <string name="add_imagetoolbox_metadata">Adăugați metadate SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Scrieți versiunea aplicației și parametrii de imagine configurați în EXIF ​​atunci când salvați</string>
     <string name="read_only">Numai citire</string>
     <string name="tag_camera_firmware">Firmware-ul camerei</string>
@@ -5051,7 +5051,7 @@
     <string name="slate">Ardezie</string>
     <string name="search_keywords_pdf_dark_mode">pdf cititor de noapte în modul întunecat inversează culorile negative</string>
     <string name="custom_depth_map">Hartă personalizată de adâncime</string>
-    <string name="custom_depth_map_sub">Opțional. Reutilizați o hartă de adâncime în tonuri de gri sau Image Toolbox în loc să estimați din nou adâncimea</string>
+    <string name="custom_depth_map_sub">Opțional. Reutilizați o hartă de adâncime în tonuri de gri sau SnapForge în loc să estimați din nou adâncimea</string>
     <string name="comic_to_pdf">Carte de benzi desenate în PDF</string>
     <string name="comic_to_pdf_sub">Convertiți CBR, CBZ, CB7 și alte arhive de imagini în PDF</string>
     <string name="select_comic_archive_to_start">Selectați o arhivă de benzi desenate CBR, CBZ, CB7 sau CBT</string>

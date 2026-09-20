@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -897,7 +897,7 @@
     <string name="header_today">Vandaag</string>
     <string name="header_yesterday">Gisteren</string>
     <string name="embedded_picker">Ingesloten kiezer</string>
-    <string name="embedded_picker_sub">Gebruik Image Toolbox\'s eigen afbeeldingenkiezer in plaats van de systeemkiezer</string>
+    <string name="embedded_picker_sub">Gebruik SnapForge\'s eigen afbeeldingenkiezer in plaats van de systeemkiezer</string>
     <string name="no_permissions">Geen rechten</string>
     <string name="request">Verzoek</string>
     <string name="legacy">Verouderd</string>
@@ -1087,7 +1087,7 @@
     <string name="engine_mode">Machine-modus</string>
     <string name="antialias_sub">Maakt anti-aliasing mogelijk om scherpe randen te voorkomen</string>
     <string name="antialias">Anti-alias</string>
-    <string name="open_edit_instead_of_preview_sub">Wanneer je een afbeelding selecteert om te openen (preview) in ImageToolbox, wordt het selectieblad voor bewerken geopend in plaats van een voorbeeld te bekijken</string>
+    <string name="open_edit_instead_of_preview_sub">Wanneer je een afbeelding selecteert om te openen (preview) in SnapForge, wordt het selectieblad voor bewerken geopend in plaats van een voorbeeld te bekijken</string>
     <string name="open_edit_instead_of_preview">Open Bewerken in plaats van Voorbeeld</string>
     <string name="scale_color_space">Kleurruimte-schaal</string>
     <string name="linear">Lineair</string>
@@ -1366,7 +1366,7 @@
     <string name="one_time_save_location_sub">Eenmalige opslaglocaties bekijken en bewerken die u kunt gebruiken door lang op de opslagknop te drukken in vrijwel alle opties</string>
     <string name="image_toolbox_in_telegram_sub">Sluit aan bij onze chat waar je alles kunt bespreken wat je wilt en kijk ook naar het CI-kanaal waar ik bèta\'s en aankondigingen plaats</string>
     <string name="ci_channel_sub">Ontvang een melding over nieuwe versies van de app en lees aankondigingen</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox op Telegram 🎉</string>
+    <string name="image_toolbox_in_telegram">SnapForge op Telegram 🎉</string>
     <string name="fit_description">Pas een afbeelding aan op een bepaalde afmeting en pas vervaging of kleur toe op de achtergrond</string>
     <string name="tools_arrangement">Hulpmiddelen ordenen</string>
     <string name="group_tools_by_type">Groeperen op type</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Exporteer het gegenereerde palet naar verschillende formaten</string>
     <string name="add_color_palette_sub">Voegt een nieuwe kleur toe aan het huidige palet</string>
     <string name="palette_name_not_supported">De indeling %1$s biedt geen ondersteuning voor het opgeven van een paletnaam</string>
-    <string name="wallpapers_export_not_avaialbe">Vanwege het Play Store-beleid kan deze functie niet worden opgenomen in de huidige build. Om toegang te krijgen tot deze functionaliteit, downloadt u ImageToolbox van een alternatieve bron. Hieronder vindt u de beschikbare builds op GitHub.</string>
+    <string name="wallpapers_export_not_avaialbe">Vanwege het Play Store-beleid kan deze functie niet worden opgenomen in de huidige build. Om toegang te krijgen tot deze functionaliteit, downloadt u SnapForge van een alternatieve bron. Hieronder vindt u de beschikbare builds op GitHub.</string>
     <string name="open_github_page">Open Github-pagina</string>
     <string name="overwrite_files_sub_short">Het originele bestand wordt vervangen door een nieuw bestand in plaats van het op te slaan in de geselecteerde map</string>
     <string name="hidden_watermark_text_detected">Verborgen watermerktekst gedetecteerd</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Converteer alle in het document ingebedde afbeeldingen naar grijswaarden</string>
     <string name="compress_pdf">PDF comprimeren</string>
     <string name="compress_pdf_sub">Optimaliseer de bestandsgrootte van uw document om gemakkelijker te kunnen delen</string>
-    <string name="repair_info">ImageToolbox bouwt de interne kruisverwijzingstabel opnieuw op en genereert de bestandsstructuur helemaal opnieuw. Hierdoor kan de toegang tot veel bestanden worden hersteld die \\\"niet kunnen worden geopend\\\"</string>
+    <string name="repair_info">SnapForge bouwt de interne kruisverwijzingstabel opnieuw op en genereert de bestandsstructuur helemaal opnieuw. Hierdoor kan de toegang tot veel bestanden worden hersteld die \\\"niet kunnen worden geopend\\\"</string>
     <string name="grayscale_info">Deze tool converteert alle documentafbeeldingen naar grijswaarden. Beste voor afdrukken en verkleinen van de bestandsgrootte</string>
     <string name="metadata">Metagegevens</string>
     <string name="metadata_pdf_sub">Bewerk documenteigenschappen voor betere privacy</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Achtergrondkleur voor alfaformaten</string>
     <string name="background_color_for_alpha_formats_sub">Voegt de mogelijkheid toe om de achtergrondkleur in te stellen voor elk afbeeldingsformaat met alfa-ondersteuning, indien uitgeschakeld is dit alleen beschikbaar voor niet-alfa-formaten</string>
     <string name="open_markup_project">Project openen</string>
-    <string name="open_markup_project_sub">Ga door met het bewerken van een eerder opgeslagen Image Toolbox-project</string>
-    <string name="markup_project_open_failed">Kan het Image Toolbox-project niet openen</string>
-    <string name="markup_project_missing_data">Bij het Image Toolbox-project ontbreken projectgegevens</string>
-    <string name="markup_project_corrupted">Het Image Toolbox-project is beschadigd</string>
-    <string name="unsupported_markup_project_version">Niet-ondersteunde Image Toolbox-projectversie: %1$d</string>
+    <string name="open_markup_project_sub">Ga door met het bewerken van een eerder opgeslagen SnapForge-project</string>
+    <string name="markup_project_open_failed">Kan het SnapForge-project niet openen</string>
+    <string name="markup_project_missing_data">Bij het SnapForge-project ontbreken projectgegevens</string>
+    <string name="markup_project_corrupted">Het SnapForge-project is beschadigd</string>
+    <string name="unsupported_markup_project_version">Niet-ondersteunde SnapForge-projectversie: %1$d</string>
     <string name="save_markup_project">Project opslaan</string>
     <string name="save_markup_project_sub">Bewaar lagen, achtergronden en bewerkingsgeschiedenis in een bewerkbaar projectbestand</string>
     <string name="failed_to_open">Kan niet worden geopend</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Kies het juiste gereedschap</string>
     <string name="help_tip_choose_tool_subtitle">Gebruik categorieën, zoek-, favorieten- en deelacties om op de juiste plek te beginnen</string>
     <string name="help_tip_choose_tool_page_title">Begin vanaf het beste toegangspunt</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox heeft veel gerichte hulpmiddelen, en veel daarvan overlappen elkaar op het eerste gezicht. Begin met de taak die u wilt voltooien en kies vervolgens de tool die het belangrijkste deel van het resultaat bepaalt: grootte, formaat, metagegevens, tekst, PDF-pagina\'s, kleuren of lay-out.</string>
+    <string name="help_tip_choose_tool_description">SnapForge heeft veel gerichte hulpmiddelen, en veel daarvan overlappen elkaar op het eerste gezicht. Begin met de taak die u wilt voltooien en kies vervolgens de tool die het belangrijkste deel van het resultaat bepaalt: grootte, formaat, metagegevens, tekst, PDF-pagina\'s, kleuren of lay-out.</string>
     <string name="help_tip_choose_tool_step_1">Gebruik zoeken als u de actienaam kent, zoals formaat wijzigen, PDF, EXIF, OCR, QR of kleur.</string>
     <string name="help_tip_choose_tool_step_2">Open een categorie als u alleen het taaktype kent en maak vervolgens veelgebruikte tools vast als favoriet.</string>
-    <string name="help_tip_choose_tool_step_3">Wanneer een andere app een afbeelding deelt in Image Toolbox, kiest u de tool uit de stroom voor het delen van werkbladen.</string>
+    <string name="help_tip_choose_tool_step_3">Wanneer een andere app een afbeelding deelt in SnapForge, kiest u de tool uit de stroom voor het delen van werkbladen.</string>
     <string name="help_tip_import_save_share_title">Resultaten importeren, opslaan en delen</string>
     <string name="help_tip_import_save_share_subtitle">Begrijp de gebruikelijke stroom vanaf het kiezen van invoer tot het exporteren van het bewerkte bestand</string>
     <string name="help_tip_import_save_share_page_title">Volg de algemene bewerkingsstroom</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Picker en draagraket</string>
     <string name="help_tip_picker_launcher_subtitle">Gebruik de kiezerinstellingen wanneer de app te veel dialoogvensters opent of op de verkeerde plaats start</string>
     <string name="help_tip_picker_launcher_page_title">Zorg ervoor dat het openen van bestanden aansluit bij uw gewoonte</string>
-    <string name="help_tip_picker_launcher_description">De instellingen voor de kiezer en het opstartprogramma bepalen of Image Toolbox start vanuit het hoofdscherm, een tool of een bestandsselectiestroom. Deze opties zijn vooral handig als u meestal vanuit het Android-aandeelblad invoert of als u wilt dat de app meer op een tool-launcher lijkt.</string>
+    <string name="help_tip_picker_launcher_description">De instellingen voor de kiezer en het opstartprogramma bepalen of SnapForge start vanuit het hoofdscherm, een tool of een bestandsselectiestroom. Deze opties zijn vooral handig als u meestal vanuit het Android-aandeelblad invoert of als u wilt dat de app meer op een tool-launcher lijkt.</string>
     <string name="help_tip_picker_launcher_step_1">Gebruik de instellingen voor de fotokiezer als de systeemkiezer bestanden verbergt, te veel recente items weergeeft of cloudbestanden slecht verwerkt.</string>
     <string name="help_tip_picker_launcher_step_2">Schakel het overslaan van selectie alleen in voor tools waarbij u gewoonlijk vanuit een gedeelde map invoert of het bronbestand al kent.</string>
-    <string name="help_tip_picker_launcher_step_3">Bekijk de opstartmodus als u wilt dat Image Toolbox zich meer als een gereedschapskiezer gedraagt ​​dan als een normaal startscherm.</string>
+    <string name="help_tip_picker_launcher_step_3">Bekijk de opstartmodus als u wilt dat SnapForge zich meer als een gereedschapskiezer gedraagt ​​dan als een normaal startscherm.</string>
     <string name="help_tip_image_source_title">Afbeeldingsbron</string>
     <string name="help_tip_image_source_subtitle">Kies de kiezermodus die het beste werkt met galerijen, bestandsbeheerders en cloudbestanden</string>
     <string name="help_tip_image_source_page_title">Kies bestanden uit de juiste bron</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Mappen voor eenmalige opslag</string>
     <string name="help_tip_one_time_save_location_subtitle">Stuur de volgende exports naar een tijdelijke map zonder uw normale bestemming te wijzigen</string>
     <string name="help_tip_one_time_save_location_page_title">Houd speciale taken gescheiden</string>
-    <string name="help_tip_one_time_save_location_description">Een eenmalige opslaglocatie is handig voor tijdelijke projecten, klantmappen, opschoonsessies of exports die niet mogen worden gecombineerd met uw gewone Image Toolbox-map. Het biedt een bestemming van korte duur zonder uw standaardinstellingen te herschrijven.</string>
+    <string name="help_tip_one_time_save_location_description">Een eenmalige opslaglocatie is handig voor tijdelijke projecten, klantmappen, opschoonsessies of exports die niet mogen worden gecombineerd met uw gewone SnapForge-map. Het biedt een bestemming van korte duur zonder uw standaardinstellingen te herschrijven.</string>
     <string name="help_tip_one_time_save_location_step_1">Kies een eenmalige map voordat u een taak start die buiten uw normale exportlocatie thuishoort.</string>
     <string name="help_tip_one_time_save_location_step_2">Gebruik het voor korte projecten, gedeelde mappen of batches waarbij de uitvoer gegroepeerd moet blijven.</string>
     <string name="help_tip_one_time_save_location_step_3">Keer na de taak terug naar de standaardmap, zodat latere exports niet onverwachts op de tijdelijke locatie terechtkomen.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d opent • %2$s</string>
     <string name="no_usage_statistics">Nog geen gebruiksstatistieken</string>
     <string name="no_usage_statistics_sub">Open een paar tools en ze verschijnen hier automatisch</string>
-    <string name="usage_statistics_info">Uw gebruiksstatistieken worden alleen lokaal op uw apparaat opgeslagen. ImageToolbox gebruikt ze alleen om uw persoonlijke activiteit, favoriete tools en opgeslagen gegevensinzichten te tonen</string>
+    <string name="usage_statistics_info">Uw gebruiksstatistieken worden alleen lokaal op uw apparaat opgeslagen. SnapForge gebruikt ze alleen om uw persoonlijke activiteit, favoriete tools en opgeslagen gegevensinzichten te tonen</string>
     <string name="search_keywords_single_edit">editor bewerk foto foto retoucheren aanpassen</string>
     <string name="search_keywords_resize_and_convert">formaat wijzigen converteren schaal resolutie afmetingen breedte hoogte jpg jpeg png webp comprimeren</string>
     <string name="search_keywords_weight_resize">comprimeer grootte gewicht bytes mb kb verminder kwaliteit optimaliseren</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Gebruik het voorbeeld dat is ingebed in de RAW-afbeelding in plaats van deze te ontwikkelen</string>
     <string name="score">Scoren</string>
     <string name="return_to_external_app_after_save">Keer terug na het opslaan van externe bewerkingen</string>
-    <string name="return_to_external_app_after_save_sub">Sluit Image Toolbox na het opslaan van een afbeelding die is geopend voor bewerking vanuit een andere app</string>
-    <string name="add_imagetoolbox_metadata">Voeg ImageToolbox-metagegevens toe</string>
+    <string name="return_to_external_app_after_save_sub">Sluit SnapForge na het opslaan van een afbeelding die is geopend voor bewerking vanuit een andere app</string>
+    <string name="add_imagetoolbox_metadata">Voeg SnapForge-metagegevens toe</string>
     <string name="add_imagetoolbox_metadata_sub">Schrijf de app-versie en geconfigureerde afbeeldingsparameters naar EXIF ​​tijdens het opslaan</string>
     <string name="read_only">Alleen lezen</string>
     <string name="tag_camera_firmware">Camerafirmware</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">Leisteen</string>
     <string name="search_keywords_pdf_dark_mode">pdf donkere modus nachtlezer kleuren negatief omkeren</string>
     <string name="custom_depth_map">Aangepaste dieptekaart</string>
-    <string name="custom_depth_map_sub">Optioneel. Gebruik een grijswaarden- of Image Toolbox-dieptekaart opnieuw in plaats van de diepte opnieuw te schatten</string>
+    <string name="custom_depth_map_sub">Optioneel. Gebruik een grijswaarden- of SnapForge-dieptekaart opnieuw in plaats van de diepte opnieuw te schatten</string>
     <string name="comic_to_pdf">Stripboek naar pdf</string>
     <string name="comic_to_pdf_sub">Converteer CBR, CBZ, CB7 en andere beeldarchieven naar PDF</string>
     <string name="select_comic_archive_to_start">Selecteer een stripboekarchief van CBR, CBZ, CB7 of CBT</string>

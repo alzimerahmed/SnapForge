@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">اليوم</string>
     <string name="header_yesterday">أمس</string>
     <string name="embedded_picker">المنتقى المضمن</string>
-    <string name="embedded_picker_sub">يستخدم منتقي الصور الخاص بـ Image Toolbox بدلاً من الصور المحددة مسبقًا في النظام</string>
+    <string name="embedded_picker_sub">يستخدم منتقي الصور الخاص بـ SnapForge بدلاً من الصور المحددة مسبقًا في النظام</string>
     <string name="no_permissions">لا أذونات</string>
     <string name="request">اطلب</string>
     <string name="pick_multiple_media">اختر صور متعددة</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">الحواف</string>
     <string name="antialias_sub">يفعّل الحواف لمنع الحواف الحادة</string>
     <string name="open_edit_instead_of_preview">افتح تحرير بدلاً من المعاينة</string>
-    <string name="open_edit_instead_of_preview_sub">عند تحديد صورة لفتحها (معاينة) في ImageToolbox، سيتم فتح ورقة تحديد التحرير بدلاً من المعاينة</string>
+    <string name="open_edit_instead_of_preview_sub">عند تحديد صورة لفتحها (معاينة) في SnapForge، سيتم فتح ورقة تحديد التحرير بدلاً من المعاينة</string>
     <string name="document_scanner">ماسح ضوئي للمستندات</string>
     <string name="document_scanner_sub">امسح المستندات ضوئيًا وإنشاء ملف PDF أو افصل الصور عنها</string>
     <string name="click_to_start_scanning">انقر لبدء المسح</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">الصور إلى WEBP</string>
     <string name="select_webp_image_to_start">اختر صورة WEBP للبدء</string>
     <string name="manage_storage_extra_types">لا يوجد وصول كامل إلى الملفات</string>
-    <string name="manage_storage_extra_types_sub">السماح لجميع الملفات بالوصول لرؤية JXL و QOI والصور الأخرى التي لم يتم التعرف عليها كصور على أندرويد. بدون إذن، يتعذر على Image Toolbox عرض تلك الصور</string>
+    <string name="manage_storage_extra_types_sub">السماح لجميع الملفات بالوصول لرؤية JXL و QOI والصور الأخرى التي لم يتم التعرف عليها كصور على أندرويد. بدون إذن، يتعذر على SnapForge عرض تلك الصور</string>
     <string name="default_draw_color">لون الرسم الافتراضي</string>
     <string name="default_draw_path_mode">وضع رسم المسار الافتراضي</string>
     <string name="add_timestamp">أضف الطابع الزمني</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">صدِّر اللوحة التي المولّدة إلى تنسيقات مختلفة</string>
     <string name="add_color_palette_sub">يضيف لونًا جديدًا إلى اللوحة الحالية</string>
     <string name="palette_name_not_supported">تنسيق %1$s لا يدعم توفير اسم اللوحة</string>
-    <string name="wallpapers_export_not_avaialbe">نظرًا لسياسات متجر Play، لا يمكن تضمين هذه الميزة في الإصدار الحالي. للوصول إلى هذه الوظيفة، يُرجى تنزيل ImageToolbox من مصدر بديل. يمكنك العثور على الإصدارات المتاحة على GitHub أدناه.</string>
+    <string name="wallpapers_export_not_avaialbe">نظرًا لسياسات متجر Play، لا يمكن تضمين هذه الميزة في الإصدار الحالي. للوصول إلى هذه الوظيفة، يُرجى تنزيل SnapForge من مصدر بديل. يمكنك العثور على الإصدارات المتاحة على GitHub أدناه.</string>
     <string name="open_github_page">افتح صفحة Github</string>
     <string name="overwrite_files_sub_short">سيتم استبدال الملف الأصلي بملف جديد بدلاً من حفظه في المجلد المحدد</string>
     <string name="hidden_watermark_text_detected">تم اكتشاف نص العلامة المائية المخفية</string>
@@ -2140,7 +2140,7 @@
     <string name="grayscale_pdf_sub">تحويل كافة الصور المضمنة في الوثيقة إلى التدرج الرمادي</string>
     <string name="compress_pdf">اضغط PDF</string>
     <string name="compress_pdf_sub">حسّن حجم ملف مستندك لتسهيل المشاركة</string>
-    <string name="repair_info">يقوم ImageToolbox بإعادة بناء جدول الإسناد الترافقي الداخلي ويعيد توليد بنية الملف من البداية. يمكن أن يؤدي هذا إلى استعادة الوصول إلى العديد من الملفات التي \"لا يمكن فتحها\"</string>
+    <string name="repair_info">يقوم SnapForge بإعادة بناء جدول الإسناد الترافقي الداخلي ويعيد توليد بنية الملف من البداية. يمكن أن يؤدي هذا إلى استعادة الوصول إلى العديد من الملفات التي \"لا يمكن فتحها\"</string>
     <string name="grayscale_info">تقوم هذه الأداة بتحويل جميع صور المستندات إلى تدرج رمادي. الأفضل للطباعة وتقليل حجم الملف</string>
     <string name="metadata">البيانات الوصفية</string>
     <string name="metadata_pdf_sub">حرِّر خصائص الوثيقة لتحسين الخصوصية</string>
@@ -2192,11 +2192,11 @@
     <string name="background_color_for_alpha_formats">لون الخلفية لتنسيقات ألفا</string>
     <string name="background_color_for_alpha_formats_sub">يضيف القدرة على تعيين لون الخلفية لكل تنسيق صورة مع دعم ألفا، عند تعطيله يكون هذا متاحًا للتنسيقات غير ألفا فقط</string>
     <string name="open_markup_project">مشروع مفتوح</string>
-    <string name="open_markup_project_sub">استمر في تحرير مشروع Image Toolbox المحفوظ مسبقًا</string>
-    <string name="markup_project_open_failed">غير قادر على فتح مشروع Image Toolbox</string>
-    <string name="markup_project_missing_data">يفتقد مشروع Image Toolbox بيانات المشروع</string>
-    <string name="markup_project_corrupted">مشروع Image Toolbox تالف</string>
-    <string name="unsupported_markup_project_version">إصدار مشروع Image Toolbox غير مدعوم: %1$d</string>
+    <string name="open_markup_project_sub">استمر في تحرير مشروع SnapForge المحفوظ مسبقًا</string>
+    <string name="markup_project_open_failed">غير قادر على فتح مشروع SnapForge</string>
+    <string name="markup_project_missing_data">يفتقد مشروع SnapForge بيانات المشروع</string>
+    <string name="markup_project_corrupted">مشروع SnapForge تالف</string>
+    <string name="unsupported_markup_project_version">إصدار مشروع SnapForge غير مدعوم: %1$d</string>
     <string name="save_markup_project">حفظ المشروع</string>
     <string name="save_markup_project_sub">قم بتخزين الطبقات والخلفية وسجل التحرير في ملف مشروع قابل للتحرير</string>
     <string name="failed_to_open">فشل في الفتح</string>
@@ -2425,10 +2425,10 @@
     <string name="help_tip_choose_tool_title">اختر الأداة المناسبة</string>
     <string name="help_tip_choose_tool_subtitle">استخدم الفئات والبحث والمفضلات ومشاركة الإجراءات للبدء في المكان المناسب</string>
     <string name="help_tip_choose_tool_page_title">ابدأ من أفضل نقطة دخول</string>
-    <string name="help_tip_choose_tool_description">يحتوي Image Toolbox على العديد من الأدوات المركزة، والعديد منها يتداخل للوهلة الأولى. ابدأ من المهمة التي ترغب في إنهائها، ثم اختر الأداة التي تتحكم في الجزء الأكثر أهمية من النتيجة: الحجم أو التنسيق أو البيانات الوصفية أو النص أو صفحات PDF أو الألوان أو التخطيط.</string>
+    <string name="help_tip_choose_tool_description">يحتوي SnapForge على العديد من الأدوات المركزة، والعديد منها يتداخل للوهلة الأولى. ابدأ من المهمة التي ترغب في إنهائها، ثم اختر الأداة التي تتحكم في الجزء الأكثر أهمية من النتيجة: الحجم أو التنسيق أو البيانات الوصفية أو النص أو صفحات PDF أو الألوان أو التخطيط.</string>
     <string name="help_tip_choose_tool_step_1">استخدم البحث عندما تعرف اسم الإجراء، مثل تغيير الحجم أو PDF أو EXIF أو OCR أو QR أو اللون.</string>
     <string name="help_tip_choose_tool_step_2">افتح فئة عندما تعرف نوع المهمة فقط، ثم ثبّت الأدوات المتكرّرة كمفضلة.</string>
-    <string name="help_tip_choose_tool_step_3">عندما يقوم تطبيق آخر بمشاركة صورة في Image Toolbox، اختر الأداة من تدفق ورقة المشاركة.</string>
+    <string name="help_tip_choose_tool_step_3">عندما يقوم تطبيق آخر بمشاركة صورة في SnapForge، اختر الأداة من تدفق ورقة المشاركة.</string>
     <string name="help_tip_import_save_share_title">استيراد النتائج وحفظها ومشاركتها</string>
     <string name="help_tip_import_save_share_subtitle">افهم التدفق المعتاد بدءًا من انتقاء المدخلات وحتى تصدير الملف الذي تم تحريره</string>
     <string name="help_tip_import_save_share_page_title">اتبع تدفق التحرير المشترك</string>
@@ -2467,10 +2467,10 @@
     <string name="help_tip_picker_launcher_title">المنتقى وقاذفة</string>
     <string name="help_tip_picker_launcher_subtitle">استخدم إعدادات المنتقي عندما يفتح التطبيق الكثير من مربعات الحوار أو يبدأ في المكان الخطأ</string>
     <string name="help_tip_picker_launcher_page_title">اجعل فتح الملفات مطابقًا لعادتك</string>
-    <string name="help_tip_picker_launcher_description">تتحكم إعدادات المنتقي والمشغل فيما إذا كان Image Toolbox يبدأ من الشاشة الرئيسية، أو من أداة، أو من تدفق تحديد الملف. تكون هذه الخيارات مفيدة بشكل خاص عندما تدخل عادةً من ورقة مشاركة Android أو عندما تريد أن يبدو التطبيق وكأنه مشغل أدوات.</string>
+    <string name="help_tip_picker_launcher_description">تتحكم إعدادات المنتقي والمشغل فيما إذا كان SnapForge يبدأ من الشاشة الرئيسية، أو من أداة، أو من تدفق تحديد الملف. تكون هذه الخيارات مفيدة بشكل خاص عندما تدخل عادةً من ورقة مشاركة Android أو عندما تريد أن يبدو التطبيق وكأنه مشغل أدوات.</string>
     <string name="help_tip_picker_launcher_step_1">استخدم إعدادات منتقي الصور إذا كان منتقي النظام يخفي الملفات، أو يعرض عددًا كبيرًا جدًا من العناصر الحديثة، أو يتعامل مع الملفات السحابية بشكل سيئ.</string>
     <string name="help_tip_picker_launcher_step_2">فعِّل تخطي الانتقاء فقط للأدوات التي تدخل إليها عادةً من المشاركة أو تعرف الملف المصدر بالفعل.</string>
-    <string name="help_tip_picker_launcher_step_3">راجع وضع المشغل إذا كنت تريد أن يتصرف Image Toolbox مثل منتقي الأدوات أكثر من كونه شاشة رئيسية عادية.</string>
+    <string name="help_tip_picker_launcher_step_3">راجع وضع المشغل إذا كنت تريد أن يتصرف SnapForge مثل منتقي الأدوات أكثر من كونه شاشة رئيسية عادية.</string>
     <string name="help_tip_image_source_title">مصدر الصورة</string>
     <string name="help_tip_image_source_subtitle">اختر وضع المنتقي الذي يعمل بشكل أفضل مع المعارض ومديري الملفات والملفات السحابية</string>
     <string name="help_tip_image_source_page_title">اختر الملفات من المصدر الصحيح</string>
@@ -2614,7 +2614,7 @@
     <string name="help_tip_one_time_save_location_title">حفظ المجلدات لمرة واحدة</string>
     <string name="help_tip_one_time_save_location_subtitle">أرسل عمليات التصدير التالية إلى مجلد مؤقت دون تغيير وجهتك العادية</string>
     <string name="help_tip_one_time_save_location_page_title">احتفظ بالوظائف الخاصة منفصلة</string>
-    <string name="help_tip_one_time_save_location_description">يعد موقع الحفظ لمرة واحدة مفيدًا للمشاريع المؤقتة أو مجلدات العميل أو جلسات التنظيف أو الصادرات التي يجب ألا تختلط مع مجلد Image Toolbox العادي. إنه يوفر وجهة قصيرة العمر دون إعادة كتابة الإعداد الافتراضي الخاص بك.</string>
+    <string name="help_tip_one_time_save_location_description">يعد موقع الحفظ لمرة واحدة مفيدًا للمشاريع المؤقتة أو مجلدات العميل أو جلسات التنظيف أو الصادرات التي يجب ألا تختلط مع مجلد SnapForge العادي. إنه يوفر وجهة قصيرة العمر دون إعادة كتابة الإعداد الافتراضي الخاص بك.</string>
     <string name="help_tip_one_time_save_location_step_1">اختر مجلدًا لمرة واحدة قبل بدء مهمة تنتمي إلى خارج موقع التصدير العادي.</string>
     <string name="help_tip_one_time_save_location_step_2">استخدمه للمشاريع القصيرة أو المجلدات المشتركة أو الدفعات حيث يجب أن تظل المخرجات مجمعة معًا.</string>
     <string name="help_tip_one_time_save_location_step_3">قم بالعودة إلى المجلد الافتراضي بعد المهمة حتى لا تصل عمليات التصدير اللاحقة بشكل غير متوقع إلى الموقع المؤقت.</string>
@@ -3191,7 +3191,7 @@
     <string name="data_saved">تم حفظ البيانات</string>
     <string name="top_format">أعلى تنسيق</string>
     <string name="tools_used">الأدوات المستخدمة</string>
-    <string name="usage_statistics_info">يتم تخزين إحصائيات الاستخدام الخاصة بك محليًا فقط على جهازك. يستخدمها ImageToolbox فقط لإظهار نشاطك الشخصي وأدواتك المفضلة ورؤى البيانات المحفوظة</string>
+    <string name="usage_statistics_info">يتم تخزين إحصائيات الاستخدام الخاصة بك محليًا فقط على جهازك. يستخدمها SnapForge فقط لإظهار نشاطك الشخصي وأدواتك المفضلة ورؤى البيانات المحفوظة</string>
     <string name="search_keywords_single_edit">محرر تحرير الصورة تنميق الصورة ضبط</string>
     <string name="search_keywords_resize_and_convert">تغيير الحجم تحويل المقياس الدقة الأبعاد العرض الارتفاع jpg jpeg png webp ضغط</string>
     <string name="search_keywords_weight_resize">ضغط الحجم والوزن بايت ميغابايت كيلو بايت تقليل الجودة وتحسينها</string>
@@ -4446,8 +4446,8 @@
     <string name="raw_use_embedded_preview_sub">استخدم المعاينة المضمنة في صورة RAW بدلاً من تطويرها</string>
     <string name="score">نتيجة</string>
     <string name="return_to_external_app_after_save">العودة بعد حفظ التعديلات الخارجية</string>
-    <string name="return_to_external_app_after_save_sub">أغلق Image Toolbox بعد حفظ الصورة المفتوحة للتحرير من تطبيق آخر</string>
-    <string name="add_imagetoolbox_metadata">إضافة البيانات الوصفية لـ ImageToolbox</string>
+    <string name="return_to_external_app_after_save_sub">أغلق SnapForge بعد حفظ الصورة المفتوحة للتحرير من تطبيق آخر</string>
+    <string name="add_imagetoolbox_metadata">إضافة البيانات الوصفية لـ SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">اكتب إصدار التطبيق ومعلمات الصورة التي تم تكوينها إلى EXIF ​​عند الحفظ</string>
     <string name="read_only">قراءة فقط</string>
     <string name="tag_camera_firmware">البرامج الثابتة للكاميرا</string>
@@ -5054,7 +5054,7 @@
     <string name="slate">لائحة</string>
     <string name="search_keywords_pdf_dark_mode">pdf الوضع الليلي للقارئ عكس الألوان السلبية</string>
     <string name="custom_depth_map">خريطة عمق مخصصة</string>
-    <string name="custom_depth_map_sub">خياري. أعد استخدام خريطة عمق التدرج الرمادي أو Image Toolbox بدلاً من تقدير العمق مرة أخرى</string>
+    <string name="custom_depth_map_sub">خياري. أعد استخدام خريطة عمق التدرج الرمادي أو SnapForge بدلاً من تقدير العمق مرة أخرى</string>
     <string name="comic_to_pdf">الكتاب الهزلي إلى PDF</string>
     <string name="comic_to_pdf_sub">تحويل CBR، CBZ، CB7 وأرشيفات الصور الأخرى إلى PDF</string>
     <string name="select_comic_archive_to_start">حدد أرشيف الكتب المصورة CBR أو CBZ أو CB7 أو CBT</string>

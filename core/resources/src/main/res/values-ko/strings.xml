@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">오늘</string>
     <string name="header_yesterday">어제</string>
     <string name="embedded_picker">내장 선택기</string>
-    <string name="embedded_picker_sub">Image Toolbox의 이미지 선택기</string>
+    <string name="embedded_picker_sub">SnapForge의 이미지 선택기</string>
     <string name="no_permissions">권한이 없습니다</string>
     <string name="request">요청</string>
     <string name="pick_multiple_media">여러 미디어 선택</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">앤티앨리어스</string>
     <string name="antialias_sub">날카로운 모서리를 방지하기 위해 앤티앨리어싱을 활성화합니다.</string>
     <string name="open_edit_instead_of_preview">미리보기 대신 편집 열기</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox에서 열려는(미리보기) 이미지를 선택하면 미리보기 대신 편집 선택 시트가 열립니다.</string>
+    <string name="open_edit_instead_of_preview_sub">SnapForge에서 열려는(미리보기) 이미지를 선택하면 미리보기 대신 편집 선택 시트가 열립니다.</string>
     <string name="document_scanner">문서 스캐너</string>
     <string name="document_scanner_sub">문서를 스캔하고 PDF를 생성하거나 문서에서 이미지를 분리하세요</string>
     <string name="click_to_start_scanning">스캔을 시작하려면 클릭하세요</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">이미지 → WEBP</string>
     <string name="select_webp_image_to_start">시작하려면 WEBP 이미지를 선택하세요.</string>
     <string name="manage_storage_extra_types">파일에 대한 전체 액세스 권한이 없습니다.</string>
-    <string name="manage_storage_extra_types_sub">안드로이드에서 이미지로 인식되지 않는 JXL, QOI 등의 이미지를 보려면 모든 파일 접근을 허용하세요. 권한이 없으면 Image Toolbox가 해당 이미지를 표시할 수 없습니다.</string>
+    <string name="manage_storage_extra_types_sub">안드로이드에서 이미지로 인식되지 않는 JXL, QOI 등의 이미지를 보려면 모든 파일 접근을 허용하세요. 권한이 없으면 SnapForge가 해당 이미지를 표시할 수 없습니다.</string>
     <string name="default_draw_color">기본 그리기 색상</string>
     <string name="default_draw_path_mode">기본 그리기 경로 모드</string>
     <string name="add_timestamp">타임스탬프 추가</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">생성된 팔레트를 다른 형식으로 내보내기</string>
     <string name="add_color_palette_sub">현재 팔레트에 새로운 색상을 추가합니다.</string>
     <string name="palette_name_not_supported">%1$s 형식은 팔레트 이름 제공을 지원하지 않습니다.</string>
-    <string name="wallpapers_export_not_avaialbe">Play 스토어 정책으로 인해 이 기능은 현재 빌드에 포함될 수 없습니다. 이 기능에 액세스하려면 대체 소스에서 ImageToolbox를 다운로드하십시오. 아래 GitHub에서 사용 가능한 빌드를 찾을 수 있습니다.</string>
+    <string name="wallpapers_export_not_avaialbe">Play 스토어 정책으로 인해 이 기능은 현재 빌드에 포함될 수 없습니다. 이 기능에 액세스하려면 대체 소스에서 SnapForge를 다운로드하십시오. 아래 GitHub에서 사용 가능한 빌드를 찾을 수 있습니다.</string>
     <string name="open_github_page">Github 페이지 열기</string>
     <string name="overwrite_files_sub_short">선택한 폴더에 저장하는 대신 원본 파일이 새 파일로 대체됩니다.</string>
     <string name="hidden_watermark_text_detected">숨겨진 워터마크 텍스트가 감지되었습니다.</string>
@@ -2135,7 +2135,7 @@
     <string name="grayscale_pdf_sub">문서에 포함된 모든 이미지를 회색조로 변환</string>
     <string name="compress_pdf">PDF 압축</string>
     <string name="compress_pdf_sub">더 쉽게 공유할 수 있도록 문서 파일 크기를 최적화하세요.</string>
-    <string name="repair_info">ImageToolbox는 내부 상호 참조 테이블을 다시 작성하고 파일 구조를 처음부터 다시 생성합니다. 이렇게 하면 \\\"열 수 없는\\\" 많은 파일에 대한 액세스를 복원할 수 있습니다.</string>
+    <string name="repair_info">SnapForge는 내부 상호 참조 테이블을 다시 작성하고 파일 구조를 처음부터 다시 생성합니다. 이렇게 하면 \\\"열 수 없는\\\" 많은 파일에 대한 액세스를 복원할 수 있습니다.</string>
     <string name="grayscale_info">이 도구는 모든 문서 이미지를 회색조로 변환합니다. 인쇄 및 파일 크기 축소에 가장 적합</string>
     <string name="metadata">메타데이터</string>
     <string name="metadata_pdf_sub">더 나은 개인 정보 보호를 위해 문서 속성 편집</string>
@@ -2187,11 +2187,11 @@
     <string name="keep_date_time">날짜 시간 유지</string>
     <string name="keep_date_time_sub">날짜 및 시간과 관련된 EXIF ​​태그를 항상 유지하며, EXIF ​​유지 옵션과 독립적으로 작동합니다.</string>
     <string name="open_markup_project">프로젝트 열기</string>
-    <string name="open_markup_project_sub">이전에 저장한 Image Toolbox 프로젝트 계속 편집</string>
+    <string name="open_markup_project_sub">이전에 저장한 SnapForge 프로젝트 계속 편집</string>
     <string name="markup_project_open_failed">이미지 도구 상자 프로젝트를 열 수 없습니다</string>
-    <string name="markup_project_missing_data">Image Toolbox 프로젝트에 프로젝트 데이터가 없습니다.</string>
+    <string name="markup_project_missing_data">SnapForge 프로젝트에 프로젝트 데이터가 없습니다.</string>
     <string name="markup_project_corrupted">이미지 도구 상자 프로젝트가 손상되었습니다</string>
-    <string name="unsupported_markup_project_version">지원되지 않는 Image Toolbox 프로젝트 버전: %1$d</string>
+    <string name="unsupported_markup_project_version">지원되지 않는 SnapForge 프로젝트 버전: %1$d</string>
     <string name="save_markup_project">프로젝트 저장</string>
     <string name="save_markup_project_sub">편집 가능한 프로젝트 파일에 레이어, 배경 및 편집 기록 저장</string>
     <string name="failed_to_open">열지 못했습니다.</string>
@@ -2420,10 +2420,10 @@
     <string name="help_tip_choose_tool_title">올바른 도구를 선택하세요</string>
     <string name="help_tip_choose_tool_subtitle">카테고리, 검색, 즐겨찾기, 공유 작업을 사용하여 올바른 위치에서 시작하세요.</string>
     <string name="help_tip_choose_tool_page_title">최적의 진입점에서 시작</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox에는 집중된 도구가 많이 있으며, 그 중 많은 도구가 언뜻 보면 중복됩니다. 완료하려는 작업부터 시작한 다음 결과의 가장 중요한 부분(크기, 형식, 메타데이터, 텍스트, PDF 페이지, 색상 또는 레이아웃)을 제어하는 ​​도구를 선택하세요.</string>
+    <string name="help_tip_choose_tool_description">SnapForge에는 집중된 도구가 많이 있으며, 그 중 많은 도구가 언뜻 보면 중복됩니다. 완료하려는 작업부터 시작한 다음 결과의 가장 중요한 부분(크기, 형식, 메타데이터, 텍스트, PDF 페이지, 색상 또는 레이아웃)을 제어하는 ​​도구를 선택하세요.</string>
     <string name="help_tip_choose_tool_step_1">크기 조정, PDF, EXIF, OCR, QR, 색상 등 작업 이름을 알고 있는 경우 검색을 사용하세요.</string>
     <string name="help_tip_choose_tool_step_2">작업 유형만 알고 있는 경우 카테고리를 열고 자주 사용하는 도구를 즐겨찾기로 고정하세요.</string>
-    <string name="help_tip_choose_tool_step_3">다른 앱이 Image Toolbox에 이미지를 공유하는 경우 공유 시트 흐름에서 도구를 선택하세요.</string>
+    <string name="help_tip_choose_tool_step_3">다른 앱이 SnapForge에 이미지를 공유하는 경우 공유 시트 흐름에서 도구를 선택하세요.</string>
     <string name="help_tip_import_save_share_title">결과 가져오기, 저장 및 공유</string>
     <string name="help_tip_import_save_share_subtitle">입력 선택부터 편집된 파일 내보내기까지의 일반적인 흐름을 이해합니다.</string>
     <string name="help_tip_import_save_share_page_title">일반적인 편집 흐름을 따르세요.</string>
@@ -2462,10 +2462,10 @@
     <string name="help_tip_picker_launcher_title">선택기 및 실행기</string>
     <string name="help_tip_picker_launcher_subtitle">앱이 너무 많은 대화 상자를 열거나 잘못된 위치에서 시작되는 경우 선택기 설정을 사용하세요.</string>
     <string name="help_tip_picker_launcher_page_title">파일 열기를 습관에 맞게 만들기</string>
-    <string name="help_tip_picker_launcher_description">선택기 및 실행기 설정은 Image Toolbox가 기본 화면, 도구 또는 파일 선택 흐름에서 시작되는지 여부를 제어합니다. 이러한 옵션은 일반적으로 Android 공유 시트에서 입력하거나 앱이 도구 실행기 같은 느낌을 주기를 원하는 경우에 특히 유용합니다.</string>
+    <string name="help_tip_picker_launcher_description">선택기 및 실행기 설정은 SnapForge가 기본 화면, 도구 또는 파일 선택 흐름에서 시작되는지 여부를 제어합니다. 이러한 옵션은 일반적으로 Android 공유 시트에서 입력하거나 앱이 도구 실행기 같은 느낌을 주기를 원하는 경우에 특히 유용합니다.</string>
     <string name="help_tip_picker_launcher_step_1">시스템 선택기가 파일을 숨기거나, 최근 항목을 너무 많이 표시하거나, 클라우드 파일을 제대로 처리하지 못하는 경우 사진 선택기 설정을 사용하세요.</string>
     <string name="help_tip_picker_launcher_step_2">일반적으로 공유에서 입력하거나 소스 파일을 이미 알고 있는 도구에 대해서만 건너뛰기 선택을 활성화합니다.</string>
-    <string name="help_tip_picker_launcher_step_3">Image Toolbox가 일반 홈 화면보다 도구 선택기처럼 작동하도록 하려면 실행 프로그램 모드를 검토하세요.</string>
+    <string name="help_tip_picker_launcher_step_3">SnapForge가 일반 홈 화면보다 도구 선택기처럼 작동하도록 하려면 실행 프로그램 모드를 검토하세요.</string>
     <string name="help_tip_image_source_title">이미지 출처</string>
     <string name="help_tip_image_source_subtitle">갤러리, 파일 관리자, 클라우드 파일에 가장 적합한 선택기 모드를 선택하세요.</string>
     <string name="help_tip_image_source_page_title">올바른 소스에서 파일 선택</string>
@@ -2609,7 +2609,7 @@
     <string name="help_tip_one_time_save_location_title">일회용 저장 폴더</string>
     <string name="help_tip_one_time_save_location_subtitle">일반 대상을 변경하지 않고 다음 내보내기를 임시 폴더로 보냅니다.</string>
     <string name="help_tip_one_time_save_location_page_title">특별한 직업을 따로 두세요</string>
-    <string name="help_tip_one_time_save_location_description">일회성 저장 위치는 임시 프로젝트, 클라이언트 폴더, 정리 세션 또는 일반 Image Toolbox 폴더와 혼합되어서는 안 되는 내보내기에 유용합니다. 기본 설정을 다시 작성하지 않고도 단기 목적지를 제공합니다.</string>
+    <string name="help_tip_one_time_save_location_description">일회성 저장 위치는 임시 프로젝트, 클라이언트 폴더, 정리 세션 또는 일반 SnapForge 폴더와 혼합되어서는 안 되는 내보내기에 유용합니다. 기본 설정을 다시 작성하지 않고도 단기 목적지를 제공합니다.</string>
     <string name="help_tip_one_time_save_location_step_1">일반 내보내기 위치 외부에 속하는 작업을 시작하기 전에 일회용 폴더를 선택하십시오.</string>
     <string name="help_tip_one_time_save_location_step_2">짧은 프로젝트, 공유 폴더 또는 출력이 함께 그룹화되어야 하는 배치에 사용하세요.</string>
     <string name="help_tip_one_time_save_location_step_3">작업 후 기본 폴더로 돌아가서 나중에 내보내기가 예기치 않게 임시 위치에 저장되지 않도록 하세요.</string>
@@ -3186,7 +3186,7 @@
     <string name="tool_usage_subtitle">%1$d 열림 • %2$s</string>
     <string name="no_usage_statistics">아직 사용 통계가 없습니다.</string>
     <string name="no_usage_statistics_sub">몇 가지 도구를 열면 여기에 자동으로 표시됩니다.</string>
-    <string name="usage_statistics_info">귀하의 사용 통계는 귀하의 장치에 로컬로만 저장됩니다. ImageToolbox는 이를 개인 활동, 즐겨찾는 도구 및 저장된 데이터 통찰력을 표시하는 데에만 사용합니다.</string>
+    <string name="usage_statistics_info">귀하의 사용 통계는 귀하의 장치에 로컬로만 저장됩니다. SnapForge는 이를 개인 활동, 즐겨찾는 도구 및 저장된 데이터 통찰력을 표시하는 데에만 사용합니다.</string>
     <string name="search_keywords_single_edit">편집자 편집 사진 사진 수정 조정</string>
     <string name="search_keywords_crop">자르기 트림 컷 종횡비</string>
     <string name="search_keywords_filter">필터 효과 색상 보정 LUT 마스크 조정</string>
@@ -4442,7 +4442,7 @@
     <string name="score">점수</string>
     <string name="return_to_external_app_after_save">외부 수정사항을 저장한 후 돌아가기</string>
     <string name="return_to_external_app_after_save_sub">다른 앱에서 편집하기 위해 연 이미지를 저장한 후 이미지 도구 상자를 닫습니다.</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox 메타데이터 추가</string>
+    <string name="add_imagetoolbox_metadata">SnapForge 메타데이터 추가</string>
     <string name="add_imagetoolbox_metadata_sub">저장할 때 앱 버전과 구성된 이미지 매개변수를 EXIF에 기록합니다.</string>
     <string name="read_only">읽기 전용</string>
     <string name="tag_camera_firmware">카메라 펌웨어</string>

@@ -17,8 +17,6 @@
 
 package com.t8rin.imagetoolbox.feature.settings.presentation.components.additional
 
-import android.content.Intent
-import androidx.activity.compose.LocalActivity
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -30,20 +28,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.core.net.toUri
-import com.t8rin.imagetoolbox.core.domain.AUTHOR_EMAIL
 import com.t8rin.imagetoolbox.core.domain.AUTHOR_GITHUB
-import com.t8rin.imagetoolbox.core.domain.AUTHOR_TELEGRAM
 import com.t8rin.imagetoolbox.core.resources.Icons
 import com.t8rin.imagetoolbox.core.resources.R
-import com.t8rin.imagetoolbox.core.resources.icons.AlternateEmail
 import com.t8rin.imagetoolbox.core.resources.icons.Forum
 import com.t8rin.imagetoolbox.core.resources.icons.Github
 import com.t8rin.imagetoolbox.core.resources.icons.Link
-import com.t8rin.imagetoolbox.core.resources.icons.Telegram
 import com.t8rin.imagetoolbox.core.settings.presentation.provider.LocalSettingsState
 import com.t8rin.imagetoolbox.core.ui.theme.blend
-import com.t8rin.imagetoolbox.core.ui.utils.helper.ContextUtils.shareText
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedButton
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.EnhancedModalBottomSheet
 import com.t8rin.imagetoolbox.core.ui.widget.enhanced.enhancedVerticalScroll
@@ -53,7 +45,6 @@ import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
 import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceItem
 import com.t8rin.imagetoolbox.core.ui.widget.text.AutoSizeText
 import com.t8rin.imagetoolbox.core.ui.widget.text.TitleItem
-import com.t8rin.imagetoolbox.core.utils.appContext
 
 @Composable
 fun AuthorLinksSheet(
@@ -80,7 +71,6 @@ fun AuthorLinksSheet(
             }
         },
         sheetContent = {
-            val activity = LocalActivity.current
             val linkHandler = LocalUriHandler.current
             val settingsState = LocalSettingsState.current
 
@@ -94,50 +84,18 @@ fun AuthorLinksSheet(
                     )
                 ) {
                     PreferenceItem(
-                        containerColor = MaterialTheme.colorScheme.tertiaryContainer,
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
                         onClick = {
-                            linkHandler.openUri(AUTHOR_TELEGRAM)
+                            linkHandler.openUri(AUTHOR_GITHUB)
                         },
                         endIcon = Icons.Rounded.Link,
                         shape = ShapeDefaults.top,
-                        title = stringResource(R.string.telegram),
-                        startIcon = Icons.Rounded.Telegram,
+                        title = stringResource(R.string.github),
+                        startIcon = Icons.Rounded.Github,
                         subtitle = stringResource(R.string.app_developer_nick),
                         overrideIconShapeContentColor = true
                     )
                 }
-                Spacer(Modifier.height(4.dp))
-                PreferenceItem(
-                    containerColor = MaterialTheme.colorScheme.secondaryContainer,
-                    onClick = {
-                        runCatching {
-                            activity!!.startActivity(
-                                Intent(Intent.ACTION_SENDTO).apply {
-                                    data = "mailto:$AUTHOR_EMAIL".toUri()
-                                }
-                            )
-                        }.onFailure {
-                            appContext.shareText(AUTHOR_EMAIL)
-                        }
-                    },
-                    shape = ShapeDefaults.center,
-                    endIcon = Icons.Rounded.Link,
-                    title = stringResource(R.string.email),
-                    startIcon = Icons.Rounded.AlternateEmail,
-                    subtitle = AUTHOR_EMAIL
-                )
-                Spacer(Modifier.height(4.dp))
-                PreferenceItem(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    onClick = {
-                        linkHandler.openUri(AUTHOR_GITHUB)
-                    },
-                    endIcon = Icons.Rounded.Link,
-                    shape = ShapeDefaults.bottom,
-                    title = stringResource(R.string.github),
-                    startIcon = Icons.Rounded.Github,
-                    subtitle = stringResource(R.string.app_developer_nick)
-                )
                 Spacer(Modifier.height(16.dp))
             }
         }

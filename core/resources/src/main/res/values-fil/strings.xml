@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">Ngayong araw</string>
     <string name="header_yesterday">Kahapon</string>
     <string name="embedded_picker">Naka-embed na Picker</string>
-    <string name="embedded_picker_sub">Tagapili ng imahe ng Image Toolbox</string>
+    <string name="embedded_picker_sub">Tagapili ng imahe ng SnapForge</string>
     <string name="no_permissions">Walang pahintulot</string>
     <string name="request">Kahilingan</string>
     <string name="pick_multiple_media">Pumili ng Maramihang Media</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Pinapagana ang antialiasing upang maiwasan ang matutulis na mga gilid</string>
     <string name="open_edit_instead_of_preview">Buksan ang Edit sa halip na Preview</string>
-    <string name="open_edit_instead_of_preview_sub">Kapag pinili mo ang larawan na bubuksan (preview) sa ImageToolbox, ang pag-edit ng selection sheet ay bubuksan sa halip na mag-preview</string>
+    <string name="open_edit_instead_of_preview_sub">Kapag pinili mo ang larawan na bubuksan (preview) sa SnapForge, ang pag-edit ng selection sheet ay bubuksan sa halip na mag-preview</string>
     <string name="document_scanner">Scanner ng Dokumento</string>
     <string name="document_scanner_sub">I-scan ang mga dokumento at gumawa ng PDF o hiwalay na mga larawan mula sa kanila</string>
     <string name="click_to_start_scanning">I-click upang simulan ang pag-scan</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Mga larawan sa WEBP</string>
     <string name="select_webp_image_to_start">Pumili ng WEBP image para magsimula</string>
     <string name="manage_storage_extra_types">Walang ganap na access sa mga file</string>
-    <string name="manage_storage_extra_types_sub">Payagan ang lahat ng mga file na ma-access upang makita ang JXL, QOI at iba pang mga larawan na hindi kinikilala bilang mga larawan sa Android. Kung walang pahintulot ang Image Toolbox ay hindi maipakita ang mga larawang iyon</string>
+    <string name="manage_storage_extra_types_sub">Payagan ang lahat ng mga file na ma-access upang makita ang JXL, QOI at iba pang mga larawan na hindi kinikilala bilang mga larawan sa Android. Kung walang pahintulot ang SnapForge ay hindi maipakita ang mga larawang iyon</string>
     <string name="default_draw_color">Default na Kulay ng Draw</string>
     <string name="default_draw_path_mode">Default na Draw Path Mode</string>
     <string name="add_timestamp">Magdagdag ng Timestamp</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">I-export ang nabuong palette sa iba\'t ibang mga format</string>
     <string name="add_color_palette_sub">Nagdaragdag ng bagong kulay sa kasalukuyang palette</string>
     <string name="palette_name_not_supported">Hindi sinusuportahan ng %1$s na format ang pagbibigay ng pangalan ng palette</string>
-    <string name="wallpapers_export_not_avaialbe">Dahil sa mga patakaran ng Play Store, hindi maaaring isama ang feature na ito sa kasalukuyang build. Upang ma-access ang functionality na ito, mangyaring i-download ang ImageToolbox mula sa isang alternatibong pinagmulan. Mahahanap mo ang mga available na build sa GitHub sa ibaba.</string>
+    <string name="wallpapers_export_not_avaialbe">Dahil sa mga patakaran ng Play Store, hindi maaaring isama ang feature na ito sa kasalukuyang build. Upang ma-access ang functionality na ito, mangyaring i-download ang SnapForge mula sa isang alternatibong pinagmulan. Mahahanap mo ang mga available na build sa GitHub sa ibaba.</string>
     <string name="open_github_page">Buksan ang pahina ng Github</string>
     <string name="overwrite_files_sub_short">Ang orihinal na file ay papalitan ng bago sa halip na i-save sa napiling folder</string>
     <string name="hidden_watermark_text_detected">Nakakita ng nakatagong watermark na text</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">I-convert ang lahat ng mga larawang naka-embed na dokumento sa grayscale</string>
     <string name="compress_pdf">I-compress ang PDF</string>
     <string name="compress_pdf_sub">I-optimize ang laki ng iyong file ng dokumento para sa mas madaling pagbabahagi</string>
-    <string name="repair_info">Ang ImageToolbox ay muling itinatayo ang panloob na cross-reference na talahanayan at muling nabuo ang istraktura ng file mula sa simula. Maaari nitong ibalik ang access sa maraming file na \\\"hindi mabubuksan\\\"</string>
+    <string name="repair_info">Ang SnapForge ay muling itinatayo ang panloob na cross-reference na talahanayan at muling nabuo ang istraktura ng file mula sa simula. Maaari nitong ibalik ang access sa maraming file na \\\"hindi mabubuksan\\\"</string>
     <string name="grayscale_info">Kino-convert ng tool na ito ang lahat ng mga imahe ng dokumento sa grayscale. Pinakamahusay para sa pag-print at pagbabawas ng laki ng file</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">I-edit ang mga katangian ng dokumento para sa mas mahusay na privacy</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Kulay ng Background Para sa Mga Alpha Format</string>
     <string name="background_color_for_alpha_formats_sub">Nagdaragdag ng kakayahang magtakda ng kulay ng background para sa bawat format ng larawan na may suporta sa alpha, kapag hindi pinagana ito ay magagamit lamang para sa mga hindi alpha</string>
     <string name="open_markup_project">Buksan ang proyekto</string>
-    <string name="open_markup_project_sub">Ipagpatuloy ang pag-edit ng naunang na-save na proyekto ng Image Toolbox</string>
-    <string name="markup_project_open_failed">Hindi mabuksan ang proyekto ng Image Toolbox</string>
-    <string name="markup_project_missing_data">Ang proyekto ng Image Toolbox ay walang data ng proyekto</string>
-    <string name="markup_project_corrupted">Ang proyekto ng Image Toolbox ay sira</string>
-    <string name="unsupported_markup_project_version">Hindi sinusuportahang bersyon ng proyekto ng Image Toolbox: %1$d</string>
+    <string name="open_markup_project_sub">Ipagpatuloy ang pag-edit ng naunang na-save na proyekto ng SnapForge</string>
+    <string name="markup_project_open_failed">Hindi mabuksan ang proyekto ng SnapForge</string>
+    <string name="markup_project_missing_data">Ang proyekto ng SnapForge ay walang data ng proyekto</string>
+    <string name="markup_project_corrupted">Ang proyekto ng SnapForge ay sira</string>
+    <string name="unsupported_markup_project_version">Hindi sinusuportahang bersyon ng proyekto ng SnapForge: %1$d</string>
     <string name="save_markup_project">I-save ang proyekto</string>
     <string name="save_markup_project_sub">Mag-imbak ng mga layer, background at kasaysayan ng pag-edit sa isang nae-edit na file ng proyekto</string>
     <string name="failed_to_open">Nabigong buksan</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Piliin ang tamang tool</string>
     <string name="help_tip_choose_tool_subtitle">Gumamit ng mga kategorya, paghahanap, paborito, at magbahagi ng mga aksyon upang magsimula sa tamang lugar</string>
     <string name="help_tip_choose_tool_page_title">Magsimula sa pinakamagandang entry point</string>
-    <string name="help_tip_choose_tool_description">Ang Image Toolbox ay may maraming nakatutok na tool, at marami sa mga ito ay nagsasapawan sa unang tingin. Magsimula sa gawaing gusto mong tapusin, pagkatapos ay piliin ang tool na kumokontrol sa pinakamahalagang bahagi ng resulta: laki, format, metadata, text, PDF page, kulay, o layout.</string>
+    <string name="help_tip_choose_tool_description">Ang SnapForge ay may maraming nakatutok na tool, at marami sa mga ito ay nagsasapawan sa unang tingin. Magsimula sa gawaing gusto mong tapusin, pagkatapos ay piliin ang tool na kumokontrol sa pinakamahalagang bahagi ng resulta: laki, format, metadata, text, PDF page, kulay, o layout.</string>
     <string name="help_tip_choose_tool_step_1">Gumamit ng paghahanap kapag alam mo ang pangalan ng pagkilos, gaya ng pagbabago ng laki, PDF, EXIF, OCR, QR, o kulay.</string>
     <string name="help_tip_choose_tool_step_2">Magbukas ng kategorya kapag alam mo lang ang uri ng gawain, pagkatapos ay i-pin ang mga madalas na tool bilang mga paborito.</string>
-    <string name="help_tip_choose_tool_step_3">Kapag nagbahagi ang isa pang app ng larawan sa Image Toolbox, piliin ang tool mula sa daloy ng share sheet.</string>
+    <string name="help_tip_choose_tool_step_3">Kapag nagbahagi ang isa pang app ng larawan sa SnapForge, piliin ang tool mula sa daloy ng share sheet.</string>
     <string name="help_tip_import_save_share_title">Mag-import, mag-save, at magbahagi ng mga resulta</string>
     <string name="help_tip_import_save_share_subtitle">Unawain ang karaniwang daloy mula sa pagpili ng input hanggang sa pag-export ng na-edit na file</string>
     <string name="help_tip_import_save_share_page_title">Sundin ang karaniwang daloy ng pag-edit</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Picker at launcher</string>
     <string name="help_tip_picker_launcher_subtitle">Gumamit ng mga setting ng picker kapag nagbukas ang app ng masyadong maraming dialog o nagsimula sa maling lugar</string>
     <string name="help_tip_picker_launcher_page_title">Gawing tumutugma sa iyong ugali ang pagbubukas ng mga file</string>
-    <string name="help_tip_picker_launcher_description">Kinokontrol ng mga setting ng picker at launcher kung magsisimula ang Image Toolbox sa pangunahing screen, tool, o daloy ng pagpili ng file. Lalo na kapaki-pakinabang ang mga opsyong ito kapag karaniwan kang pumapasok mula sa Android share sheet o kapag gusto mong maging parang tool launcher ang app.</string>
+    <string name="help_tip_picker_launcher_description">Kinokontrol ng mga setting ng picker at launcher kung magsisimula ang SnapForge sa pangunahing screen, tool, o daloy ng pagpili ng file. Lalo na kapaki-pakinabang ang mga opsyong ito kapag karaniwan kang pumapasok mula sa Android share sheet o kapag gusto mong maging parang tool launcher ang app.</string>
     <string name="help_tip_picker_launcher_step_1">Gumamit ng mga setting ng tagapili ng larawan kung ang tagapili ng system ay nagtatago ng mga file, nagpapakita ng masyadong maraming kamakailang mga item, o hindi maayos na pinangangasiwaan ang mga cloud file.</string>
     <string name="help_tip_picker_launcher_step_2">Paganahin ang laktawan ang pagpili para lang sa mga tool kung saan ka karaniwang pumapasok mula sa pagbabahagi o alam na ang source file.</string>
-    <string name="help_tip_picker_launcher_step_3">Suriin ang launcher mode kung gusto mong kumilos ang Image Toolbox na mas katulad ng tool picker kaysa sa isang normal na home screen.</string>
+    <string name="help_tip_picker_launcher_step_3">Suriin ang launcher mode kung gusto mong kumilos ang SnapForge na mas katulad ng tool picker kaysa sa isang normal na home screen.</string>
     <string name="help_tip_image_source_title">Pinagmulan ng larawan</string>
     <string name="help_tip_image_source_subtitle">Piliin ang picker mode na pinakamahusay na gumagana sa mga gallery, file manager, at cloud file</string>
     <string name="help_tip_image_source_page_title">Pumili ng mga file mula sa tamang pinagmulan</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Isang beses na i-save ang mga folder</string>
     <string name="help_tip_one_time_save_location_subtitle">Ipadala ang mga susunod na pag-export sa isang pansamantalang folder nang hindi binabago ang iyong normal na destinasyon</string>
     <string name="help_tip_one_time_save_location_page_title">Panatilihing hiwalay ang mga espesyal na trabaho</string>
-    <string name="help_tip_one_time_save_location_description">Ang isang beses na pag-save ng lokasyon ay kapaki-pakinabang para sa mga pansamantalang proyekto, mga folder ng kliyente, mga sesyon ng paglilinis, o mga pag-export na hindi dapat ihalo sa iyong regular na folder ng Image Toolbox. Nagbibigay ito ng panandaliang destinasyon nang hindi muling isinusulat ang iyong default na setup.</string>
+    <string name="help_tip_one_time_save_location_description">Ang isang beses na pag-save ng lokasyon ay kapaki-pakinabang para sa mga pansamantalang proyekto, mga folder ng kliyente, mga sesyon ng paglilinis, o mga pag-export na hindi dapat ihalo sa iyong regular na folder ng SnapForge. Nagbibigay ito ng panandaliang destinasyon nang hindi muling isinusulat ang iyong default na setup.</string>
     <string name="help_tip_one_time_save_location_step_1">Pumili ng isang beses na folder bago simulan ang isang gawain na nasa labas ng iyong normal na lokasyon ng pag-export.</string>
     <string name="help_tip_one_time_save_location_step_2">Gamitin ito para sa mga maiikling proyekto, nakabahaging folder, o mga batch kung saan dapat manatiling pinagsama-sama ang mga output.</string>
     <string name="help_tip_one_time_save_location_step_3">Bumalik sa default na folder pagkatapos ng trabaho upang ang mga pag-export sa ibang pagkakataon ay hindi mapunta sa pansamantalang lokasyon.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d ay bubukas • %2$s</string>
     <string name="no_usage_statistics">Wala pang istatistika ng paggamit</string>
     <string name="no_usage_statistics_sub">Magbukas ng ilang tool at awtomatikong lilitaw ang mga ito dito</string>
-    <string name="usage_statistics_info">Ang iyong mga istatistika sa paggamit ay lokal lamang na naka-imbak sa iyong device. Ginagamit lang sila ng ImageToolbox para ipakita ang iyong personal na aktibidad, mga paboritong tool, at mga naka-save na insight sa data</string>
+    <string name="usage_statistics_info">Ang iyong mga istatistika sa paggamit ay lokal lamang na naka-imbak sa iyong device. Ginagamit lang sila ng SnapForge para ipakita ang iyong personal na aktibidad, mga paboritong tool, at mga naka-save na insight sa data</string>
     <string name="search_keywords_single_edit">editor edit photo picture retouch adjust</string>
     <string name="search_keywords_resize_and_convert">resize convert scale resolution dimensyon lapad taas jpg jpeg png webp compress</string>
     <string name="search_keywords_weight_resize">compress size weight bytes mb kb bawasan ang kalidad optimize</string>
@@ -4443,7 +4443,7 @@
     <string name="score">Puntos</string>
     <string name="return_to_external_app_after_save">Bumalik pagkatapos i-save ang mga panlabas na pag-edit</string>
     <string name="return_to_external_app_after_save_sub">Isara ang Toolbox ng Larawan pagkatapos i-save ang isang larawang binuksan para sa pag-edit mula sa isa pang app</string>
-    <string name="add_imagetoolbox_metadata">Magdagdag ng metadata ng ImageToolbox</string>
+    <string name="add_imagetoolbox_metadata">Magdagdag ng metadata ng SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Isulat ang bersyon ng app at na-configure na mga parameter ng larawan sa EXIF ​​kapag nagse-save</string>
     <string name="read_only">Read Only</string>
     <string name="tag_camera_firmware">Firmware ng camera</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">slate</string>
     <string name="search_keywords_pdf_dark_mode">pdf dark mode night reader invert colors negative</string>
     <string name="custom_depth_map">Custom na depth na mapa</string>
-    <string name="custom_depth_map_sub">Opsyonal. Gumamit muli ng grayscale o Image Toolbox depth map sa halip na tantyahin muli ang lalim</string>
+    <string name="custom_depth_map_sub">Opsyonal. Gumamit muli ng grayscale o SnapForge depth map sa halip na tantyahin muli ang lalim</string>
     <string name="comic_to_pdf">Comic book sa PDF</string>
     <string name="comic_to_pdf_sub">I-convert ang CBR, CBZ, CB7 at iba pang mga archive ng imahe sa PDF</string>
     <string name="select_comic_archive_to_start">Pumili ng CBR, CBZ, CB7, o CBT comic book archive</string>

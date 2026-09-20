@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -69,7 +69,7 @@
     <string name="allow_betas">Leisti beta versijų</string>
     <string name="ci_channel">CI kanalas</string>
     <string name="group">Grupė</string>
-    <string name="image_toolbox_in_telegram">„Image Toolbox“ programėlėje „Telegram“ 🎉</string>
+    <string name="image_toolbox_in_telegram">„SnapForge“ programėlėje „Telegram“ 🎉</string>
     <string name="ci_channel_sub">Gaukite pranešimų apie naujas programėlės versijas ir skaitykite skelbimus.</string>
     <string name="crash_subtitle">Galite susisiekti su manimi naudojant žemiau nurodytas parinktis ir aš bandysiu surasti sprendimą.\n\n(Nepamirškite pridėti žurnalus).</string>
     <string name="explicit">Aiškus</string>
@@ -1090,7 +1090,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Įgalina antialiasing, kad būtų išvengta aštrių kraštų</string>
     <string name="open_edit_instead_of_preview">Atidarykite Redaguoti, o ne peržiūrą</string>
-    <string name="open_edit_instead_of_preview_sub">Pasirinkus vaizdą, kurį norite atidaryti (peržiūrėti) „ImageToolbox“, bus atidarytas redagavimo pasirinkimo lapas, o ne peržiūra</string>
+    <string name="open_edit_instead_of_preview_sub">Pasirinkus vaizdą, kurį norite atidaryti (peržiūrėti) „SnapForge“, bus atidarytas redagavimo pasirinkimo lapas, o ne peržiūra</string>
     <string name="document_scanner">Dokumentų skaitytuvas</string>
     <string name="document_scanner_sub">Nuskaitykite dokumentus ir kurkite PDF arba atskirkite iš jų vaizdus</string>
     <string name="click_to_start_scanning">Spustelėkite norėdami pradėti nuskaitymą</string>
@@ -1365,7 +1365,7 @@
     <string name="webp_type_to_webp">Vaizdai į WEBP</string>
     <string name="select_webp_image_to_start">Norėdami pradėti, pasirinkite WEBP vaizdą</string>
     <string name="manage_storage_extra_types">Nėra visiškos prieigos prie failų</string>
-    <string name="manage_storage_extra_types_sub">Leiskite visiems failams pasiekti JXL, QOI ir kitus vaizdus, ​​kurie „Android“ neatpažįstami kaip vaizdai. Be leidimo „Image Toolbox“ negali rodyti tų vaizdų</string>
+    <string name="manage_storage_extra_types_sub">Leiskite visiems failams pasiekti JXL, QOI ir kitus vaizdus, ​​kurie „Android“ neatpažįstami kaip vaizdai. Be leidimo „SnapForge“ negali rodyti tų vaizdų</string>
     <string name="default_draw_color">Numatytoji piešimo spalva</string>
     <string name="default_draw_path_mode">Numatytasis piešimo kelio režimas</string>
     <string name="add_timestamp">Pridėti laiko žymą</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Eksportuokite sugeneruotą paletę į skirtingus formatus</string>
     <string name="add_color_palette_sub">Prideda naują spalvą į dabartinę paletę</string>
     <string name="palette_name_not_supported">%1$s formatas nepalaiko paletės pavadinimo</string>
-    <string name="wallpapers_export_not_avaialbe">Dėl „Play“ parduotuvės politikos šios funkcijos negalima įtraukti į dabartinę versiją. Norėdami pasiekti šią funkciją, atsisiųskite ImageToolbox iš alternatyvaus šaltinio. Galimas versijas „GitHub“ rasite toliau.</string>
+    <string name="wallpapers_export_not_avaialbe">Dėl „Play“ parduotuvės politikos šios funkcijos negalima įtraukti į dabartinę versiją. Norėdami pasiekti šią funkciją, atsisiųskite SnapForge iš alternatyvaus šaltinio. Galimas versijas „GitHub“ rasite toliau.</string>
     <string name="open_github_page">Atidarykite „Github“ puslapį</string>
     <string name="overwrite_files_sub_short">Originalus failas bus pakeistas nauju, o ne išsaugoti pasirinktame aplanke</string>
     <string name="hidden_watermark_text_detected">Aptiktas paslėptas vandens ženklo tekstas</string>
@@ -2138,7 +2138,7 @@
     <string name="grayscale_pdf_sub">Konvertuoti visus dokumento įterptus vaizdus į pilkos spalvos tonus</string>
     <string name="compress_pdf">Suspausti PDF</string>
     <string name="compress_pdf_sub">Optimizuokite dokumento failo dydį, kad būtų lengviau bendrinti</string>
-    <string name="repair_info">„ImageToolbox“ atkuria vidinę kryžminių nuorodų lentelę ir atkuria failo struktūrą nuo nulio. Tai gali atkurti prieigą prie daugelio failų, kurių \\\"negalima atidaryti\\\"</string>
+    <string name="repair_info">„SnapForge“ atkuria vidinę kryžminių nuorodų lentelę ir atkuria failo struktūrą nuo nulio. Tai gali atkurti prieigą prie daugelio failų, kurių \\\"negalima atidaryti\\\"</string>
     <string name="grayscale_info">Šis įrankis konvertuoja visus dokumentų vaizdus į pilkos spalvos tonus. Geriausiai tinka spausdinti ir sumažinti failo dydį</string>
     <string name="metadata">Metaduomenys</string>
     <string name="metadata_pdf_sub">Redaguokite dokumento ypatybes, kad užtikrintumėte didesnį privatumą</string>
@@ -2191,10 +2191,10 @@
     <string name="background_color_for_alpha_formats_sub">Pridedama galimybė nustatyti fono spalvą kiekvienam vaizdo formatui su alfa palaikymu, kai išjungta, tai galima tik ne alfa formatams</string>
     <string name="open_markup_project">Atviras projektas</string>
     <string name="open_markup_project_sub">Tęskite anksčiau išsaugoto vaizdo įrankių dėžės projekto redagavimą</string>
-    <string name="markup_project_open_failed">Nepavyko atidaryti „Image Toolbox“ projekto</string>
+    <string name="markup_project_open_failed">Nepavyko atidaryti „SnapForge“ projekto</string>
     <string name="markup_project_missing_data">Vaizdo įrankių dėžutės projekte trūksta projekto duomenų</string>
     <string name="markup_project_corrupted">Vaizdo įrankių dėžutės projektas sugadintas</string>
-    <string name="unsupported_markup_project_version">Nepalaikoma „Image Toolbox“ projekto versija: %1$d</string>
+    <string name="unsupported_markup_project_version">Nepalaikoma „SnapForge“ projekto versija: %1$d</string>
     <string name="save_markup_project">Išsaugoti projektą</string>
     <string name="save_markup_project_sub">Saugokite sluoksnius, foną ir redaguokite istoriją redaguojamame projekto faile</string>
     <string name="failed_to_open">Nepavyko atidaryti</string>
@@ -2426,7 +2426,7 @@
     <string name="help_tip_choose_tool_description">Vaizdo įrankių dėžutėje yra daug tikslinių įrankių ir daugelis jų iš pirmo žvilgsnio sutampa. Pradėkite nuo užduoties, kurią norite užbaigti, tada pasirinkite įrankį, kuris valdo svarbiausią rezultato dalį: dydį, formatą, metaduomenis, tekstą, PDF puslapius, spalvas arba išdėstymą.</string>
     <string name="help_tip_choose_tool_step_1">Naudokite paiešką, kai žinote veiksmo pavadinimą, pvz., dydžio keitimas, PDF, EXIF, OCR, QR arba spalva.</string>
     <string name="help_tip_choose_tool_step_2">Atidarykite kategoriją, kai žinote tik užduoties tipą, tada dažnai prisekite įrankius kaip mėgstamiausius.</string>
-    <string name="help_tip_choose_tool_step_3">Kai kita programa bendrina vaizdą į „Image Toolbox“, pasirinkite įrankį iš bendrinimo lapo srauto.</string>
+    <string name="help_tip_choose_tool_step_3">Kai kita programa bendrina vaizdą į „SnapForge“, pasirinkite įrankį iš bendrinimo lapo srauto.</string>
     <string name="help_tip_import_save_share_title">Importuokite, išsaugokite ir bendrinkite rezultatus</string>
     <string name="help_tip_import_save_share_subtitle">Supraskite įprastą eigą nuo įvesties rinkimo iki redaguoto failo eksportavimo</string>
     <string name="help_tip_import_save_share_page_title">Vykdykite įprastą redagavimo eigą</string>
@@ -2468,7 +2468,7 @@
     <string name="help_tip_picker_launcher_description">Rinkiklio ir paleidimo priemonės nustatymai valdo, ar vaizdo įrankių dėžė paleidžiama iš pagrindinio ekrano, įrankio ar failų pasirinkimo srauto. Šios parinktys ypač naudingos, kai paprastai įvedate iš „Android“ bendrinimo lapo arba kai norite, kad programa jaustųsi kaip įrankių paleidimo priemonė.</string>
     <string name="help_tip_picker_launcher_step_1">Naudokite nuotraukų rinkiklio nustatymus, jei sistemos rinkiklis paslepia failus, rodo per daug naujausių elementų arba blogai tvarko debesies failus.</string>
     <string name="help_tip_picker_launcher_step_2">Įgalinti praleisti pasirinkimą tik tiems įrankiams, kuriuos paprastai įvedate iš bendrinimo arba jau žinote šaltinio failą.</string>
-    <string name="help_tip_picker_launcher_step_3">Peržiūrėkite paleidimo priemonės režimą, jei norite, kad „Image Toolbox“ veiktų labiau kaip įrankių rinkiklis nei įprastas pagrindinis ekranas.</string>
+    <string name="help_tip_picker_launcher_step_3">Peržiūrėkite paleidimo priemonės režimą, jei norite, kad „SnapForge“ veiktų labiau kaip įrankių rinkiklis nei įprastas pagrindinis ekranas.</string>
     <string name="help_tip_image_source_title">Vaizdo šaltinis</string>
     <string name="help_tip_image_source_subtitle">Pasirinkite rinkiklio režimą, kuris geriausiai veikia su galerijomis, failų tvarkytuvėmis ir debesies failais</string>
     <string name="help_tip_image_source_page_title">Pasirinkite failus iš tinkamo šaltinio</string>
@@ -2612,7 +2612,7 @@
     <string name="help_tip_one_time_save_location_title">Vienkartiniai išsaugojimo aplankai</string>
     <string name="help_tip_one_time_save_location_subtitle">Siųskite kitą eksportą į laikinąjį aplanką nekeisdami įprastos paskirties vietos</string>
     <string name="help_tip_one_time_save_location_page_title">Specialius darbus laikykite atskirai</string>
-    <string name="help_tip_one_time_save_location_description">Vienkartinė išsaugojimo vieta naudinga laikiniems projektams, klientų aplankams, valymo seansams ar eksportuojant, kurie neturėtų būti derinami su įprastu aplanku „Image Toolbox“. Tai suteikia trumpalaikį tikslą neperrašant numatytosios sąrankos.</string>
+    <string name="help_tip_one_time_save_location_description">Vienkartinė išsaugojimo vieta naudinga laikiniems projektams, klientų aplankams, valymo seansams ar eksportuojant, kurie neturėtų būti derinami su įprastu aplanku „SnapForge“. Tai suteikia trumpalaikį tikslą neperrašant numatytosios sąrankos.</string>
     <string name="help_tip_one_time_save_location_step_1">Prieš pradėdami užduotį, kuri nepriklauso įprastoje eksportavimo vietoje, pasirinkite vienkartinį aplanką.</string>
     <string name="help_tip_one_time_save_location_step_2">Naudokite jį trumpiems projektams, bendrinamiems aplankams ar paketams, kur išvestis turi likti sugrupuota.</string>
     <string name="help_tip_one_time_save_location_step_3">Atlikę užduotį grįžkite į numatytąjį aplanką, kad vėliau eksportuoti elementai netikėtai nepatektų į laikinąją vietą.</string>
@@ -3189,7 +3189,7 @@
     <string name="tool_usage_subtitle">%1$d atsidaro • %2$s</string>
     <string name="no_usage_statistics">Kol kas nėra naudojimo statistikos</string>
     <string name="no_usage_statistics_sub">Atidarykite kelis įrankius ir jie čia pasirodys automatiškai</string>
-    <string name="usage_statistics_info">Jūsų naudojimo statistika saugoma tik lokaliai jūsų įrenginyje. „ImageToolbox“ juos naudoja tik jūsų asmeninei veiklai, mėgstamiems įrankiams ir išsaugotų duomenų įžvalgoms rodyti</string>
+    <string name="usage_statistics_info">Jūsų naudojimo statistika saugoma tik lokaliai jūsų įrenginyje. „SnapForge“ juos naudoja tik jūsų asmeninei veiklai, mėgstamiems įrankiams ir išsaugotų duomenų įžvalgoms rodyti</string>
     <string name="search_keywords_single_edit">redaktorius redaguoti nuotraukos retušavimą koreguoti</string>
     <string name="search_keywords_resize_and_convert">keisti dydį konvertuoti mastelio skiriamąją gebą matmenys plotis aukštis jpg jpeg png webp suspausti</string>
     <string name="search_keywords_weight_resize">suspausti dydis svoris baitų mb kb sumažinti kokybę optimizuoti</string>
@@ -4445,7 +4445,7 @@
     <string name="score">Rezultatas</string>
     <string name="return_to_external_app_after_save">Grąžinkite išsaugoję išorinius pakeitimus</string>
     <string name="return_to_external_app_after_save_sub">Išsaugoję vaizdą, atidarytą redaguoti iš kitos programos, uždarykite vaizdo įrankių dėžę</string>
-    <string name="add_imagetoolbox_metadata">Pridėti „ImageToolbox“ metaduomenis</string>
+    <string name="add_imagetoolbox_metadata">Pridėti „SnapForge“ metaduomenis</string>
     <string name="add_imagetoolbox_metadata_sub">Išsaugodami įrašykite programos versiją ir sukonfigūruotus vaizdo parametrus į EXIF</string>
     <string name="read_only">Tik skaityti</string>
     <string name="tag_camera_firmware">Kameros programinė įranga</string>

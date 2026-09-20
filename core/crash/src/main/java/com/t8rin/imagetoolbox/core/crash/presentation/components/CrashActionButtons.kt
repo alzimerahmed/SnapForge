@@ -27,7 +27,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ButtonDefaults
@@ -43,14 +42,11 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.t8rin.imagetoolbox.core.domain.TELEGRAM_GROUP_LINK
 import com.t8rin.imagetoolbox.core.resources.Icons
 import com.t8rin.imagetoolbox.core.resources.R
 import com.t8rin.imagetoolbox.core.resources.icons.Github
 import com.t8rin.imagetoolbox.core.resources.icons.MobileShare
-import com.t8rin.imagetoolbox.core.resources.icons.Telegram
 import com.t8rin.imagetoolbox.core.ui.theme.Black
-import com.t8rin.imagetoolbox.core.ui.theme.Blue
 import com.t8rin.imagetoolbox.core.ui.theme.White
 import com.t8rin.imagetoolbox.core.ui.theme.outlineVariant
 import com.t8rin.imagetoolbox.core.ui.utils.animation.springySpec
@@ -80,25 +76,11 @@ internal fun CrashActionButtons(
                 LargeEnhancedButton(
                     onClick = {
                         onCopyCrashInfo()
-                        linkHandler.openUri(TELEGRAM_GROUP_LINK)
-                    },
-                    modifier = Modifier
-                        .weight(1f)
-                        .width(containerWidth / 2f)
-                        .padding(end = 8.dp),
-                    containerColor = Blue,
-                    contentColor = White,
-                    icon = Icons.Rounded.Telegram,
-                    text = stringResource(R.string.contact_me)
-                )
-                LargeEnhancedButton(
-                    onClick = {
-                        onCopyCrashInfo()
                         linkHandler.openUri(githubLink)
                     },
                     modifier = Modifier
                         .weight(1f)
-                        .width(containerWidth / 2f),
+                        .width(containerWidth),
                     containerColor = Black,
                     contentColor = White,
                     icon = Icons.Rounded.Github,

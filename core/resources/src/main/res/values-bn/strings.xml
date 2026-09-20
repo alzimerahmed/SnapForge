@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">বিভিন্ন ফরম্যাটে জেনারেট করা প্যালেট রপ্তানি করুন</string>
     <string name="add_color_palette_sub">বর্তমান প্যালেটে নতুন রঙ যোগ করে</string>
     <string name="palette_name_not_supported">%1$s বিন্যাস প্যালেট নাম প্রদান সমর্থন করে না</string>
-    <string name="wallpapers_export_not_avaialbe">প্লে স্টোর নীতির কারণে, এই বৈশিষ্ট্যটি বর্তমান বিল্ডে অন্তর্ভুক্ত করা যাবে না। এই কার্যকারিতা অ্যাক্সেস করতে, একটি বিকল্প উৎস থেকে ImageToolbox ডাউনলোড করুন। আপনি নীচে গিটহাবে উপলব্ধ বিল্ডগুলি খুঁজে পেতে পারেন।</string>
+    <string name="wallpapers_export_not_avaialbe">প্লে স্টোর নীতির কারণে, এই বৈশিষ্ট্যটি বর্তমান বিল্ডে অন্তর্ভুক্ত করা যাবে না। এই কার্যকারিতা অ্যাক্সেস করতে, একটি বিকল্প উৎস থেকে SnapForge ডাউনলোড করুন। আপনি নীচে গিটহাবে উপলব্ধ বিল্ডগুলি খুঁজে পেতে পারেন।</string>
     <string name="open_github_page">Github পৃষ্ঠা খুলুন</string>
     <string name="overwrite_files_sub_short">আসল ফাইলটি নির্বাচিত ফোল্ডারে সংরক্ষণ করার পরিবর্তে নতুন একটি দিয়ে প্রতিস্থাপিত হবে</string>
     <string name="hidden_watermark_text_detected">লুকানো ওয়াটারমার্ক টেক্সট সনাক্ত করা হয়েছে</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">সমস্ত নথি এমবেড করা ছবিকে গ্রেস্কেলে রূপান্তর করুন</string>
     <string name="compress_pdf">পিডিএফ কম্প্রেস করুন</string>
     <string name="compress_pdf_sub">সহজে ভাগ করার জন্য আপনার নথি ফাইলের আকার অপ্টিমাইজ করুন</string>
-    <string name="repair_info">ImageToolbox অভ্যন্তরীণ ক্রস-রেফারেন্স টেবিল পুনর্নির্মাণ করে এবং স্ক্র্যাচ থেকে ফাইল গঠন পুনরুত্পাদন করে। এটি অনেক ফাইলের অ্যাক্সেস পুনরুদ্ধার করতে পারে যা \\\"খোলা যাবে না\\\"</string>
+    <string name="repair_info">SnapForge অভ্যন্তরীণ ক্রস-রেফারেন্স টেবিল পুনর্নির্মাণ করে এবং স্ক্র্যাচ থেকে ফাইল গঠন পুনরুত্পাদন করে। এটি অনেক ফাইলের অ্যাক্সেস পুনরুদ্ধার করতে পারে যা \\\"খোলা যাবে না\\\"</string>
     <string name="grayscale_info">এই টুলটি সমস্ত নথির ছবিকে গ্রেস্কেলে রূপান্তর করে। ফাইলের আকার মুদ্রণ এবং হ্রাস করার জন্য সেরা</string>
     <string name="metadata">মেটাডেটা</string>
     <string name="metadata_pdf_sub">ভাল গোপনীয়তার জন্য নথি বৈশিষ্ট্য সম্পাদনা করুন</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d খোলে • %2$s</string>
     <string name="no_usage_statistics">এখনও কোন ব্যবহার পরিসংখ্যান</string>
     <string name="no_usage_statistics_sub">কয়েকটি টুল খুলুন এবং সেগুলি এখানে স্বয়ংক্রিয়ভাবে প্রদর্শিত হবে</string>
-    <string name="usage_statistics_info">আপনার ব্যবহারের পরিসংখ্যান শুধুমাত্র আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষণ করা হয়। ImageToolbox এগুলি শুধুমাত্র আপনার ব্যক্তিগত কার্যকলাপ, প্রিয় সরঞ্জাম এবং সংরক্ষিত ডেটা অন্তর্দৃষ্টি দেখাতে ব্যবহার করে</string>
+    <string name="usage_statistics_info">আপনার ব্যবহারের পরিসংখ্যান শুধুমাত্র আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষণ করা হয়। SnapForge এগুলি শুধুমাত্র আপনার ব্যক্তিগত কার্যকলাপ, প্রিয় সরঞ্জাম এবং সংরক্ষিত ডেটা অন্তর্দৃষ্টি দেখাতে ব্যবহার করে</string>
     <string name="search_keywords_single_edit">এডিটর এডিট ফটো পিকচার রিটাচ অ্যাডজাস্ট করুন</string>
     <string name="search_keywords_resize_and_convert">আকার পরিবর্তন করুন স্কেল রেজোলিউশন মাত্রা প্রস্থ উচ্চতা jpg jpeg png webp কম্প্রেস</string>
     <string name="search_keywords_weight_resize">কম্প্রেস আকার ওজন বাইট mb kb মান কমাতে অপ্টিমাইজ</string>
@@ -4443,7 +4443,7 @@
     <string name="score">স্কোর</string>
     <string name="return_to_external_app_after_save">বাহ্যিক সম্পাদনা সংরক্ষণ করার পরে ফিরে যান</string>
     <string name="return_to_external_app_after_save_sub">অন্য অ্যাপ থেকে সম্পাদনা করার জন্য খোলা একটি ছবি সংরক্ষণ করার পরে ইমেজ টুলবক্স বন্ধ করুন</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox মেটাডেটা যোগ করুন</string>
+    <string name="add_imagetoolbox_metadata">SnapForge মেটাডেটা যোগ করুন</string>
     <string name="add_imagetoolbox_metadata_sub">সংরক্ষণ করার সময় অ্যাপের সংস্করণ এবং কনফিগার করা চিত্রের প্যারামিটারগুলিকে EXIF-এ লিখুন</string>
     <string name="read_only">শুধুমাত্র পড়া</string>
     <string name="tag_camera_firmware">ক্যামেরা ফার্মওয়্যার</string>

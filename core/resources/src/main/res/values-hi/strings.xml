@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1076,7 +1076,7 @@
     <string name="antialias">एंटीएलियास</string>
     <string name="antialias_sub">तेज किनारों को रोकने के लिए एंटीएलियासिंग सक्षम करता है</string>
     <string name="open_edit_instead_of_preview">पूर्वावलोकन के बजाय संपादन खोलें</string>
-    <string name="open_edit_instead_of_preview_sub">जब आप ImageToolbox में खोलने (पूर्वावलोकन) के लिए छवि का चयन करते हैं, तो पूर्वावलोकन के बजाय संपादन चयन पत्रक खोला जायेगा</string>
+    <string name="open_edit_instead_of_preview_sub">जब आप SnapForge में खोलने (पूर्वावलोकन) के लिए छवि का चयन करते हैं, तो पूर्वावलोकन के बजाय संपादन चयन पत्रक खोला जायेगा</string>
     <string name="document_scanner">दस्तावेज़ स्कैनर</string>
     <string name="save_as_pdf">PDF के रूप में सहेजें</string>
     <string name="document_scanner_sub">दस्तावेज़ों को स्कैन करें और उनसे PDF बनाएं या चित्र अलग करें</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">उत्पन्न पैलेट को विभिन्न प्रारूपों में निर्यात करें</string>
     <string name="add_color_palette_sub">मौजूदा पैलेट में नया रंग जोड़ता है</string>
     <string name="palette_name_not_supported">%1$s प्रारूप पैलेट नाम प्रदान करने का समर्थन नहीं करता</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store नीतियों के कारण, इस सुविधा को वर्तमान बिल्ड में शामिल नहीं किया जा सकता है। इस कार्यक्षमता तक पहुँचने के लिए, कृपया वैकल्पिक स्रोत से ImageToolbox डाउनलोड करें। आप नीचे GitHub पर उपलब्ध बिल्ड पा सकते हैं।</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store नीतियों के कारण, इस सुविधा को वर्तमान बिल्ड में शामिल नहीं किया जा सकता है। इस कार्यक्षमता तक पहुँचने के लिए, कृपया वैकल्पिक स्रोत से SnapForge डाउनलोड करें। आप नीचे GitHub पर उपलब्ध बिल्ड पा सकते हैं।</string>
     <string name="open_github_page">जीथब पेज खोलें</string>
     <string name="overwrite_files_sub_short">मूल फ़ाइल को चयनित फ़ोल्डर में सहेजने के बजाय नई फ़ाइल से बदल दिया जाएगा</string>
     <string name="hidden_watermark_text_detected">छिपे हुए वॉटरमार्क टेक्स्ट का पता लगाया गया</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">सभी दस्तावेज़ एम्बेडेड छवियों को ग्रेस्केल में बदलें</string>
     <string name="compress_pdf">पीडीएफ को कंप्रेस करें</string>
     <string name="compress_pdf_sub">आसान साझाकरण के लिए अपने दस्तावेज़ फ़ाइल आकार को अनुकूलित करें</string>
-    <string name="repair_info">ImageToolbox आंतरिक क्रॉस-रेफरेंस तालिका का पुनर्निर्माण करता है और फ़ाइल संरचना को स्क्रैच से पुनर्जीवित करता है। यह कई फ़ाइलों तक पहुंच बहाल कर सकता है जिन्हें \"खोला नहीं जा सकता\"</string>
+    <string name="repair_info">SnapForge आंतरिक क्रॉस-रेफरेंस तालिका का पुनर्निर्माण करता है और फ़ाइल संरचना को स्क्रैच से पुनर्जीवित करता है। यह कई फ़ाइलों तक पहुंच बहाल कर सकता है जिन्हें \"खोला नहीं जा सकता\"</string>
     <string name="grayscale_info">यह टूल सभी दस्तावेज़ छवियों को ग्रेस्केल में परिवर्तित करता है। मुद्रण और फ़ाइल आकार को कम करने के लिए सर्वोत्तम</string>
     <string name="metadata">मेटाडाटा</string>
     <string name="metadata_pdf_sub">बेहतर गोपनीयता के लिए दस्तावेज़ गुणों को संपादित करें</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d खुलता है • %2$s</string>
     <string name="no_usage_statistics">अभी तक कोई उपयोग आँकड़े नहीं</string>
     <string name="no_usage_statistics_sub">कुछ उपकरण खोलें और वे स्वचालित रूप से यहां दिखाई देंगे</string>
-    <string name="usage_statistics_info">आपके उपयोग के आँकड़े केवल आपके डिवाइस पर स्थानीय रूप से संग्रहीत किए जाते हैं। ImageToolbox उनका उपयोग केवल आपकी व्यक्तिगत गतिविधि, पसंदीदा टूल और सहेजे गए डेटा अंतर्दृष्टि को दिखाने के लिए करता है</string>
+    <string name="usage_statistics_info">आपके उपयोग के आँकड़े केवल आपके डिवाइस पर स्थानीय रूप से संग्रहीत किए जाते हैं। SnapForge उनका उपयोग केवल आपकी व्यक्तिगत गतिविधि, पसंदीदा टूल और सहेजे गए डेटा अंतर्दृष्टि को दिखाने के लिए करता है</string>
     <string name="search_keywords_single_edit">संपादक संपादन फोटो चित्र सुधार समायोजन</string>
     <string name="search_keywords_resize_and_convert">आकार बदलें, स्केल रिज़ॉल्यूशन आयाम, चौड़ाई, ऊंचाई, जेपीजी, पीएनजी, वेबपी, कंप्रेस करें</string>
     <string name="search_keywords_weight_resize">संपीड़ित आकार वजन बाइट्स एमबी केबी गुणवत्ता को कम करें अनुकूलन करें</string>
@@ -4443,7 +4443,7 @@
     <string name="score">अंक</string>
     <string name="return_to_external_app_after_save">बाहरी संपादन सहेजने के बाद वापस लौटें</string>
     <string name="return_to_external_app_after_save_sub">किसी अन्य ऐप से संपादन के लिए खोली गई छवि को सहेजने के बाद छवि टूलबॉक्स को बंद करें</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox मेटाडेटा जोड़ें</string>
+    <string name="add_imagetoolbox_metadata">SnapForge मेटाडेटा जोड़ें</string>
     <string name="add_imagetoolbox_metadata_sub">सहेजते समय ऐप संस्करण और कॉन्फ़िगर किए गए छवि पैरामीटर को EXIF ​​​​में लिखें</string>
     <string name="read_only">केवल पढ़ने के लिए</string>
     <string name="tag_camera_firmware">कैमरा फ़र्मवेयर</string>

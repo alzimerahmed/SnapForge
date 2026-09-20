@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1076,7 +1076,7 @@
     <string name="antialias">Khử răng cưa</string>
     <string name="antialias_sub">Cho phép khử răng cưa để tránh các cạnh sắc nét</string>
     <string name="open_edit_instead_of_preview">Mở Chỉnh sửa thay vì Xem trước</string>
-    <string name="open_edit_instead_of_preview_sub">Khi bạn chọn hình ảnh để mở (xem trước) trong ImageToolbox, bảng lựa chọn chỉnh sửa sẽ được mở thay vì xem trước</string>
+    <string name="open_edit_instead_of_preview_sub">Khi bạn chọn hình ảnh để mở (xem trước) trong SnapForge, bảng lựa chọn chỉnh sửa sẽ được mở thay vì xem trước</string>
     <string name="document_scanner">Máy quét tài liệu</string>
     <string name="document_scanner_sub">Quét tài liệu và tạo PDF hoặc tách hình ảnh khỏi chúng</string>
     <string name="click_to_start_scanning">Nhấp để bắt đầu quét</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Xuất bảng màu được tạo sang các định dạng khác nhau</string>
     <string name="add_color_palette_sub">Thêm màu mới vào bảng màu hiện tại</string>
     <string name="palette_name_not_supported">Định dạng %1$s không hỗ trợ cung cấp tên bảng màu</string>
-    <string name="wallpapers_export_not_avaialbe">Do chính sách của Cửa hàng Play, tính năng này không thể được đưa vào bản dựng hiện tại. Để truy cập chức năng này, vui lòng tải xuống ImageToolbox từ một nguồn thay thế. Bạn có thể tìm thấy các bản dựng có sẵn trên GitHub bên dưới.</string>
+    <string name="wallpapers_export_not_avaialbe">Do chính sách của Cửa hàng Play, tính năng này không thể được đưa vào bản dựng hiện tại. Để truy cập chức năng này, vui lòng tải xuống SnapForge từ một nguồn thay thế. Bạn có thể tìm thấy các bản dựng có sẵn trên GitHub bên dưới.</string>
     <string name="open_github_page">Mở trang Github</string>
     <string name="overwrite_files_sub_short">Tệp gốc sẽ được thay thế bằng tệp mới thay vì lưu vào thư mục đã chọn</string>
     <string name="hidden_watermark_text_detected">Đã phát hiện văn bản hình mờ ẩn</string>
@@ -2135,7 +2135,7 @@
     <string name="grayscale_pdf_sub">Chuyển đổi tất cả các hình ảnh được nhúng trong tài liệu sang thang độ xám</string>
     <string name="compress_pdf">Nén PDF</string>
     <string name="compress_pdf_sub">Tối ưu hóa kích thước tệp tài liệu của bạn để chia sẻ dễ dàng hơn</string>
-    <string name="repair_info">ImageToolbox xây dựng lại bảng tham chiếu chéo nội bộ và tạo lại cấu trúc tệp từ đầu. Điều này có thể khôi phục quyền truy cập vào nhiều tệp \\\"không thể mở được\\\"</string>
+    <string name="repair_info">SnapForge xây dựng lại bảng tham chiếu chéo nội bộ và tạo lại cấu trúc tệp từ đầu. Điều này có thể khôi phục quyền truy cập vào nhiều tệp \\\"không thể mở được\\\"</string>
     <string name="grayscale_info">Công cụ này chuyển đổi tất cả hình ảnh tài liệu sang thang độ xám. Tốt nhất để in và giảm kích thước tập tin</string>
     <string name="metadata">Siêu dữ liệu</string>
     <string name="metadata_pdf_sub">Chỉnh sửa thuộc tính tài liệu để bảo mật tốt hơn</string>
@@ -3186,7 +3186,7 @@
     <string name="tool_usage_subtitle">%1$d mở ra • %2$s</string>
     <string name="no_usage_statistics">Chưa có số liệu thống kê sử dụng</string>
     <string name="no_usage_statistics_sub">Mở một vài công cụ và chúng sẽ tự động xuất hiện ở đây</string>
-    <string name="usage_statistics_info">Số liệu thống kê sử dụng của bạn chỉ được lưu trữ cục bộ trên thiết bị của bạn. ImageToolbox chỉ sử dụng chúng để hiển thị hoạt động cá nhân, các công cụ yêu thích của bạn và thông tin chi tiết về dữ liệu đã lưu</string>
+    <string name="usage_statistics_info">Số liệu thống kê sử dụng của bạn chỉ được lưu trữ cục bộ trên thiết bị của bạn. SnapForge chỉ sử dụng chúng để hiển thị hoạt động cá nhân, các công cụ yêu thích của bạn và thông tin chi tiết về dữ liệu đã lưu</string>
     <string name="neutral_variant">Biến thể trung lập</string>
     <string name="error">Lỗi</string>
     <string name="search_keywords_single_edit">biên tập chỉnh sửa ảnh chỉnh sửa ảnh điều chỉnh</string>
@@ -4442,7 +4442,7 @@
     <string name="score">Điểm</string>
     <string name="return_to_external_app_after_save">Quay lại sau khi lưu các chỉnh sửa bên ngoài</string>
     <string name="return_to_external_app_after_save_sub">Đóng Hộp công cụ Hình ảnh sau khi lưu hình ảnh đã mở để chỉnh sửa từ một ứng dụng khác</string>
-    <string name="add_imagetoolbox_metadata">Thêm siêu dữ liệu ImageToolbox</string>
+    <string name="add_imagetoolbox_metadata">Thêm siêu dữ liệu SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Ghi phiên bản ứng dụng và các thông số hình ảnh đã định cấu hình vào EXIF ​​​​khi lưu</string>
     <string name="read_only">Chỉ đọc</string>
     <string name="tag_camera_firmware">Phần mềm máy ảnh</string>

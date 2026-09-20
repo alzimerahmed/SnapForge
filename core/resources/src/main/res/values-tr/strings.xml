@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">Bugün</string>
     <string name="header_yesterday">Dün</string>
     <string name="embedded_picker">Gömülü Seçici</string>
-    <string name="embedded_picker_sub">Image Toolbox\'ın resim seçicisi</string>
+    <string name="embedded_picker_sub">SnapForge\'ın resim seçicisi</string>
     <string name="no_permissions">İzin yok</string>
     <string name="request">Talep et</string>
     <string name="pick_multiple_media">Çoklu Medya Seç</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Kenar Yumuşatma</string>
     <string name="antialias_sub">Keskin kenarları önlemek için kenar yumuşatmayı etkinleştirir</string>
     <string name="open_edit_instead_of_preview">Önizleme Yerine Düzenlemeyi Aç</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox\'ta açmak (önizlemek) için bir resim seçtiğinizde, önizleme yerine düzenleme seçim sayfası açılacaktır</string>
+    <string name="open_edit_instead_of_preview_sub">SnapForge\'ta açmak (önizlemek) için bir resim seçtiğinizde, önizleme yerine düzenleme seçim sayfası açılacaktır</string>
     <string name="document_scanner">Belge Tarayıcı</string>
     <string name="document_scanner_sub">Belgeleri tarayın ve bunlardan PDF veya ayrı resimler oluşturun</string>
     <string name="click_to_start_scanning">Taramayı başlatmak için tıklayın</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Resimlerden WEBP\'ye</string>
     <string name="select_webp_image_to_start">Başlamak için WEBP resmi seçin</string>
     <string name="manage_storage_extra_types">Dosyalara tam erişim yok</string>
-    <string name="manage_storage_extra_types_sub">Android\'de resim olarak tanınmayan JXL, QOI ve diğer resimleri görmek için tüm dosyalara erişime izin verin. İzin olmadan Image Toolbox bu resimleri gösteremez</string>
+    <string name="manage_storage_extra_types_sub">Android\'de resim olarak tanınmayan JXL, QOI ve diğer resimleri görmek için tüm dosyalara erişime izin verin. İzin olmadan SnapForge bu resimleri gösteremez</string>
     <string name="default_draw_color">Varsayılan Çizim Rengi</string>
     <string name="default_draw_path_mode">Varsayılan Çizim Yolu Modu</string>
     <string name="add_timestamp">Zaman Damgası Ekle</string>
@@ -1364,7 +1364,7 @@
     <string name="recently_used">Son Kullanılanlar</string>
     <string name="ci_channel">CI kanalı</string>
     <string name="group">Grup</string>
-    <string name="image_toolbox_in_telegram">Telegram\'da Image Toolbox 🎉</string>
+    <string name="image_toolbox_in_telegram">Telegram\'da SnapForge 🎉</string>
     <string name="image_toolbox_in_telegram_sub">İstediğiniz her şeyi tartışabileceğiniz sohbetimize katılın ve ayrıca betaları ve duyuruları yayınladığım CI kanalına göz atın</string>
     <string name="ci_channel_sub">Uygulamanın yeni sürümleri hakkında bildirim alın ve duyuruları okuyun</string>
     <string name="fit_description">Bir resmi verilen boyutlara sığdırın ve arka plana bulanıklık veya renk uygulayın</string>
@@ -1841,7 +1841,7 @@
     <string name="export_palette_sub">Oluşturulan paleti farklı formatlara aktarın</string>
     <string name="add_color_palette_sub">Mevcut palete yeni renk ekler</string>
     <string name="palette_name_not_supported">%1$s formatı palet adı sağlamayı desteklemiyor</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store politikaları nedeniyle, bu özellik mevcut sürümde bulunmamaktadır. Bu özelliğe erişmek için lütfen ImageToolbox\'ı alternatif bir kaynaktan indirin. Mevcut sürümleri aşağıdaki GitHub adresinde bulabilirsiniz.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store politikaları nedeniyle, bu özellik mevcut sürümde bulunmamaktadır. Bu özelliğe erişmek için lütfen SnapForge\'ı alternatif bir kaynaktan indirin. Mevcut sürümleri aşağıdaki GitHub adresinde bulabilirsiniz.</string>
     <string name="open_github_page">GitHub sayfasını aç</string>
     <string name="overwrite_files_sub_short">Orijinal dosya, seçilen klasöre kaydedilmek yerine yenisiyle değiştirilecektir.</string>
     <string name="hidden_watermark_text_detected">Gizli filigran metni algılandı</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Tüm belgeye gömülü görüntüleri gri tonlamaya dönüştürün</string>
     <string name="compress_pdf">PDF\'yi sıkıştır</string>
     <string name="compress_pdf_sub">Daha kolay paylaşım için belgenizin dosya boyutunu optimize edin</string>
-    <string name="repair_info">ImageToolbox dahili çapraz referans tablosunu yeniden oluşturur ve dosya yapısını sıfırdan yeniden oluşturur. Bu, \\\"açılamayan\\\" birçok dosyaya erişimi geri yükleyebilir</string>
+    <string name="repair_info">SnapForge dahili çapraz referans tablosunu yeniden oluşturur ve dosya yapısını sıfırdan yeniden oluşturur. Bu, \\\"açılamayan\\\" birçok dosyaya erişimi geri yükleyebilir</string>
     <string name="grayscale_info">Bu araç, tüm belge resimlerini gri tonlamaya dönüştürür. Dosya boyutunu yazdırmak ve küçültmek için en iyisi</string>
     <string name="metadata">Meta veriler</string>
     <string name="metadata_pdf_sub">Daha iyi gizlilik için belge özelliklerini düzenleyin</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Alfa Formatları İçin Arka Plan Rengi</string>
     <string name="background_color_for_alpha_formats_sub">Alfa desteğiyle her görüntü formatı için arka plan rengini ayarlama olanağı ekler; devre dışı bırakıldığında bu yalnızca alfa olmayanlar için geçerlidir</string>
     <string name="open_markup_project">Projeyi aç</string>
-    <string name="open_markup_project_sub">Önceden kaydedilmiş bir Image Toolbox projesini düzenlemeye devam edin</string>
-    <string name="markup_project_open_failed">Image Toolbox projesi açılamıyor</string>
-    <string name="markup_project_missing_data">Image Toolbox projesinde proje verileri eksik</string>
-    <string name="markup_project_corrupted">Image Toolbox projesi bozuk</string>
-    <string name="unsupported_markup_project_version">Desteklenmeyen Image Toolbox proje sürümü: %1$d</string>
+    <string name="open_markup_project_sub">Önceden kaydedilmiş bir SnapForge projesini düzenlemeye devam edin</string>
+    <string name="markup_project_open_failed">SnapForge projesi açılamıyor</string>
+    <string name="markup_project_missing_data">SnapForge projesinde proje verileri eksik</string>
+    <string name="markup_project_corrupted">SnapForge projesi bozuk</string>
+    <string name="unsupported_markup_project_version">Desteklenmeyen SnapForge proje sürümü: %1$d</string>
     <string name="save_markup_project">Projeyi kaydet</string>
     <string name="save_markup_project_sub">Katmanları, arka planı ve düzenleme geçmişini düzenlenebilir bir proje dosyasında saklayın</string>
     <string name="failed_to_open">Açılamadı</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Doğru aracı seçin</string>
     <string name="help_tip_choose_tool_subtitle">Doğru yerden başlamak için kategorileri, aramayı, favorileri ve paylaşım işlemlerini kullanın</string>
     <string name="help_tip_choose_tool_page_title">En iyi giriş noktasından başlayın</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox\'ta birçok odaklanmış araç vardır ve bunların birçoğu ilk bakışta örtüşür. Bitirmek istediğiniz görevden başlayın ve ardından sonucun en önemli bölümünü kontrol eden aracı seçin: boyut, format, meta veriler, metin, PDF sayfaları, renkler veya düzen.</string>
+    <string name="help_tip_choose_tool_description">SnapForge\'ta birçok odaklanmış araç vardır ve bunların birçoğu ilk bakışta örtüşür. Bitirmek istediğiniz görevden başlayın ve ardından sonucun en önemli bölümünü kontrol eden aracı seçin: boyut, format, meta veriler, metin, PDF sayfaları, renkler veya düzen.</string>
     <string name="help_tip_choose_tool_step_1">Yeniden boyutlandırma, PDF, EXIF, OCR, QR veya renk gibi eylem adını bildiğinizde aramayı kullanın.</string>
     <string name="help_tip_choose_tool_step_2">Yalnızca görev türünü bildiğiniz bir kategori açın, ardından sık kullandığınız araçları favorileriniz olarak sabitleyin.</string>
-    <string name="help_tip_choose_tool_step_3">Başka bir uygulama Image Toolbox\'ta bir görsel paylaştığında, paylaşım sayfası akışından aracı seçin.</string>
+    <string name="help_tip_choose_tool_step_3">Başka bir uygulama SnapForge\'ta bir görsel paylaştığında, paylaşım sayfası akışından aracı seçin.</string>
     <string name="help_tip_import_save_share_title">Sonuçları içe aktarın, kaydedin ve paylaşın</string>
     <string name="help_tip_import_save_share_subtitle">Girdiyi seçmekten düzenlenen dosyayı dışa aktarmaya kadar olağan akışı anlayın</string>
     <string name="help_tip_import_save_share_page_title">Ortak düzenleme akışını takip edin</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Seçici ve başlatıcı</string>
     <string name="help_tip_picker_launcher_subtitle">Uygulama çok fazla iletişim kutusu açtığında veya yanlış yerden başladığında seçici ayarlarını kullanın</string>
     <string name="help_tip_picker_launcher_page_title">Dosya açma alışkanlığınıza uygun hale getirin</string>
-    <string name="help_tip_picker_launcher_description">Seçici ve başlatıcı ayarları, Image Toolbox\'ın ana ekrandan mı, bir araçtan mı yoksa bir dosya seçim akışından mı başlatılacağını kontrol eder. Bu seçenekler, genellikle Android paylaşım sayfasından giriş yaptığınızda veya uygulamanın daha çok bir araç başlatıcı gibi görünmesini istediğinizde özellikle kullanışlıdır.</string>
+    <string name="help_tip_picker_launcher_description">Seçici ve başlatıcı ayarları, SnapForge\'ın ana ekrandan mı, bir araçtan mı yoksa bir dosya seçim akışından mı başlatılacağını kontrol eder. Bu seçenekler, genellikle Android paylaşım sayfasından giriş yaptığınızda veya uygulamanın daha çok bir araç başlatıcı gibi görünmesini istediğinizde özellikle kullanışlıdır.</string>
     <string name="help_tip_picker_launcher_step_1">Sistem seçici dosyaları gizlerse, çok fazla yeni öğe gösterirse veya bulut dosyalarını kötü bir şekilde işliyorsa fotoğraf seçici ayarlarını kullanın.</string>
     <string name="help_tip_picker_launcher_step_2">Atlamayı yalnızca genellikle paylaşımdan girdiğiniz veya kaynak dosyayı zaten bildiğiniz araçlar için etkinleştirin.</string>
-    <string name="help_tip_picker_launcher_step_3">Image Toolbox\'ın normal bir ana ekrandan çok bir araç seçici gibi davranmasını istiyorsanız başlatıcı modunu gözden geçirin.</string>
+    <string name="help_tip_picker_launcher_step_3">SnapForge\'ın normal bir ana ekrandan çok bir araç seçici gibi davranmasını istiyorsanız başlatıcı modunu gözden geçirin.</string>
     <string name="help_tip_image_source_title">Resim kaynağı</string>
     <string name="help_tip_image_source_subtitle">Galeriler, dosya yöneticileri ve bulut dosyalarıyla en iyi şekilde çalışan seçici modunu seçin</string>
     <string name="help_tip_image_source_page_title">Dosyaları doğru kaynaktan seçin</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Tek seferlik kaydetme klasörleri</string>
     <string name="help_tip_one_time_save_location_subtitle">Sonraki dışa aktarımları normal hedefinizi değiştirmeden geçici bir klasöre gönderin</string>
     <string name="help_tip_one_time_save_location_page_title">Özel işleri ayrı tutun</string>
-    <string name="help_tip_one_time_save_location_description">Tek seferlik kaydetme konumu, normal Image Toolbox klasörünüzle karıştırılmaması gereken geçici projeler, istemci klasörleri, temizleme oturumları veya dışa aktarmalar için kullanışlıdır. Varsayılan kurulumunuzu yeniden yazmanıza gerek kalmadan kısa ömürlü bir hedef sağlar.</string>
+    <string name="help_tip_one_time_save_location_description">Tek seferlik kaydetme konumu, normal SnapForge klasörünüzle karıştırılmaması gereken geçici projeler, istemci klasörleri, temizleme oturumları veya dışa aktarmalar için kullanışlıdır. Varsayılan kurulumunuzu yeniden yazmanıza gerek kalmadan kısa ömürlü bir hedef sağlar.</string>
     <string name="help_tip_one_time_save_location_step_1">Normal dışa aktarma konumunuzun dışına ait bir göreve başlamadan önce tek seferlik bir klasör seçin.</string>
     <string name="help_tip_one_time_save_location_step_2">Kısa projeler, paylaşılan klasörler veya çıktıların bir arada gruplandırılması gereken gruplar için kullanın.</string>
     <string name="help_tip_one_time_save_location_step_3">İşten sonra varsayılan klasöre dönün, böylece daha sonra dışa aktarmalar beklenmedik bir şekilde geçici konuma düşmez.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d açılıyor • %2$s</string>
     <string name="no_usage_statistics">Henüz kullanım istatistiği yok</string>
     <string name="no_usage_statistics_sub">Birkaç araç açın, burada otomatik olarak görünecekler</string>
-    <string name="usage_statistics_info">Kullanım istatistikleriniz yalnızca yerel olarak cihazınızda saklanır. ImageToolbox bunları yalnızca kişisel etkinliğinizi, favori araçlarınızı ve kayıtlı veri öngörülerinizi göstermek için kullanır</string>
+    <string name="usage_statistics_info">Kullanım istatistikleriniz yalnızca yerel olarak cihazınızda saklanır. SnapForge bunları yalnızca kişisel etkinliğinizi, favori araçlarınızı ve kayıtlı veri öngörülerinizi göstermek için kullanır</string>
     <string name="search_keywords_single_edit">düzenleyici fotoğraf düzenleme resim rötuş ayarlama</string>
     <string name="search_keywords_resize_and_convert">yeniden boyutlandır dönüştür ölçek çözünürlük boyutlar genişlik yükseklik jpg jpeg png webp sıkıştır</string>
     <string name="search_keywords_weight_resize">sıkıştır boyut ağırlık bayt mb kb kaliteyi azalt optimize et</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">RAW görüntüsünü geliştirmek yerine gömülü önizlemeyi kullanın</string>
     <string name="score">Gol</string>
     <string name="return_to_external_app_after_save">Harici düzenlemeleri kaydettikten sonra geri dönün</string>
-    <string name="return_to_external_app_after_save_sub">Başka bir uygulamadan düzenleme için açılan bir resmi kaydettikten sonra Image Toolbox\'ı kapatın</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox meta verilerini ekleme</string>
+    <string name="return_to_external_app_after_save_sub">Başka bir uygulamadan düzenleme için açılan bir resmi kaydettikten sonra SnapForge\'ı kapatın</string>
+    <string name="add_imagetoolbox_metadata">SnapForge meta verilerini ekleme</string>
     <string name="add_imagetoolbox_metadata_sub">Kaydederken uygulama sürümünü ve yapılandırılmış görüntü parametrelerini EXIF\'e yazın</string>
     <string name="read_only">Salt Okunur</string>
     <string name="tag_camera_firmware">Kamera yazılımı</string>
@@ -5048,7 +5048,7 @@
     <string name="slate">Arduvaz</string>
     <string name="search_keywords_pdf_dark_mode">pdf karanlık mod gece okuyucu renkleri ters çevir negatif</string>
     <string name="custom_depth_map">Özel derinlik haritası</string>
-    <string name="custom_depth_map_sub">İsteğe bağlı. Derinliği yeniden tahmin etmek yerine gri tonlamalı veya Image Toolbox derinlik haritasını yeniden kullanın</string>
+    <string name="custom_depth_map_sub">İsteğe bağlı. Derinliği yeniden tahmin etmek yerine gri tonlamalı veya SnapForge derinlik haritasını yeniden kullanın</string>
     <string name="comic_to_pdf">Çizgi romanı PDF\'ye dönüştürme</string>
     <string name="comic_to_pdf_sub">CBR, CBZ, CB7 ve diğer görüntü arşivlerini PDF\'ye dönüştürün</string>
     <string name="select_comic_archive_to_start">Bir CBR, CBZ, CB7 veya CBT çizgi roman arşivi seçin</string>

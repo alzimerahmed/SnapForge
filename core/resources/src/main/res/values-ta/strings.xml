@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">உருவாக்கப்பட்ட தட்டுகளை வெவ்வேறு வடிவங்களுக்கு ஏற்றுமதி செய்யவும்</string>
     <string name="add_color_palette_sub">தற்போதைய தட்டுக்கு புதிய வண்ணத்தைச் சேர்க்கிறது</string>
     <string name="palette_name_not_supported">%1$s வடிவம் தட்டுப் பெயரை வழங்குவதை ஆதரிக்காது</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store கொள்கைகள் காரணமாக, இந்த அம்சத்தை தற்போதைய கட்டமைப்பில் சேர்க்க முடியாது. இந்தச் செயல்பாட்டை அணுக, மாற்று மூலத்திலிருந்து ImageToolboxஐப் பதிவிறக்கவும். கீழே உள்ள GitHub இல் கிடைக்கும் உருவாக்கங்களைக் காணலாம்.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store கொள்கைகள் காரணமாக, இந்த அம்சத்தை தற்போதைய கட்டமைப்பில் சேர்க்க முடியாது. இந்தச் செயல்பாட்டை அணுக, மாற்று மூலத்திலிருந்து SnapForgeஐப் பதிவிறக்கவும். கீழே உள்ள GitHub இல் கிடைக்கும் உருவாக்கங்களைக் காணலாம்.</string>
     <string name="open_github_page">கிதுப் பக்கத்தைத் திறக்கவும்</string>
     <string name="overwrite_files_sub_short">தேர்ந்தெடுக்கப்பட்ட கோப்புறையில் சேமிப்பதற்குப் பதிலாக அசல் கோப்பு புதியதாக மாற்றப்படும்</string>
     <string name="hidden_watermark_text_detected">மறைக்கப்பட்ட வாட்டர்மார்க் உரை கண்டறியப்பட்டது</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">அனைத்து ஆவண உட்பொதிக்கப்பட்ட படங்களையும் கிரேஸ்கேலுக்கு மாற்றவும்</string>
     <string name="compress_pdf">PDF ஐ சுருக்கவும்</string>
     <string name="compress_pdf_sub">எளிதாகப் பகிர உங்கள் ஆவணக் கோப்பின் அளவை மேம்படுத்தவும்</string>
-    <string name="repair_info">ImageToolbox உள் குறுக்கு-குறிப்பு அட்டவணையை மீண்டும் உருவாக்குகிறது மற்றும் புதிதாக கோப்பு கட்டமைப்பை மீண்டும் உருவாக்குகிறது. இது \\\"திறக்க முடியாத\\\" பல கோப்புகளுக்கான அணுகலை மீட்டெடுக்கும்.</string>
+    <string name="repair_info">SnapForge உள் குறுக்கு-குறிப்பு அட்டவணையை மீண்டும் உருவாக்குகிறது மற்றும் புதிதாக கோப்பு கட்டமைப்பை மீண்டும் உருவாக்குகிறது. இது \\\"திறக்க முடியாத\\\" பல கோப்புகளுக்கான அணுகலை மீட்டெடுக்கும்.</string>
     <string name="grayscale_info">இந்தக் கருவி அனைத்து ஆவணப் படங்களையும் கிரேஸ்கேலுக்கு மாற்றுகிறது. கோப்பு அளவை அச்சிடுவதற்கும் குறைப்பதற்கும் சிறந்தது</string>
     <string name="metadata">மெட்டாடேட்டா</string>
     <string name="metadata_pdf_sub">சிறந்த தனியுரிமைக்காக ஆவண பண்புகளைத் திருத்தவும்</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d திறக்கிறது • %2$s</string>
     <string name="no_usage_statistics">இதுவரை பயன்பாட்டு புள்ளிவிவரங்கள் இல்லை</string>
     <string name="no_usage_statistics_sub">சில கருவிகளைத் திறக்கவும், அவை தானாகவே இங்கே தோன்றும்</string>
-    <string name="usage_statistics_info">உங்கள் பயன்பாட்டு புள்ளிவிவரங்கள் உங்கள் சாதனத்தில் உள்ளூரில் மட்டுமே சேமிக்கப்படும். ImageToolbox உங்கள் தனிப்பட்ட செயல்பாடு, பிடித்த கருவிகள் மற்றும் சேமிக்கப்பட்ட தரவு நுண்ணறிவு ஆகியவற்றைக் காட்ட மட்டுமே அவற்றைப் பயன்படுத்துகிறது</string>
+    <string name="usage_statistics_info">உங்கள் பயன்பாட்டு புள்ளிவிவரங்கள் உங்கள் சாதனத்தில் உள்ளூரில் மட்டுமே சேமிக்கப்படும். SnapForge உங்கள் தனிப்பட்ட செயல்பாடு, பிடித்த கருவிகள் மற்றும் சேமிக்கப்பட்ட தரவு நுண்ணறிவு ஆகியவற்றைக் காட்ட மட்டுமே அவற்றைப் பயன்படுத்துகிறது</string>
     <string name="search_keywords_resize_and_convert">அளவை மாற்ற அளவு தெளிவுத்திறன் பரிமாணங்கள் அகலம் உயரம் jpg jpeg png webp சுருக்கவும்</string>
     <string name="search_keywords_weight_resize">சுருக்க அளவு எடை பைட்டுகள் mb kb குறைக்கும் தரம் மேம்படுத்தும்</string>
     <string name="search_keywords_erase_background">பின்னணி நீக்கி அழிக்கும் கட்அவுட் வெளிப்படையான ஆல்பாவை அகற்று</string>
@@ -4443,7 +4443,7 @@
     <string name="score">மதிப்பெண்</string>
     <string name="return_to_external_app_after_save">வெளிப்புற திருத்தங்களைச் சேமித்த பிறகு திரும்பவும்</string>
     <string name="return_to_external_app_after_save_sub">மற்றொரு பயன்பாட்டிலிருந்து திருத்துவதற்காக திறக்கப்பட்ட படத்தைச் சேமித்த பிறகு படக் கருவிப்பெட்டியை மூடவும்</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox மெட்டாடேட்டாவைச் சேர்க்கவும்</string>
+    <string name="add_imagetoolbox_metadata">SnapForge மெட்டாடேட்டாவைச் சேர்க்கவும்</string>
     <string name="add_imagetoolbox_metadata_sub">பயன்பாட்டின் பதிப்பு மற்றும் உள்ளமைக்கப்பட்ட பட அளவுருக்களை சேமிக்கும் போது EXIF ​​க்கு எழுதவும்</string>
     <string name="read_only">படிக்க மட்டும்</string>
     <string name="tag_camera_firmware">கேமரா ஃபார்ம்வேர்</string>

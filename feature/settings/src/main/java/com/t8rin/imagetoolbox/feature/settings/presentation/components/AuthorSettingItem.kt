@@ -17,7 +17,6 @@
 package com.t8rin.imagetoolbox.feature.settings.presentation.components
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import com.t8rin.imagetoolbox.core.resources.Icons
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -27,15 +26,11 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.t8rin.imagetoolbox.core.resources.R
 import com.t8rin.imagetoolbox.core.resources.icons.Forum
-import com.t8rin.imagetoolbox.core.resources.shapes.MaterialStarShape
-import com.t8rin.imagetoolbox.core.ui.widget.image.Picture
 import com.t8rin.imagetoolbox.core.ui.widget.modifier.ShapeDefaults
-import com.t8rin.imagetoolbox.core.ui.widget.modifier.container
 import com.t8rin.imagetoolbox.core.ui.widget.preferences.PreferenceRow
 import com.t8rin.imagetoolbox.feature.settings.presentation.components.additional.AuthorLinksSheet
 
@@ -52,19 +47,6 @@ fun AuthorSettingItem(
         subtitle = stringResource(R.string.app_developer_nick),
         shape = shape,
         startIcon = Icons.Outlined.Forum,
-        endContent = {
-            Picture(
-                model = painterResource(id = R.drawable.avatar),
-                modifier = Modifier
-                    .padding(end = 8.dp)
-                    .size(64.dp)
-                    .container(
-                        shape = MaterialStarShape,
-                        resultPadding = 0.dp
-                    ),
-                contentDescription = null
-            )
-        },
         onClick = { showAuthorSheet = true }
     )
     AuthorLinksSheet(

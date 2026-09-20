@@ -204,7 +204,7 @@ private fun BatchOverlays(
     LoadingDialog(
         visible = component.isSaving,
         done = component.done,
-        left = component.items.size,
+        left = component.items.count { it.status != BatchItemStatus.Done },
         onCancelLoading = component::cancelSaving
     )
 
@@ -256,15 +256,31 @@ private fun BatchItemsList(
 private fun BatchStatusIcon(
     status: BatchItemStatus
 ) {
-    val (icon, tint) = when (status) {
-        BatchItemStatus.Pending -> Icons.Outlined.Schedule to MaterialTheme.colorScheme.outline
-        BatchItemStatus.Running -> Icons.Rounded.Refresh to MaterialTheme.colorScheme.primary
-        BatchItemStatus.Done -> Icons.Outlined.CheckCircle to MaterialTheme.colorScheme.primary
-        BatchItemStatus.Failed -> Icons.Rounded.Error to MaterialTheme.colorScheme.error
+    val (icon, tint, description) = when (status) {
+        BatchItemStatus.Pending -> Triple(
+            Icons.Outlined.Schedule,
+            MaterialTheme.colorScheme.outline,
+            R.string.batch_status_pending
+        )
+        BatchItemStatus.Running -> Triple(
+            Icons.Rounded.Refresh,
+            MaterialTheme.colorScheme.primary,
+            R.string.batch_status_running
+        )
+        BatchItemStatus.Done -> Triple(
+            Icons.Outlined.CheckCircle,
+            MaterialTheme.colorScheme.primary,
+            R.string.batch_status_done
+        )
+        BatchItemStatus.Failed -> Triple(
+            Icons.Rounded.Error,
+            MaterialTheme.colorScheme.error,
+            R.string.batch_status_failed
+        )
     }
     Icon(
         imageVector = icon,
-        contentDescription = null,
+        contentDescription = stringResource(description),
         tint = tint,
         modifier = Modifier.size(20.dp)
     )

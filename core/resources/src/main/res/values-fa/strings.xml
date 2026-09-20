@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -866,7 +866,7 @@
     <string name="cupertino_switch_sub">از سوئیچ مانند iOS بر اساس سیستم طراحی کوپرتینو استفاده می کند</string>
     <string name="channels_configuration">پیکربندی کانال‌ها</string>
     <string name="embedded_picker">انتخاب‌گر تصویر جعبه‌ابزار تصویر</string>
-    <string name="embedded_picker_sub">انتخابگر تصویر در Image Toolbox</string>
+    <string name="embedded_picker_sub">انتخابگر تصویر در SnapForge</string>
     <string name="auto_paste">جای‌گذاری خودکار</string>
     <string name="auto_paste_sub">به برنامه اجازه می‌دهد تا داده‌های کلیپ‌بورد را به‌طور خودکار جای‌گذاری کند، بنابراین در صفحه اصلی ظاهر می‌شود و می‌توانید آن‌ها را پردازش کنید.</string>
     <string name="harmonization_color">رنگ هماهنگ‌سازی</string>
@@ -964,7 +964,7 @@
     <string name="tag_shutter_speed_value">مقدار سرعت شاتر</string>
     <string name="tag_flash">فلش</string>
     <string name="tag_flash_energy">انرژی فلش</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox در تلگرام 🎉</string>
+    <string name="image_toolbox_in_telegram">SnapForge در تلگرام 🎉</string>
     <string name="noise_generation">تولید نویز</string>
     <string name="noise_generation_sub">نویز های مختلفی مانند پرلین یا انواع دیگر تولید کنید</string>
     <string name="noise_type">نوع نویز</string>
@@ -1191,7 +1191,7 @@
     <string name="draw_regular_star_sub">ستاره ای را بکشید که به جای شکل آزاد، منظم خواهد بود</string>
     <string name="antialias_sub">برای جلوگیری از لبه‌های تیز، آنتی‌الیاسینگ را فعال می‌کند</string>
     <string name="open_edit_instead_of_preview">ویرایش را به جای پیش نمایش باز کنید</string>
-    <string name="open_edit_instead_of_preview_sub">هنگامی که تصویر را برای باز کردن (پیش نمایش) در ImageToolbox انتخاب می کنید، برگه انتخاب ویرایش به جای پیش نمایش باز می شود</string>
+    <string name="open_edit_instead_of_preview_sub">هنگامی که تصویر را برای باز کردن (پیش نمایش) در SnapForge انتخاب می کنید، برگه انتخاب ویرایش به جای پیش نمایش باز می شود</string>
     <string name="document_scanner_sub">اسناد را اسکن کنید و PDF یا تصاویر جدا از آنها ایجاد کنید</string>
     <string name="options_below_is_for_images">گزینه های زیر برای ذخیره تصاویر است نه PDF</string>
     <string name="equalize_histogram_hsv">هیستوگرام HSV را یکسان کنید</string>
@@ -1391,7 +1391,7 @@
     <string name="links">پیوندها</string>
     <string name="ico_size_warning">فایل‌های ICO را فقط می‌توان در حداکثر اندازه ۲۵۶×۲۵۶ ذخیره کرد</string>
     <string name="manage_storage_extra_types">عدم دسترسی کامل به فایل ها</string>
-    <string name="manage_storage_extra_types_sub">برای دیدن JXL، QOI و سایر تصاویری که در Android به‌عنوان تصویر شناخته نمی‌شوند، به همه فایل‌ها اجازه دسترسی دهید. بدون مجوز Image Toolbox قادر به نمایش آن تصاویر نیست</string>
+    <string name="manage_storage_extra_types_sub">برای دیدن JXL، QOI و سایر تصاویری که در Android به‌عنوان تصویر شناخته نمی‌شوند، به همه فایل‌ها اجازه دسترسی دهید. بدون مجوز SnapForge قادر به نمایش آن تصاویر نیست</string>
     <string name="default_draw_color">رنگ ترسیم پیش فرض</string>
     <string name="default_draw_path_mode">حالت پیش‌فرض ترسیم مسیر</string>
     <string name="add_timestamp">اضافه کردن زمان</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">پالت تولید شده را به فرمت های مختلف صادر کنید</string>
     <string name="add_color_palette_sub">رنگ جدیدی را به پالت فعلی اضافه می کند</string>
     <string name="palette_name_not_supported">قالب %1$s از ارائه نام پالت پشتیبانی نمی کند</string>
-    <string name="wallpapers_export_not_avaialbe">به دلیل خط‌مشی‌های فروشگاه Play، این ویژگی نمی‌تواند در ساخت فعلی گنجانده شود. برای دسترسی به این قابلیت، لطفا ImageToolbox را از یک منبع جایگزین دانلود کنید. می توانید بیلدهای موجود در GitHub را در زیر بیابید.</string>
+    <string name="wallpapers_export_not_avaialbe">به دلیل خط‌مشی‌های فروشگاه Play، این ویژگی نمی‌تواند در ساخت فعلی گنجانده شود. برای دسترسی به این قابلیت، لطفا SnapForge را از یک منبع جایگزین دانلود کنید. می توانید بیلدهای موجود در GitHub را در زیر بیابید.</string>
     <string name="open_github_page">صفحه Github را باز کنید</string>
     <string name="overwrite_files_sub_short">فایل اصلی به جای ذخیره در پوشه انتخابی با فایل جدید جایگزین می شود</string>
     <string name="hidden_watermark_text_detected">متن واترمارک پنهان شناسایی شد</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">همه تصاویر جاسازی شده سند را به مقیاس خاکستری تبدیل کنید</string>
     <string name="compress_pdf">فشرده سازی PDF</string>
     <string name="compress_pdf_sub">اندازه فایل سند خود را برای اشتراک گذاری آسان تر بهینه کنید</string>
-    <string name="repair_info">ImageToolbox جدول مرجع متقابل داخلی را بازسازی می کند و ساختار فایل را از ابتدا بازسازی می کند. این می‌تواند دسترسی به بسیاری از فایل‌هایی را که \\\"باز نمی‌شوند\\\" بازیابی کند.</string>
+    <string name="repair_info">SnapForge جدول مرجع متقابل داخلی را بازسازی می کند و ساختار فایل را از ابتدا بازسازی می کند. این می‌تواند دسترسی به بسیاری از فایل‌هایی را که \\\"باز نمی‌شوند\\\" بازیابی کند.</string>
     <string name="grayscale_info">این ابزار تمام تصاویر سند را به مقیاس خاکستری تبدیل می کند. بهترین برای چاپ و کاهش حجم فایل</string>
     <string name="metadata">فراداده</string>
     <string name="metadata_pdf_sub">ویژگی های سند را برای حفظ حریم خصوصی بهتر ویرایش کنید</string>
@@ -2421,7 +2421,7 @@
     <string name="help_tip_choose_tool_title">ابزار مناسب را انتخاب کنید</string>
     <string name="help_tip_choose_tool_subtitle">از دسته‌ها، جستجو، موارد دلخواه و اشتراک‌گذاری کنش‌ها برای شروع از مکان مناسب استفاده کنید</string>
     <string name="help_tip_choose_tool_page_title">از بهترین نقطه ورودی شروع کنید</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox ابزارهای متمرکز زیادی دارد و بسیاری از آنها در نگاه اول با هم همپوشانی دارند. از کاری که می‌خواهید به پایان برسانید، شروع کنید، سپس ابزاری را انتخاب کنید که مهم‌ترین بخش نتیجه را کنترل می‌کند: اندازه، قالب، ابرداده، متن، صفحات PDF، رنگ‌ها یا طرح‌بندی.</string>
+    <string name="help_tip_choose_tool_description">SnapForge ابزارهای متمرکز زیادی دارد و بسیاری از آنها در نگاه اول با هم همپوشانی دارند. از کاری که می‌خواهید به پایان برسانید، شروع کنید، سپس ابزاری را انتخاب کنید که مهم‌ترین بخش نتیجه را کنترل می‌کند: اندازه، قالب، ابرداده، متن، صفحات PDF، رنگ‌ها یا طرح‌بندی.</string>
     <string name="help_tip_choose_tool_step_1">هنگامی که نام عمل را می دانید، مانند تغییر اندازه، PDF، EXIF، OCR، QR یا رنگ، از جستجو استفاده کنید.</string>
     <string name="help_tip_choose_tool_step_2">زمانی که فقط نوع کار را می‌دانید، یک دسته را باز کنید، سپس ابزارهای مکرر را به عنوان موارد دلخواه پین ​​کنید.</string>
     <string name="help_tip_choose_tool_step_3">وقتی برنامه دیگری تصویری را در جعبه ابزار تصویر به اشتراک می‌گذارد، ابزار را از جریان برگه اشتراک‌گذاری انتخاب کنید.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d باز می شود • %2$s</string>
     <string name="no_usage_statistics">هنوز آمار استفاده وجود ندارد</string>
     <string name="no_usage_statistics_sub">چند ابزار را باز کنید و آنها به طور خودکار در اینجا ظاهر می شوند</string>
-    <string name="usage_statistics_info">آمار استفاده شما فقط به صورت محلی در دستگاه شما ذخیره می شود. ImageToolbox از آنها فقط برای نشان دادن فعالیت شخصی، ابزارهای مورد علاقه و اطلاعات اطلاعات ذخیره شده شما استفاده می کند</string>
+    <string name="usage_statistics_info">آمار استفاده شما فقط به صورت محلی در دستگاه شما ذخیره می شود. SnapForge از آنها فقط برای نشان دادن فعالیت شخصی، ابزارهای مورد علاقه و اطلاعات اطلاعات ذخیره شده شما استفاده می کند</string>
     <string name="search_keywords_single_edit">ویرایشگر ویرایش عکس روتوش عکس تنظیم</string>
     <string name="search_keywords_resize_and_convert">تغییر اندازه تبدیل مقیاس وضوح ابعاد عرض ارتفاع jpg jpeg png فشرده سازی وب</string>
     <string name="search_keywords_weight_resize">فشرده سازی اندازه وزن بایت mb kb کاهش کیفیت بهینه سازی</string>
@@ -4443,7 +4443,7 @@
     <string name="score">امتیاز</string>
     <string name="return_to_external_app_after_save">پس از ذخیره ویرایش های خارجی برگردید</string>
     <string name="return_to_external_app_after_save_sub">پس از ذخیره تصویری که برای ویرایش از برنامه دیگری باز شده است، جعبه ابزار تصویر را ببندید</string>
-    <string name="add_imagetoolbox_metadata">ابرداده ImageToolbox را اضافه کنید</string>
+    <string name="add_imagetoolbox_metadata">ابرداده SnapForge را اضافه کنید</string>
     <string name="add_imagetoolbox_metadata_sub">هنگام ذخیره، نسخه برنامه و پارامترهای تصویر پیکربندی شده را در EXIF ​​بنویسید</string>
     <string name="read_only">فقط خواندن</string>
     <string name="tag_camera_firmware">سیستم عامل دوربین</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">تخته سنگ</string>
     <string name="search_keywords_pdf_dark_mode">پی دی اف شب خوان حالت تاریک رنگ های معکوس منفی</string>
     <string name="custom_depth_map">نقشه عمق سفارشی</string>
-    <string name="custom_depth_map_sub">اختیاری. به جای تخمین مجدد عمق، از نقشه عمق مقیاس خاکستری یا Image Toolbox استفاده مجدد کنید</string>
+    <string name="custom_depth_map_sub">اختیاری. به جای تخمین مجدد عمق، از نقشه عمق مقیاس خاکستری یا SnapForge استفاده مجدد کنید</string>
     <string name="comic_to_pdf">کتاب کمیک به PDF</string>
     <string name="comic_to_pdf_sub">CBR، CBZ، CB7 و سایر آرشیوهای تصویر را به PDF تبدیل کنید</string>
     <string name="select_comic_archive_to_start">آرشیو کتاب کمیک CBR، CBZ، CB7 یا CBT را انتخاب کنید</string>

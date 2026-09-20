@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -95,7 +95,7 @@
     <string name="no_palette">Cannot generate palette for given image</string>
     <string name="original">Original</string>
     <string name="folder">Output folder</string>
-    <string name="default_folder" translatable="false">Documents/ImageToolbox</string>
+    <string name="default_folder" translatable="false">Documents/SnapForge</string>
     <string name="def">Default</string>
     <string name="custom">Custom</string>
     <string name="unspecified">Unspecified</string>
@@ -130,8 +130,8 @@
     <string name="cannot_change_palette_while_dynamic_colors_applied">The app\'s color scheme cannot be changed while dynamic colors are turned on</string>
     <string name="pick_accent_color">App theme will be based on selected color</string>
     <string name="about_app">About app</string>
-    <string name="app_developer" translatable="false">Malik Mukhametzyanov</string>
-    <string name="app_developer_nick" translatable="false">T8RIN</string>
+    <string name="app_developer" translatable="false">alzimer ahmed</string>
+    <string name="app_developer_nick" translatable="false">alzimerahmed</string>
     <string name="no_updates">No updates found</string>
     <string name="issue_tracker">Issue tracker</string>
     <string name="issue_tracker_sub">Send bug reports and feature requests here</string>
@@ -1131,7 +1131,7 @@
     <string name="decrypt">Decrypt</string>
     <string name="pick_file_to_start">Pick file to start</string>
     <string name="open_markup_project">Open project</string>
-    <string name="open_markup_project_sub">Continue editing a previously Saved SnapForge project</string>
+    <string name="open_markup_project_sub">Continue editing a previously saved SnapForge project</string>
     <string name="markup_project_open_failed">Unable to open SnapForge project</string>
     <string name="markup_project_missing_data">SnapForge project is missing project data</string>
     <string name="markup_project_corrupted">SnapForge project is corrupted</string>
@@ -2088,7 +2088,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Enables antialiasing to prevent sharp edges</string>
     <string name="open_edit_instead_of_preview">Open Edit Instead Of Preview</string>
-    <string name="open_edit_instead_of_preview_sub">When you select image to open (preview) in ImageToolbox, edit selection sheet will be opened instead of previewing</string>
+    <string name="open_edit_instead_of_preview_sub">When you select image to open (preview) in SnapForge, edit selection sheet will be opened instead of previewing</string>
     <string name="document_scanner">Document Scanner</string>
     <string name="document_scanner_sub">Scan documents and create PDF or separate images from them</string>
     <string name="click_to_start_scanning">Click to start scanning</string>
@@ -2610,6 +2610,10 @@
     <string name="change_sticker">Change Sticker</string>
     <string name="fit_width">Fit Width</string>
     <string name="fit_height">Fit Height</string>
+    <string name="batch_status_pending">Pending</string>
+    <string name="batch_status_running">Processing</string>
+    <string name="batch_status_done">Done</string>
+    <string name="batch_status_failed">Failed</string>
     <string name="batch_compare">Batch Compare</string>
     <string name="pick_files_to_checksum">Pick file/files to calculate its checksum based on selected algorithm</string>
     <string name="pick_files">Pick Files</string>
@@ -2929,7 +2933,7 @@
     <string name="export_palette_sub">Export generated palette to different formats</string>
     <string name="add_color_palette_sub">Adds new color to current palette</string>
     <string name="palette_name_not_supported">%1$s format doesn\'t support providing palette name</string>
-    <string name="wallpapers_export_not_avaialbe">Due to Play Store policies, this feature cannot be included in the current build. To access this functionality, please download ImageToolbox from an alternative source. You can find the available builds on GitHub below.</string>
+    <string name="wallpapers_export_not_avaialbe">Due to Play Store policies, this feature cannot be included in the current build. To access this functionality, please download SnapForge from an alternative source. You can find the available builds on GitHub below.</string>
     <string name="open_github_page">Open Github page</string>
     <plurals name="color_count">
         <item quantity="one">%1$s color</item>
@@ -3255,7 +3259,7 @@
     <string name="grayscale_pdf_sub">Convert all document embedded images to grayscale</string>
     <string name="compress_pdf">Compress PDF</string>
     <string name="compress_pdf_sub">Optimize your document file size for easier sharing</string>
-    <string name="repair_info">ImageToolbox rebuilds the internal cross-reference table and regenerates the file structure from scratch. This can restore access to many files that \"cannot be opened\"</string>
+    <string name="repair_info">SnapForge rebuilds the internal cross-reference table and regenerates the file structure from scratch. This can restore access to many files that \"cannot be opened\"</string>
     <string name="grayscale_info">This tool converts all document images to grayscale. Best for printing and reducing file size</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">Edit document properties for better privacy</string>
@@ -3307,7 +3311,7 @@
     <string name="keep_date_time_sub">Always preserve exif tags related to date and time, works independently of keep exif option</string>
     <string name="always_clear_exif">Always clear EXIF</string>
     <string name="always_clear_exif_sub">Remove image EXIF data on save, even when a tool requests keeping metadata</string>
-    <string name="add_imagetoolbox_metadata">Add ImageToolbox metadata</string>
+    <string name="add_imagetoolbox_metadata">Add SnapForge metadata</string>
     <string name="add_imagetoolbox_metadata_sub">Write the app version and configured image parameters to EXIF when saving</string>
     <string name="background_color_for_alpha_formats">Background Color For Alpha Formats</string>
     <string name="background_color_for_alpha_formats_sub">Adds ability to set background color for every image format with alpha support, when disabled this available for non alpha ones only</string>
@@ -3494,7 +3498,7 @@
     <string name="tool_usage_subtitle">%1$d opens • %2$s</string>
     <string name="no_usage_statistics">No usage statistics yet</string>
     <string name="no_usage_statistics_sub">Open a few tools and they will appear here automatically</string>
-    <string name="usage_statistics_info">Your usage statistics are stored only locally on your device. ImageToolbox uses them only to show your personal activity, favorite tools, and saved data insights</string>
+    <string name="usage_statistics_info">Your usage statistics are stored only locally on your device. SnapForge uses them only to show your personal activity, favorite tools, and saved data insights</string>
     <string name="reset_usage_statistics">Reset usage statistics</string>
     <string name="reset_usage_statistics_sub">Tool opens, save stats, streak, saved data, and top format will be reset. App opens will stay unchanged.</string>
     <string name="search_keywords_single_edit">editor edit photo picture retouch adjust</string>

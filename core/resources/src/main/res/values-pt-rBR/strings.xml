@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="pick">Escolha</string>
     <string name="pick_multiple_media">Escolha várias mídias</string>
     <string name="pick_single_media">Escolha uma mídia única</string>
-    <string name="embedded_picker_sub">Seletor de imagens do nativo do Image Toolbox</string>
+    <string name="embedded_picker_sub">Seletor de imagens do nativo do SnapForge</string>
     <string name="no_permissions">Nenhuma permissão</string>
     <string name="request">Solicitação</string>
     <string name="header_today">Hoje</string>
@@ -1080,7 +1080,7 @@
     <string name="equalize_histogram">Equalizar Histograma</string>
     <string name="document_scanner_sub">Digitalize documentos e crie PDF ou separe imagens deles</string>
     <string name="open_edit_instead_of_preview">Abrir editor em vez da visualizar</string>
-    <string name="open_edit_instead_of_preview_sub">Quando você seleciona a imagem para abrir (visualizar) no ImageToolbox, a folha de seleção de edição será aberta em vez de visualizar</string>
+    <string name="open_edit_instead_of_preview_sub">Quando você seleciona a imagem para abrir (visualizar) no SnapForge, a folha de seleção de edição será aberta em vez de visualizar</string>
     <string name="tag_subsec_time">Tempo sub-segundo</string>
     <string name="tag_subsec_time_original">Tempo sub-segundo original</string>
     <string name="tag_subsec_time_digitized">Tempo sub-segundo digitalizado</string>
@@ -1387,13 +1387,13 @@
     <string name="histogram">Histograma</string>
     <string name="image_toolbox_in_telegram_sub">Participe do nosso bate-papo, onde você pode discutir o que quiser, e também dê uma olhada no Canal CI, onde eu público betas e anúncios</string>
     <string name="tesseract_options">Opções do Tesseract</string>
-    <string name="image_toolbox_in_telegram">Image Toolbox no Telegram 🎉</string>
+    <string name="image_toolbox_in_telegram">SnapForge no Telegram 🎉</string>
     <string name="save_empty_lut_sub">Primeiro, use seu aplicativo de edição de fotos favorito para aplicar um filtro à LUT neutra que pode ser obtida aqui. Para que isso funcione corretamente, cada cor de pixel não deve depender de outros pixels (por exemplo, o desfoque não funcionará). Quando estiver pronta, use sua nova imagem LUT como entrada para o filtro LUT de 512*512</string>
     <string name="ico_size_warning">Os arquivos ICO só podem ser salvos no tamanho máximo de 256x256</string>
     <string name="webp_type_to_webp">Imagens para WEBP</string>
     <string name="select_webp_image_to_start">Escolha a imagem WEBP para iniciar</string>
     <string name="manage_storage_extra_types">Sem acesso total aos arquivos</string>
-    <string name="manage_storage_extra_types_sub">Permitir o acesso de todos os arquivos para ver JXL, QOI e outras imagens que não são reconhecidas como imagens no Android. Sem a permissão, o Image Toolbox não poderá exibir essas imagens</string>
+    <string name="manage_storage_extra_types_sub">Permitir o acesso de todos os arquivos para ver JXL, QOI e outras imagens que não são reconhecidas como imagens no Android. Sem a permissão, o SnapForge não poderá exibir essas imagens</string>
     <string name="add_timestamp">Adicionar Data e Hora</string>
     <string name="recently_used">Usados Recentemente</string>
     <string name="ci_channel">Canal CI</string>
@@ -1836,7 +1836,7 @@
     <string name="export_palette_sub">Exportar a paleta gerada para diferentes formatos</string>
     <string name="add_color_palette_sub">Adiciona uma nova cor à paleta atual</string>
     <string name="palette_name_not_supported">O formato %1$s não suporta o fornecimento de um nome da paleta</string>
-    <string name="wallpapers_export_not_avaialbe">Devido às políticas da Play Store, esse recurso não pode ser incluído na versão atual. Para acessar essa funcionalidade, baixe o ImageToolbox de uma fonte alternativa. Você pode encontrar as versões disponíveis no GitHub abaixo.</string>
+    <string name="wallpapers_export_not_avaialbe">Devido às políticas da Play Store, esse recurso não pode ser incluído na versão atual. Para acessar essa funcionalidade, baixe o SnapForge de uma fonte alternativa. Você pode encontrar as versões disponíveis no GitHub abaixo.</string>
     <string name="open_github_page">Abrir página do Github</string>
     <plurals name="color_count">
         <item quantity="one">%1$s cor</item>
@@ -2134,7 +2134,7 @@
     <string name="grayscale_pdf_sub">Converta todas as imagens incorporadas em documentos em tons de cinza</string>
     <string name="compress_pdf">Compactar PDF</string>
     <string name="compress_pdf_sub">Otimize o tamanho do arquivo do seu documento para facilitar o compartilhamento</string>
-    <string name="repair_info">ImageToolbox reconstrói a tabela de referência cruzada interna e regenera a estrutura do arquivo do zero. Isso pode restaurar o acesso a muitos arquivos que \"não podem ser abertos\"</string>
+    <string name="repair_info">SnapForge reconstrói a tabela de referência cruzada interna e regenera a estrutura do arquivo do zero. Isso pode restaurar o acesso a muitos arquivos que \"não podem ser abertos\"</string>
     <string name="grayscale_info">Esta ferramenta converte todas as imagens de documentos em tons de cinza. Melhor para imprimir e reduzir o tamanho do arquivo</string>
     <string name="metadata">Metadados</string>
     <string name="metadata_pdf_sub">Edite as propriedades do documento para melhor privacidade</string>
@@ -2186,11 +2186,11 @@
     <string name="background_color_for_alpha_formats">Cor de fundo para formatos alfa</string>
     <string name="background_color_for_alpha_formats_sub">Adiciona a capacidade de definir a cor de fundo para cada formato de imagem com suporte alfa, quando desabilitado, disponível apenas para formatos não alfa</string>
     <string name="open_markup_project">Abrir projeto</string>
-    <string name="open_markup_project_sub">Continue editando um projeto do Image Toolbox salvo anteriormente</string>
-    <string name="markup_project_open_failed">Não é possível abrir o projeto do Image Toolbox</string>
-    <string name="markup_project_missing_data">O projeto do Image Toolbox está faltando dados do projeto</string>
-    <string name="markup_project_corrupted">O projeto do Image Toolbox está corrompido</string>
-    <string name="unsupported_markup_project_version">Versão do projeto do Image Toolbox não compatível: %1$d</string>
+    <string name="open_markup_project_sub">Continue editando um projeto do SnapForge salvo anteriormente</string>
+    <string name="markup_project_open_failed">Não é possível abrir o projeto do SnapForge</string>
+    <string name="markup_project_missing_data">O projeto do SnapForge está faltando dados do projeto</string>
+    <string name="markup_project_corrupted">O projeto do SnapForge está corrompido</string>
+    <string name="unsupported_markup_project_version">Versão do projeto do SnapForge não compatível: %1$d</string>
     <string name="save_markup_project">Salvar projeto</string>
     <string name="save_markup_project_sub">Armazene camadas, plano de fundo e histórico de edição em um arquivo de projeto editável</string>
     <string name="failed_to_open">Falha ao abrir</string>
@@ -2419,10 +2419,10 @@
     <string name="help_tip_choose_tool_title">Escolha a ferramenta certa</string>
     <string name="help_tip_choose_tool_subtitle">Use categorias, pesquisa, favoritos e ações de compartilhamento para começar no lugar certo</string>
     <string name="help_tip_choose_tool_page_title">Comece do melhor ponto de entrada</string>
-    <string name="help_tip_choose_tool_description">O Image Toolbox possui muitas ferramentas específicas e muitas delas se sobrepõem à primeira vista. Comece pela tarefa que deseja finalizar e escolha a ferramenta que controla a parte mais importante do resultado: tamanho, formato, metadados, texto, páginas PDF, cores ou layout.</string>
+    <string name="help_tip_choose_tool_description">O SnapForge possui muitas ferramentas específicas e muitas delas se sobrepõem à primeira vista. Comece pela tarefa que deseja finalizar e escolha a ferramenta que controla a parte mais importante do resultado: tamanho, formato, metadados, texto, páginas PDF, cores ou layout.</string>
     <string name="help_tip_choose_tool_step_1">Use a pesquisa quando souber o nome da ação, como redimensionar, PDF, EXIF, OCR, QR ou cor.</string>
     <string name="help_tip_choose_tool_step_2">Abra uma categoria quando você souber apenas o tipo de tarefa e fixe ferramentas frequentes como favoritas.</string>
-    <string name="help_tip_choose_tool_step_3">Quando outro aplicativo compartilhar uma imagem no Image Toolbox, escolha a ferramenta no fluxo da planilha de compartilhamento.</string>
+    <string name="help_tip_choose_tool_step_3">Quando outro aplicativo compartilhar uma imagem no SnapForge, escolha a ferramenta no fluxo da planilha de compartilhamento.</string>
     <string name="help_tip_import_save_share_title">Importe, salve e compartilhe resultados</string>
     <string name="help_tip_import_save_share_subtitle">Entenda o fluxo normal desde a seleção da entrada até a exportação do arquivo editado</string>
     <string name="help_tip_import_save_share_page_title">Siga o fluxo de edição comum</string>
@@ -2461,10 +2461,10 @@
     <string name="help_tip_picker_launcher_title">Seletor e lançador</string>
     <string name="help_tip_picker_launcher_subtitle">Use as configurações do seletor quando o aplicativo abrir muitas caixas de diálogo ou iniciar no lugar errado</string>
     <string name="help_tip_picker_launcher_page_title">Faça com que a abertura de arquivos corresponda ao seu hábito</string>
-    <string name="help_tip_picker_launcher_description">As configurações do seletor e do iniciador controlam se o Image Toolbox inicia na tela principal, em uma ferramenta ou em um fluxo de seleção de arquivo. Essas opções são especialmente úteis quando você costuma entrar na planilha de compartilhamento do Android ou quando deseja que o aplicativo pareça mais um iniciador de ferramentas.</string>
+    <string name="help_tip_picker_launcher_description">As configurações do seletor e do iniciador controlam se o SnapForge inicia na tela principal, em uma ferramenta ou em um fluxo de seleção de arquivo. Essas opções são especialmente úteis quando você costuma entrar na planilha de compartilhamento do Android ou quando deseja que o aplicativo pareça mais um iniciador de ferramentas.</string>
     <string name="help_tip_picker_launcher_step_1">Use as configurações do seletor de fotos se o seletor do sistema ocultar arquivos, mostrar muitos itens recentes ou lidar mal com os arquivos da nuvem.</string>
     <string name="help_tip_picker_launcher_step_2">Habilite skip picking apenas para ferramentas onde você costuma entrar no compartilhamento ou já conhece o arquivo de origem.</string>
-    <string name="help_tip_picker_launcher_step_3">Revise o modo de inicialização se desejar que o Image Toolbox se comporte mais como um seletor de ferramentas do que como uma tela inicial normal.</string>
+    <string name="help_tip_picker_launcher_step_3">Revise o modo de inicialização se desejar que o SnapForge se comporte mais como um seletor de ferramentas do que como uma tela inicial normal.</string>
     <string name="help_tip_image_source_title">Fonte da imagem</string>
     <string name="help_tip_image_source_subtitle">Escolha o modo de seleção que funciona melhor com galerias, gerenciadores de arquivos e arquivos na nuvem</string>
     <string name="help_tip_image_source_page_title">Escolha arquivos da fonte certa</string>
@@ -2608,7 +2608,7 @@
     <string name="help_tip_one_time_save_location_title">Salvar pastas uma única vez</string>
     <string name="help_tip_one_time_save_location_subtitle">Envie as próximas exportações para uma pasta temporária sem alterar seu destino normal</string>
     <string name="help_tip_one_time_save_location_page_title">Mantenha os trabalhos especiais separados</string>
-    <string name="help_tip_one_time_save_location_description">O local de salvamento único é útil para projetos temporários, pastas de clientes, sessões de limpeza ou exportações que não devem ser misturadas com sua pasta normal do Image Toolbox. Fornece um destino de curta duração sem reescrever sua configuração padrão.</string>
+    <string name="help_tip_one_time_save_location_description">O local de salvamento único é útil para projetos temporários, pastas de clientes, sessões de limpeza ou exportações que não devem ser misturadas com sua pasta normal do SnapForge. Fornece um destino de curta duração sem reescrever sua configuração padrão.</string>
     <string name="help_tip_one_time_save_location_step_1">Escolha uma pasta descartável antes de iniciar uma tarefa que pertença fora do seu local normal de exportação.</string>
     <string name="help_tip_one_time_save_location_step_2">Use-o para projetos curtos, pastas compartilhadas ou lotes onde as saídas devem permanecer agrupadas.</string>
     <string name="help_tip_one_time_save_location_step_3">Retorne à pasta padrão após o trabalho para que as exportações posteriores não cheguem inesperadamente ao local temporário.</string>
@@ -3185,7 +3185,7 @@
     <string name="tool_usage_subtitle">%1$d abre • %2$s</string>
     <string name="no_usage_statistics">Ainda não há estatísticas de uso</string>
     <string name="no_usage_statistics_sub">Abra algumas ferramentas e elas aparecerão aqui automaticamente</string>
-    <string name="usage_statistics_info">Suas estatísticas de uso são armazenadas apenas localmente no seu dispositivo. ImageToolbox os usa apenas para mostrar sua atividade pessoal, ferramentas favoritas e informações de dados salvos</string>
+    <string name="usage_statistics_info">Suas estatísticas de uso são armazenadas apenas localmente no seu dispositivo. SnapForge os usa apenas para mostrar sua atividade pessoal, ferramentas favoritas e informações de dados salvos</string>
     <string name="search_keywords_single_edit">editor editar foto retocar ajustar</string>
     <string name="search_keywords_resize_and_convert">redimensionar converter escala resolução dimensões largura altura jpg jpeg png webp compactar</string>
     <string name="search_keywords_weight_resize">comprimir tamanho peso bytes mb kb reduzir qualidade otimizar</string>
@@ -4440,8 +4440,8 @@
     <string name="raw_use_embedded_preview_sub">Use a visualização incorporada na imagem RAW em vez de revelá-la</string>
     <string name="score">Pontuação</string>
     <string name="return_to_external_app_after_save">Retornar após salvar edições externas</string>
-    <string name="return_to_external_app_after_save_sub">Feche o Image Toolbox depois de salvar uma imagem aberta para edição em outro aplicativo</string>
-    <string name="add_imagetoolbox_metadata">Adicionar metadados do ImageToolbox</string>
+    <string name="return_to_external_app_after_save_sub">Feche o SnapForge depois de salvar uma imagem aberta para edição em outro aplicativo</string>
+    <string name="add_imagetoolbox_metadata">Adicionar metadados do SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Escreva a versão do aplicativo e os parâmetros de imagem configurados em EXIF ​​ao salvar</string>
     <string name="read_only">Somente leitura</string>
     <string name="tag_camera_firmware">Firmware da câmera</string>
@@ -5048,7 +5048,7 @@
     <string name="slate">Ardósia</string>
     <string name="search_keywords_pdf_dark_mode">pdf modo escuro leitor noturno inverter cores negativo</string>
     <string name="custom_depth_map">Mapa de profundidade personalizado</string>
-    <string name="custom_depth_map_sub">Opcional. Reutilize um mapa de profundidade em escala de cinza ou do Image Toolbox em vez de estimar a profundidade novamente</string>
+    <string name="custom_depth_map_sub">Opcional. Reutilize um mapa de profundidade em escala de cinza ou do SnapForge em vez de estimar a profundidade novamente</string>
     <string name="comic_to_pdf">História em quadrinhos para PDF</string>
     <string name="comic_to_pdf_sub">Converta CBR, CBZ, CB7 e outros arquivos de imagem para PDF</string>
     <string name="select_comic_archive_to_start">Selecione um arquivo de quadrinhos CBR, CBZ, CB7 ou CBT</string>

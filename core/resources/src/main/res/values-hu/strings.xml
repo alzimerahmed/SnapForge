@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -879,7 +879,7 @@
     <string name="auto_paste">Automatikus beillesztés</string>
     <string name="coordinates_rounding_tolerance">Koordináták kerekítési tűrése</string>
     <string name="corners">Sarkok</string>
-    <string name="embedded_picker_sub">Az Image Toolbox képkiválasztója</string>
+    <string name="embedded_picker_sub">Az SnapForge képkiválasztója</string>
     <string name="cupertino_switch">Cupertino</string>
     <string name="downscale_image">Kép lekicsinyítése</string>
     <string name="auto_paste_sub">Engedélyezi az alkalmazás számára, hogy automatikusan beillessze a vágólap tartalmát, így az megjelenik a főképernyőn, és feldolgozhatóvá válik</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Lehetővé teszi az élsimítást az éles szélek elkerülése érdekében</string>
     <string name="open_edit_instead_of_preview">Nyissa meg a Szerkesztést az előnézet helyett</string>
-    <string name="open_edit_instead_of_preview_sub">Ha az ImageToolboxban kiválasztja a megnyitandó képet (előnézetet), a szerkesztési kijelölési lap megnyílik az előnézet helyett</string>
+    <string name="open_edit_instead_of_preview_sub">Ha az SnapForgeban kiválasztja a megnyitandó képet (előnézetet), a szerkesztési kijelölési lap megnyílik az előnézet helyett</string>
     <string name="document_scanner">Dokumentum szkenner</string>
     <string name="document_scanner_sub">Szkenneljen be dokumentumokat, és készítsen PDF-fájlt vagy különítsen el belőlük képeket</string>
     <string name="click_to_start_scanning">Kattintson a szkennelés elindításához</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Képek a WEBP-re</string>
     <string name="select_webp_image_to_start">A kezdéshez válassza ki a WEBP képet</string>
     <string name="manage_storage_extra_types">Nincs teljes hozzáférés a fájlokhoz</string>
-    <string name="manage_storage_extra_types_sub">Engedélyezze az összes fájlhoz való hozzáférést a JXL, QOI és más olyan képek megtekintéséhez, amelyeket nem ismer fel képként az Android. Engedély nélkül az Image Toolbox nem tudja megjeleníteni ezeket a képeket</string>
+    <string name="manage_storage_extra_types_sub">Engedélyezze az összes fájlhoz való hozzáférést a JXL, QOI és más olyan képek megtekintéséhez, amelyeket nem ismer fel képként az Android. Engedély nélkül az SnapForge nem tudja megjeleníteni ezeket a képeket</string>
     <string name="default_draw_color">Alapértelmezett rajzszín</string>
     <string name="default_draw_path_mode">Alapértelmezett rajzolási útvonal mód</string>
     <string name="add_timestamp">Időbélyeg hozzáadása</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">A létrehozott paletta exportálása különböző formátumokba</string>
     <string name="add_color_palette_sub">Új színt ad az aktuális palettához</string>
     <string name="palette_name_not_supported">A %1$s formátum nem támogatja a palettanév megadását</string>
-    <string name="wallpapers_export_not_avaialbe">A Play Áruház irányelvei miatt ez a funkció nem illeszthető bele a jelenlegi buildbe. A funkció eléréséhez töltse le az ImageToolbox alkalmazást egy másik forrásból. A GitHubon elérhető buildeket alább találja.</string>
+    <string name="wallpapers_export_not_avaialbe">A Play Áruház irányelvei miatt ez a funkció nem illeszthető bele a jelenlegi buildbe. A funkció eléréséhez töltse le az SnapForge alkalmazást egy másik forrásból. A GitHubon elérhető buildeket alább találja.</string>
     <string name="open_github_page">Nyissa meg a Github oldalt</string>
     <string name="overwrite_files_sub_short">Az eredeti fájl a kiválasztott mappába való mentés helyett újra cserélődik</string>
     <string name="hidden_watermark_text_detected">Rejtett vízjelszöveg észlelve</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Konvertálja az összes dokumentumba ágyazott képet szürkeárnyalatossá</string>
     <string name="compress_pdf">PDF tömörítése</string>
     <string name="compress_pdf_sub">Optimalizálja a dokumentumfájl méretét a könnyebb megosztás érdekében</string>
-    <string name="repair_info">Az ImageToolbox újraépíti a belső kereszthivatkozási táblát, és a semmiből regenerálja a fájlstruktúrát. Ezzel visszaállíthatja a hozzáférést számos olyan fájlhoz, amelyeket \\\"nem lehet megnyitni\\\"</string>
+    <string name="repair_info">Az SnapForge újraépíti a belső kereszthivatkozási táblát, és a semmiből regenerálja a fájlstruktúrát. Ezzel visszaállíthatja a hozzáférést számos olyan fájlhoz, amelyeket \\\"nem lehet megnyitni\\\"</string>
     <string name="grayscale_info">Ez az eszköz az összes dokumentumképet szürkeárnyalatossá alakítja. A legjobb a nyomtatáshoz és a fájlméret csökkentéséhez</string>
     <string name="metadata">Metaadatok</string>
     <string name="metadata_pdf_sub">Szerkessze a dokumentum tulajdonságait a jobb adatvédelem érdekében</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Háttérszín Alfa formátumokhoz</string>
     <string name="background_color_for_alpha_formats_sub">Lehetővé teszi a háttérszín beállítását minden alfa-támogatással rendelkező képformátumhoz, ha le van tiltva, ez csak a nem alfa-formátumok esetén érhető el</string>
     <string name="open_markup_project">Projekt megnyitása</string>
-    <string name="open_markup_project_sub">Folytassa a korábban elmentett Image Toolbox projekt szerkesztését</string>
-    <string name="markup_project_open_failed">Nem lehet megnyitni az Image Toolbox projektet</string>
-    <string name="markup_project_missing_data">Az Image Toolbox projektből hiányoznak a projektadatok</string>
-    <string name="markup_project_corrupted">Az Image Toolbox projekt sérült</string>
-    <string name="unsupported_markup_project_version">Nem támogatott Image Toolbox projektverzió: %1$d</string>
+    <string name="open_markup_project_sub">Folytassa a korábban elmentett SnapForge projekt szerkesztését</string>
+    <string name="markup_project_open_failed">Nem lehet megnyitni az SnapForge projektet</string>
+    <string name="markup_project_missing_data">Az SnapForge projektből hiányoznak a projektadatok</string>
+    <string name="markup_project_corrupted">Az SnapForge projekt sérült</string>
+    <string name="unsupported_markup_project_version">Nem támogatott SnapForge projektverzió: %1$d</string>
     <string name="save_markup_project">Projekt mentése</string>
     <string name="save_markup_project_sub">Tárolja a rétegeket, a hátteret és a szerkesztési előzményeket egy szerkeszthető projektfájlban</string>
     <string name="failed_to_open">Nem sikerült megnyitni</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Válassza ki a megfelelő eszközt</string>
     <string name="help_tip_choose_tool_subtitle">Használjon kategóriákat, keresést, kedvenceket, és ossza meg a műveleteket, hogy a megfelelő helyen kezdje</string>
     <string name="help_tip_choose_tool_page_title">Kezdje a legjobb belépési ponttól</string>
-    <string name="help_tip_choose_tool_description">Az Image Toolbox számos fókuszált eszközzel rendelkezik, és sok közülük első pillantásra átfedi egymást. Kezdje a befejezni kívánt feladattól, majd válassza ki az eredmény legfontosabb részét vezérlő eszközt: méretet, formátumot, metaadatokat, szöveget, PDF-oldalakat, színeket vagy elrendezést.</string>
+    <string name="help_tip_choose_tool_description">Az SnapForge számos fókuszált eszközzel rendelkezik, és sok közülük első pillantásra átfedi egymást. Kezdje a befejezni kívánt feladattól, majd válassza ki az eredmény legfontosabb részét vezérlő eszközt: méretet, formátumot, metaadatokat, szöveget, PDF-oldalakat, színeket vagy elrendezést.</string>
     <string name="help_tip_choose_tool_step_1">Használja a keresést, ha ismeri a művelet nevét, például átméretezés, PDF, EXIF, OCR, QR vagy szín.</string>
     <string name="help_tip_choose_tool_step_2">Nyisson meg egy kategóriát, ha csak a feladat típusát ismeri, majd rögzítse a gyakori eszközöket kedvencként.</string>
-    <string name="help_tip_choose_tool_step_3">Ha egy másik alkalmazás megoszt egy képet az Image Toolboxban, válassza ki az eszközt a megosztási munkafolyamatból.</string>
+    <string name="help_tip_choose_tool_step_3">Ha egy másik alkalmazás megoszt egy képet az SnapForgeban, válassza ki az eszközt a megosztási munkafolyamatból.</string>
     <string name="help_tip_import_save_share_title">Az eredmények importálása, mentése és megosztása</string>
     <string name="help_tip_import_save_share_subtitle">Ismerje meg a szokásos folyamatot a bemenet kiválasztásától a szerkesztett fájl exportálásáig</string>
     <string name="help_tip_import_save_share_page_title">Kövesse a közös szerkesztési folyamatot</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Picker és launcher</string>
     <string name="help_tip_picker_launcher_subtitle">Használja a kiválasztási beállításokat, ha az alkalmazás túl sok párbeszédablakot nyit meg, vagy rossz helyen indul</string>
     <string name="help_tip_picker_launcher_page_title">A fájlok megnyitása megfeleljen a szokásainak</string>
-    <string name="help_tip_picker_launcher_description">A kiválasztó és indító beállításai szabályozzák, hogy az Image Toolbox a főképernyőről, egy eszközről vagy egy fájlkiválasztási folyamatról induljon-e el. Ezek a beállítások különösen akkor hasznosak, ha általában az Android megosztási lapjáról lép be, vagy ha azt szeretné, hogy az alkalmazás inkább eszközindítónak tűnjön.</string>
+    <string name="help_tip_picker_launcher_description">A kiválasztó és indító beállításai szabályozzák, hogy az SnapForge a főképernyőről, egy eszközről vagy egy fájlkiválasztási folyamatról induljon-e el. Ezek a beállítások különösen akkor hasznosak, ha általában az Android megosztási lapjáról lép be, vagy ha azt szeretné, hogy az alkalmazás inkább eszközindítónak tűnjön.</string>
     <string name="help_tip_picker_launcher_step_1">Használja a fotóválasztó beállításait, ha a rendszerválasztó elrejti a fájlokat, túl sok friss elemet jelenít meg, vagy rosszul kezeli a felhőfájlokat.</string>
     <string name="help_tip_picker_launcher_step_2">Csak azoknál az eszközöknél engedélyezze a kihagyást, amelyekhez általában megosztásból lép be, vagy amelyekhez már ismeri a forrásfájlt.</string>
-    <string name="help_tip_picker_launcher_step_3">Tekintse át az Indító módot, ha azt szeretné, hogy az Image Toolbox inkább eszközválasztóként működjön, mint egy normál kezdőképernyőn.</string>
+    <string name="help_tip_picker_launcher_step_3">Tekintse át az Indító módot, ha azt szeretné, hogy az SnapForge inkább eszközválasztóként működjön, mint egy normál kezdőképernyőn.</string>
     <string name="help_tip_image_source_title">Kép forrása</string>
     <string name="help_tip_image_source_subtitle">Válassza ki azt a kiválasztó módot, amely a legjobban működik a galériákkal, fájlkezelőkkel és felhőfájlokkal</string>
     <string name="help_tip_image_source_page_title">Válasszon fájlokat a megfelelő forrásból</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Egyszeri mentési mappák</string>
     <string name="help_tip_one_time_save_location_subtitle">Küldje el a következő exportokat egy ideiglenes mappába anélkül, hogy megváltoztatná a normál célhelyet</string>
     <string name="help_tip_one_time_save_location_page_title">Tartsa külön a speciális munkákat</string>
-    <string name="help_tip_one_time_save_location_description">Az egyszeri mentési hely hasznos ideiglenes projektekhez, ügyfélmappákhoz, tisztítási munkamenetekhez vagy exportáláshoz, amelyek nem keveredhetnek a szokásos Image Toolbox mappával. Rövid életű úticélt biztosít az alapértelmezett beállítás átírása nélkül.</string>
+    <string name="help_tip_one_time_save_location_description">Az egyszeri mentési hely hasznos ideiglenes projektekhez, ügyfélmappákhoz, tisztítási munkamenetekhez vagy exportáláshoz, amelyek nem keveredhetnek a szokásos SnapForge mappával. Rövid életű úticélt biztosít az alapértelmezett beállítás átírása nélkül.</string>
     <string name="help_tip_one_time_save_location_step_1">Válasszon egy egyszeri mappát, mielőtt olyan feladatot kezdene el, amely a szokásos exportálási helyén kívül esik.</string>
     <string name="help_tip_one_time_save_location_step_2">Használja rövid projektekhez, megosztott mappákhoz vagy kötegekhez, ahol a kimeneteknek együtt kell maradniuk.</string>
     <string name="help_tip_one_time_save_location_step_3">A feladat elvégzése után térjen vissza az alapértelmezett mappába, hogy a későbbi exportálások ne kerüljenek váratlanul az ideiglenes helyre.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d nyílik • %2$s</string>
     <string name="no_usage_statistics">Még nincs használati statisztika</string>
     <string name="no_usage_statistics_sub">Nyisson meg néhány eszközt, és azok automatikusan megjelennek itt</string>
-    <string name="usage_statistics_info">A használati statisztikát csak helyileg tároljuk az eszközön. Az ImageToolbox csak az Ön személyes tevékenységének, kedvenc eszközeinek és mentett adatok betekintésének megjelenítésére használja őket</string>
+    <string name="usage_statistics_info">A használati statisztikát csak helyileg tároljuk az eszközön. Az SnapForge csak az Ön személyes tevékenységének, kedvenc eszközeinek és mentett adatok betekintésének megjelenítésére használja őket</string>
     <string name="search_keywords_single_edit">szerkesztő fotó szerkesztése kép retusálás beállítása</string>
     <string name="search_keywords_resize_and_convert">átméretezés konvertálás skála felbontás méretek szélesség magasság jpg jpeg png webp tömörítés</string>
     <string name="search_keywords_weight_resize">tömörítés méret súly bájt mb kb minőség csökkentése optimalizál</string>
@@ -4443,7 +4443,7 @@
     <string name="score">Pontszám</string>
     <string name="return_to_external_app_after_save">Külső szerkesztések mentése után térjen vissza</string>
     <string name="return_to_external_app_after_save_sub">Zárja be a Kép eszköztárat, miután elmentett egy másik alkalmazásból szerkesztésre megnyitott képet</string>
-    <string name="add_imagetoolbox_metadata">Add hozzá az ImageToolbox metaadatait</string>
+    <string name="add_imagetoolbox_metadata">Add hozzá az SnapForge metaadatait</string>
     <string name="add_imagetoolbox_metadata_sub">Mentéskor írja be az alkalmazás verzióját és a konfigurált képparamétereket az EXIF-be</string>
     <string name="read_only">Csak olvasható</string>
     <string name="tag_camera_firmware">Kamera firmware</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">Pala</string>
     <string name="search_keywords_pdf_dark_mode">pdf sötét mód éjszakai olvasó invert színek negatív</string>
     <string name="custom_depth_map">Egyedi mélységtérkép</string>
-    <string name="custom_depth_map_sub">Választható. A mélység újbóli becslése helyett használja újra a szürkeárnyalatos vagy az Image Toolbox mélységtérképét</string>
+    <string name="custom_depth_map_sub">Választható. A mélység újbóli becslése helyett használja újra a szürkeárnyalatos vagy az SnapForge mélységtérképét</string>
     <string name="comic_to_pdf">Képregény PDF-be</string>
     <string name="comic_to_pdf_sub">A CBR, CBZ, CB7 és más képarchívumok konvertálása PDF-be</string>
     <string name="select_comic_archive_to_start">Válasszon ki egy CBR, CBZ, CB7 vagy CBT képregényarchívumot</string>

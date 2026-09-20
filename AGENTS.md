@@ -7,7 +7,7 @@ SnapForge = fork of T8RIN/ImageToolbox (upstream: https://github.com/T8RIN/Image
 **Stack:** Kotlin 2.4.20, Compose + M3 (Material You dynamic color), Hilt 2.60.1, Decompose 3.5.0 (nav/lifecycle), Kotlin Serialization, Moshi, convention plugins via `build-logic/` (typesafe project accessors ON). Min SDK 24, target/compile SDK 37, JVM target 21 (JDK 21 toolchain; one convention spot pins JVM_17 — do NOT "fix" blindly). AGP 9.3.3.
 
 **Key subsystems:**
-- **Modules:** `:app` + 10 `:core:*` (data, ui, domain, resources, settings, di, crash, utils, filters, ksp) + 60+ `:feature:*` (crop, resize-convert, filters, draw, erase-background, edit-exif, pdf-tools, cipher, ai-tools, recognize-text, document-scanner, gif-tools, jxl-tools, webp-tools, collage-maker, watermarking, scan-qr-code, quick-tiles, ...). Features depend on all core; `:app` depends on `:feature:root`, `:feature:media-picker`, `:feature:quick-tiles`. Full graph: `ARCHITECTURE.md` / `ARCHITECTURE_2`.
+- **Modules:** `:app` + 10 `:core:*` (data, ui, domain, resources, settings, di, crash, utils, filters, ksp) + 60+ `:feature:*` (crop, resize-convert, filters, draw, erase-background, edit-exif, pdf-tools, cipher, ai-tools, recognize-text, document-scanner, gif-tools, jxl-tools, webp-tools, collage-maker, watermarking, scan-qr-code, quick-tiles, ...). Features depend on all core; `:app` depends on `:feature:root`, `:feature:media-picker`, `:feature:quick-tiles`. Module graph: run `./gradlew :app:dependencies` or see settings.gradle.kts.
 - **Variants:** flavor dim `app` → `foss` (default, no GMS), `market` (GMS), `benchmark`. `:app` debug suffix `.debug`.
 - **Identity:** applicationId `com.alzimerahmed.snapforge` (debug `.debug`); namespace/packages stay `com.t8rin.imagetoolbox`; file provider `com.alzimerahmed.snapforge.fileprovider`. Namespace rename deferred (docs/research.md ADR-002) — do NOT rename casually; applicationId = SnapForge identity.
 - **Native libs under `lib/`**, JitPack/Sonatype-snapshot repos; strict repo resolution (`FAIL_ON_PROJECT_REPOS`).
@@ -69,5 +69,5 @@ Quick tasks: `.devin/prompt/quick.md` (commandments) + `.devin/prompt/rules.md` 
 - `docs/CONCEPTS.md` — project vocabulary (image-pipeline terms)
 - `docs/research.md` — research, ADRs, gotchas
 - `docs/idea.md` — competitive analysis
-- `ARCHITECTURE.md`, `ARCHITECTURE_2` — upstream module graph docs
+- Module graph: `settings.gradle.kts` (upstream ARCHITECTURE docs removed)
 - Upstream repo — README/Wiki for feature/FAQ reference (no code sync)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">Avui</string>
     <string name="header_yesterday">Ahir</string>
     <string name="embedded_picker">Selector incrustat</string>
-    <string name="embedded_picker_sub">Selector d\'imatges de Image Toolbox</string>
+    <string name="embedded_picker_sub">Selector d\'imatges de SnapForge</string>
     <string name="no_permissions">Sense permisos</string>
     <string name="request">Sol·licitud</string>
     <string name="pick_multiple_media">Trieu diversos mitjans</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antiàlies</string>
     <string name="antialias_sub">Habilita l\'antialiasing per evitar vores afilades</string>
     <string name="open_edit_instead_of_preview">Obriu Edita en lloc de previsualitzar</string>
-    <string name="open_edit_instead_of_preview_sub">Quan seleccioneu la imatge per obrir (visualització prèvia) a ImageToolbox, s\'obrirà el full de selecció d\'edició en lloc de previsualitzar</string>
+    <string name="open_edit_instead_of_preview_sub">Quan seleccioneu la imatge per obrir (visualització prèvia) a SnapForge, s\'obrirà el full de selecció d\'edició en lloc de previsualitzar</string>
     <string name="document_scanner">Escàner de documents</string>
     <string name="document_scanner_sub">Escaneja documents i crea PDF o separa imatges d\'ells</string>
     <string name="click_to_start_scanning">Feu clic per començar a escanejar</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Imatges al WEBP</string>
     <string name="select_webp_image_to_start">Trieu la imatge WEBP per començar</string>
     <string name="manage_storage_extra_types">No hi ha accés complet als fitxers</string>
-    <string name="manage_storage_extra_types_sub">Permet l\'accés a tots els fitxers per veure JXL, QOI i altres imatges que no es reconeixen com a imatges a Android. Sense el permís Image Toolbox no pot mostrar aquestes imatges</string>
+    <string name="manage_storage_extra_types_sub">Permet l\'accés a tots els fitxers per veure JXL, QOI i altres imatges que no es reconeixen com a imatges a Android. Sense el permís SnapForge no pot mostrar aquestes imatges</string>
     <string name="default_draw_color">Color de dibuix per defecte</string>
     <string name="default_draw_path_mode">Mode de camí de dibuix predeterminat</string>
     <string name="add_timestamp">Afegeix marca de temps</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Exporta la paleta generada a diferents formats</string>
     <string name="add_color_palette_sub">Afegeix un color nou a la paleta actual</string>
     <string name="palette_name_not_supported">El format %1$s no admet proporcionar el nom de la paleta</string>
-    <string name="wallpapers_export_not_avaialbe">A causa de les polítiques de Play Store, aquesta funció no es pot incloure a la versió actual. Per accedir a aquesta funcionalitat, descarregueu ImageToolbox des d\'una font alternativa. Podeu trobar les versions disponibles a GitHub a continuació.</string>
+    <string name="wallpapers_export_not_avaialbe">A causa de les polítiques de Play Store, aquesta funció no es pot incloure a la versió actual. Per accedir a aquesta funcionalitat, descarregueu SnapForge des d\'una font alternativa. Podeu trobar les versions disponibles a GitHub a continuació.</string>
     <string name="open_github_page">Obriu la pàgina de Github</string>
     <string name="overwrite_files_sub_short">El fitxer original es substituirà per un de nou en lloc de desar-lo a la carpeta seleccionada</string>
     <string name="hidden_watermark_text_detected">S\'ha detectat un text de marca d\'aigua amagat</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Converteix totes les imatges incrustades del document a escala de grisos</string>
     <string name="compress_pdf">Comprimir PDF</string>
     <string name="compress_pdf_sub">Optimitzeu la mida del fitxer del document per compartir-lo més fàcilment</string>
-    <string name="repair_info">ImageToolbox reconstrueix la taula interna de referències creuades i regenera l\'estructura de fitxers des de zero. Això pot restaurar l\'accés a molts fitxers que \\\"no es poden obrir\\\"</string>
+    <string name="repair_info">SnapForge reconstrueix la taula interna de referències creuades i regenera l\'estructura de fitxers des de zero. Això pot restaurar l\'accés a molts fitxers que \\\"no es poden obrir\\\"</string>
     <string name="grayscale_info">Aquesta eina converteix totes les imatges del document a escala de grisos. El millor per imprimir i reduir la mida del fitxer</string>
     <string name="metadata">Metadades</string>
     <string name="metadata_pdf_sub">Editeu les propietats del document per a una millor privadesa</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Color de fons per a formats alfa</string>
     <string name="background_color_for_alpha_formats_sub">Afegeix la possibilitat d\'establir el color de fons per a cada format d\'imatge amb suport alfa, quan està desactivat, només està disponible per als que no són alfa</string>
     <string name="open_markup_project">Projecte obert</string>
-    <string name="open_markup_project_sub">Continueu editant un projecte de Image Toolbox desat anteriorment</string>
-    <string name="markup_project_open_failed">No es pot obrir el projecte Image Toolbox</string>
-    <string name="markup_project_missing_data">Falten dades del projecte al projecte Image Toolbox</string>
-    <string name="markup_project_corrupted">El projecte Image Toolbox està malmès</string>
-    <string name="unsupported_markup_project_version">Versió del projecte Image Toolbox no compatible: %1$d</string>
+    <string name="open_markup_project_sub">Continueu editant un projecte de SnapForge desat anteriorment</string>
+    <string name="markup_project_open_failed">No es pot obrir el projecte SnapForge</string>
+    <string name="markup_project_missing_data">Falten dades del projecte al projecte SnapForge</string>
+    <string name="markup_project_corrupted">El projecte SnapForge està malmès</string>
+    <string name="unsupported_markup_project_version">Versió del projecte SnapForge no compatible: %1$d</string>
     <string name="save_markup_project">Guarda el projecte</string>
     <string name="save_markup_project_sub">Emmagatzema capes, fons i historial d\'edició en un fitxer de projecte editable</string>
     <string name="failed_to_open">No s\'ha pogut obrir</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Trieu l\'eina adequada</string>
     <string name="help_tip_choose_tool_subtitle">Utilitzeu categories, cerques, preferits i compartiu accions per començar al lloc correcte</string>
     <string name="help_tip_choose_tool_page_title">Comenceu des del millor punt d\'entrada</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox té moltes eines enfocades, i moltes d\'elles es superposen a primera vista. Comenceu des de la tasca que voleu acabar i, a continuació, trieu l\'eina que controla la part més important del resultat: mida, format, metadades, text, pàgines PDF, colors o disseny.</string>
+    <string name="help_tip_choose_tool_description">SnapForge té moltes eines enfocades, i moltes d\'elles es superposen a primera vista. Comenceu des de la tasca que voleu acabar i, a continuació, trieu l\'eina que controla la part més important del resultat: mida, format, metadades, text, pàgines PDF, colors o disseny.</string>
     <string name="help_tip_choose_tool_step_1">Utilitzeu la cerca quan conegueu el nom de l\'acció, com ara canviar la mida, PDF, EXIF, OCR, QR o color.</string>
     <string name="help_tip_choose_tool_step_2">Obriu una categoria quan només conegueu el tipus de tasca i, a continuació, fixeu les eines freqüents com a preferides.</string>
-    <string name="help_tip_choose_tool_step_3">Quan una altra aplicació comparteix una imatge a Image Toolbox, trieu l\'eina del flux del full de compartició.</string>
+    <string name="help_tip_choose_tool_step_3">Quan una altra aplicació comparteix una imatge a SnapForge, trieu l\'eina del flux del full de compartició.</string>
     <string name="help_tip_import_save_share_title">Importeu, deseu i compartiu resultats</string>
     <string name="help_tip_import_save_share_subtitle">Entendre el flux habitual des de la selecció d\'entrada fins a l\'exportació del fitxer editat</string>
     <string name="help_tip_import_save_share_page_title">Seguiu el flux d\'edició comú</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Selector i llançador</string>
     <string name="help_tip_picker_launcher_subtitle">Utilitzeu la configuració del selector quan l\'aplicació obre massa diàlegs o s\'iniciï al lloc equivocat</string>
     <string name="help_tip_picker_launcher_page_title">Feu que obrir fitxers coincideixi amb el vostre hàbit</string>
-    <string name="help_tip_picker_launcher_description">La configuració del selector i del llançador controla si Image Toolbox s\'inicia des de la pantalla principal, una eina o un flux de selecció de fitxers. Aquestes opcions són especialment útils quan normalment entreu des del full de compartició d\'Android o quan voleu que l\'aplicació se senti més com un llançador d\'eines.</string>
+    <string name="help_tip_picker_launcher_description">La configuració del selector i del llançador controla si SnapForge s\'inicia des de la pantalla principal, una eina o un flux de selecció de fitxers. Aquestes opcions són especialment útils quan normalment entreu des del full de compartició d\'Android o quan voleu que l\'aplicació se senti més com un llançador d\'eines.</string>
     <string name="help_tip_picker_launcher_step_1">Utilitzeu la configuració del selector de fotos si el selector del sistema amaga fitxers, mostra massa elements recents o gestiona malament els fitxers del núvol.</string>
     <string name="help_tip_picker_launcher_step_2">Habiliteu la selecció de saltar només per a les eines on normalment introduïu des de la compartició o ja coneixeu el fitxer font.</string>
-    <string name="help_tip_picker_launcher_step_3">Reviseu el mode de llançador si voleu que Image Toolbox es comporti més com un selector d\'eines que com una pantalla d\'inici normal.</string>
+    <string name="help_tip_picker_launcher_step_3">Reviseu el mode de llançador si voleu que SnapForge es comporti més com un selector d\'eines que com una pantalla d\'inici normal.</string>
     <string name="help_tip_image_source_title">Font de la imatge</string>
     <string name="help_tip_image_source_subtitle">Trieu el mode de selecció que funcioni millor amb galeries, gestors de fitxers i fitxers al núvol</string>
     <string name="help_tip_image_source_page_title">Trieu fitxers de la font correcta</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d obre • %2$s</string>
     <string name="no_usage_statistics">Encara no hi ha estadístiques d\'ús</string>
     <string name="no_usage_statistics_sub">Obriu algunes eines i apareixeran aquí automàticament</string>
-    <string name="usage_statistics_info">Les vostres estadístiques d\'ús només s\'emmagatzemen localment al vostre dispositiu. ImageToolbox només els fa servir per mostrar la vostra activitat personal, les eines preferides i les dades desades</string>
+    <string name="usage_statistics_info">Les vostres estadístiques d\'ús només s\'emmagatzemen localment al vostre dispositiu. SnapForge només els fa servir per mostrar la vostra activitat personal, les eines preferides i les dades desades</string>
     <string name="search_keywords_watermarking">superposició de segell de text del logotip de la marca d\'aigua</string>
     <string name="search_keywords_gif_tools">gif animació animada convertir fotogrames</string>
     <string name="search_keywords_noise_generation">generador de soroll gra de textura aleatòria</string>
@@ -4443,7 +4443,7 @@
     <string name="score">Puntuació</string>
     <string name="return_to_external_app_after_save">Torna després de desar les edicions externes</string>
     <string name="return_to_external_app_after_save_sub">Tanqueu la Caixa d\'eines d\'imatge després de desar una imatge oberta per editar-la des d\'una altra aplicació</string>
-    <string name="add_imagetoolbox_metadata">Afegeix metadades d\'ImageToolbox</string>
+    <string name="add_imagetoolbox_metadata">Afegeix metadades d\'SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Escriviu la versió de l\'aplicació i els paràmetres de la imatge configurats a EXIF ​​quan deseu</string>
     <string name="read_only">Només lectura</string>
     <string name="tag_camera_firmware">firmware de la càmera</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">Pissarra</string>
     <string name="search_keywords_pdf_dark_mode">pdf lector nocturn en mode fosc inverteix colors negatius</string>
     <string name="custom_depth_map">Mapa de profunditat personalitzat</string>
-    <string name="custom_depth_map_sub">Opcional. Reutilitza un mapa de profunditat d\'escala de grisos o d\'Image Toolbox en lloc d\'estimar la profunditat de nou</string>
+    <string name="custom_depth_map_sub">Opcional. Reutilitza un mapa de profunditat d\'escala de grisos o d\'SnapForge en lloc d\'estimar la profunditat de nou</string>
     <string name="comic_to_pdf">Còmic a PDF</string>
     <string name="comic_to_pdf_sub">Converteix CBR, CBZ, CB7 i altres arxius d\'imatges a PDF</string>
     <string name="select_comic_archive_to_start">Seleccioneu un arxiu de còmics CBR, CBZ, CB7 o CBT</string>

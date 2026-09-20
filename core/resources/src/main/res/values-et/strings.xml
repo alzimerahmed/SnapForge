@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -862,7 +862,7 @@
     <string name="header_today">Täna</string>
     <string name="header_yesterday">eile</string>
     <string name="embedded_picker">Manustatud valija</string>
-    <string name="embedded_picker_sub">Image Toolboxi pildivalija</string>
+    <string name="embedded_picker_sub">SnapForgei pildivalija</string>
     <string name="no_permissions">Lubasid pole</string>
     <string name="request">Taotlus</string>
     <string name="pick_multiple_media">Valige mitu meediat</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Võimaldab antialiasi, et vältida teravaid servi</string>
     <string name="open_edit_instead_of_preview">Ava eelvaate asemel Redigeerimine</string>
-    <string name="open_edit_instead_of_preview_sub">Kui valite ImageToolboxis avatava (eelvaate) pildi, avatakse eelvaate asemel redigeerimise valikuleht</string>
+    <string name="open_edit_instead_of_preview_sub">Kui valite SnapForgeis avatava (eelvaate) pildi, avatakse eelvaate asemel redigeerimise valikuleht</string>
     <string name="document_scanner">Dokumendi skanner</string>
     <string name="document_scanner_sub">Skannige dokumente ja looge PDF-faile või eraldage neist pilte</string>
     <string name="click_to_start_scanning">Klõpsake skannimise alustamiseks</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Pildid WEBP-sse</string>
     <string name="select_webp_image_to_start">Alustamiseks valige WEBP-pilt</string>
     <string name="manage_storage_extra_types">Puudub täielik juurdepääs failidele</string>
-    <string name="manage_storage_extra_types_sub">Lubage kõigile failidele juurdepääs, et näha JXL-i, QOI-d ja muid pilte, mida Androidis piltidena ei tuvastata. Ilma loata ei saa Image Toolbox neid pilte näidata</string>
+    <string name="manage_storage_extra_types_sub">Lubage kõigile failidele juurdepääs, et näha JXL-i, QOI-d ja muid pilte, mida Androidis piltidena ei tuvastata. Ilma loata ei saa SnapForge neid pilte näidata</string>
     <string name="default_draw_color">Joonistuse vaikevärv</string>
     <string name="default_draw_path_mode">Vaikimisi joonistamise tee režiim</string>
     <string name="add_timestamp">Lisa ajatempel</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Ekspordi loodud palett erinevatesse vormingutesse</string>
     <string name="add_color_palette_sub">Lisab praegusele paletile uue värvi</string>
     <string name="palette_name_not_supported">%1$s vorming ei toeta paleti nime esitamist</string>
-    <string name="wallpapers_export_not_avaialbe">Play poe eeskirjade tõttu ei saa seda funktsiooni praegusesse järgmisse kaasata. Sellele funktsioonile juurdepääsemiseks laadige ImageToolbox alla alternatiivsest allikast. GitHubi saadaolevad versioonid leiate allpool.</string>
+    <string name="wallpapers_export_not_avaialbe">Play poe eeskirjade tõttu ei saa seda funktsiooni praegusesse järgmisse kaasata. Sellele funktsioonile juurdepääsemiseks laadige SnapForge alla alternatiivsest allikast. GitHubi saadaolevad versioonid leiate allpool.</string>
     <string name="open_github_page">Avage Githubi leht</string>
     <string name="overwrite_files_sub_short">Algne fail asendatakse valitud kausta salvestamise asemel uuega</string>
     <string name="hidden_watermark_text_detected">Tuvastati peidetud vesimärgi tekst</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Teisendage kõik dokumendi manustatud pildid halltoonides</string>
     <string name="compress_pdf">Tihendage PDF</string>
     <string name="compress_pdf_sub">Lihtsamaks jagamiseks optimeerige oma dokumendi faili suurust</string>
-    <string name="repair_info">ImageToolbox taastab sisemise ristviidetabeli ja taastab failistruktuuri nullist. See võib taastada juurdepääsu paljudele failidele, mida \\\"ei saa avada\\\"</string>
+    <string name="repair_info">SnapForge taastab sisemise ristviidetabeli ja taastab failistruktuuri nullist. See võib taastada juurdepääsu paljudele failidele, mida \\\"ei saa avada\\\"</string>
     <string name="grayscale_info">See tööriist teisendab kõik dokumendipildid halltoonides. Parim printimiseks ja faili suuruse vähendamiseks</string>
     <string name="metadata">Metaandmed</string>
     <string name="metadata_pdf_sub">Parema privaatsuse tagamiseks muutke dokumendi atribuute</string>
@@ -2188,8 +2188,8 @@
     <string name="background_color_for_alpha_formats">Taustavärv Alfa-vormingute jaoks</string>
     <string name="background_color_for_alpha_formats_sub">Lisab võimaluse määrata taustavärvi igale alfatoega pildivormingule, kui see on keelatud, on see saadaval ainult mittealfavormingute jaoks</string>
     <string name="open_markup_project">Avatud projekt</string>
-    <string name="open_markup_project_sub">Jätkake varem salvestatud Image Toolboxi projekti redigeerimist</string>
-    <string name="markup_project_open_failed">Image Toolboxi projekti ei saa avada</string>
+    <string name="open_markup_project_sub">Jätkake varem salvestatud SnapForgei projekti redigeerimist</string>
+    <string name="markup_project_open_failed">SnapForgei projekti ei saa avada</string>
     <string name="markup_project_missing_data">Pildi tööriistakasti projektil puuduvad projekti andmed</string>
     <string name="markup_project_corrupted">Pildi tööriistakasti projekt on rikutud</string>
     <string name="unsupported_markup_project_version">Toetamata pilditööriista projekti versioon: %1$d</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Valige õige tööriist</string>
     <string name="help_tip_choose_tool_subtitle">Kasutage kategooriaid, otsingut, lemmikuid ja jagage toiminguid, et alustada õigest kohast</string>
     <string name="help_tip_choose_tool_page_title">Alustage parimast sisenemispunktist</string>
-    <string name="help_tip_choose_tool_description">Image Toolboxil on palju keskendunud tööriistu ja paljud neist kattuvad esmapilgul. Alustage ülesandest, mille soovite lõpetada, seejärel valige tööriist, mis juhib tulemuse kõige olulisemat osa: suurus, vorming, metaandmed, tekst, PDF-lehed, värvid või paigutus.</string>
+    <string name="help_tip_choose_tool_description">SnapForgeil on palju keskendunud tööriistu ja paljud neist kattuvad esmapilgul. Alustage ülesandest, mille soovite lõpetada, seejärel valige tööriist, mis juhib tulemuse kõige olulisemat osa: suurus, vorming, metaandmed, tekst, PDF-lehed, värvid või paigutus.</string>
     <string name="help_tip_choose_tool_step_1">Kasutage otsingut, kui teate toimingu nime (nt suuruse muutmine, PDF, EXIF, OCR, QR või värv).</string>
     <string name="help_tip_choose_tool_step_2">Avage kategooria, kui teate ainult ülesande tüüpi, seejärel kinnitage sagedased tööriistad lemmikuteks.</string>
-    <string name="help_tip_choose_tool_step_3">Kui mõni muu rakendus jagab pilti Image Toolboxis, valige tööriist jagamislehe voost.</string>
+    <string name="help_tip_choose_tool_step_3">Kui mõni muu rakendus jagab pilti SnapForgeis, valige tööriist jagamislehe voost.</string>
     <string name="help_tip_import_save_share_title">Importige, salvestage ja jagage tulemusi</string>
     <string name="help_tip_import_save_share_subtitle">Mõistke tavalist voogu alates sisendi valimisest kuni redigeeritud faili eksportimiseni</string>
     <string name="help_tip_import_save_share_page_title">Järgige tavalist redigeerimisvoogu</string>
@@ -2463,10 +2463,10 @@
     <string name="help_tip_picker_launcher_title">Valija ja käivitaja</string>
     <string name="help_tip_picker_launcher_subtitle">Kasutage valija seadeid, kui rakendus avab liiga palju dialooge või käivitub valest kohast</string>
     <string name="help_tip_picker_launcher_page_title">Muutke failide avamine teie harjumusega sobivaks</string>
-    <string name="help_tip_picker_launcher_description">Valija ja käivitaja sätted määravad, kas Image Toolbox käivitub põhiekraanilt, tööriistast või failivaliku voost. Need valikud on eriti kasulikud, kui sisestate tavaliselt Androidi jagamislehelt või kui soovite, et rakendus tunneks end rohkem tööriistakäivitajana.</string>
+    <string name="help_tip_picker_launcher_description">Valija ja käivitaja sätted määravad, kas SnapForge käivitub põhiekraanilt, tööriistast või failivaliku voost. Need valikud on eriti kasulikud, kui sisestate tavaliselt Androidi jagamislehelt või kui soovite, et rakendus tunneks end rohkem tööriistakäivitajana.</string>
     <string name="help_tip_picker_launcher_step_1">Kasutage fotovalija seadeid, kui süsteemivalija peidab failid, näitab liiga palju hiljutisi üksusi või käsitleb pilvefaile halvasti.</string>
     <string name="help_tip_picker_launcher_step_2">Lubage vahelejätmine ainult nende tööriistade puhul, kuhu tavaliselt sisestate jagamise kaudu või teate juba lähtefaili.</string>
-    <string name="help_tip_picker_launcher_step_3">Vaadake üle käivitusrežiim, kui soovite, et Image Toolbox käituks rohkem nagu tööriistavalija kui tavaline avakuva.</string>
+    <string name="help_tip_picker_launcher_step_3">Vaadake üle käivitusrežiim, kui soovite, et SnapForge käituks rohkem nagu tööriistavalija kui tavaline avakuva.</string>
     <string name="help_tip_image_source_title">Pildi allikas</string>
     <string name="help_tip_image_source_subtitle">Valige valijarežiim, mis töötab kõige paremini galeriide, failihaldurite ja pilvefailidega</string>
     <string name="help_tip_image_source_page_title">Valige failid õigest allikast</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Ühekordsed salvestuskaustad</string>
     <string name="help_tip_one_time_save_location_subtitle">Saatke järgmised ekspordid ajutisse kausta tavalist sihtkohta muutmata</string>
     <string name="help_tip_one_time_save_location_page_title">Hoidke eritööd eraldi</string>
-    <string name="help_tip_one_time_save_location_description">Ühekordne salvestamise asukoht on kasulik ajutiste projektide, kliendikaustade, puhastusseansside või eksportimise jaoks, mis ei tohiks segada teie tavalise Image Toolboxi kaustaga. See annab lühiajalise sihtkoha ilma vaikeseadet ümber kirjutamata.</string>
+    <string name="help_tip_one_time_save_location_description">Ühekordne salvestamise asukoht on kasulik ajutiste projektide, kliendikaustade, puhastusseansside või eksportimise jaoks, mis ei tohiks segada teie tavalise SnapForgei kaustaga. See annab lühiajalise sihtkoha ilma vaikeseadet ümber kirjutamata.</string>
     <string name="help_tip_one_time_save_location_step_1">Valige ühekordne kaust enne toimingu alustamist, mis asub väljaspool teie tavapärast ekspordikohta.</string>
     <string name="help_tip_one_time_save_location_step_2">Kasutage seda lühikeste projektide, jagatud kaustade või partiide jaoks, kus väljundid peavad jääma koos rühmitatuks.</string>
     <string name="help_tip_one_time_save_location_step_3">Naaske pärast tööd vaikekausta, et hilisem eksport ei satuks ootamatult ajutisse asukohta.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d avaneb • %2$s</string>
     <string name="no_usage_statistics">Kasutusstatistikat veel pole</string>
     <string name="no_usage_statistics_sub">Avage mõned tööriistad ja need kuvatakse siin automaatselt</string>
-    <string name="usage_statistics_info">Teie kasutusstatistika salvestatakse teie seadmesse ainult kohapeal. ImageToolbox kasutab neid ainult teie isikliku tegevuse, lemmiktööriistade ja salvestatud andmete ülevaate kuvamiseks</string>
+    <string name="usage_statistics_info">Teie kasutusstatistika salvestatakse teie seadmesse ainult kohapeal. SnapForge kasutab neid ainult teie isikliku tegevuse, lemmiktööriistade ja salvestatud andmete ülevaate kuvamiseks</string>
     <string name="search_keywords_single_edit">redaktori redigeerimine foto pildi retušeerimine kohandamine</string>
     <string name="search_keywords_resize_and_convert">suuruse muutmine teisenda skaala eraldusvõime mõõtmed laius kõrgus jpg jpeg png webp tihendus</string>
     <string name="search_keywords_weight_resize">tihenda suurus kaal baiti mb kb kvaliteedi vähendamine optimeeri</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Kasutage selle arendamise asemel RAW-kujutisele manustatud eelvaadet</string>
     <string name="score">Skoor</string>
     <string name="return_to_external_app_after_save">Tagasi pärast väliste muudatuste salvestamist</string>
-    <string name="return_to_external_app_after_save_sub">Pärast teisest rakendusest redigeerimiseks avatud pildi salvestamist sulgege Image Toolbox</string>
-    <string name="add_imagetoolbox_metadata">Lisage ImageToolboxi metaandmed</string>
+    <string name="return_to_external_app_after_save_sub">Pärast teisest rakendusest redigeerimiseks avatud pildi salvestamist sulgege SnapForge</string>
+    <string name="add_imagetoolbox_metadata">Lisage SnapForgei metaandmed</string>
     <string name="add_imagetoolbox_metadata_sub">Kirjutage salvestamisel rakenduse versioon ja seadistatud pildiparameetrid EXIF-i</string>
     <string name="read_only">Ainult lugemiseks</string>
     <string name="tag_camera_firmware">Kaamera püsivara</string>

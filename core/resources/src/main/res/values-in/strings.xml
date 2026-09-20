@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -854,7 +854,7 @@
     <string name="resize_anchor">Ubah Ukuran Jangkar</string>
     <string name="header_today">Hari ini</string>
     <string name="embedded_picker">Pemilih Tersemat</string>
-    <string name="embedded_picker_sub">Menggunakan pemilih gambar bawaan Image Toolbox, bukan pemilih gambar yang telah ditentukan sistem</string>
+    <string name="embedded_picker_sub">Menggunakan pemilih gambar bawaan SnapForge, bukan pemilih gambar yang telah ditentukan sistem</string>
     <string name="no_permissions">Tidak Ada Izin</string>
     <string name="request">Permintaan</string>
     <string name="auto_paste">Tempel Otomatis</string>
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">Mengaktifkan antialiasing untuk mencegah tepi tajam</string>
     <string name="open_edit_instead_of_preview">Buka Edit, Bukan Pratinjau</string>
-    <string name="open_edit_instead_of_preview_sub">Saat Anda memilih gambar untuk dibuka (pratinjau) di ImageToolbox, lembar pilihan edit akan dibuka alih-alih dipratinjau</string>
+    <string name="open_edit_instead_of_preview_sub">Saat Anda memilih gambar untuk dibuka (pratinjau) di SnapForge, lembar pilihan edit akan dibuka alih-alih dipratinjau</string>
     <string name="document_scanner">Pemindai Dokumen</string>
     <string name="document_scanner_sub">Pindai dokumen dan buat PDF atau pisahkan gambar darinya</string>
     <string name="click_to_start_scanning">Klik untuk mulai memindai</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Gambar ke WEBP</string>
     <string name="select_webp_image_to_start">Pilih gambar WEBP untuk memulai</string>
     <string name="manage_storage_extra_types">Tidak ada akses penuh ke file</string>
-    <string name="manage_storage_extra_types_sub">Izinkan semua akses file untuk melihat JXL, QOI dan gambar lain yang tidak dikenali sebagai gambar di Android. Tanpa izin, Image Toolbox tidak dapat menampilkan gambar-gambar itu</string>
+    <string name="manage_storage_extra_types_sub">Izinkan semua akses file untuk melihat JXL, QOI dan gambar lain yang tidak dikenali sebagai gambar di Android. Tanpa izin, SnapForge tidak dapat menampilkan gambar-gambar itu</string>
     <string name="default_draw_color">Warna Gambar Default</string>
     <string name="default_draw_path_mode">Mode Jalur Gambar Default</string>
     <string name="add_timestamp">Tambahkan Stempel Waktu</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Ekspor palet yang dihasilkan ke format berbeda</string>
     <string name="add_color_palette_sub">Menambahkan warna baru ke palet saat ini</string>
     <string name="palette_name_not_supported">Format %1$s tidak mendukung pemberian nama palet</string>
-    <string name="wallpapers_export_not_avaialbe">Karena kebijakan Play Store, fitur ini tidak dapat disertakan dalam versi saat ini. Untuk mengakses fungsi ini, silakan unduh ImageToolbox dari sumber alternatif. Anda dapat menemukan build yang tersedia di GitHub di bawah.</string>
+    <string name="wallpapers_export_not_avaialbe">Karena kebijakan Play Store, fitur ini tidak dapat disertakan dalam versi saat ini. Untuk mengakses fungsi ini, silakan unduh SnapForge dari sumber alternatif. Anda dapat menemukan build yang tersedia di GitHub di bawah.</string>
     <string name="open_github_page">Buka halaman Github</string>
     <string name="overwrite_files_sub_short">File asli akan diganti dengan yang baru alih-alih disimpan di folder yang dipilih</string>
     <string name="hidden_watermark_text_detected">Teks tanda air tersembunyi terdeteksi</string>
@@ -2135,7 +2135,7 @@
     <string name="grayscale_pdf_sub">Ubah semua gambar yang disematkan pada dokumen menjadi skala abu-abu</string>
     <string name="compress_pdf">Kompres PDF</string>
     <string name="compress_pdf_sub">Optimalkan ukuran file dokumen Anda agar lebih mudah dibagikan</string>
-    <string name="repair_info">ImageToolbox membangun kembali tabel referensi silang internal dan membuat ulang struktur file dari awal. Ini dapat memulihkan akses ke banyak file yang \\\"tidak dapat dibuka\\\"</string>
+    <string name="repair_info">SnapForge membangun kembali tabel referensi silang internal dan membuat ulang struktur file dari awal. Ini dapat memulihkan akses ke banyak file yang \\\"tidak dapat dibuka\\\"</string>
     <string name="grayscale_info">Alat ini mengubah semua gambar dokumen menjadi skala abu-abu. Terbaik untuk mencetak dan mengurangi ukuran file</string>
     <string name="metadata">Metadata</string>
     <string name="metadata_pdf_sub">Edit properti dokumen untuk privasi yang lebih baik</string>
@@ -2187,11 +2187,11 @@
     <string name="background_color_for_alpha_formats">Warna Latar Belakang Untuk Format Alfa</string>
     <string name="background_color_for_alpha_formats_sub">Menambahkan kemampuan untuk mengatur warna latar belakang untuk setiap format gambar dengan dukungan alfa, jika dinonaktifkan, ini hanya tersedia untuk format non alfa</string>
     <string name="open_markup_project">Buka proyek</string>
-    <string name="open_markup_project_sub">Lanjutkan mengedit proyek Image Toolbox yang disimpan sebelumnya</string>
-    <string name="markup_project_open_failed">Tidak dapat membuka proyek Image Toolbox</string>
-    <string name="markup_project_missing_data">Proyek Image Toolbox tidak memiliki data proyek</string>
-    <string name="markup_project_corrupted">Proyek Image Toolbox rusak</string>
-    <string name="unsupported_markup_project_version">Versi proyek Image Toolbox yang tidak didukung: %1$d</string>
+    <string name="open_markup_project_sub">Lanjutkan mengedit proyek SnapForge yang disimpan sebelumnya</string>
+    <string name="markup_project_open_failed">Tidak dapat membuka proyek SnapForge</string>
+    <string name="markup_project_missing_data">Proyek SnapForge tidak memiliki data proyek</string>
+    <string name="markup_project_corrupted">Proyek SnapForge rusak</string>
+    <string name="unsupported_markup_project_version">Versi proyek SnapForge yang tidak didukung: %1$d</string>
     <string name="save_markup_project">Simpan proyek</string>
     <string name="save_markup_project_sub">Simpan lapisan, latar belakang, dan riwayat edit dalam file proyek yang dapat diedit</string>
     <string name="failed_to_open">Gagal dibuka</string>
@@ -2420,7 +2420,7 @@
     <string name="help_tip_choose_tool_title">Pilih alat yang tepat</string>
     <string name="help_tip_choose_tool_subtitle">Gunakan kategori, pencarian, favorit, dan berbagi tindakan untuk memulai di tempat yang tepat</string>
     <string name="help_tip_choose_tool_page_title">Mulailah dari titik masuk terbaik</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox memiliki banyak alat yang terfokus, dan banyak di antaranya yang terlihat tumpang tindih. Mulailah dari tugas yang ingin Anda selesaikan, lalu pilih alat yang mengontrol bagian terpenting dari hasil: ukuran, format, metadata, teks, halaman PDF, warna, atau tata letak.</string>
+    <string name="help_tip_choose_tool_description">SnapForge memiliki banyak alat yang terfokus, dan banyak di antaranya yang terlihat tumpang tindih. Mulailah dari tugas yang ingin Anda selesaikan, lalu pilih alat yang mengontrol bagian terpenting dari hasil: ukuran, format, metadata, teks, halaman PDF, warna, atau tata letak.</string>
     <string name="help_tip_choose_tool_step_1">Gunakan pencarian ketika Anda mengetahui nama tindakan, seperti mengubah ukuran, PDF, EXIF, OCR, QR, atau warna.</string>
     <string name="help_tip_choose_tool_step_2">Buka kategori jika Anda hanya mengetahui jenis tugasnya, lalu sematkan alat yang sering digunakan sebagai favorit.</string>
     <string name="help_tip_choose_tool_step_3">Saat aplikasi lain membagikan gambar ke Kotak Alat Gambar, pilih alat dari alur lembar berbagi.</string>
@@ -2462,10 +2462,10 @@
     <string name="help_tip_picker_launcher_title">Pemetik dan peluncur</string>
     <string name="help_tip_picker_launcher_subtitle">Gunakan pengaturan pemilih ketika aplikasi membuka terlalu banyak dialog atau dimulai di tempat yang salah</string>
     <string name="help_tip_picker_launcher_page_title">Jadikan pembukaan file sesuai dengan kebiasaan Anda</string>
-    <string name="help_tip_picker_launcher_description">Pengaturan pemilih dan peluncur mengontrol apakah Image Toolbox dimulai dari layar utama, alat, atau alur pemilihan file. Opsi ini sangat berguna ketika Anda biasanya masuk dari lembar berbagi Android atau ketika Anda ingin aplikasi terasa lebih seperti peluncur alat.</string>
+    <string name="help_tip_picker_launcher_description">Pengaturan pemilih dan peluncur mengontrol apakah SnapForge dimulai dari layar utama, alat, atau alur pemilihan file. Opsi ini sangat berguna ketika Anda biasanya masuk dari lembar berbagi Android atau ketika Anda ingin aplikasi terasa lebih seperti peluncur alat.</string>
     <string name="help_tip_picker_launcher_step_1">Gunakan pengaturan pemilih foto jika pemilih sistem menyembunyikan file, menampilkan terlalu banyak item terbaru, atau menangani file cloud dengan buruk.</string>
     <string name="help_tip_picker_launcher_step_2">Aktifkan lewati pengambilan hanya untuk alat yang biasa Anda masuki dari share atau sudah mengetahui sumber filenya.</string>
-    <string name="help_tip_picker_launcher_step_3">Tinjau mode peluncur jika Anda ingin Image Toolbox berperilaku lebih seperti pemilih alat daripada layar beranda biasa.</string>
+    <string name="help_tip_picker_launcher_step_3">Tinjau mode peluncur jika Anda ingin SnapForge berperilaku lebih seperti pemilih alat daripada layar beranda biasa.</string>
     <string name="help_tip_image_source_title">Sumber gambar</string>
     <string name="help_tip_image_source_subtitle">Pilih mode pemilih yang paling sesuai dengan galeri, pengelola file, dan file cloud</string>
     <string name="help_tip_image_source_page_title">Pilih file dari sumber yang tepat</string>
@@ -2609,7 +2609,7 @@
     <string name="help_tip_one_time_save_location_title">Simpan folder satu kali</string>
     <string name="help_tip_one_time_save_location_subtitle">Kirim ekspor berikutnya ke folder sementara tanpa mengubah tujuan normal Anda</string>
     <string name="help_tip_one_time_save_location_page_title">Pisahkan pekerjaan khusus</string>
-    <string name="help_tip_one_time_save_location_description">Lokasi penyimpanan satu kali berguna untuk proyek sementara, folder klien, sesi pembersihan, atau ekspor yang tidak boleh tercampur dengan folder Image Toolbox biasa Anda. Ini memberikan tujuan jangka pendek tanpa menulis ulang pengaturan default Anda.</string>
+    <string name="help_tip_one_time_save_location_description">Lokasi penyimpanan satu kali berguna untuk proyek sementara, folder klien, sesi pembersihan, atau ekspor yang tidak boleh tercampur dengan folder SnapForge biasa Anda. Ini memberikan tujuan jangka pendek tanpa menulis ulang pengaturan default Anda.</string>
     <string name="help_tip_one_time_save_location_step_1">Pilih folder satu kali sebelum memulai tugas yang berada di luar lokasi ekspor normal Anda.</string>
     <string name="help_tip_one_time_save_location_step_2">Gunakan untuk proyek pendek, folder bersama, atau batch yang keluarannya harus tetap dikelompokkan bersama.</string>
     <string name="help_tip_one_time_save_location_step_3">Kembali ke folder default setelah pekerjaan selesai sehingga ekspor selanjutnya tidak tiba-tiba mendarat di lokasi sementara.</string>
@@ -3186,7 +3186,7 @@
     <string name="tool_usage_subtitle">%1$d terbuka • %2$s</string>
     <string name="no_usage_statistics">Belum ada statistik penggunaan</string>
     <string name="no_usage_statistics_sub">Buka beberapa alat dan alat tersebut akan muncul di sini secara otomatis</string>
-    <string name="usage_statistics_info">Statistik penggunaan Anda hanya disimpan secara lokal di perangkat Anda. ImageToolbox menggunakannya hanya untuk menampilkan aktivitas pribadi Anda, alat favorit, dan wawasan data yang disimpan</string>
+    <string name="usage_statistics_info">Statistik penggunaan Anda hanya disimpan secara lokal di perangkat Anda. SnapForge menggunakannya hanya untuk menampilkan aktivitas pribadi Anda, alat favorit, dan wawasan data yang disimpan</string>
     <string name="search_keywords_single_edit">editor edit foto, retouch gambar, sesuaikan</string>
     <string name="search_keywords_resize_and_convert">ubah ukuran konversi skala resolusi dimensi lebar tinggi jpg jpeg png kompres webp</string>
     <string name="search_keywords_weight_resize">ukuran kompres berat byte mb kb mengurangi optimalisasi kualitas</string>
@@ -4442,7 +4442,7 @@
     <string name="score">Skor</string>
     <string name="return_to_external_app_after_save">Kembali setelah menyimpan hasil edit eksternal</string>
     <string name="return_to_external_app_after_save_sub">Tutup Kotak Alat Gambar setelah menyimpan gambar yang dibuka untuk diedit dari aplikasi lain</string>
-    <string name="add_imagetoolbox_metadata">Tambahkan metadata ImageToolbox</string>
+    <string name="add_imagetoolbox_metadata">Tambahkan metadata SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">Tulis versi aplikasi dan parameter gambar yang dikonfigurasi ke EXIF ​​saat menyimpan</string>
     <string name="read_only">Hanya Baca</string>
     <string name="tag_camera_firmware">Firmware kamera</string>
@@ -5049,7 +5049,7 @@
     <string name="slate">Batu tulis</string>
     <string name="search_keywords_pdf_dark_mode">pdf mode gelap pembaca malam membalikkan warna negatif</string>
     <string name="custom_depth_map">Peta kedalaman khusus</string>
-    <string name="custom_depth_map_sub">Opsional. Gunakan kembali peta kedalaman skala abu-abu atau Image Toolbox daripada memperkirakan kedalaman lagi</string>
+    <string name="custom_depth_map_sub">Opsional. Gunakan kembali peta kedalaman skala abu-abu atau SnapForge daripada memperkirakan kedalaman lagi</string>
     <string name="comic_to_pdf">Buku komik ke PDF</string>
     <string name="comic_to_pdf_sub">Konversi CBR, CBZ, CB7 dan arsip gambar lainnya ke PDF</string>
     <string name="select_comic_archive_to_start">Pilih arsip buku komik CBR, CBZ, CB7, atau CBT</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -885,7 +885,7 @@
     <string name="pick_multiple_media">複数メディアの選択</string>
     <string name="pick_single_media">単一メディアの選択</string>
     <string name="pick">選択</string>
-    <string name="embedded_picker_sub">システム定義のものの代わりにImage Toolbox独自の画像ピッカーを使用します</string>
+    <string name="embedded_picker_sub">システム定義のものの代わりにSnapForge独自の画像ピッカーを使用します</string>
     <string name="no_permissions">権限なし</string>
     <string name="request">リクエスト</string>
     <string name="tag_gps_dest_latitude">GPS目的地緯度</string>
@@ -1172,7 +1172,7 @@
     <string name="draw_regular_star_sub">自由形式ではなく正星形を描画します</string>
     <string name="antialias_sub">鋭いエッジを防止するためにアンチエイリアスを有効にします</string>
     <string name="open_edit_instead_of_preview">プレビューの代わりに編集を開く</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolboxで画像を開く（プレビュー）を選択すると、プレビューの代わりに編集選択シートが開きます</string>
+    <string name="open_edit_instead_of_preview_sub">SnapForgeで画像を開く（プレビュー）を選択すると、プレビューの代わりに編集選択シートが開きます</string>
     <string name="document_scanner">ドキュメントスキャナー</string>
     <string name="click_to_start_scanning">クリックしてスキャンを開始</string>
     <string name="start_scanning">スキャン開始</string>
@@ -1298,7 +1298,7 @@
     <string name="recently_used">最近使用した</string>
     <string name="ci_channel">CIチャンネル</string>
     <string name="group">グループ</string>
-    <string name="image_toolbox_in_telegram">ImageToolbox in Telegram 🎉</string>
+    <string name="image_toolbox_in_telegram">SnapForge in Telegram 🎉</string>
     <string name="image_toolbox_in_telegram_sub">何でも議論できるチャットに参加してください。また、ベータ版や発表を投稿するCIチャンネルもチェックできます</string>
     <string name="fit_description">画像を指定した寸法に合わせ、背景にぼかしや色を適用します</string>
     <string name="group_tools_by_type">タイプ別にツールをグループ化</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">生成されたパレットをさまざまな形式でエクスポートする</string>
     <string name="add_color_palette_sub">現在のパレットに新しい色を追加します</string>
     <string name="palette_name_not_supported">%1$s 形式はパレット名の指定をサポートしていません</string>
-    <string name="wallpapers_export_not_avaialbe">Play ストアのポリシーにより、この機能は現在のビルドに含めることができません。この機能にアクセスするには、別のソースから ImageToolbox をダウンロードしてください。利用可能なビルドは以下の GitHub で見つけることができます。</string>
+    <string name="wallpapers_export_not_avaialbe">Play ストアのポリシーにより、この機能は現在のビルドに含めることができません。この機能にアクセスするには、別のソースから SnapForge をダウンロードしてください。利用可能なビルドは以下の GitHub で見つけることができます。</string>
     <string name="open_github_page">Githubページを開く</string>
     <string name="overwrite_files_sub_short">選択したフォルダーに保存されるのではなく、元のファイルが新しいファイルに置き換えられます</string>
     <string name="hidden_watermark_text_detected">検出された隠し透かしテキスト</string>
@@ -2135,7 +2135,7 @@
     <string name="grayscale_pdf_sub">すべてのドキュメントに埋め込まれた画像をグレースケールに変換します</string>
     <string name="compress_pdf">PDFを圧縮する</string>
     <string name="compress_pdf_sub">ドキュメントのファイル サイズを最適化して共有しやすくします</string>
-    <string name="repair_info">ImageToolbox は内部相互参照テーブルを再構築し、ファイル構造を最初から再生成します。これにより、「開けない」多くのファイルへのアクセスを復元できます。</string>
+    <string name="repair_info">SnapForge は内部相互参照テーブルを再構築し、ファイル構造を最初から再生成します。これにより、「開けない」多くのファイルへのアクセスを復元できます。</string>
     <string name="grayscale_info">このツールはすべての文書画像をグレースケールに変換します。印刷やファイルサイズの縮小に最適</string>
     <string name="metadata">メタデータ</string>
     <string name="metadata_pdf_sub">プライバシーを向上させるためにドキュメントのプロパティを編集する</string>
@@ -2187,11 +2187,11 @@
     <string name="background_color_for_alpha_formats">アルファ形式の背景色</string>
     <string name="background_color_for_alpha_formats_sub">アルファサポートを使用してすべての画像フォーマットの背景色を設定する機能を追加します。無効にすると、アルファ以外のフォーマットでのみ使用できます。</string>
     <string name="open_markup_project">プロジェクトを開く</string>
-    <string name="open_markup_project_sub">以前に保存した Image Toolbox プロジェクトの編集を続行する</string>
-    <string name="markup_project_open_failed">Image Toolbox プロジェクトを開けません</string>
-    <string name="markup_project_missing_data">Image Toolbox プロジェクトにプロジェクト データがありません</string>
-    <string name="markup_project_corrupted">Image Toolbox プロジェクトが破損しています</string>
-    <string name="unsupported_markup_project_version">サポートされていない Image Toolbox プロジェクト バージョン: %1$d</string>
+    <string name="open_markup_project_sub">以前に保存した SnapForge プロジェクトの編集を続行する</string>
+    <string name="markup_project_open_failed">SnapForge プロジェクトを開けません</string>
+    <string name="markup_project_missing_data">SnapForge プロジェクトにプロジェクト データがありません</string>
+    <string name="markup_project_corrupted">SnapForge プロジェクトが破損しています</string>
+    <string name="unsupported_markup_project_version">サポートされていない SnapForge プロジェクト バージョン: %1$d</string>
     <string name="save_markup_project">プロジェクトの保存</string>
     <string name="save_markup_project_sub">レイヤー、背景、編集履歴を編集可能なプロジェクト ファイルに保存</string>
     <string name="failed_to_open">開けませんでした</string>
@@ -2420,10 +2420,10 @@
     <string name="help_tip_choose_tool_title">適切なツールを選択してください</string>
     <string name="help_tip_choose_tool_subtitle">カテゴリ、検索、お気に入り、共有アクションを使用して、適切な場所から開始します</string>
     <string name="help_tip_choose_tool_page_title">最適なエントリーポイントから始める</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox には焦点を絞ったツールが多数あり、一見するとそれらの多くは重複しています。完了したいタスクから開始して、結果の最も重要な部分 (サイズ、形式、メタデータ、テキスト、PDF ページ、色、レイアウト) を制御するツールを選択します。</string>
+    <string name="help_tip_choose_tool_description">SnapForge には焦点を絞ったツールが多数あり、一見するとそれらの多くは重複しています。完了したいタスクから開始して、結果の最も重要な部分 (サイズ、形式、メタデータ、テキスト、PDF ページ、色、レイアウト) を制御するツールを選択します。</string>
     <string name="help_tip_choose_tool_step_1">サイズ変更、PDF、EXIF、OCR、QR、色などのアクション名がわかっている場合は、検索を使用します。</string>
     <string name="help_tip_choose_tool_step_2">タスクの種類だけがわかっている場合はカテゴリを開き、頻繁に使用するツールをお気に入りとして固定します。</string>
-    <string name="help_tip_choose_tool_step_3">別のアプリが画像を Image Toolbox に共有する場合、共有シート フローからツールを選択します。</string>
+    <string name="help_tip_choose_tool_step_3">別のアプリが画像を SnapForge に共有する場合、共有シート フローからツールを選択します。</string>
     <string name="help_tip_import_save_share_title">結果をインポート、保存、共有する</string>
     <string name="help_tip_import_save_share_subtitle">入力の選択から編集したファイルのエクスポートまでの通常の流れを理解する</string>
     <string name="help_tip_import_save_share_page_title">一般的な編集フローに従う</string>
@@ -2462,10 +2462,10 @@
     <string name="help_tip_picker_launcher_title">ピッカーとランチャー</string>
     <string name="help_tip_picker_launcher_subtitle">アプリが開くダイアログが多すぎる場合、または間違った場所から起動する場合は、ピッカー設定を使用します。</string>
     <string name="help_tip_picker_launcher_page_title">ファイルを開く習慣を習慣に合わせる</string>
-    <string name="help_tip_picker_launcher_description">ピッカーとランチャーの設定は、Image Toolbox をメイン画面、ツール、またはファイル選択フローのいずれから開始するかを制御します。これらのオプションは、通常 Android 共有シートから入力する場合、またはアプリをツール ランチャーのようにしたい場合に特に便利です。</string>
+    <string name="help_tip_picker_launcher_description">ピッカーとランチャーの設定は、SnapForge をメイン画面、ツール、またはファイル選択フローのいずれから開始するかを制御します。これらのオプションは、通常 Android 共有シートから入力する場合、またはアプリをツール ランチャーのようにしたい場合に特に便利です。</string>
     <string name="help_tip_picker_launcher_step_1">システム ピッカーがファイルを非表示にする場合、最近のアイテムが多すぎる場合、またはクラウド ファイルの処理が不十分な場合は、フォト ピッカー設定を使用します。</string>
     <string name="help_tip_picker_launcher_step_2">通常共有から入力するツール、またはソース ファイルをすでに知っているツールに対してのみスキップ ピッキングを有効にします。</string>
-    <string name="help_tip_picker_launcher_step_3">Image Toolbox を通常のホーム画面よりもツール ピッカーのように動作させたい場合は、ランチャー モードを検討してください。</string>
+    <string name="help_tip_picker_launcher_step_3">SnapForge を通常のホーム画面よりもツール ピッカーのように動作させたい場合は、ランチャー モードを検討してください。</string>
     <string name="help_tip_image_source_title">画像ソース</string>
     <string name="help_tip_image_source_subtitle">ギャラリー、ファイル マネージャー、クラウド ファイルに最適なピッカー モードを選択してください</string>
     <string name="help_tip_image_source_page_title">適切なソースからファイルを選択する</string>
@@ -2609,7 +2609,7 @@
     <string name="help_tip_one_time_save_location_title">ワンタイム保存フォルダー</string>
     <string name="help_tip_one_time_save_location_subtitle">通常の宛先を変更せずに、次のエクスポートを一時フォルダーに送信します</string>
     <string name="help_tip_one_time_save_location_page_title">特別なジョブを分離する</string>
-    <string name="help_tip_one_time_save_location_description">ワンタイム保存場所は、通常の Image Toolbox フォルダーと混在させるべきではない一時プロジェクト、クライアント フォルダー、クリーンアップ セッション、またはエクスポートに役立ちます。デフォルト設定を書き換えることなく、短期間の宛先を提供します。</string>
+    <string name="help_tip_one_time_save_location_description">ワンタイム保存場所は、通常の SnapForge フォルダーと混在させるべきではない一時プロジェクト、クライアント フォルダー、クリーンアップ セッション、またはエクスポートに役立ちます。デフォルト設定を書き換えることなく、短期間の宛先を提供します。</string>
     <string name="help_tip_one_time_save_location_step_1">通常のエクスポート場所以外に属するタスクを開始する前に、ワンタイム フォルダーを選択してください。</string>
     <string name="help_tip_one_time_save_location_step_2">出力をグループ化しておく必要がある短いプロジェクト、共有フォルダー、またはバッチに使用します。</string>
     <string name="help_tip_one_time_save_location_step_3">ジョブの後はデフォルトのフォルダーに戻り、後のエクスポートが予期せず一時的な場所に到達しないようにします。</string>
@@ -3186,7 +3186,7 @@
     <string name="tool_usage_subtitle">%1$d が開きます • %2$s</string>
     <string name="no_usage_statistics">使用統計はまだありません</string>
     <string name="no_usage_statistics_sub">いくつかのツールを開くと、自動的にここに表示されます</string>
-    <string name="usage_statistics_info">使用状況統計は、デバイスのローカルにのみ保存されます。 ImageToolbox は、個人的なアクティビティ、お気に入りのツール、保存されたデータの洞察を表示するためにのみこれらを使用します。</string>
+    <string name="usage_statistics_info">使用状況統計は、デバイスのローカルにのみ保存されます。 SnapForge は、個人的なアクティビティ、お気に入りのツール、保存されたデータの洞察を表示するためにのみこれらを使用します。</string>
     <string name="search_keywords_single_edit">エディター編集写真画像レタッチ調整</string>
     <string name="search_keywords_resize_and_convert">サイズ変更 変換 スケール 解像度 寸法 幅 高さ jpg jpeg png webp 圧縮</string>
     <string name="search_keywords_weight_resize">サイズを圧縮 重み バイト mb kb 品質を下げる 最適化</string>
@@ -4441,8 +4441,8 @@
     <string name="raw_use_embedded_preview_sub">RAW画像を現像する代わりに、RAW画像に埋め込まれたプレビューを使用する</string>
     <string name="score">スコア</string>
     <string name="return_to_external_app_after_save">外部編集を保存した後に戻る</string>
-    <string name="return_to_external_app_after_save_sub">別のアプリで編集のために開いた画像を保存した後、Image Toolbox を閉じる</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox メタデータの追加</string>
+    <string name="return_to_external_app_after_save_sub">別のアプリで編集のために開いた画像を保存した後、SnapForge を閉じる</string>
+    <string name="add_imagetoolbox_metadata">SnapForge メタデータの追加</string>
     <string name="add_imagetoolbox_metadata_sub">保存時にアプリのバージョンと設定された画像パラメーターを EXIF に書き込みます</string>
     <string name="read_only">読み取り専用</string>
     <string name="tag_camera_firmware">カメラファームウェア</string>
@@ -5047,7 +5047,7 @@
     <string name="slate">スレート</string>
     <string name="search_keywords_pdf_dark_mode">PDF ダークモード ナイト リーダー 色を反転 ネガティブ</string>
     <string name="custom_depth_map">カスタム深度マップ</string>
-    <string name="custom_depth_map_sub">オプション。深度を再度推定する代わりに、グレースケールまたは Image Toolbox の深度マップを再利用します。</string>
+    <string name="custom_depth_map_sub">オプション。深度を再度推定する代わりに、グレースケールまたは SnapForge の深度マップを再利用します。</string>
     <string name="comic_to_pdf">コミックブックをPDFに変換</string>
     <string name="comic_to_pdf_sub">CBR、CBZ、CB7、その他の画像アーカイブを PDF に変換</string>
     <string name="select_comic_archive_to_start">CBR、CBZ、CB7、または CBT コミックブックアーカイブを選択してください</string>

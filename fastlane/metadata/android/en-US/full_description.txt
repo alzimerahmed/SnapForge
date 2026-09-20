@@ -1,8 +1,8 @@
-<h1>✨ Image Toolbox ✨</h1>
+<h1>✨ SnapForge ✨</h1>
 
 <p>Powerful all-in-one image editor, AI toolkit and format converter for creators and power users.</p>
 
-<p><strong>Note:</strong> This is only a partial list of features. Full list is available in the <a href="https://github.com/T8RIN/ImageToolbox/blob/master/README.md">README</a>.</p>
+<p><strong>Note:</strong> This is only a partial list of features. Full list is available in the <a href="https://github.com/alzimerahmed/SnapForge">GitHub repository</a>.</p>
 
 <h2>Core Features</h2>
 <ul>

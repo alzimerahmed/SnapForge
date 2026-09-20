@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1076,7 +1076,7 @@
     <string name="antialias">యాంటిలియాస్</string>
     <string name="antialias_sub">పదునైన అంచులను నిరోధించడానికి యాంటీఅలియాసింగ్‌ని ప్రారంభిస్తుంది</string>
     <string name="open_edit_instead_of_preview">ప్రివ్యూకి బదులుగా సవరణను తెరవండి</string>
-    <string name="open_edit_instead_of_preview_sub">మీరు ImageToolboxలో తెరవడానికి (ప్రివ్యూ) చిత్రాన్ని ఎంచుకున్నప్పుడు, ప్రివ్యూకి బదులుగా సవరణ ఎంపిక షీట్ తెరవబడుతుంది</string>
+    <string name="open_edit_instead_of_preview_sub">మీరు SnapForgeలో తెరవడానికి (ప్రివ్యూ) చిత్రాన్ని ఎంచుకున్నప్పుడు, ప్రివ్యూకి బదులుగా సవరణ ఎంపిక షీట్ తెరవబడుతుంది</string>
     <string name="document_scanner">డాక్యుమెంట్ స్కానర్</string>
     <string name="document_scanner_sub">పత్రాలను స్కాన్ చేయండి మరియు వాటి నుండి PDF లేదా ప్రత్యేక చిత్రాలను సృష్టించండి</string>
     <string name="click_to_start_scanning">స్కానింగ్ ప్రారంభించడానికి క్లిక్ చేయండి</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">విభిన్న ఫార్మాట్‌లకు ఉత్పత్తి చేయబడిన పాలెట్‌ను ఎగుమతి చేయండి</string>
     <string name="add_color_palette_sub">ప్రస్తుత పాలెట్‌కు కొత్త రంగును జోడిస్తుంది</string>
     <string name="palette_name_not_supported">%1$s ఫార్మాట్ పాలెట్ పేరును అందించడానికి మద్దతు ఇవ్వదు</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store విధానాల కారణంగా, ఈ ఫీచర్ ప్రస్తుత బిల్డ్‌లో చేర్చబడదు. ఈ కార్యాచరణను యాక్సెస్ చేయడానికి, దయచేసి ప్రత్యామ్నాయ మూలం నుండి ImageToolboxని డౌన్‌లోడ్ చేయండి. మీరు దిగువన GitHubలో అందుబాటులో ఉన్న బిల్డ్‌లను కనుగొనవచ్చు.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store విధానాల కారణంగా, ఈ ఫీచర్ ప్రస్తుత బిల్డ్‌లో చేర్చబడదు. ఈ కార్యాచరణను యాక్సెస్ చేయడానికి, దయచేసి ప్రత్యామ్నాయ మూలం నుండి SnapForgeని డౌన్‌లోడ్ చేయండి. మీరు దిగువన GitHubలో అందుబాటులో ఉన్న బిల్డ్‌లను కనుగొనవచ్చు.</string>
     <string name="open_github_page">Github పేజీని తెరవండి</string>
     <string name="overwrite_files_sub_short">ఎంచుకున్న ఫోల్డర్‌లో సేవ్ చేయడానికి బదులుగా అసలు ఫైల్ కొత్త దానితో భర్తీ చేయబడుతుంది</string>
     <string name="hidden_watermark_text_detected">దాచిన వాటర్‌మార్క్ వచనం కనుగొనబడింది</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">అన్ని డాక్యుమెంట్ ఎంబెడెడ్ ఇమేజ్‌లను గ్రేస్కేల్‌కి మార్చండి</string>
     <string name="compress_pdf">PDFని కుదించుము</string>
     <string name="compress_pdf_sub">సులభంగా భాగస్వామ్యం చేయడానికి మీ డాక్యుమెంట్ ఫైల్ పరిమాణాన్ని ఆప్టిమైజ్ చేయండి</string>
-    <string name="repair_info">ImageToolbox అంతర్గత క్రాస్-రిఫరెన్స్ పట్టికను పునర్నిర్మిస్తుంది మరియు మొదటి నుండి ఫైల్ నిర్మాణాన్ని పునరుత్పత్తి చేస్తుంది. ఇది \\\"తెరవలేని\\\" అనేక ఫైల్‌లకు యాక్సెస్‌ని పునరుద్ధరించగలదు</string>
+    <string name="repair_info">SnapForge అంతర్గత క్రాస్-రిఫరెన్స్ పట్టికను పునర్నిర్మిస్తుంది మరియు మొదటి నుండి ఫైల్ నిర్మాణాన్ని పునరుత్పత్తి చేస్తుంది. ఇది \\\"తెరవలేని\\\" అనేక ఫైల్‌లకు యాక్సెస్‌ని పునరుద్ధరించగలదు</string>
     <string name="grayscale_info">ఈ సాధనం అన్ని డాక్యుమెంట్ చిత్రాలను గ్రేస్కేల్‌కి మారుస్తుంది. ఫైల్ పరిమాణాన్ని ముద్రించడానికి మరియు తగ్గించడానికి ఉత్తమమైనది</string>
     <string name="metadata">మెటాడేటా</string>
     <string name="metadata_pdf_sub">మెరుగైన గోప్యత కోసం డాక్యుమెంట్ ప్రాపర్టీలను సవరించండి</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d తెరవబడుతుంది • %2$s</string>
     <string name="no_usage_statistics">ఇంకా వినియోగ గణాంకాలు లేవు</string>
     <string name="no_usage_statistics_sub">కొన్ని సాధనాలను తెరవండి మరియు అవి స్వయంచాలకంగా ఇక్కడ కనిపిస్తాయి</string>
-    <string name="usage_statistics_info">మీ వినియోగ గణాంకాలు మీ పరికరంలో స్థానికంగా మాత్రమే నిల్వ చేయబడతాయి. ImageToolbox మీ వ్యక్తిగత కార్యాచరణ, ఇష్టమైన సాధనాలు మరియు సేవ్ చేసిన డేటా అంతర్దృష్టులను చూపడానికి మాత్రమే వాటిని ఉపయోగిస్తుంది</string>
+    <string name="usage_statistics_info">మీ వినియోగ గణాంకాలు మీ పరికరంలో స్థానికంగా మాత్రమే నిల్వ చేయబడతాయి. SnapForge మీ వ్యక్తిగత కార్యాచరణ, ఇష్టమైన సాధనాలు మరియు సేవ్ చేసిన డేటా అంతర్దృష్టులను చూపడానికి మాత్రమే వాటిని ఉపయోగిస్తుంది</string>
     <string name="search_keywords_single_edit">ఎడిటర్ ఎడిట్ ఫోటో పిక్చర్ రీటచ్ సర్దుబాటు</string>
     <string name="search_keywords_resize_and_convert">పరిమాణాన్ని మార్చండి స్కేల్ రిజల్యూషన్ కొలతలు వెడల్పు ఎత్తు jpg jpeg png webp కంప్రెస్</string>
     <string name="search_keywords_weight_resize">కంప్రెస్ సైజు బరువు బైట్‌లు mb kb నాణ్యతను ఆప్టిమైజ్‌ని తగ్గిస్తుంది</string>
@@ -4443,7 +4443,7 @@
     <string name="score">స్కోర్</string>
     <string name="return_to_external_app_after_save">బాహ్య సవరణలను సేవ్ చేసిన తర్వాత తిరిగి వెళ్లండి</string>
     <string name="return_to_external_app_after_save_sub">మరొక యాప్ నుండి సవరించడం కోసం తెరవబడిన చిత్రాన్ని సేవ్ చేసిన తర్వాత ఇమేజ్ టూల్‌బాక్స్‌ని మూసివేయండి</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox మెటాడేటాను జోడించండి</string>
+    <string name="add_imagetoolbox_metadata">SnapForge మెటాడేటాను జోడించండి</string>
     <string name="add_imagetoolbox_metadata_sub">సేవ్ చేసేటప్పుడు యాప్ వెర్షన్ మరియు కాన్ఫిగర్ చేయబడిన ఇమేజ్ పారామితులను EXIFకి వ్రాయండి</string>
     <string name="read_only">చదవడానికి మాత్రమే</string>
     <string name="tag_camera_firmware">కెమెరా ఫర్మ్‌వేర్</string>

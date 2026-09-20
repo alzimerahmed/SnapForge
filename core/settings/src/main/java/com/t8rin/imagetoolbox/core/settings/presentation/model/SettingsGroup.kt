@@ -64,8 +64,7 @@ sealed class SettingsGroup(
         titleId = R.string.contact_me,
         settingsList = listOf(
             Setting.Author,
-            Setting.SendLogs,
-            Setting.Donate
+            Setting.SendLogs
         ),
         initialState = true
     )
@@ -317,8 +316,6 @@ sealed class SettingsGroup(
             Setting.HelpTranslate,
             Setting.IssueTracker,
             Setting.FreeSoftwarePartner.takeIf { !Flavor.isFoss() && Locale.getDefault().language == "ru" },
-            Setting.TelegramGroup,
-            Setting.TelegramChannel,
             Setting.SourceCode,
             Setting.HelpTips,
             Setting.DebugMenu.takeIf { BuildConfig.DEBUG }

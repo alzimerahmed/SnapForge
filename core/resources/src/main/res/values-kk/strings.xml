@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1076,7 +1076,7 @@
     <string name="antialias">Антиалиас</string>
     <string name="antialias_sub">Өткір жиектерді болдырмау үшін антиалиазингті қосады</string>
     <string name="open_edit_instead_of_preview">Алдын ала қараудың орнына Өңдеуді ашыңыз</string>
-    <string name="open_edit_instead_of_preview_sub">ImageToolbox қолданбасында ашу (алдын ала қарау) үшін кескінді таңдаған кезде, таңдау парағы алдын ала қараудың орнына ашылады.</string>
+    <string name="open_edit_instead_of_preview_sub">SnapForge қолданбасында ашу (алдын ала қарау) үшін кескінді таңдаған кезде, таңдау парағы алдын ала қараудың орнына ашылады.</string>
     <string name="document_scanner">Құжат сканері</string>
     <string name="document_scanner_sub">Құжаттарды сканерлеңіз және олардан PDF немесе бөлек кескіндер жасаңыз</string>
     <string name="click_to_start_scanning">Сканерлеуді бастау үшін басыңыз</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">Суреттер WEBP</string>
     <string name="select_webp_image_to_start">Бастау үшін WEBP кескінін таңдаңыз</string>
     <string name="manage_storage_extra_types">Файлдарға толық рұқсат жоқ</string>
-    <string name="manage_storage_extra_types_sub">JXL, QOI және Android жүйесінде кескін ретінде танылмаған басқа кескіндерді көру үшін барлық файлдарға рұқсат беріңіз. Рұқсатсыз Image Toolbox бұл кескіндерді көрсете алмайды</string>
+    <string name="manage_storage_extra_types_sub">JXL, QOI және Android жүйесінде кескін ретінде танылмаған басқа кескіндерді көру үшін барлық файлдарға рұқсат беріңіз. Рұқсатсыз SnapForge бұл кескіндерді көрсете алмайды</string>
     <string name="default_draw_color">Әдепкі сызу түсі</string>
     <string name="default_draw_path_mode">Әдепкі сызу жолы режимі</string>
     <string name="add_timestamp">Уақыт белгісін қосыңыз</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">Жасалған палитраны әртүрлі пішімдерге экспорттау</string>
     <string name="add_color_palette_sub">Ағымдағы палитраға жаңа түс қосады</string>
     <string name="palette_name_not_supported">%1$s пішімі палитра атауын беруді қолдамайды</string>
-    <string name="wallpapers_export_not_avaialbe">Play Store саясаттарына байланысты бұл мүмкіндікті ағымдағы құрастыруға қосу мүмкін емес. Бұл функцияға қол жеткізу үшін ImageToolbox қолданбасын балама көзден жүктеп алыңыз. Төменде GitHub сайтында қолжетімді құрылымдарды таба аласыз.</string>
+    <string name="wallpapers_export_not_avaialbe">Play Store саясаттарына байланысты бұл мүмкіндікті ағымдағы құрастыруға қосу мүмкін емес. Бұл функцияға қол жеткізу үшін SnapForge қолданбасын балама көзден жүктеп алыңыз. Төменде GitHub сайтында қолжетімді құрылымдарды таба аласыз.</string>
     <string name="open_github_page">Github бетін ашыңыз</string>
     <string name="overwrite_files_sub_short">Түпнұсқа файл таңдалған қалтада сақтаудың орнына жаңасымен ауыстырылады</string>
     <string name="hidden_watermark_text_detected">Жасырын су таңбасының мәтіні анықталды</string>
@@ -2136,7 +2136,7 @@
     <string name="grayscale_pdf_sub">Барлық ендірілген құжат кескіндерін сұр реңкке түрлендіріңіз</string>
     <string name="compress_pdf">PDF файлын қысыңыз</string>
     <string name="compress_pdf_sub">Бөлісуді жеңілдету үшін құжат файлының өлшемін оңтайландырыңыз</string>
-    <string name="repair_info">ImageToolbox ішкі айқас сілтеме кестесін қайта құрады және файл құрылымын нөлден бастап қайта жасайды. Бұл \\\"ашу мүмкін емес\\\" көптеген файлдарға кіру рұқсатын қалпына келтіре алады.</string>
+    <string name="repair_info">SnapForge ішкі айқас сілтеме кестесін қайта құрады және файл құрылымын нөлден бастап қайта жасайды. Бұл \\\"ашу мүмкін емес\\\" көптеген файлдарға кіру рұқсатын қалпына келтіре алады.</string>
     <string name="grayscale_info">Бұл құрал барлық құжат кескіндерін сұр реңкке түрлендіреді. Басып шығару және файл өлшемін азайту үшін ең жақсы</string>
     <string name="metadata">Метадеректер</string>
     <string name="metadata_pdf_sub">Құпиялықты жақсарту үшін құжат сипаттарын өңдеңіз</string>
@@ -2188,11 +2188,11 @@
     <string name="background_color_for_alpha_formats">Альфа пішімдері үшін фон түсі</string>
     <string name="background_color_for_alpha_formats_sub">Альфа қолдауы бар әрбір кескін пішімі үшін фон түсін орнату мүмкіндігін қосады, өшірілген кезде бұл тек альфа еместер үшін қолжетімді.</string>
     <string name="open_markup_project">Ашық жоба</string>
-    <string name="open_markup_project_sub">Бұрын сақталған Image Toolbox жобасын өңдеуді жалғастырыңыз</string>
-    <string name="markup_project_open_failed">Image Toolbox жобасын ашу мүмкін емес</string>
-    <string name="markup_project_missing_data">Image Toolbox жобасында жоба деректері жоқ</string>
-    <string name="markup_project_corrupted">Image Toolbox жобасы бүлінген</string>
-    <string name="unsupported_markup_project_version">Қолдау көрсетілмейтін Image Toolbox жобасының нұсқасы: %1$d</string>
+    <string name="open_markup_project_sub">Бұрын сақталған SnapForge жобасын өңдеуді жалғастырыңыз</string>
+    <string name="markup_project_open_failed">SnapForge жобасын ашу мүмкін емес</string>
+    <string name="markup_project_missing_data">SnapForge жобасында жоба деректері жоқ</string>
+    <string name="markup_project_corrupted">SnapForge жобасы бүлінген</string>
+    <string name="unsupported_markup_project_version">Қолдау көрсетілмейтін SnapForge жобасының нұсқасы: %1$d</string>
     <string name="save_markup_project">Жобаны сақтау</string>
     <string name="save_markup_project_sub">Қабаттарды, фондық және өңдеу журналын өңделетін жоба файлында сақтаңыз</string>
     <string name="failed_to_open">Ашылмады</string>
@@ -2421,10 +2421,10 @@
     <string name="help_tip_choose_tool_title">Дұрыс құралды таңдаңыз</string>
     <string name="help_tip_choose_tool_subtitle">Дұрыс жерден бастау үшін санаттарды, іздеуді, таңдаулыларды пайдаланыңыз және әрекеттерді бөлісіңіз</string>
     <string name="help_tip_choose_tool_page_title">Ең жақсы кіру нүктесінен бастаңыз</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox-те көптеген бағытталған құралдар бар және олардың көпшілігі бір қарағанда бір-біріне сәйкес келеді. Аяқтағыңыз келетін тапсырмадан бастаңыз, содан кейін нәтиженің ең маңызды бөлігін басқаратын құралды таңдаңыз: өлшем, пішім, метадеректер, мәтін, PDF беттері, түстер немесе орналасу.</string>
+    <string name="help_tip_choose_tool_description">SnapForge-те көптеген бағытталған құралдар бар және олардың көпшілігі бір қарағанда бір-біріне сәйкес келеді. Аяқтағыңыз келетін тапсырмадан бастаңыз, содан кейін нәтиженің ең маңызды бөлігін басқаратын құралды таңдаңыз: өлшем, пішім, метадеректер, мәтін, PDF беттері, түстер немесе орналасу.</string>
     <string name="help_tip_choose_tool_step_1">Өлшемін өзгерту, PDF, EXIF, OCR, QR немесе түс сияқты әрекет атауын білетін кезде іздеуді пайдаланыңыз.</string>
     <string name="help_tip_choose_tool_step_2">Тапсырма түрін ғана білетін кезде санатты ашыңыз, содан кейін жиі қолданылатын құралдарды таңдаулылар ретінде бекітіңіз.</string>
-    <string name="help_tip_choose_tool_step_3">Басқа қолданба кескінді Image Toolbox ішіне ортақ пайдаланған кезде, ортақ парақ ағынынан құралды таңдаңыз.</string>
+    <string name="help_tip_choose_tool_step_3">Басқа қолданба кескінді SnapForge ішіне ортақ пайдаланған кезде, ортақ парақ ағынынан құралды таңдаңыз.</string>
     <string name="help_tip_import_save_share_title">Нәтижелерді импорттаңыз, сақтаңыз және бөлісіңіз</string>
     <string name="help_tip_import_save_share_subtitle">Енгізуді таңдаудан өңделген файлды экспорттауға дейінгі әдеттегі ағынды түсініңіз</string>
     <string name="help_tip_import_save_share_page_title">Жалпы өңдеу ағынын орындаңыз</string>
@@ -2463,7 +2463,7 @@
     <string name="help_tip_picker_launcher_title">Таңдаушы және іске қосу құралы</string>
     <string name="help_tip_picker_launcher_subtitle">Қолданба тым көп тілқатысу терезелерін ашқанда немесе дұрыс емес жерден басталғанда таңдаушы параметрлерін пайдаланыңыз</string>
     <string name="help_tip_picker_launcher_page_title">Ашылатын файлдарды әдеттеріңізге сәйкес етіңіз</string>
-    <string name="help_tip_picker_launcher_description">Таңдаушы және іске қосу құралы параметрлері Image Toolbox негізгі экраннан, құралдан немесе файлды таңдау ағынынан басталатынын басқарады. Бұл опциялар әдетте Android ортақ парағынан кірген кезде немесе қолданбаны құралды іске қосу құралы сияқты сезінгіңіз келгенде әсіресе пайдалы.</string>
+    <string name="help_tip_picker_launcher_description">Таңдаушы және іске қосу құралы параметрлері SnapForge негізгі экраннан, құралдан немесе файлды таңдау ағынынан басталатынын басқарады. Бұл опциялар әдетте Android ортақ парағынан кірген кезде немесе қолданбаны құралды іске қосу құралы сияқты сезінгіңіз келгенде әсіресе пайдалы.</string>
     <string name="help_tip_picker_launcher_step_1">Жүйе таңдаушысы файлдарды жасырса, тым көп соңғы элементтерді көрсетсе немесе бұлттық файлдарды нашар өңдесе, фотосурет таңдау құралы параметрлерін пайдаланыңыз.</string>
     <string name="help_tip_picker_launcher_step_2">Өткізіп алуды әдетте ортақ пайдаланудан енгізетін немесе бастапқы файлды білетін құралдар үшін ғана қосыңыз.</string>
     <string name="help_tip_picker_launcher_step_3">Кескін құралдар жинағы кәдімгі басты экранға қарағанда құрал таңдау құралы сияқты әрекет етуін қаласаңыз, іске қосу режимін қарап шығыңыз.</string>
@@ -2610,7 +2610,7 @@
     <string name="help_tip_one_time_save_location_title">Бір реттік қалталарды сақтау</string>
     <string name="help_tip_one_time_save_location_subtitle">Қалыпты тағайындалған жеріңізді өзгертпей, келесі экспорттарды уақытша қалтаға жіберіңіз</string>
     <string name="help_tip_one_time_save_location_page_title">Арнайы жұмыстарды бөлек ұстаңыз</string>
-    <string name="help_tip_one_time_save_location_description">Бір реттік сақтау орны уақытша жобалар, клиент қалталары, тазалау сеанстары немесе әдеттегі Image Toolbox қалтасымен араласпауы керек экспорттар үшін пайдалы. Ол әдепкі орнатуды қайта жазбастан қысқа мерзімді тағайындауды береді.</string>
+    <string name="help_tip_one_time_save_location_description">Бір реттік сақтау орны уақытша жобалар, клиент қалталары, тазалау сеанстары немесе әдеттегі SnapForge қалтасымен араласпауы керек экспорттар үшін пайдалы. Ол әдепкі орнатуды қайта жазбастан қысқа мерзімді тағайындауды береді.</string>
     <string name="help_tip_one_time_save_location_step_1">Қалыпты экспорттау орнынан тыс тапсырманы бастамас бұрын бір реттік қалтаны таңдаңыз.</string>
     <string name="help_tip_one_time_save_location_step_2">Оны қысқа жобалар, ортақ қалталар немесе шығыстар бірге топтастырылуы керек топтамалар үшін пайдаланыңыз.</string>
     <string name="help_tip_one_time_save_location_step_3">Тапсырмадан кейін әдепкі қалтаға оралыңыз, осылайша кейінгі экспорттар уақытша орынға күтпеген жерден түспеуі үшін.</string>
@@ -3187,7 +3187,7 @@
     <string name="tool_usage_subtitle">%1$d ашылады • %2$s</string>
     <string name="no_usage_statistics">Қолдану статистикасы әлі жоқ</string>
     <string name="no_usage_statistics_sub">Бірнеше құралдарды ашыңыз және олар осы жерде автоматты түрде пайда болады</string>
-    <string name="usage_statistics_info">Пайдалану статистикасы құрылғыңызда тек жергілікті түрде сақталады. ImageToolbox оларды жеке әрекетті, таңдаулы құралдарды және сақталған деректер туралы түсініктерді көрсету үшін ғана пайдаланады</string>
+    <string name="usage_statistics_info">Пайдалану статистикасы құрылғыңызда тек жергілікті түрде сақталады. SnapForge оларды жеке әрекетті, таңдаулы құралдарды және сақталған деректер туралы түсініктерді көрсету үшін ғана пайдаланады</string>
     <string name="search_keywords_single_edit">өңдегіш фотосуретті өңдеу суретін ретушпен реттеу</string>
     <string name="search_keywords_resize_and_convert">өлшемін өзгерту масштабты түрлендіру ажыратымдылық өлшемдерін ені биіктігі jpg jpeg png webp қысу</string>
     <string name="search_keywords_weight_resize">қысу өлшемі салмақ байт мб кб сапаны азайту</string>
@@ -4442,8 +4442,8 @@
     <string name="raw_use_embedded_preview_sub">Оны әзірлеудің орнына RAW кескініне ендірілген алдын ала қарауды пайдаланыңыз</string>
     <string name="score">Ұпай</string>
     <string name="return_to_external_app_after_save">Сыртқы өңдеулерді сақтағаннан кейін оралыңыз</string>
-    <string name="return_to_external_app_after_save_sub">Басқа қолданбадан өңдеу үшін ашылған кескінді сақтағаннан кейін Image Toolbox жабыңыз</string>
-    <string name="add_imagetoolbox_metadata">ImageToolbox метадеректерін қосыңыз</string>
+    <string name="return_to_external_app_after_save_sub">Басқа қолданбадан өңдеу үшін ашылған кескінді сақтағаннан кейін SnapForge жабыңыз</string>
+    <string name="add_imagetoolbox_metadata">SnapForge метадеректерін қосыңыз</string>
     <string name="add_imagetoolbox_metadata_sub">Сақтау кезінде қолданба нұсқасын және конфигурацияланған кескін параметрлерін EXIF ​​​​пішіміне жазыңыз</string>
     <string name="read_only">Тек оқу</string>
     <string name="tag_camera_firmware">Камера микробағдарламасы</string>
@@ -5050,7 +5050,7 @@
     <string name="slate">Шифер</string>
     <string name="search_keywords_pdf_dark_mode">pdf қараңғы режим түнгі оқу құралы түстерді теріс айналдырады</string>
     <string name="custom_depth_map">Арнайы тереңдік картасы</string>
-    <string name="custom_depth_map_sub">Қосымша. Тереңдікті қайта бағалаудың орнына сұр реңкті немесе Image Toolbox тереңдік картасын қайта пайдаланыңыз</string>
+    <string name="custom_depth_map_sub">Қосымша. Тереңдікті қайта бағалаудың орнына сұр реңкті немесе SnapForge тереңдік картасын қайта пайдаланыңыз</string>
     <string name="comic_to_pdf">Комикстер PDF форматына</string>
     <string name="comic_to_pdf_sub">CBR, CBZ, CB7 және басқа кескін мұрағаттарын PDF форматына түрлендіру</string>
     <string name="select_comic_archive_to_start">CBR, CBZ, CB7 немесе CBT комикс мұрағатын таңдаңыз</string>

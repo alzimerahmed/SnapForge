@@ -17,9 +17,7 @@
 
 package com.t8rin.imagetoolbox.core.domain
 
-const val AUTHOR_NICK = "T8RIN"
-
-const val AUTHOR_EMAIL = "open.t8rin@internet.ru"
+const val AUTHOR_NICK = "alzimerahmed"
 
 const val AUTHOR_TELEGRAM = "http://t.me/$AUTHOR_NICK"
 const val TELEGRAM_GROUP_LINK = "https://t.me/t8rin_imagetoolbox"

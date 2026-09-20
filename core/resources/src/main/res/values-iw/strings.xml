@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -1076,7 +1076,7 @@
     <string name="antialias">Antialias</string>
     <string name="antialias_sub">מאפשר הדפסה נגדית כדי למנוע קצוות חדים</string>
     <string name="open_edit_instead_of_preview">פתח את עריכה במקום תצוגה מקדימה</string>
-    <string name="open_edit_instead_of_preview_sub">כאשר אתה בוחר תמונה לפתיחה (תצוגה מקדימה) ב-ImageToolbox, גיליון הבחירה של עריכה ייפתח במקום תצוגה מקדימה</string>
+    <string name="open_edit_instead_of_preview_sub">כאשר אתה בוחר תמונה לפתיחה (תצוגה מקדימה) ב-SnapForge, גיליון הבחירה של עריכה ייפתח במקום תצוגה מקדימה</string>
     <string name="document_scanner">סורק מסמכים</string>
     <string name="document_scanner_sub">סרוק מסמכים וצור PDF או הפרד מהם תמונות</string>
     <string name="click_to_start_scanning">לחץ כדי להתחיל בסריקה</string>
@@ -1351,7 +1351,7 @@
     <string name="webp_type_to_webp">תמונות ל-WEBP</string>
     <string name="select_webp_image_to_start">בחר תמונת WEBP כדי להתחיל</string>
     <string name="manage_storage_extra_types">אין גישה מלאה לקבצים</string>
-    <string name="manage_storage_extra_types_sub">אפשר לכל הקבצים גישה לראות JXL, QOI ותמונות אחרות שאינן מזוהות כתמונות באנדרואיד. ללא הרשאה Image Toolbox אינו יכול להציג את התמונות הללו</string>
+    <string name="manage_storage_extra_types_sub">אפשר לכל הקבצים גישה לראות JXL, QOI ותמונות אחרות שאינן מזוהות כתמונות באנדרואיד. ללא הרשאה SnapForge אינו יכול להציג את התמונות הללו</string>
     <string name="default_draw_color">צבע ציור ברירת מחדל</string>
     <string name="default_draw_path_mode">מצב ציור ברירת מחדל</string>
     <string name="add_timestamp">הוסף חותמת זמן</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">ייצוא פלטה שנוצרה לפורמטים שונים</string>
     <string name="add_color_palette_sub">מוסיף צבע חדש ללוח הנוכחי</string>
     <string name="palette_name_not_supported">פורמט %1$s אינו תומך במתן שם לוח</string>
-    <string name="wallpapers_export_not_avaialbe">עקב מדיניות חנות Play, לא ניתן לכלול תכונה זו במבנה הנוכחי. כדי לגשת לפונקציונליות זו, אנא הורד את ImageToolbox ממקור חלופי. אתה יכול למצוא את ה-builds הזמינים ב-GitHub למטה.</string>
+    <string name="wallpapers_export_not_avaialbe">עקב מדיניות חנות Play, לא ניתן לכלול תכונה זו במבנה הנוכחי. כדי לגשת לפונקציונליות זו, אנא הורד את SnapForge ממקור חלופי. אתה יכול למצוא את ה-builds הזמינים ב-GitHub למטה.</string>
     <string name="open_github_page">פתח את דף Github</string>
     <string name="overwrite_files_sub_short">הקובץ המקורי יוחלף בקובץ חדש במקום לשמור בתיקייה שנבחרה</string>
     <string name="hidden_watermark_text_detected">זוהה טקסט של סימן מים מוסתר</string>
@@ -2138,7 +2138,7 @@
     <string name="grayscale_pdf_sub">המר את כל התמונות המוטבעות במסמכים לגווני אפור</string>
     <string name="compress_pdf">דחוס PDF</string>
     <string name="compress_pdf_sub">בצע אופטימיזציה של גודל קובץ המסמך שלך לשיתוף קל יותר</string>
-    <string name="repair_info">ImageToolbox בונה מחדש את טבלת ההפניות הפנימית ומחדשת את מבנה הקובץ מאפס. זה יכול לשחזר גישה לקבצים רבים ש\\\"לא ניתן לפתוח\\\"</string>
+    <string name="repair_info">SnapForge בונה מחדש את טבלת ההפניות הפנימית ומחדשת את מבנה הקובץ מאפס. זה יכול לשחזר גישה לקבצים רבים ש\\\"לא ניתן לפתוח\\\"</string>
     <string name="grayscale_info">כלי זה ממיר את כל תמונות המסמכים לגווני אפור. הטוב ביותר להדפסה ולהקטנת גודל הקובץ</string>
     <string name="metadata">מטא נתונים</string>
     <string name="metadata_pdf_sub">ערוך מאפייני מסמך לפרטיות טובה יותר</string>
@@ -2191,10 +2191,10 @@
     <string name="background_color_for_alpha_formats_sub">מוסיף יכולת להגדיר צבע רקע עבור כל פורמט תמונה עם תמיכה באלפא, כאשר מושבת זה זמין עבור לא אלפא בלבד</string>
     <string name="open_markup_project">פרויקט פתוח</string>
     <string name="open_markup_project_sub">המשך לערוך פרויקט תמונה כלים שנשמר בעבר</string>
-    <string name="markup_project_open_failed">לא ניתן לפתוח את פרויקט Image Toolbox</string>
-    <string name="markup_project_missing_data">בפרויקט Image Toolbox חסרים נתוני פרויקט</string>
-    <string name="markup_project_corrupted">פרויקט Image Toolbox פגום</string>
-    <string name="unsupported_markup_project_version">גרסת פרויקט Image Toolbox לא נתמכת: %1$d</string>
+    <string name="markup_project_open_failed">לא ניתן לפתוח את פרויקט SnapForge</string>
+    <string name="markup_project_missing_data">בפרויקט SnapForge חסרים נתוני פרויקט</string>
+    <string name="markup_project_corrupted">פרויקט SnapForge פגום</string>
+    <string name="unsupported_markup_project_version">גרסת פרויקט SnapForge לא נתמכת: %1$d</string>
     <string name="save_markup_project">שמור פרויקט</string>
     <string name="save_markup_project_sub">אחסן שכבות, רקע והיסטוריית עריכה בקובץ פרויקט הניתן לעריכה</string>
     <string name="failed_to_open">הפתיחה נכשלה</string>
@@ -2423,10 +2423,10 @@
     <string name="help_tip_choose_tool_title">בחר את הכלי הנכון</string>
     <string name="help_tip_choose_tool_subtitle">השתמש בקטגוריות, חיפוש, מועדפים ושתף פעולות כדי להתחיל במקום הנכון</string>
     <string name="help_tip_choose_tool_page_title">התחל מנקודת הכניסה הטובה ביותר</string>
-    <string name="help_tip_choose_tool_description">ל-Image Toolbox יש הרבה כלים ממוקדים, ורבים מהם חופפים במבט ראשון. התחל מהמשימה שברצונך לסיים, ולאחר מכן בחר בכלי ששולט בחלק החשוב ביותר של התוצאה: גודל, פורמט, מטא נתונים, טקסט, דפי PDF, צבעים או פריסה.</string>
+    <string name="help_tip_choose_tool_description">ל-SnapForge יש הרבה כלים ממוקדים, ורבים מהם חופפים במבט ראשון. התחל מהמשימה שברצונך לסיים, ולאחר מכן בחר בכלי ששולט בחלק החשוב ביותר של התוצאה: גודל, פורמט, מטא נתונים, טקסט, דפי PDF, צבעים או פריסה.</string>
     <string name="help_tip_choose_tool_step_1">השתמש בחיפוש כאשר אתה יודע את שם הפעולה, כגון שינוי גודל, PDF, EXIF, OCR, QR או צבע.</string>
     <string name="help_tip_choose_tool_step_2">פתח קטגוריה כאשר אתה יודע רק את סוג המשימה, ולאחר מכן הצמד כלים תכופים כמועדפים.</string>
-    <string name="help_tip_choose_tool_step_3">כאשר אפליקציה אחרת משתפת תמונה לתוך Image Toolbox, בחר את הכלי מזרימת גיליון השיתוף.</string>
+    <string name="help_tip_choose_tool_step_3">כאשר אפליקציה אחרת משתפת תמונה לתוך SnapForge, בחר את הכלי מזרימת גיליון השיתוף.</string>
     <string name="help_tip_import_save_share_title">ייבא, שמור ושתף תוצאות</string>
     <string name="help_tip_import_save_share_subtitle">הבן את הזרימה הרגילה מבחירת קלט ועד לייצוא הקובץ הערוך</string>
     <string name="help_tip_import_save_share_page_title">עקוב אחר זרימת העריכה הנפוצה</string>
@@ -2465,10 +2465,10 @@
     <string name="help_tip_picker_launcher_title">בוחר ומשגר</string>
     <string name="help_tip_picker_launcher_subtitle">השתמש בהגדרות הבוחר כאשר האפליקציה פותחת יותר מדי דיאלוגים או מתחילה במקום הלא נכון</string>
     <string name="help_tip_picker_launcher_page_title">הפוך את פתיחת הקבצים להתאים להרגל שלך</string>
-    <string name="help_tip_picker_launcher_description">הגדרות הבורר והמפעיל קובעות אם Image Toolbox מתחיל מהמסך הראשי, מכלי או זרימת בחירת קבצים. אפשרויות אלה שימושיות במיוחד כאשר אתה בדרך כלל נכנס מגיליון השיתוף של אנדרואיד או כאשר אתה רוצה שהאפליקציה תרגיש יותר כמו משגר כלים.</string>
+    <string name="help_tip_picker_launcher_description">הגדרות הבורר והמפעיל קובעות אם SnapForge מתחיל מהמסך הראשי, מכלי או זרימת בחירת קבצים. אפשרויות אלה שימושיות במיוחד כאשר אתה בדרך כלל נכנס מגיליון השיתוף של אנדרואיד או כאשר אתה רוצה שהאפליקציה תרגיש יותר כמו משגר כלים.</string>
     <string name="help_tip_picker_launcher_step_1">השתמש בהגדרות של בורר תמונות אם בורר המערכת מסתיר קבצים, מציג יותר מדי פריטים אחרונים או מטפל בצורה גרועה בקבצי ענן.</string>
     <string name="help_tip_picker_launcher_step_2">אפשר בחירה לדלג רק עבור כלים שבהם אתה בדרך כלל נכנס משיתוף או שכבר מכיר את קובץ המקור.</string>
-    <string name="help_tip_picker_launcher_step_3">סקור את מצב המשגר ​​אם אתה רוצה ש-Image Toolbox יתנהג יותר כמו בוחר כלים מאשר מסך בית רגיל.</string>
+    <string name="help_tip_picker_launcher_step_3">סקור את מצב המשגר ​​אם אתה רוצה ש-SnapForge יתנהג יותר כמו בוחר כלים מאשר מסך בית רגיל.</string>
     <string name="help_tip_image_source_title">מקור תמונה</string>
     <string name="help_tip_image_source_subtitle">בחר את מצב הבורר שעובד הכי טוב עם גלריות, מנהלי קבצים וקבצי ענן</string>
     <string name="help_tip_image_source_page_title">בחר קבצים מהמקור הנכון</string>
@@ -2612,7 +2612,7 @@
     <string name="help_tip_one_time_save_location_title">תיקיות שמירה חד פעמיות</string>
     <string name="help_tip_one_time_save_location_subtitle">שלח את היצוא הבא לתיקיה זמנית מבלי לשנות את היעד הרגיל שלך</string>
     <string name="help_tip_one_time_save_location_page_title">יש להפריד בין עבודות מיוחדות</string>
-    <string name="help_tip_one_time_save_location_description">מיקום שמירה חד פעמי שימושי עבור פרויקטים זמניים, תיקיות לקוח, הפעלות ניקוי או ייצוא שלא אמורים להתערבב עם תיקיית ה-Image Toolbox הרגילה שלך. זה נותן יעד קצר מועד מבלי לשכתב את הגדרות ברירת המחדל שלך.</string>
+    <string name="help_tip_one_time_save_location_description">מיקום שמירה חד פעמי שימושי עבור פרויקטים זמניים, תיקיות לקוח, הפעלות ניקוי או ייצוא שלא אמורים להתערבב עם תיקיית ה-SnapForge הרגילה שלך. זה נותן יעד קצר מועד מבלי לשכתב את הגדרות ברירת המחדל שלך.</string>
     <string name="help_tip_one_time_save_location_step_1">בחר תיקיה חד פעמית לפני תחילת משימה ששייכת מחוץ למיקום הייצוא הרגיל שלך.</string>
     <string name="help_tip_one_time_save_location_step_2">השתמש בו עבור פרויקטים קצרים, תיקיות משותפות או קבוצות שבהן הפלטים חייבים להישאר מקובצים יחד.</string>
     <string name="help_tip_one_time_save_location_step_3">חזור לתיקיית ברירת המחדל לאחר העבודה כדי שייצוא מאוחר יותר לא ינחת באופן בלתי צפוי במיקום הזמני.</string>
@@ -3189,7 +3189,7 @@
     <string name="tool_usage_subtitle">%1$d נפתח • %2$s</string>
     <string name="no_usage_statistics">אין עדיין סטטיסטיקות שימוש</string>
     <string name="no_usage_statistics_sub">פתחו כמה כלים והם יופיעו כאן אוטומטית</string>
-    <string name="usage_statistics_info">סטטיסטיקת השימוש שלך מאוחסנת רק באופן מקומי במכשיר שלך. ImageToolbox משתמש בהם רק כדי להציג את הפעילות האישית שלך, הכלים המועדפים ותובנות הנתונים השמורים</string>
+    <string name="usage_statistics_info">סטטיסטיקת השימוש שלך מאוחסנת רק באופן מקומי במכשיר שלך. SnapForge משתמש בהם רק כדי להציג את הפעילות האישית שלך, הכלים המועדפים ותובנות הנתונים השמורים</string>
     <string name="search_keywords_single_edit">עורך לערוך תמונה תמונה ריטוש התאמת</string>
     <string name="search_keywords_resize_and_convert">שנה גודל המרת קנה מידה רזולוציה ממדים רוחב גובה jpg jpeg png webp compress</string>
     <string name="search_keywords_weight_resize">לדחוס גודל משקל בתים mb kb צמצום איכות מיטוב</string>
@@ -4445,7 +4445,7 @@
     <string name="score">צִיוּן</string>
     <string name="return_to_external_app_after_save">חזור לאחר שמירת עריכות חיצוניות</string>
     <string name="return_to_external_app_after_save_sub">סגור את ארגז הכלים של תמונה לאחר שמירת תמונה שנפתחה לעריכה מאפליקציה אחרת</string>
-    <string name="add_imagetoolbox_metadata">הוסף מטא נתונים של ImageToolbox</string>
+    <string name="add_imagetoolbox_metadata">הוסף מטא נתונים של SnapForge</string>
     <string name="add_imagetoolbox_metadata_sub">כתוב את גרסת האפליקציה ואת פרמטרי התמונה המוגדרים ל-EXIF בעת השמירה</string>
     <string name="read_only">קריאה בלבד</string>
     <string name="tag_camera_firmware">קושחת המצלמה</string>
@@ -5052,7 +5052,7 @@
     <string name="slate">צִפחָה</string>
     <string name="search_keywords_pdf_dark_mode">pdf מצב כהה קורא לילה הפוך צבעים שליליים</string>
     <string name="custom_depth_map">מפת עומק מותאמת אישית</string>
-    <string name="custom_depth_map_sub">אופציונלי. השתמש מחדש במפת עומק בגווני אפור או ב-Image Toolbox במקום להעריך שוב את העומק</string>
+    <string name="custom_depth_map_sub">אופציונלי. השתמש מחדש במפת עומק בגווני אפור או ב-SnapForge במקום להעריך שוב את העומק</string>
     <string name="comic_to_pdf">קומיקס ל-PDF</string>
     <string name="comic_to_pdf_sub">המר CBR, CBZ, CB7 וארכיוני תמונות אחרים ל-PDF</string>
     <string name="select_comic_archive_to_start">בחר ארכיון קומיקס CBR, CBZ, CB7 או CBT</string>

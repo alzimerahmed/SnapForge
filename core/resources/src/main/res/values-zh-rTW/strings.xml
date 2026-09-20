@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ ImageToolbox is an image editor for android
+  ~ SnapForge is an image editor for android
   ~ Copyright (c) 2026 T8RIN (Malik Mukhametzyanov)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -842,7 +842,7 @@
     <string name="header_today">今天</string>
     <string name="header_yesterday">昨天</string>
     <string name="embedded_picker">嵌入式選擇器</string>
-    <string name="embedded_picker_sub">Image Toolbox 的圖片選取器</string>
+    <string name="embedded_picker_sub">SnapForge 的圖片選取器</string>
     <string name="no_permissions">無權限</string>
     <string name="request">請求</string>
     <string name="lanczos_bessel">Lanczos Bessel</string>
@@ -1305,7 +1305,7 @@
     <string name="export_fonts">匯出字型</string>
     <string name="copy_not_a_valid_base_64">無法複製空或無效的 Base64 字串</string>
     <string name="draw_regular_star_sub">繪製等邊星形，而不是自由形式的形狀</string>
-    <string name="open_edit_instead_of_preview_sub">當您在 ImageToolbox 中選擇圖片要開啟（預覽）時，將開啟編輯選單而不是預覽</string>
+    <string name="open_edit_instead_of_preview_sub">當您在 SnapForge 中選擇圖片要開啟（預覽）時，將開啟編輯選單而不是預覽</string>
     <string name="scan_qr_code_to_replace_content">掃描 QR Code 以取代欄位中的內容，或輸入內容以產生新的 QR 代碼</string>
     <string name="show_system_bars_by_swipe_sub">啟用滑動以顯示系統列（如果它們被隱藏）</string>
     <string name="tool_exit_confirmation">工具退出確認</string>
@@ -1577,7 +1577,7 @@
     <string name="edgy_amber">銳利琥珀</string>
     <string name="greenish">淡綠</string>
     <string name="ico_size_warning">ICO 檔案的最大儲存尺寸僅為 256*256</string>
-    <string name="image_toolbox_in_telegram">Telegram 中的 Image Toolbox 🎉</string>
+    <string name="image_toolbox_in_telegram">Telegram 中的 SnapForge 🎉</string>
     <string name="lacunarity">Lacunarity</string>
     <string name="gain">增益</string>
     <string name="use_circle_kernel">使用圓形內核</string>
@@ -1837,7 +1837,7 @@
     <string name="export_palette_sub">將生成的調色盤匯出為不同的格式</string>
     <string name="add_color_palette_sub">向當前調色盤添加新顏色</string>
     <string name="palette_name_not_supported">%1$s 格式不支持提供調色盤名稱</string>
-    <string name="wallpapers_export_not_avaialbe">由於 Play 商店政策，此功能無法包含在當前版本中。要存取此功能，請從其他來源下載 ImageToolbox。您可以在下面的 GitHub 上找到可用的版本。</string>
+    <string name="wallpapers_export_not_avaialbe">由於 Play 商店政策，此功能無法包含在當前版本中。要存取此功能，請從其他來源下載 SnapForge。您可以在下面的 GitHub 上找到可用的版本。</string>
     <string name="open_github_page">開啟Github頁面</string>
     <string name="overwrite_files_sub_short">原始檔案將被新檔案替換，而不是保存在所選檔案夾中</string>
     <string name="hidden_watermark_text_detected">檢測到隱藏水印文字</string>
@@ -2135,7 +2135,7 @@
     <string name="grayscale_pdf_sub">將所有文件嵌入圖像轉換為灰度</string>
     <string name="compress_pdf">壓縮PDF</string>
     <string name="compress_pdf_sub">最佳化文件檔案大小以方便共享</string>
-    <string name="repair_info">ImageToolbox 重建內部交叉引用表並從頭開始重新生成檔案結構。這可以恢復對許多「無法開啟」檔案的存取</string>
+    <string name="repair_info">SnapForge 重建內部交叉引用表並從頭開始重新生成檔案結構。這可以恢復對許多「無法開啟」檔案的存取</string>
     <string name="grayscale_info">該工具將所有文件圖像轉換為灰度。最適合列印和減小檔案大小</string>
     <string name="metadata">詮釋資料</string>
     <string name="metadata_pdf_sub">編輯文件屬性以獲得更好的隱私</string>
@@ -2187,11 +2187,11 @@
     <string name="background_color_for_alpha_formats">Alpha 格式的背景颜色</string>
     <string name="background_color_for_alpha_formats_sub">增加了为每种具有 Alpha 支持的图像格式设置背景颜色的功能，禁用后，此功能仅适用于非 Alpha 格式</string>
     <string name="open_markup_project">打开项目</string>
-    <string name="open_markup_project_sub">继续编辑之前保存的 Image Toolbox 项目</string>
+    <string name="open_markup_project_sub">继续编辑之前保存的 SnapForge 项目</string>
     <string name="markup_project_open_failed">无法打开图像工具箱项目</string>
-    <string name="markup_project_missing_data">Image Toolbox 项目缺少项目数据</string>
+    <string name="markup_project_missing_data">SnapForge 项目缺少项目数据</string>
     <string name="markup_project_corrupted">图像工具箱项目已损坏</string>
-    <string name="unsupported_markup_project_version">不受支持的 Image Toolbox 项目版本：%1$d</string>
+    <string name="unsupported_markup_project_version">不受支持的 SnapForge 项目版本：%1$d</string>
     <string name="save_markup_project">保存项目</string>
     <string name="save_markup_project_sub">将图层、背景和编辑历史记录存储在可编辑的项目文件中</string>
     <string name="failed_to_open">打开失败</string>
@@ -2419,7 +2419,7 @@
     <string name="help_tip_choose_tool_title">選擇正確的工具</string>
     <string name="help_tip_choose_tool_subtitle">使用類別、搜尋、收藏夾和共享操作從正確的位置開始</string>
     <string name="help_tip_choose_tool_page_title">從最佳切入點開始</string>
-    <string name="help_tip_choose_tool_description">Image Toolbox 有許多重點工具，乍看之下其中許多工具是重疊的。從您想要完成的任務開始，然後選擇控制結果最重要部分的工具：大小、格式、元資料、文字、PDF 頁面、顏色或佈局。</string>
+    <string name="help_tip_choose_tool_description">SnapForge 有許多重點工具，乍看之下其中許多工具是重疊的。從您想要完成的任務開始，然後選擇控制結果最重要部分的工具：大小、格式、元資料、文字、PDF 頁面、顏色或佈局。</string>
     <string name="help_tip_choose_tool_step_1">當您知道操作名稱（例如調整大小、PDF、EXIF、OCR、QR 或顏色）時，請使用搜尋。</string>
     <string name="help_tip_choose_tool_step_2">當您只知道任務類型時開啟一個類別，然後將常用工具固定為收藏夾。</string>
     <string name="help_tip_choose_tool_step_3">當另一個應用程式將影像共用到影像工具箱時，請從共用表格流程中選擇該工具。</string>
@@ -2455,10 +2455,10 @@
     <string name="help_tip_default_values_step_3">只有當您的工作流程需要跨顯示器、列印或外部編輯器進行一致的顏色處理時，才會變更色彩空間預設值。</string>
     <string name="help_tip_picker_launcher_title">選擇器和啟動器</string>
     <string name="help_tip_picker_launcher_subtitle">當應用程式開啟太多對話方塊或在錯誤位置啟動時使用選擇器設置</string>
-    <string name="help_tip_picker_launcher_description">選擇器和啟動器設定控制 Image Toolbox 是否從主畫面、工具或檔案選擇流程啟動。當您通常從 Android 共享表輸入或希望應用程式更像工具啟動器時，這些選項特別有用。</string>
+    <string name="help_tip_picker_launcher_description">選擇器和啟動器設定控制 SnapForge 是否從主畫面、工具或檔案選擇流程啟動。當您通常從 Android 共享表輸入或希望應用程式更像工具啟動器時，這些選項特別有用。</string>
     <string name="help_tip_picker_launcher_step_1">如果系統選擇器隱藏檔案、顯示太多最近的項目或處理雲端檔案效果不佳，請使用照片選擇器設定。</string>
     <string name="help_tip_picker_launcher_step_2">僅對您通常從共用輸入或已經知道來源檔案的工具啟用跳過選取。</string>
-    <string name="help_tip_picker_launcher_step_3">如果您希望 Image Toolbox 的行為更像工具選擇器而不是普通的主螢幕，請查看啟動器模式。</string>
+    <string name="help_tip_picker_launcher_step_3">如果您希望 SnapForge 的行為更像工具選擇器而不是普通的主螢幕，請查看啟動器模式。</string>
     <string name="help_tip_image_source_title">圖片來源</string>
     <string name="help_tip_image_source_subtitle">選擇最適合圖庫、檔案管理器和雲端檔案的選取器模式</string>
     <string name="help_tip_image_source_description">圖像來源設定會影響應用程式向 Android 請求圖像的方式。最佳選擇取決於您的檔案是否位於系統庫、檔案管理器資料夾、雲端提供者或共享臨時內容的其他應用程式中。</string>
@@ -2599,7 +2599,7 @@
     <string name="help_tip_one_time_save_location_title">一次保存資料夾</string>
     <string name="help_tip_one_time_save_location_subtitle">將下一個匯出傳送到臨時資料夾，而不更改您的正常目的地</string>
     <string name="help_tip_one_time_save_location_page_title">將特殊工作分開</string>
-    <string name="help_tip_one_time_save_location_description">一次性保存位置對於臨時專案、用戶端資料夾、清理會話或不應與常規 Image Toolbox 資料夾混合的匯出非常有用。它提供了一個短暫的目的地，而無需重寫您的預設。</string>
+    <string name="help_tip_one_time_save_location_description">一次性保存位置對於臨時專案、用戶端資料夾、清理會話或不應與常規 SnapForge 資料夾混合的匯出非常有用。它提供了一個短暫的目的地，而無需重寫您的預設。</string>
     <string name="help_tip_one_time_save_location_step_1">在開始屬於正常匯出位置之外的任務之前，請選擇一個一次性資料夾。</string>
     <string name="help_tip_one_time_save_location_step_2">將其用於短項目、共用資料夾或輸出必須保持分組在一起的批次。</string>
     <string name="help_tip_one_time_save_location_step_3">作業完成後返回預設資料夾，以便以後的匯出不會意外到達臨時位置。</string>
@@ -3186,7 +3186,7 @@
     <string name="no_usage_statistics_sub">打開一些工具，它們會自動出現在這裡</string>
     <string name="show_recent_tools">顯示最近使用的工具</string>
     <string name="tool_usage_subtitle">%1$d 開啟 • %2$s</string>
-    <string name="usage_statistics_info">您的使用情況統計資料僅儲存在您的裝置本機。 ImageToolbox 僅使用它們來顯示您的個人活動、最喜歡的工具和保存的資料見解</string>
+    <string name="usage_statistics_info">您的使用情況統計資料僅儲存在您的裝置本機。 SnapForge 僅使用它們來顯示您的個人活動、最喜歡的工具和保存的資料見解</string>
     <string name="neutral_variant">中性變體</string>
     <string name="error">錯誤</string>
     <string name="search_keywords_single_edit">編輯器編輯照片圖片修飾調整</string>
@@ -4442,7 +4442,7 @@
     <string name="score">分數</string>
     <string name="return_to_external_app_after_save">儲存外部編輯後返回</string>
     <string name="return_to_external_app_after_save_sub">儲存從其他應用程式開啟進行編輯的影像後關閉影像工具箱</string>
-    <string name="add_imagetoolbox_metadata">新增 ImageToolbox 元數據</string>
+    <string name="add_imagetoolbox_metadata">新增 SnapForge 元數據</string>
     <string name="add_imagetoolbox_metadata_sub">儲存時將應用程式版本和配置的影像參數寫入EXIF</string>
     <string name="read_only">只讀</string>
     <string name="tag_camera_firmware">相機韌體</string>
@@ -5046,7 +5046,7 @@
     <string name="slate">石板</string>
     <string name="search_keywords_pdf_dark_mode">pdf暗模式夜間閱讀器反轉顏色負片</string>
     <string name="custom_depth_map">自訂深度圖</string>
-    <string name="custom_depth_map_sub">選修的。重複使用灰階圖或 Image Toolbox 深度圖，而不是再次估計深度</string>
+    <string name="custom_depth_map_sub">選修的。重複使用灰階圖或 SnapForge 深度圖，而不是再次估計深度</string>
     <string name="comic_to_pdf">漫畫書轉 PDF</string>
     <string name="comic_to_pdf_sub">將CBR、CBZ、CB7等影像檔案轉換為PDF</string>
     <string name="select_comic_archive_to_start">選擇 CBR、CBZ、CB7 或 CBT 漫畫書存檔</string>
