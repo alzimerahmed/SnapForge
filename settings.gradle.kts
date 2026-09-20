@@ -129,6 +129,7 @@ include(":feature:multi-frame-fusion")
 include(":feature:compression-lab")
 include(":feature:code-preview")
 include(":feature:fractal-generation")
+include(":feature:batch")
 
 include(":feature:root")
 

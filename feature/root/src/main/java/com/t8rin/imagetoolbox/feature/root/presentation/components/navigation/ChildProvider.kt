@@ -28,6 +28,7 @@ import com.t8rin.imagetoolbox.feature.archive_tools.presentation.screenLogic.Arc
 import com.t8rin.imagetoolbox.feature.ascii_art.presentation.screenLogic.AsciiArtComponent
 import com.t8rin.imagetoolbox.feature.audio_cover_extractor.ui.screenLogic.AudioCoverExtractorComponent
 import com.t8rin.imagetoolbox.feature.base64_tools.presentation.screenLogic.Base64ToolsComponent
+import com.t8rin.imagetoolbox.feature.batch.presentation.screenLogic.BatchComponent
 import com.t8rin.imagetoolbox.feature.batchrename.presentation.screenLogic.BatchRenameComponent
 import com.t8rin.imagetoolbox.feature.checksum_tools.presentation.screenLogic.ChecksumToolsComponent
 import com.t8rin.imagetoolbox.feature.cipher.presentation.screenLogic.CipherComponent
@@ -105,6 +106,7 @@ import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.Na
 import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.AsciiArt
 import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.AudioCoverExtractor
 import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.Base64Tools
+import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.Batch
 import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.BatchRename
 import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.ChecksumTools
 import com.t8rin.imagetoolbox.feature.root.presentation.components.navigation.NavigationChild.Cipher
@@ -308,6 +310,7 @@ internal class ChildProvider @Inject constructor(
     private val removeAnnotationsPdfToolComponentFactory: RemoveAnnotationsPdfToolComponent.Factory,
     private val helpComponentFactory: HelpComponent.Factory,
     private val batchRenameComponentFactory: BatchRenameComponent.Factory,
+    private val batchComponentFactory: BatchComponent.Factory,
 ) {
     fun RootComponent.createChild(
         config: Screen,
@@ -645,6 +648,15 @@ internal class ChildProvider @Inject constructor(
 
         is Screen.ResizeAndConvert -> ResizeAndConvert(
             resizeAndConvertComponentFactory(
+                componentContext = componentContext,
+                initialUris = config.uris,
+                onGoBack = ::navigateBack,
+                onNavigate = ::navigateTo
+            )
+        )
+
+        is Screen.Batch -> Batch(
+            batchComponentFactory(
                 componentContext = componentContext,
                 initialUris = config.uris,
                 onGoBack = ::navigateBack,

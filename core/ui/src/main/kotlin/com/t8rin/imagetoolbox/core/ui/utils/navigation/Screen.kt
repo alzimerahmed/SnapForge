@@ -1367,6 +1367,15 @@ sealed class Screen(
         subtitle = R.string.fractal_generation_sub
     )
 
+    @Serializable
+    data class Batch(
+        val uris: List<Uri>? = null
+    ) : Screen(
+        id = 83,
+        title = R.string.batch_tool,
+        subtitle = R.string.batch_tool_sub
+    )
+
     companion object : ScreenConstants by ScreenConstants
 
 }

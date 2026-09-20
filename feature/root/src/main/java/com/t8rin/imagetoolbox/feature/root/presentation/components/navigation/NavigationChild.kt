@@ -37,6 +37,8 @@ import com.t8rin.imagetoolbox.feature.audio_cover_extractor.ui.AudioCoverExtract
 import com.t8rin.imagetoolbox.feature.audio_cover_extractor.ui.screenLogic.AudioCoverExtractorComponent
 import com.t8rin.imagetoolbox.feature.base64_tools.presentation.Base64ToolsContent
 import com.t8rin.imagetoolbox.feature.base64_tools.presentation.screenLogic.Base64ToolsComponent
+import com.t8rin.imagetoolbox.feature.batch.presentation.BatchContent
+import com.t8rin.imagetoolbox.feature.batch.presentation.screenLogic.BatchComponent
 import com.t8rin.imagetoolbox.feature.batchrename.presentation.BatchRenameContent
 import com.t8rin.imagetoolbox.feature.batchrename.presentation.screenLogic.BatchRenameComponent
 import com.t8rin.imagetoolbox.feature.checksum_tools.presentation.ChecksumToolsContent
@@ -424,6 +426,11 @@ internal sealed interface NavigationChild {
     class ResizeAndConvert(private val component: ResizeAndConvertComponent) : NavigationChild {
         @Composable
         override fun Content() = ResizeAndConvertContent(component)
+    }
+
+    class Batch(private val component: BatchComponent) : NavigationChild {
+        @Composable
+        override fun Content() = BatchContent(component)
     }
 
     class ScanQrCode(private val component: ScanQrCodeComponent) : NavigationChild {

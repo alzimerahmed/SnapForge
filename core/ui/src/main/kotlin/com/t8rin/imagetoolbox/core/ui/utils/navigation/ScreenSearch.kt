@@ -39,6 +39,7 @@ import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.CompressionLab
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.Crop
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.Curves
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.DeleteExif
+import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.Batch
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.DocumentScanner
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.Draw
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.DuplicateFinder
@@ -157,6 +158,7 @@ private fun Screen.searchKeywordsRes(): Int? = when (this) {
     is Photomosaic -> R.string.search_keywords_photomosaic
     is MultiFrameFusion -> R.string.search_keywords_multi_frame_fusion
     is DeleteExif -> R.string.search_keywords_delete_exif
+    is Batch -> R.string.search_keywords_batch_tool
     is Compare -> R.string.search_keywords_compare
     is CompressionLab -> R.string.search_keywords_compression_lab
     is CodePreview -> R.string.search_keywords_code_preview

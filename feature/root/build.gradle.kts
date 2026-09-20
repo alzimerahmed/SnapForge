@@ -90,4 +90,5 @@ dependencies {
     implementation(projects.feature.compressionLab)
     implementation(projects.feature.codePreview)
     implementation(projects.feature.fractalGeneration)
+    implementation(projects.feature.batch)
 }

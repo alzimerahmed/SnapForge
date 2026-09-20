@@ -110,6 +110,7 @@ import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.AppLogs
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.ArchiveTools
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.AsciiArt
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.AudioCoverExtractor
+import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.Batch
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.Base64Tools
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.BatchRename
 import com.t8rin.imagetoolbox.core.ui.utils.navigation.Screen.ChecksumTools
@@ -248,6 +249,7 @@ internal fun Screen.simpleName(): String = when (this) {
     is WallpapersExport -> "Wallpapers_Export"
     is AsciiArt -> "Ascii_Art"
     is AiTools -> "Ai_Tools"
+    is Batch -> "Batch"
     is ColorLibrary -> "ColorLibrary"
     is ShaderStudio -> "Shader_Studio"
     is Help -> "Help_Tips"
@@ -349,6 +351,7 @@ internal fun Screen.icon(): ImageVector? = when (this) {
     is WallpapersExport -> Icons.Outlined.WallpaperAlt
     is AsciiArt -> Icons.Outlined.Ascii
     is AiTools -> Icons.Outlined.Neurology
+    is Batch -> Icons.Outlined.MultipleImageEdit
     is ColorLibrary -> Icons.Outlined.FormatPaintVariant
     is ShaderStudio -> Icons.Rounded.EvShadow
     is PdfTools.Merge -> Icons.Rounded.ImageCombine
@@ -448,6 +451,7 @@ internal fun Screen.twoToneIcon(): ImageVector? = when (this) {
     is WallpapersExport -> Icons.TwoTone.WallpaperAlt
     is AsciiArt -> Icons.Outlined.Ascii
     is AiTools -> Icons.TwoTone.Neurology
+    is Batch -> Icons.TwoTone.MultipleImageEdit
     is ColorLibrary -> Icons.TwoTone.FormatPaintVariant
     is ShaderStudio -> Icons.TwoTone.EvShadow
     is PdfTools.Merge -> Icons.TwoTone.ImageCombine
@@ -522,6 +526,7 @@ private object ScreenConstantsImpl : ScreenConstants {
                     EditExif(),
                     DeleteExif(),
                     BatchRename(),
+                    Batch(),
                 ),
                 title = R.string.edit,
                 selectedIcon = Icons.Rounded.MiniEditLarge,
