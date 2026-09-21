@@ -43,7 +43,7 @@ agp = "9.3.3"
 hilt = "2.60.1"
 
 ktor = "3.6.0"
-coil = "3.6.2"
+coil = "3.6.3"
 dotlottieAndroid = "0.16.0"
 appCompat = "1.8.0"
 androidxCore = "1.19.0"
